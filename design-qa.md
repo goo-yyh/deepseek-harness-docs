@@ -113,7 +113,7 @@ values, and all 82 bilingual pairing records validate. The official
 
 ## Production deployment verification
 
-- Vercel production alias: `https://deepseek-harness-docs.vercel.app`.
+- Production canonical origin: `https://www.deepseek-harness-docs.com`.
 - Vercel reported the production deployment as `Ready`.
 - `/` resolved to `/guide/quickstart`; Chinese and English Quickstart routes
   returned `200`, while unpublished Japanese and Korean routes returned `404`.

@@ -7,7 +7,7 @@ import { docsPages, routeLink, type DocsLocale, type DocsPage } from './docs.ts'
 
 export const SITE_NAME = 'DeepSeek Harness'
 export const SITE_ORIGIN = normalizeOrigin(
-  process.env.DOCS_SITE_ORIGIN ?? 'https://deepseek-harness-docs.vercel.app',
+  process.env.DOCS_SITE_ORIGIN ?? 'https://www.deepseek-harness-docs.com',
 )
 export const SITEMAP_URL = `${SITE_ORIGIN}/sitemap.xml`
 

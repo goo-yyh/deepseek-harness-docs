@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deepseek-harness-docs.vercel.app/sitemap.xml
+Sitemap: https://www.deepseek-harness-docs.com/sitemap.xml

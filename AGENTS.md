@@ -43,9 +43,10 @@ This repository publishes an isomorphic mirror of the official DeepSeek Harness 
 ## Multilingual SEO
 
 - `website/seo.ts` is the single owner of per-page SEO projection. `website/public/robots.txt` owns crawler discovery, and `scripts/audit-seo.ts` owns the rendered-page audit. Do not add one-off page tags that bypass these owners.
+- The production canonical origin is `https://www.deepseek-harness-docs.com`; the apex domain redirects to `www`. Keep sitemap locations, robots discovery, canonical, hreflang, Open Graph, and JSON-LD on this origin.
 - Every indexable localized page requires a unique localized title and description, the correct `<html lang>`, an absolute self-canonical URL, matching Open Graph and Twitter metadata, JSON-LD language and URL, and a complete reciprocal hreflang set plus `x-default`.
 - `x-default` resolves to Chinese when a real Chinese translation exists. A fallback route uses the native-language canonical and alternates only; it is never advertised as a translation.
-- `DOCS_SITE_ORIGIN` may override the production origin only with an HTTPS origin that has no path, query, or fragment. Keep canonical, sitemap, robots, Open Graph, and JSON-LD URLs on the same origin.
+- `DOCS_SITE_ORIGIN` may override the production origin only with an HTTPS origin that has no path, query, or fragment. Any intentional origin migration must update `website/public/robots.txt` in the same change so the SEO audit remains consistent.
 - `pnpm run build` runs the SEO audit for every rendered locale page and writes deterministic evidence to `reports/seo-audit.json`. The audit must cover titles, descriptions, languages, canonical URLs, hreflang, robots, Open Graph, Twitter, JSON-LD, sitemap entries, and `robots.txt`.
 
 ## Synchronization and future translation
@@ -82,6 +83,7 @@ pnpm run docs:routes
 ## Git and deployment
 
 - `main` is the publication branch. Direct pushes require explicit user authorization plus branch, remote, staged-scope, secret, validation, and remote-ref checks.
-- A request to commit and push does not authorize a Vercel CLI deployment. Do not run `vercel deploy`, `vercel --prod`, change aliases, or remove deployments unless the user explicitly requests deployment work.
+- The user owns Vercel Project creation, Git connection, and first deployment. A request to commit and push does not authorize `vercel link`, Project creation, CLI deployment, alias changes, or Project deletion.
+- Keep `vercel.json` portable and do not set `git.deploymentEnabled: false`; after the user connects a Project, Vercel Git automatic deployments remain available under that Project's settings.
 - The repository is configured for a Vercel static build with `pnpm install --frozen-lockfile`, `pnpm run build`, and output directory `website/.dist`. Keep `cleanUrls` and immutable asset caching unless the routing contract changes.
 - After pushing, verify local `HEAD`, `origin/main`, and the remote `refs/heads/main` are identical. Report validation and Git state separately from deployment state.

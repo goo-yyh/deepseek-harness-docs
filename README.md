@@ -60,13 +60,18 @@ Quickstart。中文 Cordis API inherited 页面当前是官方英文回退，也
 
 ## Vercel 部署
 
-生产地址：[`https://deepseek-harness-docs.vercel.app`](https://deepseek-harness-docs.vercel.app)
+生产地址：[`https://www.deepseek-harness-docs.com`](https://www.deepseek-harness-docs.com)
 
 仓库根目录已包含 `vercel.json`。Vercel 使用：
 
 - Install Command：`pnpm install --frozen-lockfile`
 - Build Command：`pnpm run build`
 - Output Directory：`website/.dist`
+
+Vercel Project、Git 仓库连接和首次部署由维护者在 Vercel 中创建。本仓库不设置
+`git.deploymentEnabled: false`；Project 连接完成后可以继续使用 Vercel Git 自动部署。
+当前 canonical origin 是 `https://www.deepseek-harness-docs.com`。迁移生产域名时，
+必须同时更新 `website/seo.ts`、`website/public/robots.txt` 并重新运行 SEO 审计。
 
 通过 Vercel CLI 部署时：
 
