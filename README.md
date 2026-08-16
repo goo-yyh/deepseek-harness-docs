@@ -97,7 +97,7 @@ evidence、`verify` 和 `result`。publication control 变化会阻断自动 pro
 
 IndexNow 所有权文件位于站点根目录：
 
-`https://www.deepseek-harness-docs.com/5ea4e0732ca042618e5286a58181a867.txt`
+`https://www.deepseek-harness-docs.com/3ad568e2babd4212b27130365f0c7a16.txt`
 
 构建会离线验证 key 文件和 sitemap；内容部署完成后再提交当前 sitemap：
 

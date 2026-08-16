@@ -5,7 +5,7 @@ import { resolve } from 'node:path'
 import { SITE_ORIGIN } from '../website/seo.ts'
 
 const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow'
-const KEY_FILE = '5ea4e0732ca042618e5286a58181a867.txt'
+const KEY_FILE = '3ad568e2babd4212b27130365f0c7a16.txt'
 const MAX_URLS_PER_REQUEST = 10_000
 const root = resolve(import.meta.dirname, '..')
 const publicKeyPath = resolve(root, 'website/public', KEY_FILE)

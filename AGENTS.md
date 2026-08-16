@@ -59,7 +59,7 @@ This repository publishes an isomorphic mirror of the official DeepSeek Harness 
 
 ## IndexNow
 
-- `website/public/5ea4e0732ca042618e5286a58181a867.txt` is the root ownership file for `www.deepseek-harness-docs.com`. Its filename and UTF-8 content must remain identical unless the IndexNow key is intentionally rotated.
+- `website/public/3ad568e2babd4212b27130365f0c7a16.txt` is the root ownership file for `www.deepseek-harness-docs.com`. Its filename and UTF-8 content must remain identical unless the IndexNow key is intentionally rotated.
 - `scripts/submit-indexnow.ts` reads only the freshly built `website/.dist/sitemap.xml`, rejects duplicate or off-origin URLs, verifies the built key, and checks that the deployed key and sitemap match before notifying IndexNow.
 - `pnpm run build` includes the offline `indexnow:check` gate. Run `pnpm run indexnow:submit` manually only after the matching commit is deployed; do not submit on every CI build or notify URLs that are not live.
 - An IndexNow HTTP `200` or `202` confirms receipt or pending key validation only. It does not prove crawling, indexing, or ranking; verify received URLs separately in Bing Webmaster Tools.
