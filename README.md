@@ -93,6 +93,23 @@ python3 .agents/skills/diff-translation/scripts/snapshot_manager.py check \
 evidence、`verify` 和 `result`。publication control 变化会阻断自动 promote，必须先
 人工核对目录、视觉、适配器或许可证。
 
+## IndexNow
+
+IndexNow 所有权文件位于站点根目录：
+
+`https://www.deepseek-harness-docs.com/5ea4e0732ca042618e5286a58181a867.txt`
+
+构建会离线验证 key 文件和 sitemap；内容部署完成后再提交当前 sitemap：
+
+```bash
+pnpm run build
+pnpm run indexnow:submit
+```
+
+提交脚本只接受 `www.deepseek-harness-docs.com` 的唯一 URL，并在发送前确认线上 key
+与 sitemap 和本地构建完全一致。HTTP `200`/`202` 仅表示 IndexNow 已接收通知或等待
+验证，不代表页面已经抓取或收录；最终状态在 Bing Webmaster Tools 中查看。
+
 ## 目录说明
 
 - `docs/`：官方 canonical 中英文 Markdown、图片和 pairing records。

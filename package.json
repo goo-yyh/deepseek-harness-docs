@@ -9,12 +9,14 @@
   },
   "scripts": {
     "dev": "vitepress dev website --host 127.0.0.1 --port 5173",
-    "build": "pnpm run docs:check && vitepress build website && pnpm run seo:audit",
+    "build": "pnpm run docs:check && vitepress build website && pnpm run seo:audit && pnpm run indexnow:check",
     "preview": "vitepress preview website --host 127.0.0.1 --port 4173",
     "docs:check": "tsx scripts/validate-docs.ts",
     "docs:manifest": "tsx scripts/capture-upstream.ts",
     "docs:routes": "tsx scripts/verify-built-routes.ts",
     "seo:audit": "tsx scripts/audit-seo.ts",
+    "indexnow:check": "tsx scripts/submit-indexnow.ts --dry-run",
+    "indexnow:submit": "tsx scripts/submit-indexnow.ts",
     "docs:sync": "python3 .agents/skills/diff-translation/scripts/snapshot_manager.py",
     "test": "python3 .agents/skills/diff-translation/tests/test_pipeline.py"
   },

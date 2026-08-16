@@ -57,6 +57,13 @@ This repository publishes an isomorphic mirror of the official DeepSeek Harness 
 - Never publish a partial locale or copy English into a translated route. Promote a locale only after complete structural, language, SEO, search, desktop, mobile, light, and dark validation.
 - Generated run state under `.docs-source/` and user-facing run output under `diff/` are ignored local evidence unless the workflow explicitly promotes a tracked artifact.
 
+## IndexNow
+
+- `website/public/5ea4e0732ca042618e5286a58181a867.txt` is the root ownership file for `www.deepseek-harness-docs.com`. Its filename and UTF-8 content must remain identical unless the IndexNow key is intentionally rotated.
+- `scripts/submit-indexnow.ts` reads only the freshly built `website/.dist/sitemap.xml`, rejects duplicate or off-origin URLs, verifies the built key, and checks that the deployed key and sitemap match before notifying IndexNow.
+- `pnpm run build` includes the offline `indexnow:check` gate. Run `pnpm run indexnow:submit` manually only after the matching commit is deployed; do not submit on every CI build or notify URLs that are not live.
+- An IndexNow HTTP `200` or `202` confirms receipt or pending key validation only. It does not prove crawling, indexing, or ranking; verify received URLs separately in Bing Webmaster Tools.
+
 ## Generated and local-only files
 
 - Do not commit `node_modules/`, `website/.generated/`, `website/.cache/`, `website/.dist/`, `.docs-source/`, `diff/`, `.vercel/`, `.chat/`, `.DS_Store`, or logs.
@@ -77,6 +84,7 @@ pnpm run docs:routes
 
 - `docs:check` verifies locked official bytes, Git blobs, bilingual pairing records, route/locale boundaries, and adapted controls.
 - `build` projects the sources, builds VitePress, generates the sitemap, and runs the all-page SEO audit.
+- `build` also validates the IndexNow key file and production sitemap without sending a notification.
 - `docs:routes` verifies every official HTML route, unpublished-locale absence, locale-home redirects, and the Vercel fallback redirect contract.
 - Before a Git release, also inspect the complete staged scope, run `git diff --cached --check`, and scan staged paths for credentials and ignored build output.
 
