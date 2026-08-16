@@ -1,0 +1,142 @@
+- link "Skip to content":
+  - /url: "#VPContent"
+- banner:
+  - link "Preview":
+    - /url: /deepseek-harness/en/
+    - generic: Preview
+  - button "Search":
+    - generic: Search
+    - generic: ⌘
+    - generic: K
+  - navigation "Main Navigation":
+    - generic: Main Navigation
+    - link "Guide":
+      - /url: /deepseek-harness/en/guide/quickstart
+      - generic: Guide
+    - link "Development":
+      - /url: /deepseek-harness/en/develop/basic/
+      - generic: Development
+    - link "Reference":
+      - /url: /deepseek-harness/en/reference/
+      - generic: Reference
+  - button "Change language"
+  - switch "Switch to dark theme"
+  - link "github":
+    - /url: https://github.com/deepseek-ai/deepseek-harness
+- complementary:
+  - navigation "Sidebar Navigation":
+    - generic: Sidebar Navigation
+    - button "Guide":
+      - heading "Guide" [level=2]
+    - link "Use the Web UI":
+      - /url: /deepseek-harness/en/guide/quickstart
+      - paragraph: Use the Web UI
+    - link "Configure models":
+      - /url: /deepseek-harness/en/guide/providers
+      - paragraph: Configure models
+    - button "SDK":
+      - heading "SDK" [level=2]
+    - link "Python":
+      - /url: /deepseek-harness/en/guide/python-sdk
+      - paragraph: Python
+    - link "Development":
+      - /url: /deepseek-harness/en/develop/basic/
+      - paragraph: Development
+    - link "Reference":
+      - /url: /deepseek-harness/en/reference/
+      - paragraph: Reference
+- navigation "On this page":
+  - heading "On this page" [level=2]
+  - list:
+    - link "Configure a model":
+      - /url: "#configure-a-model"
+    - link "Choose a workspace":
+      - /url: "#choose-a-workspace"
+    - link "Run a task":
+      - /url: "#run-a-task"
+    - link "Continue":
+      - /url: "#continue"
+- main:
+  - heading "Use the Web UI Permalink to \"Use the Web UI\"" [level=1]:
+    - text: Use the Web UI
+    - link "Permalink to \"Use the Web UI\"":
+      - /url: "#use-the-web-ui"
+      - text: "#"
+  - paragraph:
+    - text: Start the Web UI through the
+    - link "root README":
+      - /url: https://github.com/deepseek-ai/deepseek-harness/blob/master/README.md#run
+    - text: ; the command prints its URL. This guide begins after that server is running. The
+    - code: dsh
+    - text: process uses its invoking directory as the default filesystem location, but a fresh Web UI has no selected workspace until you add one.
+  - heading "Configure a model Permalink to \"Configure a model\"" [level=2]:
+    - text: Configure a model
+    - link "Permalink to \"Configure a model\"":
+      - /url: "#configure-a-model"
+      - text: "#"
+  - paragraph:
+    - text: Open
+    - strong: Settings → Models
+    - text: ", enter a DeepSeek API key, and save it. The model route becomes usable immediately without restarting the server."
+  - paragraph:
+    - text: The
+    - link "model configuration guide":
+      - /url: ./providers
+    - text: covers other providers and custom OpenAI-compatible endpoints.
+  - heading "Choose a workspace Permalink to \"Choose a workspace\"" [level=2]:
+    - text: Choose a workspace
+    - link "Permalink to \"Choose a workspace\"":
+      - /url: "#choose-a-workspace"
+      - text: "#"
+  - paragraph:
+    - text: Click
+    - strong: Choose workspace
+    - text: ", add the project directory where you started"
+    - code: dsh
+    - text: ", and select it. The session composer remains unavailable until a workspace is selected."
+  - heading "Run a task Permalink to \"Run a task\"" [level=2]:
+    - text: Run a task
+    - link "Permalink to \"Run a task\"":
+      - /url: "#run-a-task"
+      - text: "#"
+  - paragraph: "Start a session and send:"
+  - blockquote:
+    - paragraph: Summarize this repository and identify its main packages.
+  - paragraph: The agent can read and edit workspace files, run commands, delegate work, and maintain a plan. The Web UI asks before operations that require approval under the active permission policy.
+  - heading "Continue Permalink to \"Continue\"" [level=2]:
+    - text: Continue
+    - link "Permalink to \"Continue\"":
+      - /url: "#continue"
+      - text: "#"
+  - list:
+    - link "Configure models":
+      - /url: ./providers
+    - link "Use the Python SDK":
+      - /url: ./python-sdk
+    - link "Use other CLI modes":
+      - /url: https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/cli/README.md
+    - link "Develop a plugin":
+      - /url: ./../develop/basic/
+- contentinfo:
+  - link "Edit this page on GitHub":
+    - /url: https://github.com/deepseek-ai/deepseek-harness/edit/master/docs/user/guide/index.md
+    - text: Edit this page on GitHub
+  - navigation "Pager":
+    - generic: Pager
+    - link "Next Configure models":
+      - /url: /deepseek-harness/en/guide/providers
+      - generic: Next
+      - generic: Configure models
+- button [expanded]:
+  - generic "Search"
+  - searchbox [active]
+  - button "Display detailed list"
+  - button "Reset search" [disabled]
+  - list
+  - generic "up arrow"
+  - generic "down arrow"
+  - text: to navigate
+  - generic "enter"
+  - text: to select
+  - generic "escape": esc
+  - text: to close

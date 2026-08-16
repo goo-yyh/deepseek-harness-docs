@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.py[cod]
+website/.generated/
+website/.cache/
+website/.dist/
+.docs-source/
+diff/
+.vercel/
+.chat/
+.DS_Store
+*.log

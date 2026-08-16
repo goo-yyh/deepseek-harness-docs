@@ -1,0 +1,2666 @@
+{
+  "schema_version": 1,
+  "site_origin": "https://deepseek-harness-docs.vercel.app",
+  "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
+  "pages_checked": 166,
+  "indexable_pages": 163,
+  "noindex_pages": 3,
+  "sitemap_entries": 163,
+  "status": "passed",
+  "pages": [
+    {
+      "route": "/",
+      "output": "website/.dist/index.html",
+      "content_locale": "zh-CN",
+      "indexable": false,
+      "title": "DeepSeek Harness",
+      "description": "DeepSeek Harness 中文文档：构建、扩展和运行插件化 Agent Harness。",
+      "description_sha256": "bf2ac86365ac7d3ccd102de38b1d14b5f78245dc7d03fcc30b0ed5158c688f03",
+      "canonical": "https://deepseek-harness-docs.vercel.app/guide/quickstart",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/quickstart",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/quickstart",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/quickstart"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/",
+      "output": "website/.dist/en/index.html",
+      "content_locale": "en-US",
+      "indexable": false,
+      "title": "DeepSeek Harness",
+      "description": "DeepSeek Harness documentation for building, extending, and running a plugin-based agent harness.",
+      "description_sha256": "9ec41222fb4529cfedf9761a0f52a3ccfba5b8bb8b828d503dbd32be551af6f3",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/guide/quickstart",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/quickstart",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/quickstart",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/quickstart"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/guide/quickstart",
+      "output": "website/.dist/guide/quickstart.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "使用 Web UI | DeepSeek Harness",
+      "description": "先按照根 README启动 Web UI；命令会打印其访问地址。本指南从服务器已经运行的状态开始。dsh 进程会把调用目录作为默认文件系统位置，但新的 Web UI 在添加工作区前不会选中任何工作区。",
+      "description_sha256": "230758d7c550d29e482f99177b895e82a441a31b853d36125ae71bc5cc25ce8a",
+      "canonical": "https://deepseek-harness-docs.vercel.app/guide/quickstart",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/quickstart",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/quickstart",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/quickstart"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/guide/quickstart",
+      "output": "website/.dist/en/guide/quickstart.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Use the Web UI | DeepSeek Harness",
+      "description": "Start the Web UI through the root README; the command prints its URL. This guide begins after that server is running. The dsh process uses its invoking…",
+      "description_sha256": "535d038ede4bfe9b35255d2c7bd1ac45367eb965b0e867d117adb7aaa2824034",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/guide/quickstart",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/quickstart",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/quickstart",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/quickstart"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/guide/providers",
+      "output": "website/.dist/guide/providers.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "配置模型 | DeepSeek Harness",
+      "description": "本指南假定你已按照根 README启动 Web UI。模型变更会在下一次请求时生效，不需要重启服务器。",
+      "description_sha256": "8cfd1bb021b0da708fb19d03f0d51eabb3be3e2bf2704fd542d9be9bda49c1c9",
+      "canonical": "https://deepseek-harness-docs.vercel.app/guide/providers",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/providers",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/providers",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/providers"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/guide/providers",
+      "output": "website/.dist/en/guide/providers.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Configure models | DeepSeek Harness",
+      "description": "This guide assumes you started the Web UI through the root README. Model changes take effect on the next request without restarting the server.",
+      "description_sha256": "8ad5f1802db8dd1549eeab4c32401cbb272dd45b3c847336513b6e2b55b1086c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/guide/providers",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/providers",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/providers",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/providers"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/guide/python-sdk",
+      "output": "website/.dist/guide/python-sdk.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Python SDK 快速上手 | DeepSeek Harness",
+      "description": "本教程介绍 Web UI 之外的程序化使用方式：安装已发布的 Python SDK、运行仓库内置的 agent（智能体）组合，并在自己的程序中调用同一套 API。",
+      "description_sha256": "c8ad8c7ab257131dcbaa45d35cb3fb064a925c5b8f9f36f16d408b41e1d06093",
+      "canonical": "https://deepseek-harness-docs.vercel.app/guide/python-sdk",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/python-sdk",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/python-sdk",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/python-sdk"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/guide/python-sdk",
+      "output": "website/.dist/en/guide/python-sdk.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Get started with the Python SDK | DeepSeek Harness",
+      "description": "This tutorial is the programmatic alternative to the Web UI. It installs the published Python SDK, runs a checked-in agent composition, and shows how to call…",
+      "description_sha256": "c1821bb63821e8c9d5c75e059c6b6644dca40dabdf20eec8e13c5657f43ee137",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/guide/python-sdk",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/guide/python-sdk",
+        "en": "https://deepseek-harness-docs.vercel.app/en/guide/python-sdk",
+        "x-default": "https://deepseek-harness-docs.vercel.app/guide/python-sdk"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/basic/",
+      "output": "website/.dist/develop/basic/index.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "第一个插件 | DeepSeek Harness",
+      "description": "本教程会创建一个最小的 Harness 插件，并将其加载到 Web UI 中。请从已完成从源码运行路径的仓库检出开始。",
+      "description_sha256": "9a023b1b75153242002ee1d18dcd90cbac5998614406479e87b44183e3550821",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/basic/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/basic/",
+      "output": "website/.dist/en/develop/basic/index.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Your first plugin | DeepSeek Harness",
+      "description": "This tutorial creates a minimal Harness plugin and loads it into the Web UI. Start from a repository checkout that has completed the run-from-source path.",
+      "description_sha256": "1f9879f84b31660244b288412d11130567300e98e902b8c88981503dd1f616ee",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/basic/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/basic/tool",
+      "output": "website/.dist/develop/basic/tool.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "开发一个工具 | DeepSeek Harness",
+      "description": "本教程会在 Web UI 中添加一个 greet 工具。请先完成第一个插件，并保留其中的 scratch-plugin 目录。",
+      "description_sha256": "11a18cf015906501e62f4a8f0e1449ea03ef6010dfad3f085eb2e98e4cb745fe",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/basic/tool",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/tool",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/tool",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/tool"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/basic/tool",
+      "output": "website/.dist/en/develop/basic/tool.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Build a tool | DeepSeek Harness",
+      "description": "This tutorial adds a greet tool to the Web UI. Complete Your first plugin first and keep its scratch-plugin directory.",
+      "description_sha256": "84d3c708a17f30a03b1fb230b2f08e7733153f642c994597447f4bdca4967704",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/basic/tool",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/tool",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/tool",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/tool"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/basic/config",
+      "output": "website/.dist/develop/basic/config.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "插件配置 | DeepSeek Harness",
+      "description": "让你的插件接受用户在 cordis.yml 中传入的配置。",
+      "description_sha256": "e180477fd80bd266cafe645d1535db99d31e14e2ed577b74d084e69f14c5cb75",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/basic/config",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/config",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/config",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/config"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/basic/config",
+      "output": "website/.dist/en/develop/basic/config.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Plugin configuration | DeepSeek Harness",
+      "description": "Accept configuration supplied through cordis.yml.",
+      "description_sha256": "d84b047c01c003c06d44cb62fb7be9659ece00f556a18ff06d02d292695d9cb4",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/basic/config",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/config",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/config",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/config"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/basic/publish",
+      "output": "website/.dist/develop/basic/publish.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "打包与安装插件 | DeepSeek Harness",
+      "description": "前几篇教程通过 --patch overlay 加载本地插件。本教程把它打包成可安装的组合包（bundle），用 dsh plugin add 安装进一个 profile，并解释决定组合后配置的层顺序。本文假设 dsh CLI 已安装。请先完成插件配置。",
+      "description_sha256": "b62eba0c85e0378d7f7d8a253b2cb5dab318ef9323b237e582258f8ac9d4682a",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/basic/publish",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/publish",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/publish",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/publish"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/basic/publish",
+      "output": "website/.dist/en/develop/basic/publish.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Package and install a plugin | DeepSeek Harness",
+      "description": "The previous tutorials loaded a local plugin through a --patch overlay. This tutorial packages it as an installable bundle, installs it into a profile with…",
+      "description_sha256": "1224a2508c7babbb6f86e95fb14f3fd627d822054bfa2caf921dda9cf6f2c27f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/basic/publish",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/basic/publish",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/basic/publish",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/basic/publish"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/framework/",
+      "output": "website/.dist/develop/framework/index.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "插件与生命周期 | DeepSeek Harness",
+      "description": "本页介绍 Cordis 插件模型和生命周期状态机。",
+      "description_sha256": "193e183a5190f9e454d20103003ea211b3fe6cf84d89a2a58c24eef8a707dc66",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/framework/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/framework/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/framework/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/framework/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/framework/",
+      "output": "website/.dist/en/develop/framework/index.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Plugins and lifecycle | DeepSeek Harness",
+      "description": "This page describes the Cordis plugin model and lifecycle state machine.",
+      "description_sha256": "b10d8dacf8c2ebd3e521ce888b9a81fccc166e81b67a2542365bf70923ac2ba3",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/framework/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/framework/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/framework/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/framework/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/framework/service",
+      "output": "website/.dist/develop/framework/service.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "服务与依赖 | DeepSeek Harness",
+      "description": "服务是一个插件向其他插件公开的能力。inject 声明插件需要哪些服务。",
+      "description_sha256": "7a6270fa0abed9f975221452693f85fdaa79ae6d8a9f171bee5af05596d726a0",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/framework/service",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/framework/service",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/framework/service",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/framework/service"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/framework/service",
+      "output": "website/.dist/en/develop/framework/service.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Services and dependencies | DeepSeek Harness",
+      "description": "A service is a capability one plugin exposes to other plugins. inject declares the services a plugin requires.",
+      "description_sha256": "987031a2d6a05f6b2b4a59ebfdc31b231cf708428e23cf00b86d9cd953433881",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/framework/service",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/framework/service",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/framework/service",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/framework/service"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/framework/events",
+      "output": "website/.dist/develop/framework/events.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "事件系统 | DeepSeek Harness",
+      "description": "事件是 Cordis 插件间通信的核心机制。Harness 大量使用事件来实现松耦合的扩展点。",
+      "description_sha256": "755732579c65c3e5cb58697a0b07289c9463c7a92eac2827d5bf08e5d7e304a5",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/framework/events",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/framework/events",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/framework/events",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/framework/events"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/framework/events",
+      "output": "website/.dist/en/develop/framework/events.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Event system | DeepSeek Harness",
+      "description": "Events are the core communication mechanism between Cordis plugins. Harness uses them extensively for loosely coupled extension points.",
+      "description_sha256": "347f8fdb44c8a52ea51a939b1c714455e9f68f213f60b8e527fb5e1645590ca9",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/framework/events",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/framework/events",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/framework/events",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/framework/events"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/practice/",
+      "output": "website/.dist/develop/practice/index.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "能力的三种角色设计 | DeepSeek Harness",
+      "description": "本文分为两部分：先参考三种角色能力模式的概念，再通过高级教程构建一项能力。请先完成基础插件路径和服务教程。",
+      "description_sha256": "7fe7bbe883661cd6eab9a4302cf5420816e70aca0fb206cfb8478807b8e60619",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/practice/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/practice/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/practice/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/practice/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/practice/",
+      "output": "website/.dist/en/develop/practice/index.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Three-role capability design | DeepSeek Harness",
+      "description": "This page has two parts: a concept reference for the three-role capability pattern, followed by an advanced tutorial that builds one capability. Complete the…",
+      "description_sha256": "e895efc5002401fe69ad63a8d89176d300020ff8e1727f0b4f35bfc75be3cf14",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/practice/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/practice/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/practice/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/practice/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/practice/llm-adapter",
+      "output": "website/.dist/develop/practice/llm-adapter.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "LLM 适配器 | DeepSeek Harness",
+      "description": "本文介绍如何为 Harness 接入新的模型提供方。",
+      "description_sha256": "a869f17ca1315d279990a5dca0783015c39c2f41114293f8667c655a378f1e60",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/practice/llm-adapter",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/practice/llm-adapter",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/practice/llm-adapter",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/practice/llm-adapter"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/practice/llm-adapter",
+      "output": "website/.dist/en/develop/practice/llm-adapter.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "LLM adapters | DeepSeek Harness",
+      "description": "This guide connects a new LLM provider to Harness.",
+      "description_sha256": "09a08060e56805c65552a1f19bd104f913b7aa24b94dcb6a32ce61e8907b0aff",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/practice/llm-adapter",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/practice/llm-adapter",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/practice/llm-adapter",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/practice/llm-adapter"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/",
+      "output": "website/.dist/develop/cordis-tutorial/index.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Cordis 教程 | DeepSeek Harness",
+      "description": "Cordis 是 DeepSeek Harness 底层的插件框架：它是一个小型运行时，其中的每项能力，包括工具、LLM（大语言模型）适配器、文件访问乃至 agent loop（智能体循环）本身，都是挂载到共享上下文中的插件。本教程通过动手实践讲解…",
+      "description_sha256": "c6ab8ff2cfc873f7289ca14fc1de12254cb571a35eb9ee329c9c2c89406cfb81",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/",
+      "output": "website/.dist/en/develop/cordis-tutorial/index.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Cordis tutorial | DeepSeek Harness",
+      "description": "Cordis is the plugin framework underneath DeepSeek Harness: a small runtime where every capability — tools, LLM adapters, file access, the agent loop itself —…",
+      "description_sha256": "6a617780bdbac395c2524ca8f38295b2937010534794f3f557220738b3c99c0f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/01-first-plugin",
+      "output": "website/.dist/develop/cordis-tutorial/01-first-plugin.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "1. 编写第一个插件 | DeepSeek Harness",
+      "description": "在本教程使用的 loader 配置中，Cordis 插件模块通过命名导出提供 apply 函数。Cordis 加载模块时，会用一个 上下文 调用 apply；该上下文就是 ctx 对象，插件通过它注册自己贡献的所有内容。",
+      "description_sha256": "31fd30d4d2569ccb2e8bc4a18ae67d31a6c672c81493c3df8dba2dba8b02edb5",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/01-first-plugin",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/01-first-plugin",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/01-first-plugin",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/01-first-plugin"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/01-first-plugin",
+      "output": "website/.dist/en/develop/cordis-tutorial/01-first-plugin.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "1. Your first plugin | DeepSeek Harness",
+      "description": "In the loader configuration used here, a Cordis plugin module named-exports an apply function. When Cordis loads it, it calls apply with a context — the ctx…",
+      "description_sha256": "193658aef372bb8678f820ea3c056cbcbfde3a9eee5770b363593801849b533b",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/01-first-plugin",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/01-first-plugin",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/01-first-plugin",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/01-first-plugin"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/02-lifecycle-and-effects",
+      "output": "website/.dist/develop/cordis-tutorial/02-lifecycle-and-effects.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "2. 生命周期与 effect | DeepSeek Harness",
+      "description": "Cordis 插件可能因修改配置、热重载、显式资源释放或所需服务消失而卸载。通过 Cordis API 建立的注册属于 effect，会在所属插件卸载时撤销；在这些 API 之外管理的资源必须包装在 ctx.effect() 中。",
+      "description_sha256": "05ef4a32fe753f2ba21ba4771407832d379dde12999d39fb76f9867b4bae7566",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/02-lifecycle-and-effects",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/02-lifecycle-and-effects",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/02-lifecycle-and-effects",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/02-lifecycle-and-effects"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/02-lifecycle-and-effects",
+      "output": "website/.dist/en/develop/cordis-tutorial/02-lifecycle-and-effects.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "2. Lifecycle and effects | DeepSeek Harness",
+      "description": "A Cordis plugin can be unloaded by a config edit, hot reload, explicit disposal, or loss of a required service. Registrations made through Cordis APIs are…",
+      "description_sha256": "abbe5287c546efccdf97181d66d8d670ac5cf399a389d0dd7a8c5977f4d8446f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/02-lifecycle-and-effects",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/02-lifecycle-and-effects",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/02-lifecycle-and-effects",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/02-lifecycle-and-effects"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/03-services",
+      "output": "website/.dist/develop/cordis-tutorial/03-services.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "3. 服务 | DeepSeek Harness",
+      "description": "服务是一个插件提供、其他插件通过 ctx 消费的具名能力。在 harness 中，ctx.tools、ctx.llm 和 ctx.agents 都是服务。消费方只指定 'tools' 之类的能力，而不导入其提供方，因此配置可以选择提供方，无需修改消费方。",
+      "description_sha256": "95f162bbbd2a2e5c36dc4252a8821fd0919df1ca72e3e42762191e56f30dc2b9",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/03-services",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/03-services",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/03-services",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/03-services"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/03-services",
+      "output": "website/.dist/en/develop/cordis-tutorial/03-services.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "3. Services | DeepSeek Harness",
+      "description": "A service is a named capability one plugin provides and other plugins consume through ctx. In the harness, ctx.tools, ctx.llm, and ctx.agents are services. A…",
+      "description_sha256": "66de231f23664d198b848db7d7eeb73935b1304a420620ee635029e17a4573ec",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/03-services",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/03-services",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/03-services",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/03-services"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/04-events",
+      "output": "website/.dist/develop/cordis-tutorial/04-events.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "4. 事件 | DeepSeek Harness",
+      "description": "服务支持直接调用；事件让插件无需知道有哪些插件正在监听，就能发出通知。harness 使用事件处理工具结果、模型请求和审批决定等交互。",
+      "description_sha256": "2532b8b73e516f7bb9ccfd3d2acb89fc6b18d9458df56b350d7d2f67865b15e7",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/04-events",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/04-events",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/04-events",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/04-events"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/04-events",
+      "output": "website/.dist/en/develop/cordis-tutorial/04-events.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "4. Events | DeepSeek Harness",
+      "description": "Services support direct calls; events let a plugin announce something without knowing which plugins listen. The harness uses events for interactions such as…",
+      "description_sha256": "a58904d56ff98ea957298d5e516217805a6d6be05e46ba720ca874cbb418bb70",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/04-events",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/04-events",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/04-events",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/04-events"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/05-config",
+      "output": "website/.dist/develop/cordis-tutorial/05-config.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "5. 配置 | DeepSeek Harness",
+      "description": "cordis.yml 中的每个 Cordis 配置项都可以携带 config 块，插件则声明一个 schema，在运行 apply 前验证该块。错误配置会导致加载失败，并给出准确的错误：插件绝不会在配置不完整时启动。",
+      "description_sha256": "8fa7f02184683c0c48bf9a0527c646960fa92f39b5b7c88eeacf6fb8db401304",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/05-config",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/05-config",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/05-config",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/05-config"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/05-config",
+      "output": "website/.dist/en/develop/cordis-tutorial/05-config.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "5. Configuration | DeepSeek Harness",
+      "description": "Each cordis.yml entry can carry a config block, and the plugin declares a schema that validates it before apply runs. Bad config fails the load with a precise…",
+      "description_sha256": "901b985eb52519fe52e8bbda06a9d983da5b6d04304c23df57589e5b07fde5fe",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/05-config",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/05-config",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/05-config",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/05-config"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/06-composition-and-hmr",
+      "output": "website/.dist/develop/cordis-tutorial/06-composition-and-hmr.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "6. 组合与 HMR（热模块替换） | DeepSeek Harness",
+      "description": "到目前为止构建的每项能力都是插件，cordis.yml 则选择应用的插件树。本章会改变这种组合、热重载一个插件，并诊断始终无法加载的插件。",
+      "description_sha256": "4fbf0084b9b3240f1883bd36cab9514c74ddf27af103e142a42b30e0d40ed9d8",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/06-composition-and-hmr",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/06-composition-and-hmr",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/06-composition-and-hmr",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/06-composition-and-hmr"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/06-composition-and-hmr",
+      "output": "website/.dist/en/develop/cordis-tutorial/06-composition-and-hmr.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "6. Composition and HMR | DeepSeek Harness",
+      "description": "Every capability built so far is a plugin, and cordis.yml selects the application's plugin tree. This chapter changes that composition, hot-reloads a plugin…",
+      "description_sha256": "09ef7a7316c25a84cf386d60eff13b84a600a75a3904e15e8f9968e9f201b838",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/06-composition-and-hmr",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/06-composition-and-hmr",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/06-composition-and-hmr",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/06-composition-and-hmr"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/develop/cordis-tutorial/07-into-the-harness",
+      "output": "website/.dist/develop/cordis-tutorial/07-into-the-harness.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "7. 进入 harness | DeepSeek Harness",
+      "description": "本章会向 harness 的 tools 服务注册一个可由模型调用的工具，通过 harness 工具流水线执行它，并观察结果事件。整个示例无需密钥，也不会调用模型。",
+      "description_sha256": "c95ebb03d4e1aaf9937047a29047b6fa7b6f447dd68986195c9fb18ee6bbf921",
+      "canonical": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/07-into-the-harness",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/07-into-the-harness",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/07-into-the-harness",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/07-into-the-harness"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/develop/cordis-tutorial/07-into-the-harness",
+      "output": "website/.dist/en/develop/cordis-tutorial/07-into-the-harness.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "7. Into the harness | DeepSeek Harness",
+      "description": "This chapter registers a model-callable tool with the harness's tools service, executes it through the harness tool pipeline, and observes the result event.…",
+      "description_sha256": "48fa9443b9fd445007925d62f2a057f431f7cb6136216133159b51407d600532",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/07-into-the-harness",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/07-into-the-harness",
+        "en": "https://deepseek-harness-docs.vercel.app/en/develop/cordis-tutorial/07-into-the-harness",
+        "x-default": "https://deepseek-harness-docs.vercel.app/develop/cordis-tutorial/07-into-the-harness"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cordis-primer",
+      "output": "website/.dist/reference/cordis-primer.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Cordis 入门 | DeepSeek Harness",
+      "description": "Cordis 是 DeepSeek Harness 底层以 vendor 方式引入的插件框架。本文介绍 harness 插件作者在阅读子系统页面上生成的服务/事件参考之前需要了解的 Cordis 核心概念；Cordis 教程则通过实践逐一讲解这些概念。vendor 源码与同步流程见 vendor/README.md。",
+      "description_sha256": "0095355a7b55c6bb2b9a8605970e7646192f88b55033d849224473de9e1cee06",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cordis-primer",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-primer",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-primer",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-primer"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cordis-primer",
+      "output": "website/.dist/en/reference/cordis-primer.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Cordis Primer | DeepSeek Harness",
+      "description": "Cordis is the vendored plugin framework underneath DeepSeek Harness. This primer teaches the Cordis ideas a harness plugin author needs before reading the…",
+      "description_sha256": "c5c4d99de467323118fa34d5509ad6e451c01f97ce620f55efb3d7038fa27e25",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-primer",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-primer",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-primer",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-primer"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/",
+      "output": "website/.dist/reference/subsystems/index.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "子系统 | DeepSeek Harness",
+      "description": "每个子系统一页，覆盖 DeepSeek Harness 的全部子系统：它是什么、它操作哪些数据结构，以及——当它由某个 ctx 服务或事件作用域支撑时——一段生成的 Cordis API 小节，承载其服务与事件参考。本目录与 architecture.md…",
+      "description_sha256": "6cf034f937e5a6b03d2cefb8e75a797f1274c767d73b5ea3d7ff2cd77f7ae63f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/",
+      "output": "website/.dist/en/reference/subsystems/index.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Subsystems | DeepSeek Harness",
+      "description": "One page per subsystem of the DeepSeek Harness: what it is, the data structures it moves, and — where a ctx service or event scope backs it — a generated…",
+      "description_sha256": "623c810382b6aa93570294317818ad4e78186d8be4fb787f59719a78f799a717",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/core",
+      "output": "website/.dist/reference/subsystems/core.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "核心 | DeepSeek Harness",
+      "description": "核心子系统即 packages/core，包含每个组合都会启动的包：事件溯源的会话日志、系统提示词组装、工具注册表、agent（智能体）类型，以及驱动它们的具体循环。本页说明 agent/agent-loop 这对包所声明的内容：agent 如何被创建与拥有，以及 Agent…",
+      "description_sha256": "7165be021c03687233a7009bbfb430317173705c252081a79e05e7f1866463f6",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/core",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/core",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/core",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/core"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/core",
+      "output": "website/.dist/en/reference/subsystems/core.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Core | DeepSeek Harness",
+      "description": "The core subsystem is packages/core — the packages every composition boots: the event-sourced session log, system-prompt assembly, the tool registry, the…",
+      "description_sha256": "243bfe20c6e94dc13b55a866121ecfaac55300e0656a8af7bfad9e66c699f80b",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/core",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/core",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/core",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/core"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/scope",
+      "output": "website/.dist/reference/subsystems/scope.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "作用域注册 | DeepSeek Harness",
+      "description": "scope 包提供身份、载体与作用域层词汇，使同一注册上下文同时表达每个 agent（智能体）的可见性和共享生命周期所有权。它是库原语，而不是 Cordis 服务；生命周期设计理由由 agent-scope 运行时设计 Agent Note规定，注册表层决策由共享存储 Agent Note规定，可调用 API…",
+      "description_sha256": "089284c893d522441b58172ebfe9cedc808b4b0c4cb81bebb98349279dbff607",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/scope",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/scope",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/scope",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/scope"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/scope",
+      "output": "website/.dist/en/reference/subsystems/scope.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Scoped Registration | DeepSeek Harness",
+      "description": "The scope package supplies the identity, carrier, and scoped-layer vocabulary that makes one registration context mean both per-agent visibility and shared…",
+      "description_sha256": "3eff64fdce0433bd1dc69dad241e3971e8f15951ff4f01e53578146b93eb9451",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/scope",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/scope",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/scope",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/scope"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/invariants",
+      "output": "website/.dist/reference/subsystems/invariants.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "运行时不变式 | DeepSeek Harness",
+      "description": "dsh-invariants 是面向包自有运行时不变式检查的可配置注册表服务（ctx.invariants）。它是一个 support 组的包，不是三包能力 seam，也不属于 agent loop（智能体循环）主干：注册表拥有选择逻辑、名称保留、子 fiber 生命周期和归因到包的失败，而每个工作区包发布一个…",
+      "description_sha256": "d3e1b64eb989da0db24570070acf8fb88350de72b253f2c1bdc372c312b7496f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/invariants",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/invariants",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/invariants",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/invariants"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/invariants",
+      "output": "website/.dist/en/reference/subsystems/invariants.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Runtime Invariants | DeepSeek Harness",
+      "description": "dsh-invariants is the configurable registry service (ctx.invariants) for package-owned runtime invariant checks. It is one support-group package, not a…",
+      "description_sha256": "9fc09de8b5f4428b27ddee79a17078365d7aa3f23cacdd067a6b78b5cf8141bf",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/invariants",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/invariants",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/invariants",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/invariants"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/session",
+      "output": "website/.dist/reference/subsystems/session.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "会话 | DeepSeek Harness",
+      "description": "dsh-session 的内存事件溯源模型。Session 是一份由类型化 SessionEvent 组成的仅追加日志，是 agent（智能体）完整交互历史的唯一真源。LLM（大语言模型）消息历史从日志派生而来，从不单独存储；回放即从同一组事件重新派生。日志如何实现持久化（持久化…",
+      "description_sha256": "c629630d2fd1cedd018da7952f0e99edb62df41fc68d6b815c1e49a30d3d9ea3",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/session",
+      "output": "website/.dist/en/reference/subsystems/session.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Sessions | DeepSeek Harness",
+      "description": "The in-memory, event-sourced model of dsh-session. A Session is an append-only log of typed SessionEvents — the single source of truth for an agent's whole…",
+      "description_sha256": "cf0e023071adf8450c78755216f4fc2610fcc82d6b699d4eca3b06146d203b58",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/session-query",
+      "output": "website/.dist/reference/subsystems/session-query.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "会话查询 | DeepSeek Harness",
+      "description": "本文定义逻辑会话语料库的查询词汇；当 live 数据存在时，该语料库优先使用 live 数据。Service Definition 包负责精确读取、来源优先级、关系追踪、语义提取，以及与提供方无关的过滤器；SQLite 提供方负责具体全文索引的生命周期。",
+      "description_sha256": "c62ea898b3e015d81deb9330cdad2e4347b55066edce40ef9d5ee4e1a548aa6f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-query",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-query",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-query",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-query"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/session-query",
+      "output": "website/.dist/en/reference/subsystems/session-query.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Session Query | DeepSeek Harness",
+      "description": "Query vocabulary over the live-preferred logical session corpus. The Service Definition package owns exact reads, source precedence, relationship tracing…",
+      "description_sha256": "cf9e6256e88e6b57dd24b8b8bbdddf3ea5f4e53d9180ac2081ba0857e70d7728",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-query",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-query",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-query",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-query"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/session-reference",
+      "output": "website/.dist/reference/subsystems/session-reference.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "会话引用 | DeepSeek Harness",
+      "description": "结构化的跨会话引用请求与准备后的消息上下文。包约定 定义规范 URI、当前表层投影、标签安全的 JSON 与字节保留、稳定错误和不可信的模型提示词。宿主适配器使用这些类型，而不会把各自 UI 的提及语法传入 agent（智能体）核心。",
+      "description_sha256": "ee59135244c2700560c2fc6ab8a702a775f0d6c546f1d7a696eacf346499b1d9",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-reference",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-reference",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-reference",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-reference"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/session-reference",
+      "output": "website/.dist/en/reference/subsystems/session-reference.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Session References | DeepSeek Harness",
+      "description": "Structured cross-session reference requests and prepared message contexts. The package contract defines canonical URIs, current-surface projection, tag-safe…",
+      "description_sha256": "dd3f1c9bc80ef255e25bac930cd7e243203957ffda5f3957cedc93c7e8f0ae61",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-reference",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-reference",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-reference",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-reference"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/session-title",
+      "output": "website/.dist/reference/subsystems/session-title.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "会话标题 | DeepSeek Harness",
+      "description": "@deepseek-ai/dsh-session-title 所拥有的持久、后写覆盖的标题状态与可选异步提供方词汇。共享 LLM（大语言模型）辅助组件负责精确的辅助请求记录。各包 README 负责时序、回退、失败与 fork 行为；生成的持久化日志事件目录负责完整的事件声明。",
+      "description_sha256": "9879eac9df3afd8664e322344665c10ae68397610d2440e3d567e0dcd113e0b4",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-title",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-title",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-title",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-title"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/session-title",
+      "output": "website/.dist/en/reference/subsystems/session-title.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Session Titles | DeepSeek Harness",
+      "description": "Durable latest-wins title state and the optional asynchronous provider vocabulary owned by @deepseek-ai/dsh-session-title. The shared LLM helper owns the…",
+      "description_sha256": "4a61cbcedc578bd501f872d08319ea775e71f5b56e93de49e30887b363620a62",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-title",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-title",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-title",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-title"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/session-projection",
+      "output": "website/.dist/reference/subsystems/session-projection.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "会话投影 | DeepSeek Harness",
+      "description": "会话投影 seam 是一项能力 seam：领域 host 插件经由它向客户端载体供给按会话的日志派生状态的当前全量值；三方分别是 Service Definition 与注册表（dsh-session-projection，ctx.sessionProjections）、领域贡献方（每个领域注册一个纯单元）与载体（d…",
+      "description_sha256": "8b3fdcb8425756e0b4ee6906c43488a64324292061aed400e44431c24f166789",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-projection",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-projection",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-projection",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-projection"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/session-projection",
+      "output": "website/.dist/en/reference/subsystems/session-projection.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Session Projections | DeepSeek Harness",
+      "description": "The session-projection seam — a capability seam through which domain host plugins serve whole current values of log-derived per-session state to client…",
+      "description_sha256": "9bee819ae7695e980eb296011629e0fef1815c214fb78f480ada23d8e05d7a5c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-projection",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-projection",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-projection",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-projection"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/persistence",
+      "output": "website/.dist/reference/subsystems/persistence.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "会话持久化 | DeepSeek Harness",
+      "description": "事件日志的持久性 seam。session.md 描述了内存中的 Session：仅追加的 SessionEvent 日志即为真源。本页描述如何使该日志持久化：抽象的 SessionPersistence 服务、它的后端、flush…",
+      "description_sha256": "06231b7dac52401fc69d6b69b48c48306912623624028d9f99acf25f56760277",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/persistence",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/persistence",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/persistence",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/persistence"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/persistence",
+      "output": "website/.dist/en/reference/subsystems/persistence.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Session Persistence | DeepSeek Harness",
+      "description": "The durability seam for the event log. session.md describes the in-memory Session — the append-only SessionEvent log that is the source of truth. This page…",
+      "description_sha256": "301d6e4d43d7af8bd0d44eb7d4aaf0e7fda4cf9ea95a32c4297c4b2636720726",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/persistence",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/persistence",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/persistence",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/persistence"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/spill",
+      "output": "website/.dist/reference/subsystems/spill.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "spill 存储 | DeepSeek Harness",
+      "description": "spill 存储 seam 是一项能力 seam，它持久保存工具的超大文本，并返回面向模型的定位符与检索指引；该能力拆分到三个包：Service Definition（dsh-spill，ctx.spillStore）、Service…",
+      "description_sha256": "cf6c00c34322487ac86df252ea51025d04d725a54c1c693198de317093388ecb",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/spill",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/spill",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/spill",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/spill"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/spill",
+      "output": "website/.dist/en/reference/subsystems/spill.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Spill Storage | DeepSeek Harness",
+      "description": "The spill storage seam — a capability seam that persists a tool's oversized text and returns a model-facing locator plus retrieval guidance, split across…",
+      "description_sha256": "7ee47b95db806f9dc23ee29646d807551b49d8ff19716d8b99a6d01c4b73ca87",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/spill",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/spill",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/spill",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/spill"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/session-telemetry",
+      "output": "website/.dist/reference/subsystems/session-telemetry.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "遥测（telemetry） | DeepSeek Harness",
+      "description": "对外的会话上报拆分为一项能力 seam：Service Definition 与捕获协调器（dsh-session-telemetry，ctx.sessionTelemetry）拥有捕获点、固定分片投影、session-telemetry/record 脱敏 waterfall（瀑布式事件）、handoff…",
+      "description_sha256": "a772ac0f0d68b8b7a531f53081d293b20625ae43f36ada2474968a1d620a1f9d",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-telemetry",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-telemetry",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-telemetry",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-telemetry"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/session-telemetry",
+      "output": "website/.dist/en/reference/subsystems/session-telemetry.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "SessionTelemetryBackend | DeepSeek Harness",
+      "description": "Outbound session reporting is split as a capability seam: the Service Definition and capture coordinator (dsh-session-telemetry, ctx.sessionTelemetry) own the…",
+      "description_sha256": "0c94e5b2c22c215a912318cbdffe0200805633c8d3ee7cc2ae6b9a4c9511b3d7",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-telemetry",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-telemetry",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/session-telemetry",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/session-telemetry"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/llm-streaming",
+      "output": "website/.dist/reference/subsystems/llm-streaming.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "LLM（大语言模型）流式输出 | DeepSeek Harness",
+      "description": "packages/llm 提供对话与流式输出类型：每个请求和持久历史共用的 Message/ContentBlock 变体、完整组装的模型请求、原始 StreamChunk 协议、每个适配器必须实现的适配器约定（adapter contract），以及共享的…",
+      "description_sha256": "91c4cf30be50403714e677b751b418d01c96a59a2c55eb07e10b31513031c390",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/llm-streaming",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/llm-streaming",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/llm-streaming",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/llm-streaming"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/llm-streaming",
+      "output": "website/.dist/en/reference/subsystems/llm-streaming.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "LLM Streaming | DeepSeek Harness",
+      "description": "The conversation and streaming types from packages/llm: the Message/ContentBlock variants every request and durable history share, the fully assembled model…",
+      "description_sha256": "6ad230478818c94caf3d76830782fba7518d9dae163c592977b4d30d3ff284f8",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/llm-streaming",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/llm-streaming",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/llm-streaming",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/llm-streaming"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/token-meter",
+      "output": "website/.dist/reference/subsystems/token-meter.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Token 计量 | DeepSeek Harness",
+      "description": "@deepseek-ai/dsh-token-meter 公开一个独立的回放快照，用于表示请求压力与按位置计算的表层定价。logRevision 表示生成该计量中每个字段时所消费的持久事件数量。",
+      "description_sha256": "cd32c5b4c9e87738937de6c973429a2fd1172a48172037f21e0f43195de6faf8",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/token-meter",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/token-meter",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/token-meter",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/token-meter"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/token-meter",
+      "output": "website/.dist/en/reference/subsystems/token-meter.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Token Meter | DeepSeek Harness",
+      "description": "@deepseek-ai/dsh-token-meter exposes one detached replay snapshot for request pressure and positional surface pricing. logRevision is the number of durable…",
+      "description_sha256": "30950f742687aba54b1469633f57ead96b0bc9c1d92686e0bfa9dfe8b0401d4a",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/token-meter",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/token-meter",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/token-meter",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/token-meter"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/system-prompt",
+      "output": "website/.dist/reference/subsystems/system-prompt.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "系统提示词组装 | DeepSeek Harness",
+      "description": "system-prompt 包负责管理提示词贡献者与一次组装调用之间交换的数据。该包的 README 记录注册、排序、作用域与渲染行为；本页记录各插件实现或传递的确切跨包类型。",
+      "description_sha256": "f67b01dbbee1bc039952e6ca23d3cfff0ae4b9f8a48904a63a183b4ff3eac608",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/system-prompt",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/system-prompt",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/system-prompt",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/system-prompt"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/system-prompt",
+      "output": "website/.dist/en/reference/subsystems/system-prompt.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "System Prompt Assembly | DeepSeek Harness",
+      "description": "The system-prompt package owns the data exchanged between prompt contributors and one assembly call. The package README documents registration, ordering…",
+      "description_sha256": "ee3152320ad3a92664969c1e02bc93036fdef4cceb63998a01c158a4f922414a",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/system-prompt",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/system-prompt",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/system-prompt",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/system-prompt"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/compaction",
+      "output": "website/.dist/reference/subsystems/compaction.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "压缩（compaction） | DeepSeek Harness",
+      "description": "压缩 seam 是一个能力 seam，与 bash 一样分为 Service Definition（dsh-compaction，ctx.compaction）、Service Provider（例如 dsh-compaction-basic 后端）和面向用户的…",
+      "description_sha256": "1d0cae52e1bfea128245cb2b85ad58fe31e3dc2872b3da364167bc1b64f5f744",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/compaction",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/compaction",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/compaction",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/compaction"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/compaction",
+      "output": "website/.dist/en/reference/subsystems/compaction.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Compaction | DeepSeek Harness",
+      "description": "The compaction seam — a capability seam split like bash: Service Definition (dsh-compaction, ctx.compaction), Service Provider (a backend such as…",
+      "description_sha256": "02eec55475a761bc98fc052255b9c6aab7ddf619e6af0d1d1f787139e267e5a0",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/compaction",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/compaction",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/compaction",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/compaction"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/tools",
+      "output": "website/.dist/reference/subsystems/tools.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "工具 | DeepSeek Harness",
+      "description": "dsh-tools 的工具流水线。core.md 介绍了核心包共用、用于编写流水线的类型 ToolDefinition；面向模型的 ToolSchema 协议类型与模型请求一起声明。本页记录 ToolDefinition 的每个字段、用于构建它的类型化 schema DSL、带守卫的执行类型和 UI 展示类型。",
+      "description_sha256": "9ec60cda483061e2096d4b1d2d591c5cd7ac9a5cd94f59ab58b22aac5ff2ccc0",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/tools",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/tools",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/tools",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/tools"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/tools",
+      "output": "website/.dist/en/reference/subsystems/tools.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Tools | DeepSeek Harness",
+      "description": "The tool pipeline of dsh-tools. core.md introduces ToolDefinition as the pipeline-authoring type shared by the core packages; the model-facing ToolSchema wire…",
+      "description_sha256": "864e0ef63bc5c9004f7411b71cf40e6806b90e0cef09393da193eb63b40cb7e9",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/tools",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/tools",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/tools",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/tools"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/shell",
+      "output": "website/.dist/reference/subsystems/shell.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Bash 执行器 | DeepSeek Harness",
+      "description": "bash 执行 seam 分为 Service Definition（dsh-shell，ctx.shell）、Service Provider（dsh-bash-local 与 dsh-bash-sandbox）和 Consumer（dsh-tool-bash，即 bash schema）。通用后台任务的 job…",
+      "description_sha256": "d7b934aa18f1baba54f9979e02cc3ceedad0e1878676c857c31ff507bb596543",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/shell",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/shell",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/shell",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/shell"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/shell",
+      "output": "website/.dist/en/reference/subsystems/shell.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Bash Executor | DeepSeek Harness",
+      "description": "The bash execution seam is split across a Service Definition (dsh-shell, ctx.shell), Service Providers (dsh-bash-local and dsh-bash-sandbox), and Consumer…",
+      "description_sha256": "1a14b0d3ea30ed045cc0212277efcf19c9c2f20d1ae2232f69eca58ab7a0912d",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/shell",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/shell",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/shell",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/shell"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/subprocess",
+      "output": "website/.dist/reference/subsystems/subprocess.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "子进程 | DeepSeek Harness",
+      "description": "子进程 seam 分为 Service Definition（dsh-subprocess，ctx.subprocess）与 Service Provider（dsh-subprocess-local）；它的 Consumer 是其他能力 seam 与进程外后端：bash 执行器家族使用收集模式的批量输出，LSP…",
+      "description_sha256": "4266bea36ad2008336ea16fcd5fb79400d8a50ad088422a736e6403b465c698e",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subprocess",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subprocess",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/subprocess",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subprocess"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/subprocess",
+      "output": "website/.dist/en/reference/subsystems/subprocess.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Subprocess | DeepSeek Harness",
+      "description": "The subprocess seam is split across a Service Definition (dsh-subprocess, ctx.subprocess) and Service Provider (dsh-subprocess-local); its Consumers are other…",
+      "description_sha256": "a52e3ca7f7657f6d85a9d6183cb060654c606a325eb2420defdbc1326d8ef89d",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/subprocess",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subprocess",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/subprocess",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subprocess"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/terminal",
+      "output": "website/.dist/reference/subsystems/terminal.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "持久 PTY 会话 | DeepSeek Harness",
+      "description": "PTY 后端、ctx.terminals 与面向模型的消费方共享的类型。持久 PTY Agent Note 负责记录决策依据；本页记录来自 packages/terminal/terminal/src/types.ts 的跨包词汇。",
+      "description_sha256": "88e217e73b55d0218e71e1ea034a2c7ee0edd7f7753723f06333ac5e6ddca8c0",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/terminal",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/terminal",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/terminal",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/terminal"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/terminal",
+      "output": "website/.dist/en/reference/subsystems/terminal.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Persistent PTY Sessions | DeepSeek Harness",
+      "description": "Types shared by PTY backends, ctx.terminals, and the model-facing consumer. The persistent PTY Agent Note owns the rationale; this page records the…",
+      "description_sha256": "b07b33a9d66da7d8015f9b2ca8cedcf8656f35b25db2c04775164b9261e97211",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/terminal",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/terminal",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/terminal",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/terminal"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/jobs",
+      "output": "website/.dist/reference/subsystems/jobs.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "后台任务运行时 | DeepSeek Harness",
+      "description": "长时间运行的生产方、ctx.jobs 与任务控制命令共用的类型。运行时 Agent Note 负责设计；本页记录 packages/jobs/jobs/src/types.ts 中的确切字段和变体。",
+      "description_sha256": "c9147e667b5cfc6e95fd0de3a021eea3db33966eaaef9411f8653bac2ebbed4e",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/jobs",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/jobs",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/jobs",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/jobs"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/jobs",
+      "output": "website/.dist/en/reference/subsystems/jobs.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Background Task Runtime | DeepSeek Harness",
+      "description": "Types shared by long-running producers, ctx.jobs, and job controls. The runtime Agent Note owns the design; this page records the exact fields and variants…",
+      "description_sha256": "d1585eebcbb1e990e94458f309a91e6f6e95a55fb98548105328ff54e0715e27",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/jobs",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/jobs",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/jobs",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/jobs"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/filesystem",
+      "output": "website/.dist/reference/subsystems/filesystem.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "文件系统 | DeepSeek Harness",
+      "description": "可选的文件系统能力由四个部分组成：dsh-fs 拥有 ctx.fs 以及带可选守卫的原子文本操作；dsh-fs-local 实现本地磁盘后端；dsh-fs-observation-policy 记录观测到的存在或缺失状态，并通过事件（而非服务）添加新鲜度规则；dsh-tool-fs 直接执行面向模型的…",
+      "description_sha256": "a42171e92c06f7287bb0a955d7fd11a7c16480819af803393ecbdfe1f8f98a43",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/filesystem",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/filesystem",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/filesystem",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/filesystem"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/filesystem",
+      "output": "website/.dist/en/reference/subsystems/filesystem.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Filesystem | DeepSeek Harness",
+      "description": "The optional filesystem capability has four parts: dsh-fs owns ctx.fs and atomic text operations with optional guards, dsh-fs-local implements local disk…",
+      "description_sha256": "48d56ce4d5bfd66a536c41a083b00fafeb12d75861d2d2862561047d3114a42d",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/filesystem",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/filesystem",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/filesystem",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/filesystem"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/lsp",
+      "output": "website/.dist/reference/subsystems/lsp.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "LSP 导航 | DeepSeek Harness",
+      "description": "LSP seam 是一个能力 seam：它在单一 ctx.lsp 服务上公开语义代码导航，并拆分到多个包：Service Definition（dsh-lsp，ctx.lsp + 提供方注册表）、通用 Service Provider（dsh-lsp-stdio，经过配置的 stdio 语言服务器宿主）和…",
+      "description_sha256": "da62abe0c9bf1c2ad628298dcd4bd9a9d32071011760e68ab26c204b7be03057",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/lsp",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/lsp",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/lsp",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/lsp"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/lsp",
+      "output": "website/.dist/en/reference/subsystems/lsp.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "LSP navigation | DeepSeek Harness",
+      "description": "The LSP seam — a capability seam exposing semantic code navigation on one ctx.lsp service, split across packages: Service Definition (dsh-lsp, ctx.lsp + the…",
+      "description_sha256": "5fc8e766787cc19a211e045c2b4fee967cf06d77ecc20fa8cdb64617e40687ae",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/lsp",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/lsp",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/lsp",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/lsp"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/code-runtime",
+      "output": "website/.dist/reference/subsystems/code-runtime.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "代码运行时 | DeepSeek Harness",
+      "description": "代码执行 seam 是一个能力 seam：其 Service Definition（dsh-code-runtime，ctx.codeRuntime）使用宿主提供的异步绑定运行一段模型编写的程序，并报告其打印内容与返回值。代码执行是一项可选能力，不属于 agent loop（智能体循环）主干，因此其词汇定义在此而非…",
+      "description_sha256": "a9ba402b8688800993c1fd224796c362c381705ece2594c01da05b08fbc7df2f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/code-runtime",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/code-runtime",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/code-runtime",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/code-runtime"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/code-runtime",
+      "output": "website/.dist/en/reference/subsystems/code-runtime.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Code Runtime | DeepSeek Harness",
+      "description": "The code-execution seam — a capability seam whose Service Definition (dsh-code-runtime, ctx.codeRuntime) runs one model-written program against host-provided…",
+      "description_sha256": "7f6a75b5b439a2bf4681efbf0ce2f81bd92abd1777e2267f04672a4df6dd3c0f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/code-runtime",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/code-runtime",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/code-runtime",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/code-runtime"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/web",
+      "output": "website/.dist/reference/subsystems/web.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Web 访问 | DeepSeek Harness",
+      "description": "Web 访问 seam 是一个能力 seam，在同一个 ctx.web 服务上横跨两项操作（search 与 fetch），并拆分到多个包：Service Definition（dsh-web，ctx.web + 提供方注册表）、Service…",
+      "description_sha256": "195f73aabb61b301a196c2de87a6953ce08da0054207be398510271e612ada30",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/web",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/web",
+      "output": "website/.dist/en/reference/subsystems/web.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Web Access | DeepSeek Harness",
+      "description": "The web access seam — a capability seam that spans two operations (search and fetch) on one ctx.web service, split across packages: Service Definition…",
+      "description_sha256": "45b9358bc232b322826839ddc8e112c445bbde4f0f84d25d724e9c6c172bcb1f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/web",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/web",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/skills",
+      "output": "website/.dist/reference/subsystems/skills.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Skills | DeepSeek Harness",
+      "description": "skill（技能）能力族 包含 Service Definition（dsh-skill，ctx.skills）、本地 Service Provider（dsh-skill-filesystem）、可选的随包徽章提供方（dsh-skill-badge）和…",
+      "description_sha256": "520d10f90af68e092138098554c114bdeff79f244503807e396784bc5b655cd4",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/skills",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/skills",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/skills",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/skills"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/skills",
+      "output": "website/.dist/en/reference/subsystems/skills.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Skills | DeepSeek Harness",
+      "description": "The skill capability family includes the Service Definition (dsh-skill, ctx.skills), the local Service Provider (dsh-skill-filesystem), the optional packaged…",
+      "description_sha256": "8488213e136b18b1306ef8ef1a4cb20f5fe310ffb18bce0ff603f36ee0dee659",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/skills",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/skills",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/skills",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/skills"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/workflow",
+      "output": "website/.dist/reference/subsystems/workflow.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "工作流 | DeepSeek Harness",
+      "description": "工作流 seam 允许 agent（智能体）运行由模型编写、会启动 subagent 的编排脚本。与 subagent 一样，它是一项可选能力，不属于 agent loop，因此其类型和操作记录在此处，而非 core.md。与 bash 一样，每个上下文只允许一个引擎实现提供…",
+      "description_sha256": "4fd0adb8c679c395891a2565cc93ccf501c835a06c7be19605e06459d8ab0f10",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workflow",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workflow",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/workflow",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workflow"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/workflow",
+      "output": "website/.dist/en/reference/subsystems/workflow.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Workflow | DeepSeek Harness",
+      "description": "The workflow seam lets an agent run a model-written orchestration SCRIPT that starts subagents. Like subagent it is one optional capability, not part of the…",
+      "description_sha256": "a88b5444b3f13d3cd92a0644b69d4a429cf00ee1bbf632f6432f84e950db5023",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/workflow",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workflow",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/workflow",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workflow"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/subagent",
+      "output": "website/.dist/reference/subsystems/subagent.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Subagent | DeepSeek Harness",
+      "description": "subagent seam 让一个 agent（智能体）将工作委派给子 agent。与 bash 一样，它是一项可选能力，不属于 agent loop（智能体循环），因此其类型定义在此而非 core.md 中。它不同于其他能力 seam，因为同一上下文中可共存多个提供方实现，并按名称注册（ctx.subagents）…",
+      "description_sha256": "db8e4a3fff690dc4e3d75275ead4ea1bf0a78774466ca2a90bfee9194612a378",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subagent",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subagent",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/subagent",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subagent"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/subagent",
+      "output": "website/.dist/en/reference/subsystems/subagent.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Subagent | DeepSeek Harness",
+      "description": "The subagent seam lets an agent delegate work to a child agent. Like bash, it is one optional capability, not part of the agent loop, so its types live here…",
+      "description_sha256": "f7999ea68e1868e65d8ba54e3c203e2d42993d93d8dfa538554945c6f9dd40e2",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/subagent",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subagent",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/subagent",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/subagent"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/approval",
+      "output": "website/.dist/reference/subsystems/approval.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "用户审批 | DeepSeek Harness",
+      "description": "dsh-user-approval 的用户审批 seam 回答一个问题：这个具体操作是否可以继续？它拥有共享的请求/结果词汇、ctx.approval 分发服务、approval/request 应答者 waterfall（瀑布式事件）、仅记录日志的审计事件对，以及按会话的 ask/never 策略。UI…",
+      "description_sha256": "bd826aef2393415cdda4a356e00c174a1ff7f25c005fa3df3f305b805a95acdb",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/approval",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/approval",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/approval",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/approval"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/approval",
+      "output": "website/.dist/en/reference/subsystems/approval.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "User Approval | DeepSeek Harness",
+      "description": "The user-approval seam of dsh-user-approval answers one question: may this specific action proceed? It owns the shared request/outcome vocabulary, the…",
+      "description_sha256": "ea60c9e12b29b1b59f3d74f12fc3e7ede88f65db3745c0278b2ea841a138bdbc",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/approval",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/approval",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/approval",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/approval"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/permission-presets",
+      "output": "website/.dist/reference/subsystems/permission-presets.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "权限预设 | DeepSeek Harness",
+      "description": "dsh-permission-presets 的权限预设层（ctx.permissionPresets，PermissionPresetService）把两个相互独立的强制执行 knob，即沙箱模式（sandbox/mode）与审批策略（approval/policy），捆绑成具名预设，供客户端作为单个权限（Perm…",
+      "description_sha256": "68943e6216639f8c517b4b53be557b39550e589905f6bd51ffd24f99e4e2eda5",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/permission-presets",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/permission-presets",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/permission-presets",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/permission-presets"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/permission-presets",
+      "output": "website/.dist/en/reference/subsystems/permission-presets.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Permission Presets | DeepSeek Harness",
+      "description": "The permission-preset layer of dsh-permission-presets (ctx.permissionPresets, PermissionPresetService) bundles the two independent enforcement knobs — sandbox…",
+      "description_sha256": "401ad19f417162b59a9e13c1c6ff241a145d5afa8f7c7b5e08753d1b146f00d0",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/permission-presets",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/permission-presets",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/permission-presets",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/permission-presets"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/sandbox",
+      "output": "website/.dist/reference/subsystems/sandbox.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "进程沙箱 | DeepSeek Harness",
+      "description": "dsh-sandbox 的进程沙箱 seam 将与宿主共享文件系统和内核的子进程 argv 包装在文件效果策略中，而不将消费方耦合到特定平台运行器。dsh-sandbox-local 提供 Linux bwrap/Landlock、macOS Seatbelt 与 Windows ACL…",
+      "description_sha256": "36c23d74e9322bcb9748c78a37a13fda1376fe85797c84cedab6a38d680d4456",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/sandbox",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/sandbox",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/sandbox",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/sandbox"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/sandbox",
+      "output": "website/.dist/en/reference/subsystems/sandbox.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Process Sandbox | DeepSeek Harness",
+      "description": "The process-sandbox seam of dsh-sandbox wraps a same-world subprocess argv in a file-effect policy without coupling consumers to a platform runner.…",
+      "description_sha256": "2ffed7b69ab9047292190dc92710dc5984e416939aa966d74b9d422468b015de",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/sandbox",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/sandbox",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/sandbox",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/sandbox"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/plan",
+      "output": "website/.dist/reference/subsystems/plan.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "计划模式 | DeepSeek Harness",
+      "description": "计划模式是 dsh-plan-mode 拥有的、记录到日志的逐 agent（智能体）协作状态（ctx.planMode，PlanModeController）：激活期间，每个模型请求都会包含一段部署持有的指引。计划模式是软性指引。沙箱模式与审批策略分别强制限制；两者都不读写计划状态，因此部署需要分别配置它们。该包是可…",
+      "description_sha256": "4d7c82d325b43174163ef0a2e765d66534e737a9034141626d8dd005fa206c2c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/plan",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/plan",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/plan",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/plan"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/plan",
+      "output": "website/.dist/en/reference/subsystems/plan.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Plan Mode | DeepSeek Harness",
+      "description": "Plan mode is logged per-agent collaboration state owned by dsh-plan-mode (ctx.planMode, PlanModeController): while active, a deployment-owned guidance section…",
+      "description_sha256": "014cac305fa76651ed803df25489cfc9e6fdc7669884d1bc74a00e8b4026a235",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/plan",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/plan",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/plan",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/plan"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/user-questions",
+      "output": "website/.dist/reference/subsystems/user-questions.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "用户交互 | DeepSeek Harness",
+      "description": "dsh-user-questions 的用户交互 seam。它是工具或权限插件需要人类回答后 agent（智能体）才能继续时所使用的、提供方无关的词汇。UI 界面提供活跃的 UserQuestionProvider；host 运行时把请求转发给其连接的客户端。",
+      "description_sha256": "b6fcfe2311bc2e946440539ef45be0d26ea6db5e2a3485cf38d23a5e00212436",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/user-questions",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/user-questions",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/user-questions",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/user-questions"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/user-questions",
+      "output": "website/.dist/en/reference/subsystems/user-questions.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "User Interaction | DeepSeek Harness",
+      "description": "The user-questions seam of dsh-user-questions. It is the provider-neutral vocabulary a tool or permission plugin uses when it needs the human to answer before…",
+      "description_sha256": "6a4f0aad3c08ffeeb5e538b74de33afcd110abd389caf98c10195d65189dc9a1",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/user-questions",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/user-questions",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/user-questions",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/user-questions"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/commands",
+      "output": "website/.dist/reference/subsystems/commands.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "用户命令 | DeepSeek Harness",
+      "description": "dsh-commands 提供的用户命令注册表服务。交互式适配器用它发现插件拥有的命令，并针对确切的 agent（智能体）直接执行这些命令，而不创建模型消息。命令 Agent Note 负责分发与生命周期的决策依据；包 README 负责组合方式与限制。",
+      "description_sha256": "ea77f179dfadb0118624209e0af430f814b8ef72274f528c6ee28c5b6db64944",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/commands",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/commands",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/commands",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/commands"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/commands",
+      "output": "website/.dist/en/reference/subsystems/commands.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Human Commands | DeepSeek Harness",
+      "description": "The human-command registry service from dsh-commands. Interactive adapters use it to discover and directly execute plugin-owned commands for an exact agent…",
+      "description_sha256": "3f4ee3a0ff4e5de2c274ace0ff2b5af13cfd378a34839df0c629bfe8400ec2cc",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/commands",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/commands",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/commands",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/commands"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/goal",
+      "output": "website/.dist/reference/subsystems/goal.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "同会话目标 | DeepSeek Harness",
+      "description": "事件溯源目标服务及其策略消费方共享的类型。目标领域 Agent Note 负责记录持久化与激活决策；本页记录 packages/goal/goal/src/types.ts 中的确切字段和变体。",
+      "description_sha256": "e5ac8e6bf21b58c6e9e6559419f27cb9c8db6c86c3decf7169894d35b84580dc",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/goal",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/goal",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/goal",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/goal"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/goal",
+      "output": "website/.dist/en/reference/subsystems/goal.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Same-session goals | DeepSeek Harness",
+      "description": "Types shared by the event-sourced goal service and its policy consumers. The goal-domain Agent Note owns the persistence and activation decisions; this page…",
+      "description_sha256": "1da6e0ccf3b2c9d87077e67e7035515441df062fd688572fe6c02366dd073620",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/goal",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/goal",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/goal",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/goal"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/schedule",
+      "output": "website/.dist/reference/subsystems/schedule.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "仅限 Session 内的 Schedule | DeepSeek Harness",
+      "description": "Schedule 拥有持久提醒；这些提醒会作为普通的后续对话轮次返回原 live Session。持久 Schedule Agent Note 负责持久化与生命周期决策，对话式交付 负责无回执边界，显式时区边界 负责浏览器本地解释，有界固定速率 Schedule 负责重复调度。本页记录…",
+      "description_sha256": "645d669c5d569df641044baaeb6fc9845adeb16d882891be09268619d621f8fa",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/schedule",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/schedule",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/schedule",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/schedule"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/schedule",
+      "output": "website/.dist/en/reference/subsystems/schedule.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Session-local Schedule | DeepSeek Harness",
+      "description": "Schedule owns durable reminders that return to the original live Session as ordinary later conversation turns. The durable Schedule Agent Note owns the…",
+      "description_sha256": "bbb7e51d38149d973b4eddd3dfbd942b0de957de148b478a309b4a4eeae5e0af",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/schedule",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/schedule",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/schedule",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/schedule"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/web-server",
+      "output": "website/.dist/reference/subsystems/web-server.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "HTTP 服务器 | DeepSeek Harness",
+      "description": "dsh-host-webserver 是 GUI 宿主的浏览器 HTTP 载体：它是一个提供 ctx.webServer 的 node:http 插件，包含具名路由注册表、index.html 转换回调，以及一个可由插件认领的回退处理器。它不属于 agent loop（智能体循环），也不是能力…",
+      "description_sha256": "449411d43e5cbcb2df78b65346485d3fe7a6c77e78439600a4085d677e766274",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web-server",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web-server",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/web-server",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web-server"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/web-server",
+      "output": "website/.dist/en/reference/subsystems/web-server.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "HTTP Server | DeepSeek Harness",
+      "description": "dsh-host-webserver is the browser HTTP carrier for the GUI host: a single node:http plugin providing ctx.webServer, a named-route registry, index.html…",
+      "description_sha256": "3341e3ef7b0fb5313e79b4bc75cdaee49f4a360bdb47d54d0cedf426f178991a",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/web-server",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web-server",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/web-server",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/web-server"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/typert",
+      "output": "website/.dist/reference/subsystems/typert.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Typert 远程调用 | DeepSeek Harness",
+      "description": "以下类型由生成的 Remote 产物、Host Gateway 与消费方 API assembly 共用。Typert Gateway Agent Note 负责架构与传输决策；本页记录 dsh-typert-protocol 和 dsh-api-gateway 中公共约定的字面定义。",
+      "description_sha256": "9b3db03e44f1bfcf122bb7eef7158406bc1158cc7edfae3d7a2def040d4b9088",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/typert",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/typert",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/typert",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/typert"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/typert",
+      "output": "website/.dist/en/reference/subsystems/typert.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Typert remote calls | DeepSeek Harness",
+      "description": "Types shared by generated Remote artifacts, the Host Gateway, and consumer API assemblies. The Typert Gateway Agent Note owns the architecture and transport…",
+      "description_sha256": "0f5758ac27699a0387d8f756305f792e3641f97fccb230b7648865fab4c1ba8d",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/typert",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/typert",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/typert",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/typert"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/client-modules",
+      "output": "website/.dist/reference/subsystems/client-modules.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Client 模块 | DeepSeek Harness",
+      "description": "Web 插件表：dsh-client-modules 中 client 模块系统的 Node 半，以 ctx.clientModules（ClientModuleRegistry）形式提供。它扫描宿主 Loader 的 entry，找出声明了 dsh.client 的包，组合出 window.DSHBOOT…",
+      "description_sha256": "4281b4c0bbb37994336f4c440aaafb59ca460397e74788fc3e4b65d1fbe717b5",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/client-modules",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/client-modules",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/client-modules",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/client-modules"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/client-modules",
+      "output": "website/.dist/en/reference/subsystems/client-modules.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Client Modules | DeepSeek Harness",
+      "description": "The web plugin table: the Node half of the client module system in dsh-client-modules, provided as ctx.clientModules (ClientModuleRegistry). It scans the host…",
+      "description_sha256": "fff37679e2589840f871317233711ee2bbac10f2e59bf1a560ac2ed8427d11e5",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/client-modules",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/client-modules",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/client-modules",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/client-modules"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/storage",
+      "output": "website/.dist/reference/subsystems/storage.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "存储 | DeepSeek Harness",
+      "description": "存储子系统持久保存一切不属于会话事件日志的数据（会话日志有自己的 seam——见 persistence.md）。它是一项可选能力，不属于 agent loop（智能体循环）主干，并按能力 seam 拆分：枢纽（hub）与 Service…",
+      "description_sha256": "75b8a9c1c100257c2e88aef1fedc19c3135a54e055f1acf1cc6dcaea3885a868",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/storage",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/storage",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/storage",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/storage"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/storage",
+      "output": "website/.dist/en/reference/subsystems/storage.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Storage | DeepSeek Harness",
+      "description": "The storage subsystem persists everything that is not a session event log (session logs have their own seam — persistence.md). It is one optional capability…",
+      "description_sha256": "61e4af1aecd0817410168b82185d2d7a7614c6e06711907850efc99fa98f5610",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/storage",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/storage",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/storage",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/storage"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/workspace",
+      "output": "website/.dist/reference/subsystems/workspace.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "工作区 | DeepSeek Harness",
+      "description": "工作区（workspace）是用户工作目录的持久记录：一个建立在规范路径之上的稳定 id、一个显示标题，以及归属于它的会话的有序账本。该子系统是单个包（package）（dsh-workspace，ctx.workspaceRegistry）——一项宿主侧可选能力，不属于 agent…",
+      "description_sha256": "d7863415f9843d4cc0e35ad3da13bcdade47d845fcb4f29208e617875de47bc0",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workspace",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workspace",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/workspace",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workspace"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/workspace",
+      "output": "website/.dist/en/reference/subsystems/workspace.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Workspaces | DeepSeek Harness",
+      "description": "A workspace is the persistent record of a directory the user works in: a stable id over a canonical path, a display title, and the ordered account of sessions…",
+      "description_sha256": "9977b694119293b73662df6c491174630fb2986ffe24def994bdff666ab5d338",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/workspace",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workspace",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/workspace",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/workspace"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/settings",
+      "output": "website/.dist/reference/subsystems/settings.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "用户设置 | DeepSeek Harness",
+      "description": "dsh-settings 的用户设置 seam 持有一份按 namespace 分节的用户文档，并把每个已注册 namespace 解析为：schema 默认值，然后注册方的组合 base，最后用户分节。dsh-settings-file 这类提供方存储原始文档并推送外部编辑；消费方插件注册 schema…",
+      "description_sha256": "49eba0c91c73531806fe2de29cfb27f5768e589fe358e43c10a1a9a61970cd78",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/settings",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/settings",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/settings",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/settings"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/settings",
+      "output": "website/.dist/en/reference/subsystems/settings.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "User Settings | DeepSeek Harness",
+      "description": "The user-settings seam of dsh-settings holds one user-owned document of per-namespace sections and resolves each registered namespace as schema defaults, then…",
+      "description_sha256": "0b67ee5a0f9edd204b20917dc732a809e18dc8b9afdd8b60449d40afd5ab553e",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/settings",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/settings",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/settings",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/settings"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/subsystems/credentials",
+      "output": "website/.dist/reference/subsystems/credentials.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "用户凭据 | DeepSeek Harness",
+      "description": "dsh-credentials 的凭据 seam 把机密挡在配置之外：settings 分节与 cordis.yml 条目携带的是引用（环境变量名），值归 dsh-credentials-local 这类提供方所有，消费方每个操作解析一次引用——LLM（大语言模型）适配器每次模型请求解析一次，因此轮换后的凭据无需任何…",
+      "description_sha256": "17c33c2189a34209bc8a443a29dec7d168ef9af1bd41c352d6c923401d623c1d",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/subsystems/credentials",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/credentials",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/credentials",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/credentials"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/subsystems/credentials",
+      "output": "website/.dist/en/reference/subsystems/credentials.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "User Credentials | DeepSeek Harness",
+      "description": "The credential seam of dsh-credentials keeps secrets out of configuration: settings sections and cordis.yml entries carry references (environment-variable…",
+      "description_sha256": "d7c0664d6c996e972932bdabe37eb15851cb5e879d033e7d7eca91a905f05d2c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/credentials",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/subsystems/credentials",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/subsystems/credentials",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/subsystems/credentials"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/",
+      "output": "website/.dist/reference/index.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "DeepSeek Harness 架构 | DeepSeek Harness",
+      "description": "改动 packages/ 下的任何内容之前，请先阅读本文。本文假定你已了解 Cordis；如果尚未了解，请先阅读入门或教程。",
+      "description_sha256": "d74c3d36f7cfbfe09defd933e1b9cf542038eb9586e6b9d4bfd58fa3f348a7f1",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/",
+      "output": "website/.dist/en/reference/index.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "DeepSeek Harness Architecture | DeepSeek Harness",
+      "description": "Read this before changing anything under packages/. It assumes you know Cordis; if you do not, start with the primer or the tutorial.",
+      "description_sha256": "41ae2667a4d09d7629cb30c260a35aa5d85f82551b9f6e22ab812658d39f4770",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/capability-seams",
+      "output": "website/.dist/reference/capability-seams.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "能力 Seams 与核心服务 | DeepSeek Harness",
+      "description": "服务可以是核心主干服务、可替换的能力 seam，也可以是组合包／组合点。下图展示了拥有服务声明的包、已知实现包，以及直接消费该服务的包。",
+      "description_sha256": "c6ba6390a4c4893cb8f237457b6635ce09624f8cc194c8da5d9f079c4b9a499e",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/capability-seams",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/capability-seams",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/capability-seams",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/capability-seams"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/capability-seams",
+      "output": "website/.dist/en/reference/capability-seams.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Capability Seams And Core Services | DeepSeek Harness",
+      "description": "A service can be a core spine service, a swappable capability seam, or a bundle/composition point. The graph shows the package that owns the service…",
+      "description_sha256": "dbe2527a84a0e6f7cbf80aa29d3e0e935624267fcf970bd285a4e1d87cf15fa8",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/capability-seams",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/capability-seams",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/capability-seams",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/capability-seams"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/agent-lifecycle",
+      "output": "website/.dist/reference/agent-lifecycle.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Agent 轮次与步骤生命周期 | DeepSeek Harness",
+      "description": "此时序图是 architecture.md 的配套图示。持久的回放事实保存在 session/event 中，实时控制与状态则保存在 agent/ 中。",
+      "description_sha256": "5db9999dd7529eb0e46afc2c23c9426e90bcfd46895538784c28c6a5e18dbb4f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/agent-lifecycle",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/agent-lifecycle",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/agent-lifecycle",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/agent-lifecycle"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/agent-lifecycle",
+      "output": "website/.dist/en/reference/agent-lifecycle.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Agent Turn And Step Lifecycle | DeepSeek Harness",
+      "description": "This sequence is the visual companion to architecture.md. It keeps durable replay facts on session/event and live control/status on agent/.",
+      "description_sha256": "9ac49e4c6d7db65066c6fe2b9d156b3797656d1fb1d9cf8e60269fe5aa1fe277",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/agent-lifecycle",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/agent-lifecycle",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/agent-lifecycle",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/agent-lifecycle"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/tool-execution-pipeline",
+      "output": "website/.dist/reference/tool-execution-pipeline.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "工具执行流水线 | DeepSeek Harness",
+      "description": "此图展示策略、钩子、沙箱、文件系统守卫、结果重写、最终结果观察和 UI 渲染在不改变循环的情况下何时运行。tools/pre-execute waterfall（瀑布式事件）首先运行，随后是单调守卫，然后运行 tools/execute 和 tools/post-execute waterfall；这三个…",
+      "description_sha256": "c15b4228bba52c9cabdeb3c254eaa5ad00a41dc80ac6f17927206a06ba2af532",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/tool-execution-pipeline",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/tool-execution-pipeline",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/tool-execution-pipeline",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/tool-execution-pipeline"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/tool-execution-pipeline",
+      "output": "website/.dist/en/reference/tool-execution-pipeline.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Tool Execution Pipeline | DeepSeek Harness",
+      "description": "This graph shows where policy, hooks, sandboxing, filesystem guards, result rewriting, final-outcome observation, and UI rendering run without changing the…",
+      "description_sha256": "079d0f507027b0a3e8d33f2a880c869e9d9774d9d80a07ad3c70c49ab0b066f1",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/tool-execution-pipeline",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/tool-execution-pipeline",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/tool-execution-pipeline",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/tool-execution-pipeline"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/config-catalog",
+      "output": "website/.dist/reference/config-catalog.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "插件配置目录 | DeepSeek Harness",
+      "description": "每个 config: 块均可由 cordis.yml 条目设置：针对每个可加载的 harness 包，原样列出其 apply 函数或服务构造函数接收的配置声明（包括 JSDoc），并附上所有引用类型——包内类型直接粘贴，其他类型则提供链接。粘贴的内容是插件声明的完整配置类型——运行时 schema…",
+      "description_sha256": "cfc8c6f6a7e0b914b2c5d1f567c9185eab45459977bbafe1d1721d83e240a67c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/config-catalog",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/config-catalog",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/config-catalog",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/config-catalog"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/config-catalog",
+      "output": "website/.dist/en/reference/config-catalog.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Plugin Config Catalog | DeepSeek Harness",
+      "description": "Every config: block a cordis.yml entry can set: for each loadable harness package, the verbatim config declaration (JSDoc included) its apply function or…",
+      "description_sha256": "bd8dde83b0f9389ba3a1946b6d07b9f033c20b2821ac432dec3d756de14adf9c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/config-catalog",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/config-catalog",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/config-catalog",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/config-catalog"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/tool-catalog",
+      "output": "website/.dist/reference/tool-catalog.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "工具 Schema 目录 | DeepSeek Harness",
+      "description": "已发布插件向 ctx.tools 提供的所有面向模型的工具：模型通过系统提示词组装获得的 name、description 和 JSON Schema parameters。本目录是子系统页面（类型及每页生成的 cordis-surface 接线区域）的补充；本页列出的是向 agent（智能体）提供的工具。",
+      "description_sha256": "a942006ea8833524f404960c540e26800304e46fcb027b2000cb716a1c41e6b7",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/tool-catalog",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/tool-catalog",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/tool-catalog",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/tool-catalog"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/tool-catalog",
+      "output": "website/.dist/en/reference/tool-catalog.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Tool Schema Catalog | DeepSeek Harness",
+      "description": "Every model-facing tool a shipped plugin contributes to ctx.tools: the name, description, and JSON-Schema parameters the model receives via the system-prompt…",
+      "description_sha256": "7e83988d70b0fa9f1274e4f717022704a8dbfdd0dc9f11fb396ad5b6ab62d9a8",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/tool-catalog",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/tool-catalog",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/tool-catalog",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/tool-catalog"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/persistence-catalog",
+      "output": "website/.dist/reference/persistence-catalog.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "会话持久化事件目录 | DeepSeek Harness",
+      "description": "会话持久事件日志中可能出现的所有事件类型：完整持久化的 SessionEvent 信封，以及可通过合并扩展的 SessionEventMap 中的每个成员，包括 @deepseek-ai/dsh-session 所属的词汇和本仓库中每个插件对 @deepseek-ai/dsh-session/types…",
+      "description_sha256": "dea104adbd5b64b1a24be6cf7a7c7f8db9f992eac08323736fb2d132c087441c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/persistence-catalog",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/persistence-catalog",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/persistence-catalog",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/persistence-catalog"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/persistence-catalog",
+      "output": "website/.dist/en/reference/persistence-catalog.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Session Persistence Event Catalog | DeepSeek Harness",
+      "description": "Every event type that can appear in a session's durable event log: the complete persisted SessionEvent envelope and each member of the merge-extensible…",
+      "description_sha256": "eb457f7e2c57872196bdf9d0c0eea656a0ec765f5c67f2bfa0ddabe1f36d8150",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/persistence-catalog",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/persistence-catalog",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/persistence-catalog",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/persistence-catalog"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cordis-api/context",
+      "output": "website/.dist/reference/cordis-api/context.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "上下文 | DeepSeek Harness",
+      "description": "上下文是 Cordis 的核心对象：所有服务、事件和生命周期 API 都通过 ctx 访问。事件方法见事件，副作用与当前 fiber 见 Fiber，插件加载见注册表。",
+      "description_sha256": "dfa2204cd496daced0a2997dbf651ba743888b0967a97295b6dea635c78e85cd",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/context",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/context",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/context",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/context"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cordis-api/context",
+      "output": "website/.dist/en/reference/cordis-api/context.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Context | DeepSeek Harness",
+      "description": "The context is the core Cordis object: every service, event, and lifecycle API is reached through ctx. Event methods are documented on Events, effects and the…",
+      "description_sha256": "8d75a47e50d418770fcad38ef37bbf50ed0ce8207187e21d7204760c2d57d4ca",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/context",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/context",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/context",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/context"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cordis-api/events",
+      "output": "website/.dist/reference/cordis-api/events.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "事件 | DeepSeek Harness",
+      "description": "每个上下文中都混入了事件分发 API。Harness 事件声明及其分发模式会生成到各自所属的子系统页面。",
+      "description_sha256": "a8b09cf503d08778db9217de2990091ae5881052dcda2b14a8f45b73c892c3ad",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/events",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/events",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/events",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/events"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cordis-api/events",
+      "output": "website/.dist/en/reference/cordis-api/events.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Events | DeepSeek Harness",
+      "description": "The event-dispatch API mixed into every context. Harness event declarations and their dispatch modes are generated into each owning subsystem page.",
+      "description_sha256": "114fa2edeb033594c6766ccbea72b39a2ee318bf112d502324b7427409483377",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/events",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/events",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/events",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/events"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cordis-api/fiber",
+      "output": "website/.dist/reference/cordis-api/fiber.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Fiber | DeepSeek Harness",
+      "description": "fiber 是一个已加载的插件实例，包含其生命周期状态、经过校验的配置以及已注册的作用。ctx.fiber 是当前 fiber，ctx.effect() 会将调用委托给它。",
+      "description_sha256": "faaac3f70d771028b5ecc613683ed3c193a159bf7a9b639070251d327440e4bc",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/fiber",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/fiber",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/fiber",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/fiber"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cordis-api/fiber",
+      "output": "website/.dist/en/reference/cordis-api/fiber.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Fiber | DeepSeek Harness",
+      "description": "A fiber is one loaded plugin instance: its lifecycle state, validated config, and registered effects. ctx.fiber is the current fiber, and ctx.effect()…",
+      "description_sha256": "219371f321219e8e749de9fe7335c5cdd6e75c2bf28e4ccce06a775cf069d1d4",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/fiber",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/fiber",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/fiber",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/fiber"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cordis-api/registry",
+      "output": "website/.dist/reference/cordis-api/registry.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "注册表 | DeepSeek Harness",
+      "description": "这是 ctx.plugin({ inject, apply: callback }) 的简写形式：每当某个必需服务发生变化时，系统都会卸载并重新运行该回调。",
+      "description_sha256": "d628f9868e96c14abd5ac4aa8d8e89a50faa445f547cfe32408bf69f556627b0",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/registry",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/registry",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/registry",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/registry"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cordis-api/registry",
+      "output": "website/.dist/en/reference/cordis-api/registry.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Registry | DeepSeek Harness",
+      "description": "Plugin loading and dependency injection.",
+      "description_sha256": "c6f717b0a6bc8307ba22dd99c1608536540a8ba579dc528f1f633f3d2288ed2a",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/registry",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/registry",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/registry",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/registry"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cordis-api/service",
+      "output": "website/.dist/reference/cordis-api/service.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "Service | DeepSeek Harness",
+      "description": "上下文服务的基类。以插件形式加载的子类会将自身注册为 ctx. 。",
+      "description_sha256": "12b9eff5b5d4f1269025f3c4b93fc18a0251f6f400884915479b20c8250ec9c7",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/service",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/service",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/service",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/service"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cordis-api/service",
+      "output": "website/.dist/en/reference/cordis-api/service.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Service | DeepSeek Harness",
+      "description": "The base class for context services. A subclass loaded as a plugin registers itself as ctx. .",
+      "description_sha256": "239dcf3e63cea91f7247c40f03e0e2d5ce993f22184855cb12ee1690142ab1e9",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/service",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/service",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/service",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cordis-api/service"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cordis-api/inherited",
+      "output": "website/.dist/reference/cordis-api/inherited.html",
+      "content_locale": "en-US",
+      "indexable": false,
+      "title": "Inherited Cordis API | DeepSeek Harness",
+      "description": "The framework ctx members and events every plugin sees beyond the harness tier — pinned vendor source (vendoring policy), summarized tersely so the harness…",
+      "description_sha256": "940a13a1a2a81bc3954c90d95cada4369d7cd0ddfa7e3ce09b9130ae859f3036",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/inherited",
+      "alternates": {
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/inherited",
+        "x-default": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/inherited"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cordis-api/inherited",
+      "output": "website/.dist/en/reference/cordis-api/inherited.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Inherited Cordis API | DeepSeek Harness",
+      "description": "The framework ctx members and events every plugin sees beyond the harness tier — pinned vendor source (vendoring policy), summarized tersely so the harness…",
+      "description_sha256": "940a13a1a2a81bc3954c90d95cada4369d7cd0ddfa7e3ce09b9130ae859f3036",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/inherited",
+      "alternates": {
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/inherited",
+        "x-default": "https://deepseek-harness-docs.vercel.app/en/reference/cordis-api/inherited"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cookbook/adding-a-package",
+      "output": "website/.dist/reference/cookbook/adding-a-package.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "实操手册：添加 workspace 包 | DeepSeek Harness",
+      "description": "为新建 @deepseek-ai/dsh- 包提供的逐文件清单。本清单以 bash 和适配器这两个包为模板进行验证；如果清单与模板有出入，请在此修正。",
+      "description_sha256": "ec4b576ae7f327c6ae51622945535f3dc7bddc96d6d582849898264aa2cc7b04",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-package",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-package",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-package",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-package"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cookbook/adding-a-package",
+      "output": "website/.dist/en/reference/cookbook/adding-a-package.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Cookbook: adding a workspace package | DeepSeek Harness",
+      "description": "The file-by-file checklist for a new @deepseek-ai/dsh- package. This checklist is validated against the bash and adapter packages as templates; if it drifts…",
+      "description_sha256": "720882252396c472a9cfdeef5ff0872eb354430671c2a4459082514847a80a2b",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-package",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-package",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-package",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-package"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cookbook/adding-a-tool",
+      "output": "website/.dist/reference/cookbook/adding-a-tool.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "工具编写参考 | DeepSeek Harness",
+      "description": "面向模型的工具必须满足哪些约定，均以本文为准。如需按步骤构建第一个工具，请阅读构建工具。packages/shell/tool-bash 是生产级的三包示例。",
+      "description_sha256": "d3f0eeaa4b60c8ef2b75520935bb9857afb80f058ed703e505bf11210aba396f",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-tool",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-tool",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-tool",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-tool"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cookbook/adding-a-tool",
+      "output": "website/.dist/en/reference/cookbook/adding-a-tool.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Tool authoring reference | DeepSeek Harness",
+      "description": "Reference for the contracts a model-facing tool must satisfy. For an ordered first tool, follow Build a tool. packages/shell/tool-bash is the production-grade…",
+      "description_sha256": "b5ae0a7b1bfb6cb63a939351d841059534583ff77fa6df152fe155837d76f6be",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-tool",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-tool",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-tool",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-tool"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cookbook/adding-an-llm-adapter",
+      "output": "website/.dist/reference/cookbook/adding-an-llm-adapter.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "实操手册：添加 LLM（大语言模型）适配器 | DeepSeek Harness",
+      "description": "如何接入一个新的模型提供方。参考实现：packages/llm/llm-deepseek（直接 HTTP，SSE（Server-Sent Events）由 eventsource-parser 分帧）与 packages/llm/llm-pi-ai（封装 LLM 库）。请先阅读…",
+      "description_sha256": "6fc832c3c33a01f8ac92ee050fab325ffca143361fd58be25ddb93d682e418b9",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-an-llm-adapter",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-an-llm-adapter",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-an-llm-adapter",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-an-llm-adapter"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cookbook/adding-an-llm-adapter",
+      "output": "website/.dist/en/reference/cookbook/adding-an-llm-adapter.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Cookbook: adding an LLM adapter | DeepSeek Harness",
+      "description": "How to connect a new model provider. Reference implementations: packages/llm/llm-deepseek (direct HTTP, SSE framed by eventsource-parser) and…",
+      "description_sha256": "5e67a9d75cc1328e827d88f08c42c76fae24097290ee8fd3dd48918309e4de4a",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-an-llm-adapter",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-an-llm-adapter",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-an-llm-adapter",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-an-llm-adapter"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cookbook/extension-cookbook",
+      "output": "website/.dist/reference/cookbook/extension-cookbook.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "实操手册：扩展插件形态 | DeepSeek Harness",
+      "description": "harness 扩展的参考模式。代码片段省略了 import 和辅助实现，无法直接复制运行。具体编写路径见包检查清单、第一个工具教程、工具参考和 LLM（大语言模型）适配器指南；系统与扩展点映射由架构文档负责。",
+      "description_sha256": "43105e147e5f58517d7904837c7ed755da615b8724f51f3c400ecca4b09bb0c5",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cookbook/extension-cookbook",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/extension-cookbook",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/extension-cookbook",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/extension-cookbook"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cookbook/extension-cookbook",
+      "output": "website/.dist/en/reference/cookbook/extension-cookbook.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Cookbook: extension plugin shapes | DeepSeek Harness",
+      "description": "Reference patterns for harness extensions. The snippets omit imports and helper implementations and are not copy-paste-complete. For concrete authoring paths…",
+      "description_sha256": "5cabb02f5d5d516c94dfaf0b1db6192384e7c6c8e9559d49f143aa1e2de8199c",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/extension-cookbook",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/extension-cookbook",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/extension-cookbook",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/extension-cookbook"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/reference/cookbook/adding-a-conversation-node",
+      "output": "website/.dist/reference/cookbook/adding-a-conversation-node.html",
+      "content_locale": "zh-CN",
+      "indexable": true,
+      "title": "添加 Web Client Conversation Node | DeepSeek Harness",
+      "description": "本教程为 Web Client Chat 视图添加一行由业务自行拥有的内容。完成后的插件会把一个持久 Session 事件族关联成一个 Context，增量构造业务 State，发布类型化 Step 数据，再渲染 keyed Chat Node；整个过程不扫描 Session 窗口或其他已渲染节点。本教程假设…",
+      "description_sha256": "ab2a74a6dbefb9ea8dc79ebd002cd4f3f43e05f4f9f6d87ae5b23e385a59506b",
+      "canonical": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-conversation-node",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-conversation-node",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-conversation-node",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-conversation-node"
+      },
+      "status": "passed"
+    },
+    {
+      "route": "/en/reference/cookbook/adding-a-conversation-node",
+      "output": "website/.dist/en/reference/cookbook/adding-a-conversation-node.html",
+      "content_locale": "en-US",
+      "indexable": true,
+      "title": "Add a Web Client conversation node | DeepSeek Harness",
+      "description": "This tutorial adds one business-owned row to the Web Client Chat view. The finished plugin correlates a durable Session event family into one Context…",
+      "description_sha256": "7ce9e4ffd6d54b7676f2343b6a7498e6b6320242a4b24977f4bc998e1337c063",
+      "canonical": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-conversation-node",
+      "alternates": {
+        "zh-CN": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-conversation-node",
+        "en": "https://deepseek-harness-docs.vercel.app/en/reference/cookbook/adding-a-conversation-node",
+        "x-default": "https://deepseek-harness-docs.vercel.app/reference/cookbook/adding-a-conversation-node"
+      },
+      "status": "passed"
+    }
+  ]
+}

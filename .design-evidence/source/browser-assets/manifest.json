@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "contentType": "text/css",
+      "id": "89934fe8afce4568",
+      "kind": "stylesheet",
+      "name": "style.D49WVbqx.css",
+      "path": "/var/folders/6_/1smt6k6x2md_1kggt8t_v33h0000gn/T/browser-use/assets/98259212-a545-48cd-a27b-3b3caf864594/89934fe8afce4568.css",
+      "url": "https://deepseek-harness.github.io/deepseek-harness/assets/style.D49WVbqx.css"
+    },
+    {
+      "contentType": "text/css",
+      "id": "db836f7a23741f06",
+      "kind": "stylesheet",
+      "name": "vp-icons.css",
+      "path": "/var/folders/6_/1smt6k6x2md_1kggt8t_v33h0000gn/T/browser-use/assets/98259212-a545-48cd-a27b-3b3caf864594/db836f7a23741f06.css",
+      "url": "https://deepseek-harness.github.io/deepseek-harness/vp-icons.css"
+    },
+    {
+      "contentType": "font/woff2",
+      "id": "bf17179724eb39b6",
+      "kind": "font",
+      "name": "inter-roman-latin.Di8DUHzh.woff2",
+      "path": "/var/folders/6_/1smt6k6x2md_1kggt8t_v33h0000gn/T/browser-use/assets/98259212-a545-48cd-a27b-3b3caf864594/bf17179724eb39b6.woff2",
+      "url": "https://deepseek-harness.github.io/deepseek-harness/assets/inter-roman-latin.Di8DUHzh.woff2"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "0b481c614a4e2655",
+      "kind": "image",
+      "name": "svg-1",
+      "path": "/var/folders/6_/1smt6k6x2md_1kggt8t_v33h0000gn/T/browser-use/assets/98259212-a545-48cd-a27b-3b3caf864594/0b481c614a4e2655.svg",
+      "url": "inline-svg:0b481c614a4e2655"
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,39 @@
+{
+  "name": "deepseek-harness-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.26.0",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "vitepress dev website --host 127.0.0.1 --port 5173",
+    "build": "pnpm run docs:check && vitepress build website && pnpm run seo:audit",
+    "preview": "vitepress preview website --host 127.0.0.1 --port 4173",
+    "docs:check": "tsx scripts/validate-docs.ts",
+    "docs:manifest": "tsx scripts/capture-upstream.ts",
+    "docs:routes": "tsx scripts/verify-built-routes.ts",
+    "seo:audit": "tsx scripts/audit-seo.ts",
+    "docs:sync": "python3 .agents/skills/diff-translation/scripts/snapshot_manager.py",
+    "test": "python3 .agents/skills/diff-translation/tests/test_pipeline.py"
+  },
+  "devDependencies": {
+    "@braintree/sanitize-url": "7.1.2",
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^22.20.0",
+    "cytoscape": "3.34.0",
+    "cytoscape-cose-bilkent": "4.1.0",
+    "dayjs": "1.11.21",
+    "debug": "4.4.3",
+    "mdast-util-from-markdown": "^2.0.3",
+    "mdast-util-gfm": "^3.1.0",
+    "mermaid": "11.16.0",
+    "micromark-extension-gfm": "^3.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vite": "^5.4.14",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}

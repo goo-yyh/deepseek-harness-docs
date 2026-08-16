@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "locales": [
+    {
+      "id": "zh-CN",
+      "vitepress_key": "root",
+      "path_prefix": "/",
+      "source": "official",
+      "published": true
+    },
+    {
+      "id": "en-US",
+      "vitepress_key": "en",
+      "path_prefix": "/en/",
+      "source": "official",
+      "published": true
+    },
+    {
+      "id": "ja-JP",
+      "vitepress_key": "ja",
+      "path_prefix": "/ja/",
+      "source": "codex",
+      "published": false
+    },
+    {
+      "id": "ko-KR",
+      "vitepress_key": "ko",
+      "path_prefix": "/ko/",
+      "source": "codex",
+      "published": false
+    }
+  ]
+}

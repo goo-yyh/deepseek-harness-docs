@@ -1,0 +1,2221 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
+  "canonical_page_count": 83,
+  "published_route_count": 166,
+  "official_locales": [
+    "zh-CN",
+    "en-US"
+  ],
+  "module_counts": {
+    "guide": 3,
+    "develop": 17,
+    "reference": 62
+  },
+  "pages": [
+    {
+      "id": "home",
+      "route": "/",
+      "module": "home",
+      "section": {
+        "zh-CN": "首页",
+        "en-US": "Home"
+      },
+      "order": 0,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/index.zh.md",
+          "label": "DeepSeek Harness",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/index.md",
+          "label": "DeepSeek Harness",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "guide.quickstart",
+      "route": "/guide/quickstart",
+      "module": "guide",
+      "section": {
+        "zh-CN": "入门",
+        "en-US": "Guide"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/guide/index.zh.md",
+          "label": "使用 Web UI",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/guide/index.md",
+          "label": "Use the Web UI",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "guide.providers",
+      "route": "/guide/providers",
+      "module": "guide",
+      "section": {
+        "zh-CN": "入门",
+        "en-US": "Guide"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/guide/providers.zh.md",
+          "label": "配置模型",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/guide/providers.md",
+          "label": "Configure models",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "guide.python-sdk",
+      "route": "/guide/python-sdk",
+      "module": "guide",
+      "section": {
+        "zh-CN": "SDK",
+        "en-US": "SDK"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/guide/python-sdk.zh.md",
+          "label": "Python",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/guide/python-sdk.md",
+          "label": "Python",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.basic",
+      "route": "/develop/basic/",
+      "module": "develop",
+      "section": {
+        "zh-CN": "基础",
+        "en-US": "Basics"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/basic/index.zh.md",
+          "label": "第一个 Harness 插件",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/basic/index.md",
+          "label": "Your first Harness plugin",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.basic.tool",
+      "route": "/develop/basic/tool",
+      "module": "develop",
+      "section": {
+        "zh-CN": "基础",
+        "en-US": "Basics"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/basic/tool.zh.md",
+          "label": "开发一个 Tool",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/basic/tool.md",
+          "label": "Build a tool",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.basic.config",
+      "route": "/develop/basic/config",
+      "module": "develop",
+      "section": {
+        "zh-CN": "基础",
+        "en-US": "Basics"
+      },
+      "order": 3,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/basic/config.zh.md",
+          "label": "插件配置",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/basic/config.md",
+          "label": "Plugin configuration",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.basic.publish",
+      "route": "/develop/basic/publish",
+      "module": "develop",
+      "section": {
+        "zh-CN": "基础",
+        "en-US": "Basics"
+      },
+      "order": 4,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/basic/publish.zh.md",
+          "label": "打包与安装插件",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/basic/publish.md",
+          "label": "Package and install",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.framework",
+      "route": "/develop/framework/",
+      "module": "develop",
+      "section": {
+        "zh-CN": "框架能力",
+        "en-US": "Framework"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/framework/index.zh.md",
+          "label": "插件与生命周期",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/framework/index.md",
+          "label": "Plugin lifecycle",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.framework.service",
+      "route": "/develop/framework/service",
+      "module": "develop",
+      "section": {
+        "zh-CN": "框架能力",
+        "en-US": "Framework"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/framework/service.zh.md",
+          "label": "服务与依赖",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/framework/service.md",
+          "label": "Services and dependencies",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.framework.events",
+      "route": "/develop/framework/events",
+      "module": "develop",
+      "section": {
+        "zh-CN": "框架能力",
+        "en-US": "Framework"
+      },
+      "order": 3,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/framework/events.zh.md",
+          "label": "事件系统",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/framework/events.md",
+          "label": "Event system",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.practice",
+      "route": "/develop/practice/",
+      "module": "develop",
+      "section": {
+        "zh-CN": "实战",
+        "en-US": "Practice"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/practice/index.zh.md",
+          "label": "能力的三层拆分",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/practice/index.md",
+          "label": "Capability layering",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.practice.llm-adapter",
+      "route": "/develop/practice/llm-adapter",
+      "module": "develop",
+      "section": {
+        "zh-CN": "实战",
+        "en-US": "Practice"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/user/develop/practice/llm-adapter.zh.md",
+          "label": "LLM 适配器",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/user/develop/practice/llm-adapter.md",
+          "label": "LLM adapter",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial",
+      "route": "/develop/cordis-tutorial/",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 0,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/index.zh.md",
+          "label": "总览",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/index.md",
+          "label": "Overview",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial.01-first-plugin",
+      "route": "/develop/cordis-tutorial/01-first-plugin",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/01-first-plugin.zh.md",
+          "label": "1. 第一个插件",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/01-first-plugin.md",
+          "label": "1. Your first plugin",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial.02-lifecycle-and-effects",
+      "route": "/develop/cordis-tutorial/02-lifecycle-and-effects",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/02-lifecycle-and-effects.zh.md",
+          "label": "2. 生命周期与副作用",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/02-lifecycle-and-effects.md",
+          "label": "2. Lifecycle and effects",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial.03-services",
+      "route": "/develop/cordis-tutorial/03-services",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 3,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/03-services.zh.md",
+          "label": "3. 服务",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/03-services.md",
+          "label": "3. Services",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial.04-events",
+      "route": "/develop/cordis-tutorial/04-events",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 4,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/04-events.zh.md",
+          "label": "4. 事件",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/04-events.md",
+          "label": "4. Events",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial.05-config",
+      "route": "/develop/cordis-tutorial/05-config",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 5,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/05-config.zh.md",
+          "label": "5. 配置",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/05-config.md",
+          "label": "5. Configuration",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial.06-composition-and-hmr",
+      "route": "/develop/cordis-tutorial/06-composition-and-hmr",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 6,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/06-composition-and-hmr.zh.md",
+          "label": "6. 组合与热重载",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/06-composition-and-hmr.md",
+          "label": "6. Composition and HMR",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "develop.cordis-tutorial.07-into-the-harness",
+      "route": "/develop/cordis-tutorial/07-into-the-harness",
+      "module": "develop",
+      "section": {
+        "zh-CN": "Cordis 框架教程",
+        "en-US": "Cordis framework tutorial"
+      },
+      "order": 7,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-tutorial/07-into-the-harness.zh.md",
+          "label": "7. 进入 Harness",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-tutorial/07-into-the-harness.md",
+          "label": "7. Into the harness",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cordis-primer",
+      "route": "/reference/cordis-primer",
+      "module": "reference",
+      "section": {
+        "zh-CN": "概念",
+        "en-US": "Concepts"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-primer.zh.md",
+          "label": "Cordis 入门",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-primer.md",
+          "label": "Cordis primer",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems",
+      "route": "/reference/subsystems/",
+      "module": "reference",
+      "section": {
+        "zh-CN": "总览",
+        "en-US": "Overview"
+      },
+      "order": 0,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/README.zh.md",
+          "label": "子系统",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/README.md",
+          "label": "Subsystems",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.core",
+      "route": "/reference/subsystems/core",
+      "module": "reference",
+      "section": {
+        "zh-CN": "内核与作用域",
+        "en-US": "Core and scopes"
+      },
+      "order": 0,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/core.zh.md",
+          "label": "核心",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/core.md",
+          "label": "Core",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.scope",
+      "route": "/reference/subsystems/scope",
+      "module": "reference",
+      "section": {
+        "zh-CN": "内核与作用域",
+        "en-US": "Core and scopes"
+      },
+      "order": 1,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/scope.zh.md",
+          "label": "作用域",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/scope.md",
+          "label": "Scopes",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.invariants",
+      "route": "/reference/subsystems/invariants",
+      "module": "reference",
+      "section": {
+        "zh-CN": "内核与作用域",
+        "en-US": "Core and scopes"
+      },
+      "order": 2,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/invariants.zh.md",
+          "label": "运行时不变式",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/invariants.md",
+          "label": "Runtime invariants",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.session",
+      "route": "/reference/subsystems/session",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 0,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/session.zh.md",
+          "label": "会话",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/session.md",
+          "label": "Sessions",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.session-query",
+      "route": "/reference/subsystems/session-query",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 1,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/session-query.zh.md",
+          "label": "会话查询",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/session-query.md",
+          "label": "Session query",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.session-reference",
+      "route": "/reference/subsystems/session-reference",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 2,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/session-reference.zh.md",
+          "label": "会话引用",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/session-reference.md",
+          "label": "Session references",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.session-title",
+      "route": "/reference/subsystems/session-title",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 3,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/session-title.zh.md",
+          "label": "会话标题",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/session-title.md",
+          "label": "Session titles",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.session-projection",
+      "route": "/reference/subsystems/session-projection",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 4,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/session-projection.zh.md",
+          "label": "会话投影",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/session-projection.md",
+          "label": "Session projections",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.persistence",
+      "route": "/reference/subsystems/persistence",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 5,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/persistence.zh.md",
+          "label": "会话持久化",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/persistence.md",
+          "label": "Session persistence",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.spill",
+      "route": "/reference/subsystems/spill",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 6,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/spill.zh.md",
+          "label": "Spill 存储",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/spill.md",
+          "label": "Spill storage",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.session-telemetry",
+      "route": "/reference/subsystems/session-telemetry",
+      "module": "reference",
+      "section": {
+        "zh-CN": "会话与持久化",
+        "en-US": "Sessions and persistence"
+      },
+      "order": 7,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/session-telemetry.zh.md",
+          "label": "遥测",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/session-telemetry.md",
+          "label": "SessionTelemetryBackend",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.llm-streaming",
+      "route": "/reference/subsystems/llm-streaming",
+      "module": "reference",
+      "section": {
+        "zh-CN": "模型与上下文",
+        "en-US": "Model and context"
+      },
+      "order": 0,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/llm-streaming.zh.md",
+          "label": "LLM 流式响应",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/llm-streaming.md",
+          "label": "LLM streaming",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.token-meter",
+      "route": "/reference/subsystems/token-meter",
+      "module": "reference",
+      "section": {
+        "zh-CN": "模型与上下文",
+        "en-US": "Model and context"
+      },
+      "order": 1,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/token-meter.zh.md",
+          "label": "Token 计量",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/token-meter.md",
+          "label": "Token metering",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.system-prompt",
+      "route": "/reference/subsystems/system-prompt",
+      "module": "reference",
+      "section": {
+        "zh-CN": "模型与上下文",
+        "en-US": "Model and context"
+      },
+      "order": 2,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/system-prompt.zh.md",
+          "label": "系统提示词",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/system-prompt.md",
+          "label": "System prompts",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.compaction",
+      "route": "/reference/subsystems/compaction",
+      "module": "reference",
+      "section": {
+        "zh-CN": "模型与上下文",
+        "en-US": "Model and context"
+      },
+      "order": 3,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/compaction.zh.md",
+          "label": "上下文压缩",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/compaction.md",
+          "label": "Compaction",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.tools",
+      "route": "/reference/subsystems/tools",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 0,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/tools.zh.md",
+          "label": "工具",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/tools.md",
+          "label": "Tools",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.shell",
+      "route": "/reference/subsystems/shell",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 1,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/shell.zh.md",
+          "label": "Bash 执行",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/shell.md",
+          "label": "Bash execution",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.subprocess",
+      "route": "/reference/subsystems/subprocess",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 2,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/subprocess.zh.md",
+          "label": "子进程",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/subprocess.md",
+          "label": "Subprocesses",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.terminal",
+      "route": "/reference/subsystems/terminal",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 3,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/terminal.zh.md",
+          "label": "PTY 会话",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/terminal.md",
+          "label": "PTY sessions",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.jobs",
+      "route": "/reference/subsystems/jobs",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 4,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/jobs.zh.md",
+          "label": "后台任务",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/jobs.md",
+          "label": "Background jobs",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.filesystem",
+      "route": "/reference/subsystems/filesystem",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 5,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/filesystem.zh.md",
+          "label": "文件系统",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/filesystem.md",
+          "label": "Filesystem",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.lsp",
+      "route": "/reference/subsystems/lsp",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 6,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/lsp.zh.md",
+          "label": "LSP 导航",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/lsp.md",
+          "label": "LSP navigation",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.code-runtime",
+      "route": "/reference/subsystems/code-runtime",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 7,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/code-runtime.zh.md",
+          "label": "代码运行时",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/code-runtime.md",
+          "label": "Code runtime",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.web",
+      "route": "/reference/subsystems/web",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 8,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/web.zh.md",
+          "label": "Web 访问",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/web.md",
+          "label": "Web access",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.skills",
+      "route": "/reference/subsystems/skills",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 9,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/skills.zh.md",
+          "label": "技能",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/skills.md",
+          "label": "Skills",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.workflow",
+      "route": "/reference/subsystems/workflow",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 10,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/workflow.zh.md",
+          "label": "工作流",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/workflow.md",
+          "label": "Workflows",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.subagent",
+      "route": "/reference/subsystems/subagent",
+      "module": "reference",
+      "section": {
+        "zh-CN": "执行与工具",
+        "en-US": "Execution and tools"
+      },
+      "order": 11,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/subagent.zh.md",
+          "label": "子代理",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/subagent.md",
+          "label": "Subagents",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.approval",
+      "route": "/reference/subsystems/approval",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 0,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/approval.zh.md",
+          "label": "审批",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/approval.md",
+          "label": "Approvals",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.permission-presets",
+      "route": "/reference/subsystems/permission-presets",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 1,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/permission-presets.zh.md",
+          "label": "权限预设",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/permission-presets.md",
+          "label": "Permission presets",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.sandbox",
+      "route": "/reference/subsystems/sandbox",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 2,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/sandbox.zh.md",
+          "label": "沙箱",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/sandbox.md",
+          "label": "Sandboxing",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.plan",
+      "route": "/reference/subsystems/plan",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 3,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/plan.zh.md",
+          "label": "计划模式",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/plan.md",
+          "label": "Plan mode",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.user-questions",
+      "route": "/reference/subsystems/user-questions",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 4,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/user-questions.zh.md",
+          "label": "用户交互",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/user-questions.md",
+          "label": "User interaction",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.commands",
+      "route": "/reference/subsystems/commands",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 5,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/commands.zh.md",
+          "label": "命令",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/commands.md",
+          "label": "Human commands",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.goal",
+      "route": "/reference/subsystems/goal",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 6,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/goal.zh.md",
+          "label": "目标",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/goal.md",
+          "label": "Goals",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.schedule",
+      "route": "/reference/subsystems/schedule",
+      "module": "reference",
+      "section": {
+        "zh-CN": "策略与交互",
+        "en-US": "Policy and interaction"
+      },
+      "order": 7,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/schedule.zh.md",
+          "label": "定时提醒",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/schedule.md",
+          "label": "Scheduled reminders",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.web-server",
+      "route": "/reference/subsystems/web-server",
+      "module": "reference",
+      "section": {
+        "zh-CN": "平台与接入",
+        "en-US": "Platform and access"
+      },
+      "order": 0,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/web-server.zh.md",
+          "label": "HTTP 服务器",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/web-server.md",
+          "label": "HTTP server",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.typert",
+      "route": "/reference/subsystems/typert",
+      "module": "reference",
+      "section": {
+        "zh-CN": "平台与接入",
+        "en-US": "Platform and access"
+      },
+      "order": 1,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/typert.zh.md",
+          "label": "Typert",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/typert.md",
+          "label": "Typert",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.client-modules",
+      "route": "/reference/subsystems/client-modules",
+      "module": "reference",
+      "section": {
+        "zh-CN": "平台与接入",
+        "en-US": "Platform and access"
+      },
+      "order": 2,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/client-modules.zh.md",
+          "label": "客户端模块",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/client-modules.md",
+          "label": "Client modules",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.storage",
+      "route": "/reference/subsystems/storage",
+      "module": "reference",
+      "section": {
+        "zh-CN": "平台与接入",
+        "en-US": "Platform and access"
+      },
+      "order": 3,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/storage.zh.md",
+          "label": "存储",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/storage.md",
+          "label": "Storage",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.workspace",
+      "route": "/reference/subsystems/workspace",
+      "module": "reference",
+      "section": {
+        "zh-CN": "平台与接入",
+        "en-US": "Platform and access"
+      },
+      "order": 4,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/workspace.zh.md",
+          "label": "工作区",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/workspace.md",
+          "label": "Workspaces",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.settings",
+      "route": "/reference/subsystems/settings",
+      "module": "reference",
+      "section": {
+        "zh-CN": "平台与接入",
+        "en-US": "Platform and access"
+      },
+      "order": 5,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/settings.zh.md",
+          "label": "用户设置",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/settings.md",
+          "label": "User settings",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.subsystems.credentials",
+      "route": "/reference/subsystems/credentials",
+      "module": "reference",
+      "section": {
+        "zh-CN": "平台与接入",
+        "en-US": "Platform and access"
+      },
+      "order": 6,
+      "outline": [
+        2,
+        3
+      ],
+      "locales": {
+        "zh-CN": {
+          "source": "docs/subsystems/credentials.zh.md",
+          "label": "用户凭据",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/subsystems/credentials.md",
+          "label": "User credentials",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference",
+      "route": "/reference/",
+      "module": "reference",
+      "section": {
+        "zh-CN": "概念",
+        "en-US": "Concepts"
+      },
+      "order": 0,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/architecture.zh.md",
+          "label": "架构",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/architecture.md",
+          "label": "Architecture",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.capability-seams",
+      "route": "/reference/capability-seams",
+      "module": "reference",
+      "section": {
+        "zh-CN": "概念",
+        "en-US": "Concepts"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/capability-seams.zh.md",
+          "label": "能力服务",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/capability-seams.md",
+          "label": "Capability services",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.agent-lifecycle",
+      "route": "/reference/agent-lifecycle",
+      "module": "reference",
+      "section": {
+        "zh-CN": "概念",
+        "en-US": "Concepts"
+      },
+      "order": 3,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/agent-lifecycle.zh.md",
+          "label": "Agent 生命周期",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/agent-lifecycle.md",
+          "label": "Agent lifecycle",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.tool-execution-pipeline",
+      "route": "/reference/tool-execution-pipeline",
+      "module": "reference",
+      "section": {
+        "zh-CN": "概念",
+        "en-US": "Concepts"
+      },
+      "order": 4,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/tool-execution-pipeline.zh.md",
+          "label": "Tool 执行",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/tool-execution-pipeline.md",
+          "label": "Tool execution",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.config-catalog",
+      "route": "/reference/config-catalog",
+      "module": "reference",
+      "section": {
+        "zh-CN": "生成参考",
+        "en-US": "Generated reference"
+      },
+      "order": 0,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/config-catalog.zh.md",
+          "label": "插件配置",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/config-catalog.md",
+          "label": "Plugin configuration",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.tool-catalog",
+      "route": "/reference/tool-catalog",
+      "module": "reference",
+      "section": {
+        "zh-CN": "生成参考",
+        "en-US": "Generated reference"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/tool-catalog.zh.md",
+          "label": "Tool Schema",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/tool-catalog.md",
+          "label": "Tool schemas",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.persistence-catalog",
+      "route": "/reference/persistence-catalog",
+      "module": "reference",
+      "section": {
+        "zh-CN": "生成参考",
+        "en-US": "Generated reference"
+      },
+      "order": 2,
+      "outline": "deep",
+      "locales": {
+        "zh-CN": {
+          "source": "docs/persistence-catalog.zh.md",
+          "label": "持久化事件",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/persistence-catalog.md",
+          "label": "Persistence events",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cordis-api.context",
+      "route": "/reference/cordis-api/context",
+      "module": "reference",
+      "section": {
+        "zh-CN": "Cordis API",
+        "en-US": "Cordis Core API"
+      },
+      "order": 0,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-api/context.zh.md",
+          "label": "Context",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-api/context.md",
+          "label": "Context",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cordis-api.events",
+      "route": "/reference/cordis-api/events",
+      "module": "reference",
+      "section": {
+        "zh-CN": "Cordis API",
+        "en-US": "Cordis Core API"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-api/events.zh.md",
+          "label": "Events",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-api/events.md",
+          "label": "Events",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cordis-api.fiber",
+      "route": "/reference/cordis-api/fiber",
+      "module": "reference",
+      "section": {
+        "zh-CN": "Cordis API",
+        "en-US": "Cordis Core API"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-api/fiber.zh.md",
+          "label": "Fiber",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-api/fiber.md",
+          "label": "Fiber",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cordis-api.registry",
+      "route": "/reference/cordis-api/registry",
+      "module": "reference",
+      "section": {
+        "zh-CN": "Cordis API",
+        "en-US": "Cordis Core API"
+      },
+      "order": 3,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-api/registry.zh.md",
+          "label": "Plugin Registry",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-api/registry.md",
+          "label": "Plugin Registry",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cordis-api.service",
+      "route": "/reference/cordis-api/service",
+      "module": "reference",
+      "section": {
+        "zh-CN": "Cordis API",
+        "en-US": "Cordis Core API"
+      },
+      "order": 4,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-api/service.zh.md",
+          "label": "Service",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cordis-api/service.md",
+          "label": "Service",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cordis-api.inherited",
+      "route": "/reference/cordis-api/inherited",
+      "module": "reference",
+      "section": {
+        "zh-CN": "Cordis API",
+        "en-US": "Cordis Core API"
+      },
+      "order": 5,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cordis-api/inherited.md",
+          "label": "继承接口面",
+          "content_locale": "en-US",
+          "source_kind": "upstream_english_fallback"
+        },
+        "en-US": {
+          "source": "docs/cordis-api/inherited.md",
+          "label": "Inherited surface",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cookbook.adding-a-package",
+      "route": "/reference/cookbook/adding-a-package",
+      "module": "reference",
+      "section": {
+        "zh-CN": "开发手册",
+        "en-US": "Cookbook"
+      },
+      "order": 0,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cookbook/adding-a-package.zh.md",
+          "label": "新增 Package",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cookbook/adding-a-package.md",
+          "label": "Adding a package",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cookbook.adding-a-tool",
+      "route": "/reference/cookbook/adding-a-tool",
+      "module": "reference",
+      "section": {
+        "zh-CN": "开发手册",
+        "en-US": "Cookbook"
+      },
+      "order": 1,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cookbook/adding-a-tool.zh.md",
+          "label": "新增 Tool",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cookbook/adding-a-tool.md",
+          "label": "Adding a tool",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cookbook.adding-an-llm-adapter",
+      "route": "/reference/cookbook/adding-an-llm-adapter",
+      "module": "reference",
+      "section": {
+        "zh-CN": "开发手册",
+        "en-US": "Cookbook"
+      },
+      "order": 2,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cookbook/adding-an-llm-adapter.zh.md",
+          "label": "新增 LLM Adapter",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cookbook/adding-an-llm-adapter.md",
+          "label": "Adding an LLM adapter",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cookbook.extension-cookbook",
+      "route": "/reference/cookbook/extension-cookbook",
+      "module": "reference",
+      "section": {
+        "zh-CN": "开发手册",
+        "en-US": "Cookbook"
+      },
+      "order": 3,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cookbook/extension-cookbook.zh.md",
+          "label": "扩展模式",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cookbook/extension-cookbook.md",
+          "label": "Extension patterns",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    },
+    {
+      "id": "reference.cookbook.adding-a-conversation-node",
+      "route": "/reference/cookbook/adding-a-conversation-node",
+      "module": "reference",
+      "section": {
+        "zh-CN": "开发手册",
+        "en-US": "Cookbook"
+      },
+      "order": 4,
+      "outline": null,
+      "locales": {
+        "zh-CN": {
+          "source": "docs/cookbook/adding-a-conversation-node.zh.md",
+          "label": "新增 Conversation Node",
+          "content_locale": "zh-CN",
+          "source_kind": "official"
+        },
+        "en-US": {
+          "source": "docs/cookbook/adding-a-conversation-node.md",
+          "label": "Adding a Conversation Node",
+          "content_locale": "en-US",
+          "source_kind": "official"
+        }
+      }
+    }
+  ]
+}

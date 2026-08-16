@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deepseek-harness-docs.vercel.app/sitemap.xml
