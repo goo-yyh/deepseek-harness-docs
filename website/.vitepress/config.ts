@@ -9,11 +9,13 @@ import { landingLink, orderedPages, routeLink, sectionSpec, type DocsLocale, typ
 import {
   applyContentLanguageToHtml,
   applySeoToPageData,
+  publishedSeoLocales,
   SITEMAP_URL,
   SITE_ORIGIN,
   transformSitemapItems,
 } from '../seo.ts'
 import { docsSourceFiles, projectDocs } from '../../scripts/project-doc-site.ts'
+import { stableHeadingSlug } from '../heading-anchors.ts'
 
 projectDocs()
 
@@ -52,7 +54,7 @@ interface GuideModuleLink {
  */
 interface GuideModules {
   /** Guide sidebar collection for the locale. */
-  guide: 'zh-guide' | 'en-guide'
+  guide: DocsSidebar
   /** Development module link. */
   develop: GuideModuleLink
   /** Reference module link. */
@@ -73,6 +75,16 @@ const guideModules = {
     guide: 'en-guide',
     develop: { label: 'Development', collection: 'en-develop' },
     reference: { label: 'Reference', collection: 'en-reference' },
+  },
+  ja: {
+    guide: 'ja-guide',
+    develop: { label: '開発', collection: 'ja-develop' },
+    reference: { label: 'リファレンス', collection: 'ja-reference' },
+  },
+  ko: {
+    guide: 'ko-guide',
+    develop: { label: '개발', collection: 'ko-develop' },
+    reference: { label: '레퍼런스', collection: 'ko-reference' },
   },
 } satisfies Record<DocsLocale, GuideModules>
 
@@ -102,7 +114,7 @@ function guideSidebar(locale: DocsLocale): DefaultTheme.SidebarItem[] {
  */
 function moduleNav(locale: DocsLocale): DefaultTheme.NavItem[] {
   const { develop, reference } = guideModules[locale]
-  const routePrefix = locale === 'root' ? '' : '/en'
+  const routePrefix = locale === 'root' ? '' : `/${locale}`
   return [
     { text: develop.label, link: landingLink(locale, develop.collection), activeMatch: `^${routePrefix}/develop/` },
     { text: reference.label, link: landingLink(locale, reference.collection), activeMatch: `^${routePrefix}/reference/` },
@@ -150,6 +162,52 @@ const sharedTheme: Pick<DefaultTheme.Config, 'search' | 'socialLinks' | 'editLin
             },
           },
         },
+        ja: {
+          translations: {
+            button: {
+              buttonText: 'ドキュメントを検索',
+              buttonAriaLabel: 'ドキュメントを検索',
+            },
+            modal: {
+              displayDetails: '詳細リストを表示',
+              resetButtonTitle: '検索をクリア',
+              backButtonTitle: '検索を閉じる',
+              noResultsText: '該当する結果がありません',
+              footer: {
+                selectText: '選択',
+                selectKeyAriaLabel: 'Enter キー',
+                navigateText: '移動',
+                navigateUpKeyAriaLabel: '上矢印キー',
+                navigateDownKeyAriaLabel: '下矢印キー',
+                closeText: '閉じる',
+                closeKeyAriaLabel: 'Esc キー',
+              },
+            },
+          },
+        },
+        ko: {
+          translations: {
+            button: {
+              buttonText: '문서 검색',
+              buttonAriaLabel: '문서 검색',
+            },
+            modal: {
+              displayDetails: '상세 목록 표시',
+              resetButtonTitle: '검색 지우기',
+              backButtonTitle: '검색 닫기',
+              noResultsText: '검색 결과가 없습니다',
+              footer: {
+                selectText: '선택',
+                selectKeyAriaLabel: 'Enter 키',
+                navigateText: '이동',
+                navigateUpKeyAriaLabel: '위쪽 화살표 키',
+                navigateDownKeyAriaLabel: '아래쪽 화살표 키',
+                closeText: '닫기',
+                closeKeyAriaLabel: 'Esc 키',
+              },
+            },
+          },
+        },
       },
     },
   },
@@ -169,6 +227,7 @@ const sharedTheme: Pick<DefaultTheme.Config, 'search' | 'socialLinks' | 'editLin
 
 /** Site base path, carrying the leading and trailing slashes VitePress requires. */
 const base = process.env.DOCS_BASE ?? '/'
+const publishedLocaleKeys = new Set(publishedSeoLocales().map(locale => locale.vitepress_key))
 
 /**
  * The DeepSeek wordmark, inlined so its `currentColor` fills follow the active
@@ -332,6 +391,80 @@ export default withMermaid({
         docFooter: { prev: 'Previous', next: 'Next' },
       },
     },
+    ...(publishedLocaleKeys.has('ja') ? {
+      ja: {
+        label: '日本語',
+        lang: 'ja-JP',
+        link: '/ja/',
+        themeConfig: {
+          siteTitle: siteTitle('プレビュー'),
+          nav: [
+            { text: 'ガイド', link: landingLink('ja', guideModules.ja.guide), activeMatch: '^/ja/guide/' },
+            ...moduleNav('ja'),
+          ],
+          sidebar: {
+            '/ja/guide/': guideSidebar('ja'),
+            '/ja/develop/': sidebar('ja', 'ja-develop'),
+            '/ja/reference/': sidebar('ja', 'ja-reference'),
+          },
+          editLink: {
+            pattern: ({ frontmatter }: PageData) => {
+              const data: unknown = frontmatter
+              const editSource: unknown = typeof data === 'object' && data !== null ? Reflect.get(data, 'editSource') : undefined
+              if (typeof editSource !== 'string') throw new Error('Projected documentation page has no editSource frontmatter.')
+              return `https://github.com/deepseek-ai/deepseek-harness/edit/master/${editSource}`
+            },
+            text: 'GitHub でこのページを編集',
+          },
+          outline: { label: 'このページの内容' },
+          docFooter: { prev: '前へ', next: '次へ' },
+          darkModeSwitchLabel: '表示',
+          lightModeSwitchTitle: 'ライトテーマに切り替える',
+          darkModeSwitchTitle: 'ダークテーマに切り替える',
+          sidebarMenuLabel: 'メニュー',
+          returnToTopLabel: 'トップへ戻る',
+          langMenuLabel: '言語を切り替える',
+          skipToContentLabel: '本文へ移動',
+        },
+      },
+    } : {}),
+    ...(publishedLocaleKeys.has('ko') ? {
+      ko: {
+        label: '한국어',
+        lang: 'ko-KR',
+        link: '/ko/',
+        themeConfig: {
+          siteTitle: siteTitle('미리 보기'),
+          nav: [
+            { text: '가이드', link: landingLink('ko', guideModules.ko.guide), activeMatch: '^/ko/guide/' },
+            ...moduleNav('ko'),
+          ],
+          sidebar: {
+            '/ko/guide/': guideSidebar('ko'),
+            '/ko/develop/': sidebar('ko', 'ko-develop'),
+            '/ko/reference/': sidebar('ko', 'ko-reference'),
+          },
+          editLink: {
+            pattern: ({ frontmatter }: PageData) => {
+              const data: unknown = frontmatter
+              const editSource: unknown = typeof data === 'object' && data !== null ? Reflect.get(data, 'editSource') : undefined
+              if (typeof editSource !== 'string') throw new Error('Projected documentation page has no editSource frontmatter.')
+              return `https://github.com/deepseek-ai/deepseek-harness/edit/master/${editSource}`
+            },
+            text: 'GitHub에서 이 페이지 편집',
+          },
+          outline: { label: '이 페이지에서' },
+          docFooter: { prev: '이전', next: '다음' },
+          darkModeSwitchLabel: '화면 모드',
+          lightModeSwitchTitle: '라이트 테마로 전환',
+          darkModeSwitchTitle: '다크 테마로 전환',
+          sidebarMenuLabel: '메뉴',
+          returnToTopLabel: '맨 위로',
+          langMenuLabel: '언어 변경',
+          skipToContentLabel: '본문으로 이동',
+        },
+      },
+    } : {}),
   },
   vite: {
     // `srcDir` puts the Vite root inside the disposable generated tree, whose
@@ -345,6 +478,9 @@ export default withMermaid({
     ],
   },
   markdown: {
+    anchor: {
+      slugifyWithState: stableHeadingSlug,
+    },
     config(md) {
       const renderText = md.renderer.rules.text
       const renderCode = md.renderer.rules.code_inline

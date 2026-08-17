@@ -1,0 +1,5 @@
+{
+  "source": "---\ntitle: fixture\n---\n# Configure the plugin\n\nUse the [configuration guide](https://example.com/config) to create the plugin.\n\n::: warning Read before continuing\nKeep the token in `HARNESS_TOKEN`.\n:::\n\n| Setting | Description |\n| --- | --- |\n| Timeout | Maximum waiting time |\n\n```ts\nconst timeout = 30\n```\n",
+  "ja": "---\ntitle: fixture\n---\n# プラグインを設定する\n\n[設定ガイド](https://example.com/config)を使用してプラグインを作成します。\n\n::: warning 続行する前に確認\nトークンは `HARNESS_TOKEN` に保持します。\n:::\n\n| 設定 | 説明 |\n| --- | --- |\n| タイムアウト | 最大待機時間 |\n\n```ts\nconst timeout = 30\n```\n",
+  "ko": "---\ntitle: fixture\n---\n# 플러그인 설정\n\n[설정 가이드](https://example.com/config)를 사용하여 플러그인을 만듭니다.\n\n::: warning 계속하기 전에 확인\n토큰은 `HARNESS_TOKEN`에 보관합니다.\n:::\n\n| 설정 | 설명 |\n| --- | --- |\n| 시간 제한 | 최대 대기 시간 |\n\n```ts\nconst timeout = 30\n```\n"
+}

@@ -3,16 +3,22 @@
   "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
   "adapters": [
     {
+      "path": "website/docs.ts",
+      "upstream_sha256": "55d2b315e080e5112443923f5cf22e3efc85b6076ef8091a4b2104278a510d28",
+      "local_sha256": "b182e76ff484c3878010bc75a31c27b5acb176cd38353a49e25ade3a170e8706",
+      "reason": "Project validated Japanese and Korean translations into locale-isomorphic route, sidebar, and source catalogs while keeping official Chinese and English catalog entries unchanged."
+    },
+    {
       "path": "scripts/project-doc-site.ts",
       "upstream_sha256": "2081fbf35974a00ac74294caa313eae4f2fd7d522d1689ffd0bc37f8fe79b6a8",
-      "local_sha256": "082c6db18c1a08f1106b725c226beeaae132f4dc4c771ee3e4f48af4d6d7acdd",
-      "reason": "Resolve non-vendored repository-relative links against the pinned upstream Git tree while keeping rendered images local."
+      "local_sha256": "a35c0965baa942a46d22f6d84b3db60db4be32ec132a31c7c0df3841135fc64e",
+      "reason": "Resolve non-vendored repository-relative links against the pinned upstream Git tree, keep rendered images local, and bind translated headings to canonical English identities."
     },
     {
       "path": "website/.vitepress/config.ts",
       "upstream_sha256": "51e246d500db89ac1d8f2d8305be02d66c9dd0f38b9935a3ea153d2f286b6a6b",
-      "local_sha256": "b7da0bf7580991dad77316da56395a008ee838567cea1ac9c26613d0d1d2faf7",
-      "reason": "Add manifest-driven multilingual canonical, hreflang, localized metadata, structured data, and sitemap hooks without changing the official VitePress theme."
+      "local_sha256": "914522ce7c8193627e722338679eae49c5561b8dd33f8cb1fd6636198c534ef0",
+      "reason": "Add manifest-driven multilingual canonical, hreflang, localized metadata, structured data, sitemap hooks, and stable translated heading IDs without changing the official VitePress theme."
     }
   ]
 }

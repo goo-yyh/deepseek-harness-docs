@@ -7,8 +7,12 @@
  * source instead of copying Markdown.
  */
 
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
+
 /** Locale key used by the VitePress site. */
-export type DocsLocale = 'root' | 'en'
+export type DocsLocale = 'root' | 'en' | 'ja' | 'ko'
+type OfficialDocsLocale = 'root' | 'en'
 
 /** Sidebar collection rendered for one locale and top-level module. */
 export type DocsSidebar =
@@ -18,15 +22,23 @@ export type DocsSidebar =
   | 'en-guide'
   | 'en-develop'
   | 'en-reference'
+  | 'ja-guide'
+  | 'ja-develop'
+  | 'ja-reference'
+  | 'ko-guide'
+  | 'ko-develop'
+  | 'ko-reference'
 
 /** A page projected into the VitePress source tree. */
 export interface DocsPage {
   /** VitePress locale whose route tree owns this projection. */
   locale: DocsLocale
   /** Language of the canonical source currently projected at this route. */
-  contentLocale: 'zh-CN' | 'en-US'
+  contentLocale: 'zh-CN' | 'en-US' | 'ja-JP' | 'ko-KR'
   /** Repository-relative canonical Markdown source. */
   source: string
+  /** Official English path used to resolve links and edit URLs for a Codex translation. */
+  canonicalSource?: string
   /** VitePress route, including the `.md` suffix. */
   route: string
   /** Navigation label shown in the sidebar. */
@@ -44,15 +56,15 @@ export interface DocsPage {
 }
 
 interface MirroredPage {
-  source: string | Record<DocsLocale, string>
+  source: string | Record<OfficialDocsLocale, string>
   route: string
-  contentLocale: DocsPage['contentLocale'] | Record<DocsLocale, DocsPage['contentLocale']>
-  label: Record<DocsLocale, string>
-  sidebar: Record<DocsLocale, DocsSidebar | null>
-  section: Record<DocsLocale, string>
+  contentLocale: DocsPage['contentLocale'] | Record<OfficialDocsLocale, DocsPage['contentLocale']>
+  label: Record<OfficialDocsLocale, string>
+  sidebar: Record<OfficialDocsLocale, DocsSidebar | null>
+  section: Record<OfficialDocsLocale, string>
   order: number
   outline?: DocsPage['outline']
-  sourceAliases?: string[] | Partial<Record<DocsLocale, string[]>>
+  sourceAliases?: string[] | Partial<Record<OfficialDocsLocale, string[]>>
 }
 
 type PairedPage = Omit<MirroredPage, 'source' | 'contentLocale' | 'sourceAliases'> & {
@@ -62,9 +74,9 @@ type PairedPage = Omit<MirroredPage, 'source' | 'contentLocale' | 'sourceAliases
   sourceAliases?: string[]
 }
 
-function localized<T>(value: T | Record<DocsLocale, T>, locale: DocsLocale): T {
+function localized<T>(value: T | Record<OfficialDocsLocale, T>, locale: OfficialDocsLocale): T {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
-    ? (value as Record<DocsLocale, T>)[locale]
+    ? (value as Record<OfficialDocsLocale, T>)[locale]
     : value
 }
 
@@ -450,6 +462,94 @@ const sections: Record<DocsLocale, readonly DocsSection[]> = {
     { label: 'Policy and interaction', collapsed: true },
     { label: 'Platform and access', collapsed: true },
   ],
+  ja: [
+    { label: 'ガイド' }, { label: 'SDK' },
+    { label: '基礎' }, { label: 'フレームワーク' }, { label: '実践' }, { label: 'Cordis フレームワークチュートリアル' },
+    { label: '概念' }, { label: '生成リファレンス' }, { label: 'Cordis Core API' }, { label: 'クックブック' },
+    { label: '概要' },
+    { label: 'コアとスコープ', collapsed: true },
+    { label: 'セッションと永続化', collapsed: true },
+    { label: 'モデルとコンテキスト', collapsed: true },
+    { label: '実行とツール', collapsed: true },
+    { label: 'ポリシーと対話', collapsed: true },
+    { label: 'プラットフォームとアクセス', collapsed: true },
+  ],
+  ko: [
+    { label: '가이드' }, { label: 'SDK' },
+    { label: '기본' }, { label: '프레임워크' }, { label: '실전' }, { label: 'Cordis 프레임워크 튜토리얼' },
+    { label: '개념' }, { label: '생성된 레퍼런스' }, { label: 'Cordis Core API' }, { label: '실전 가이드' },
+    { label: '개요' },
+    { label: '코어와 스코프', collapsed: true },
+    { label: '세션과 영속성', collapsed: true },
+    { label: '모델과 컨텍스트', collapsed: true },
+    { label: '실행과 도구', collapsed: true },
+    { label: '정책과 상호작용', collapsed: true },
+    { label: '플랫폼과 액세스', collapsed: true },
+  ],
+}
+
+const localizedSections: Record<'ja' | 'ko', Record<string, string>> = {
+  ja: Object.fromEntries(sections.en.map((section, index) => [section.label, sections.ja[index]?.label ?? ''])),
+  ko: Object.fromEntries(sections.en.map((section, index) => [section.label, sections.ko[index]?.label ?? ''])),
+}
+
+interface TranslationStatePage {
+  page_id: string
+  source_path: string
+  target_path: string
+  navigation_label: string
+  translation_review: 'validated'
+}
+
+interface TranslationState {
+  locale: 'ja-JP' | 'ko-KR'
+  pages: TranslationStatePage[]
+}
+
+interface LocalePublicationConfig {
+  locales: Array<{ vitepress_key: DocsLocale; published: boolean }>
+}
+
+const publicationConfig = JSON.parse(
+  readFileSync(resolve(import.meta.dirname, '../config/locales.json'), 'utf8'),
+) as LocalePublicationConfig
+const publishedLocaleKeys = new Set(
+  publicationConfig.locales.filter(locale => locale.published).map(locale => locale.vitepress_key),
+)
+
+function translatedPages(
+  locale: 'ja' | 'ko',
+  contentLocale: 'ja-JP' | 'ko-KR',
+  officialPages: DocsPage[],
+): DocsPage[] {
+  if (!publishedLocaleKeys.has(locale)) return []
+  const statePath = resolve(import.meta.dirname, `../config/translation-state/${contentLocale}.json`)
+  const state = JSON.parse(readFileSync(statePath, 'utf8')) as TranslationState
+  if (state.locale !== contentLocale) throw new Error(`Translation state ${statePath} has locale ${state.locale}.`)
+  const entries = new Map(state.pages.map(page => [page.source_path, page]))
+  return officialPages.filter(page => page.locale === 'en').map((page) => {
+    const translation = entries.get(page.source)
+    if (translation === undefined || translation.translation_review !== 'validated') {
+      throw new Error(`Missing validated ${contentLocale} translation state for ${page.source}.`)
+    }
+    const section = page.sidebar === null
+      ? locale === 'ja' ? 'ホーム' : '홈'
+      : localizedSections[locale][page.section]
+    if (section === undefined || section === '') {
+      throw new Error(`Missing ${contentLocale} section translation for ${page.section}.`)
+    }
+    return {
+      ...page,
+      locale,
+      contentLocale,
+      source: translation.target_path,
+      canonicalSource: page.source,
+      route: `${locale}/${page.route.replace(/^en\//, '')}`,
+      label: translation.navigation_label,
+      sidebar: page.sidebar === null ? null : page.sidebar.replace(/^en-/, `${locale}-`) as DocsSidebar,
+      section,
+    }
+  })
 }
 
 /**
@@ -469,14 +569,20 @@ export function sectionSpec(locale: DocsLocale, label: string): DocsSection & { 
   return { ...section, index: declared.indexOf(section) }
 }
 
-/** Every canonical page published by the documentation website. */
-export const docsPages: DocsPage[] = [
+const officialDocsPages: DocsPage[] = [
   ...homeAndGuide,
   ...develop,
   ...cordisTutorial,
   ...cordisPrimerReference,
   ...subsystemsReference,
   ...reference,
+]
+
+/** Every canonical page published by the documentation website. */
+export const docsPages: DocsPage[] = [
+  ...officialDocsPages,
+  ...translatedPages('ja', 'ja-JP', officialDocsPages),
+  ...translatedPages('ko', 'ko-KR', officialDocsPages),
 ]
 
 /**

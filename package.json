@@ -9,16 +9,19 @@
   },
   "scripts": {
     "dev": "vitepress dev website --host 127.0.0.1 --port 5173",
-    "build": "pnpm run docs:check && vitepress build website && pnpm run seo:audit && pnpm run indexnow:check",
+    "build": "pnpm run docs:check && pnpm run docs:i18n && vitepress build website && pnpm run seo:audit && pnpm run indexnow:check && pnpm run docs:fragments",
     "preview": "vitepress preview website --host 127.0.0.1 --port 4173",
     "docs:check": "tsx scripts/validate-docs.ts",
+    "docs:i18n": "tsx scripts/audit-translations.ts",
     "docs:manifest": "tsx scripts/capture-upstream.ts",
-    "docs:routes": "tsx scripts/verify-built-routes.ts",
+    "docs:routes": "tsx scripts/verify-built-routes.ts && tsx scripts/verify-built-fragments.ts",
+    "docs:fragments": "tsx scripts/verify-built-fragments.ts",
     "seo:audit": "tsx scripts/audit-seo.ts",
     "indexnow:check": "tsx scripts/submit-indexnow.ts --dry-run",
     "indexnow:submit": "tsx scripts/submit-indexnow.ts",
     "docs:sync": "python3 .agents/skills/diff-translation/scripts/snapshot_manager.py",
-    "test": "python3 .agents/skills/diff-translation/tests/test_pipeline.py"
+    "test": "python3 .agents/skills/diff-translation/tests/test_pipeline.py && tsx scripts/test-heading-anchors.ts && pnpm run test:i18n-audit && tsx --test scripts/tests/translation-runner.test.ts",
+    "test:i18n-audit": "tsx --test scripts/tests/audit-translations.test.ts"
   },
   "devDependencies": {
     "@braintree/sanitize-url": "7.1.2",

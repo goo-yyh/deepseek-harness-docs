@@ -28,7 +28,25 @@ const root = resolve(import.meta.dirname, '..')
 const dist = resolve(root, 'website/.dist')
 const manifest = JSON.parse(readFileSync(resolve(root, 'config/docs-manifest.json'), 'utf8')) as {
   upstream_commit: string
+  canonical_page_count: number
+  published_route_count: number
 }
+const localeConfig = JSON.parse(readFileSync(resolve(root, 'config/locales.json'), 'utf8')) as {
+  locales: Array<{
+    id: string
+    vitepress_key: 'root' | 'en' | 'ja' | 'ko'
+    path_prefix: string
+    published: boolean
+  }>
+}
+const publishedLocales = localeConfig.locales.filter(locale => locale.published)
+const localeByKey = new Map(localeConfig.locales.map(locale => [locale.vitepress_key, locale]))
+const hreflangByLocaleId = new Map([
+  ['zh-CN', 'zh-CN'],
+  ['en-US', 'en'],
+  ['ja-JP', 'ja'],
+  ['ko-KR', 'ko'],
+])
 const issues: string[] = []
 const entries: AuditEntry[] = []
 const indexableTitles = new Map<string, string>()
@@ -104,8 +122,31 @@ function outputPath(route: string): string {
   return resolve(dist, route.replace(/\.md$/, '.html'))
 }
 
+function assertLocalizedDescription(route: string, contentLocale: string, description: string): void {
+  if (contentLocale === 'ja-JP' && !/[\p{Script=Hiragana}\p{Script=Katakana}]/u.test(description)) {
+    fail(route, 'Japanese SEO description does not contain Japanese prose')
+  }
+  if (contentLocale === 'ko-KR' && !/\p{Script=Hangul}/u.test(description)) {
+    fail(route, 'Korean SEO description does not contain Korean prose')
+  }
+}
+
+const expectedRouteCount = manifest.canonical_page_count * publishedLocales.length
+if (docsPages.length !== expectedRouteCount || manifest.published_route_count !== expectedRouteCount) {
+  issues.push(
+    `publication has ${docsPages.length} rendered routes and manifest count ${manifest.published_route_count}; `
+    + `expected ${manifest.canonical_page_count} × ${publishedLocales.length} = ${expectedRouteCount}`,
+  )
+}
+
 for (const page of docsPages) {
   const route = publicRoute(page.route)
+  const locale = localeByKey.get(page.locale)
+  if (locale === undefined || !locale.published) {
+    fail(route, `route belongs to unconfigured or unpublished locale ${page.locale}`)
+  } else if ((page.locale === 'ja' || page.locale === 'ko') && page.contentLocale !== locale.id) {
+    fail(route, `${locale.id} route is an SEO fallback instead of native localized content`)
+  }
   const output = outputPath(page.route)
   if (!existsSync(output)) {
     fail(route, 'rendered HTML is missing')
@@ -123,9 +164,13 @@ for (const page of docsPages) {
   if (description.length < 24 || description.length > 160) {
     fail(route, `meta description length ${description.length} is outside 24..160`)
   }
+  assertLocalizedDescription(route, page.contentLocale, description)
 
   const canonical = oneLink(route, html, 'canonical')
   if (canonical !== seo.canonical) fail(route, `canonical ${JSON.stringify(canonical)} != ${JSON.stringify(seo.canonical)}`)
+  if (seo.indexable && canonical !== new URL(route, `${SITE_ORIGIN}/`).href) {
+    fail(route, `indexable localized page is not self-canonical: ${canonical}`)
+  }
   if (oneLink(route, html, 'sitemap') !== SITEMAP_URL) fail(route, 'sitemap discovery link is incorrect')
 
   const alternateTags = tags(html, 'link').filter(tag => attribute(tag, 'rel') === 'alternate')
@@ -143,6 +188,10 @@ for (const page of docsPages) {
   const expectedAlternates = new Map(seo.alternates.map(item => [item.hreflang, item.href]))
   if (JSON.stringify([...actualAlternates]) !== JSON.stringify([...expectedAlternates])) {
     fail(route, `hreflang set differs: ${JSON.stringify([...actualAlternates])}`)
+  }
+  const nativeHreflang = hreflangByLocaleId.get(page.contentLocale)
+  if (seo.indexable && (nativeHreflang === undefined || actualAlternates.get(nativeHreflang) !== canonical)) {
+    fail(route, 'indexable localized page has no self-referencing hreflang')
   }
 
   const robots = oneContent(route, html, 'name', 'robots')
@@ -209,6 +258,14 @@ for (const page of docsPages) {
   })
 }
 
+for (const locale of localeConfig.locales) {
+  const count = docsPages.filter(page => page.locale === locale.vitepress_key).length
+  const expected = locale.published ? manifest.canonical_page_count : 0
+  if (count !== expected) {
+    issues.push(`${locale.id} has ${count} rendered routes; expected ${expected} for published=${locale.published}`)
+  }
+}
+
 const sitemapPath = resolve(dist, 'sitemap.xml')
 if (!existsSync(sitemapPath)) {
   issues.push('sitemap.xml is missing')
@@ -223,6 +280,7 @@ if (!existsSync(sitemapPath)) {
     const location = decodeEntities(block.match(/<loc>([\s\S]*?)<\/loc>/)?.[1] ?? '')
     return [location, block]
   }))
+  if (blockByLocation.size !== blocks.length) issues.push('sitemap.xml contains duplicate URL locations')
   for (const page of expectedPages) {
     const seo = resolveDocsSeo(page)
     const block = blockByLocation.get(seo.canonical)
@@ -237,8 +295,11 @@ if (!existsSync(sitemapPath)) {
       issues.push(`${seo.route}: sitemap hreflang set differs`)
     }
   }
-  if ([...blockByLocation].some(([url]) => url.includes('/ja/') || url.includes('/ko/'))) {
-    issues.push('sitemap.xml contains an unpublished locale')
+  for (const locale of localeConfig.locales.filter(item => !item.published && item.vitepress_key !== 'root')) {
+    const prefix = new URL(locale.path_prefix, `${SITE_ORIGIN}/`).href
+    if ([...blockByLocation].some(([url]) => url.startsWith(prefix))) {
+      issues.push(`sitemap.xml contains unpublished ${locale.id} URLs`)
+    }
   }
 }
 

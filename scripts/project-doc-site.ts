@@ -14,6 +14,7 @@ import { gfmFromMarkdown } from 'mdast-util-gfm'
 import { gfm } from 'micromark-extension-gfm'
 import type { Nodes } from 'mdast'
 import { docsPages, type DocsLocale, type DocsPage } from '../website/docs.ts'
+import { stableTranslatedHeadingSlugs } from '../website/heading-anchors.ts'
 
 const REPOSITORY_URL = 'https://github.com/deepseek-ai/deepseek-harness'
 const root = resolve(import.meta.dirname, '..')
@@ -146,12 +147,9 @@ function destinationRange(rawNode: string, type: 'link' | 'image' | 'definition'
   return { start, end: rawNode.length }
 }
 
-// `#fragment` suffixes pass through verbatim. Generated cordis-surface
-// headings carry explicit `<a id>` anchors with the GitHub slug, so those
-// fragments resolve on the published site too; hand-written headings rely on
-// VitePress's own slugger, which differs from GitHub's for punctuation-heavy
-// text — hand-authored cross-page fragments should prefer plain-text headings
-// or explicit anchors.
+// `#fragment` suffixes pass through verbatim. Codex translations receive the
+// same heading IDs as their canonical English pages at render time, and the
+// built-fragment audit verifies every resulting same-page and cross-page hash.
 function splitTarget(url: string): { path: string; suffix: string } {
   const boundary = url.search(/[?#]/)
   if (boundary === -1) return { path: url, suffix: '' }
@@ -174,7 +172,9 @@ function routeTarget(fromRoute: string, toRoute: string, suffix: string): string
 function sourceMap(pages: DocsPage[]): Map<string, Map<DocsLocale, DocsPage>> {
   const map = new Map<string, Map<DocsLocale, DocsPage>>()
   for (const page of pages) {
-    for (const source of [page.source, ...(page.sourceAliases ?? [])]) {
+    for (const source of [page.source, page.canonicalSource, ...(page.sourceAliases ?? [])].filter(
+      (candidate): candidate is string => candidate !== undefined,
+    )) {
       const localized = map.get(source) ?? new Map<DocsLocale, DocsPage>()
       if (localized.has(page.locale)) {
         throw new Error(`project-doc-site: duplicate source or alias ${JSON.stringify(source)} for locale ${JSON.stringify(page.locale)}.`)
@@ -312,10 +312,17 @@ export function rewriteMarkdown(source: string, options: RewriteMarkdownOptions)
  * @param page Publication manifest entry for the content.
  * @returns Markdown with projection-owned frontmatter fields.
  */
-export function addProjectionFrontmatter(markdown: string, page: Pick<DocsPage, 'source' | 'outline'>): string {
+export function addProjectionFrontmatter(
+  markdown: string,
+  page: Pick<DocsPage, 'source' | 'canonicalSource' | 'outline'>,
+  canonicalHeadingSlugs?: readonly string[],
+): string {
   const fields = [
-    `editSource: ${JSON.stringify(page.source)}`,
+    `editSource: ${JSON.stringify(page.canonicalSource ?? page.source)}`,
     ...(page.outline === undefined ? [] : [`outline: ${JSON.stringify(page.outline)}`]),
+    ...(canonicalHeadingSlugs === undefined
+      ? []
+      : [`canonicalHeadingSlugs: ${JSON.stringify(canonicalHeadingSlugs)}`]),
   ].join('\n')
   if (markdown.startsWith('---\n')) return markdown.replace('---\n', `---\n${fields}\n`)
   return `---\n${fields}\n---\n\n${markdown}`
@@ -399,7 +406,7 @@ function referencedImages(): string[] {
     const sourceAbs = resolve(root, page.source)
     if (!existsSync(sourceAbs)) continue
     rewriteMarkdown(readFileSync(sourceAbs, 'utf8'), {
-      sourcePath: page.source,
+      sourcePath: page.canonicalSource ?? page.source,
       locale: page.locale,
       route: page.route,
       pages: docsPages,
@@ -459,7 +466,7 @@ export function projectDocs(): void {
     mkdirSync(dirname(output), { recursive: true })
     const markdown = readFileSync(sourceAbs, 'utf8')
     const projected = rewriteMarkdown(markdown, {
-      sourcePath: page.source,
+      sourcePath: page.canonicalSource ?? page.source,
       locale: page.locale,
       route: page.route,
       pages: docsPages,
@@ -485,6 +492,15 @@ export function projectDocs(): void {
         return `./${encodeURI(name)}`
       },
     })
-    writeFileSync(output, addProjectionFrontmatter(projectedPageContent(projected, page), page))
+    const content = projectedPageContent(projected, page)
+    const canonicalHeadingSlugs = page.locale === 'ja' || page.locale === 'ko'
+      ? page.sidebar === null
+        ? []
+        : stableTranslatedHeadingSlugs(
+            withoutRepositoryChrome(readFileSync(resolve(root, page.canonicalSource ?? ''), 'utf8')),
+            content,
+          )
+      : undefined
+    writeFileSync(output, addProjectionFrontmatter(content, page, canonicalHeadingSlugs))
   }
 }

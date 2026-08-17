@@ -25,6 +25,7 @@ interface PublicationManifest {
   upstream_commit: string
   canonical_page_count: number
   published_route_count: number
+  official_locales: string[]
   module_counts: Record<string, number>
   pages: Array<{
     id: string
@@ -35,7 +36,13 @@ interface PublicationManifest {
 }
 
 interface LocalesConfig {
-  locales: Array<{ id: string; published: boolean; source: string }>
+  locales: Array<{
+    id: string
+    vitepress_key: 'root' | 'en' | 'ja' | 'ko'
+    path_prefix: string
+    published: boolean
+    source: 'official' | 'codex'
+  }>
 }
 
 interface AdapterRecord {
@@ -84,34 +91,86 @@ function validateLockedFile(file: LockedFile, requireOfficialBytes = true): void
 if (!/^[0-9a-f]{40}$/.test(lock.commit)) fail('upstream commit is not a full SHA-1')
 if (manifest.upstream_commit !== lock.commit) fail('manifest and upstream lock commit differ')
 if (docsPages.length !== manifest.published_route_count) fail('publication route count differs from manifest')
-if (manifest.canonical_page_count * 2 !== manifest.published_route_count) {
-  fail('first-version publication must contain exactly two official routes per canonical page')
+if (manifest.pages.length !== manifest.canonical_page_count) fail('canonical page inventory differs from manifest')
+
+const configuredLocaleKeys = new Set(locales.locales.map(locale => locale.vitepress_key))
+if (configuredLocaleKeys.size !== locales.locales.length) fail('locale config contains duplicate VitePress keys')
+const configuredLocaleIds = new Set(locales.locales.map(locale => locale.id))
+if (configuredLocaleIds.size !== locales.locales.length) fail('locale config contains duplicate locale IDs')
+const officialLocaleIds = locales.locales.filter(locale => locale.source === 'official').map(locale => locale.id)
+if (JSON.stringify(officialLocaleIds) !== JSON.stringify(['zh-CN', 'en-US'])) {
+  fail('official source locales must remain zh-CN and en-US')
+}
+if (JSON.stringify(manifest.official_locales) !== JSON.stringify(officialLocaleIds)) {
+  fail('manifest official locales differ from locale config')
+}
+for (const required of [
+  { id: 'zh-CN', key: 'root', prefix: '/', source: 'official' },
+  { id: 'en-US', key: 'en', prefix: '/en/', source: 'official' },
+  { id: 'ja-JP', key: 'ja', prefix: '/ja/', source: 'codex' },
+  { id: 'ko-KR', key: 'ko', prefix: '/ko/', source: 'codex' },
+] as const) {
+  const locale = locales.locales.find(item => item.id === required.id)
+  if (
+    locale === undefined
+    || locale.vitepress_key !== required.key
+    || locale.path_prefix !== required.prefix
+    || locale.source !== required.source
+  ) {
+    fail(`locale config contract changed for ${required.id}`)
+  }
+}
+for (const id of ['zh-CN', 'en-US']) {
+  if (!locales.locales.find(locale => locale.id === id)?.published) fail(`${id} official locale must be published`)
 }
 
-const rootPages = docsPages.filter(page => page.locale === 'root')
-const enPages = docsPages.filter(page => page.locale === 'en')
-if (rootPages.length !== manifest.canonical_page_count || enPages.length !== manifest.canonical_page_count) {
-  fail('official locale route counts are not isomorphic')
+const publishedLocales = locales.locales.filter(locale => locale.published)
+const publishedLocaleKeys = new Set(publishedLocales.map(locale => locale.vitepress_key))
+const expectedPublishedRouteCount = manifest.canonical_page_count * publishedLocales.length
+if (manifest.published_route_count !== expectedPublishedRouteCount) {
+  fail(
+    `published route count must be ${manifest.canonical_page_count} canonical pages × `
+    + `${publishedLocales.length} published locales = ${expectedPublishedRouteCount}`,
+  )
+}
+
+const manifestRoutes = new Set(manifest.pages.map(page => page.route))
+if (manifestRoutes.size !== manifest.canonical_page_count) fail('manifest contains duplicate canonical routes')
+const manifestIds = new Set(manifest.pages.map(page => page.id))
+if (manifestIds.size !== manifest.canonical_page_count) fail('manifest contains duplicate canonical page IDs')
+for (const locale of locales.locales) {
+  const localePages = docsPages.filter(page => page.locale === locale.vitepress_key)
+  if (!locale.published) {
+    if (localePages.length !== 0) fail(`unpublished ${locale.id} locale leaked ${localePages.length} route(s)`)
+    continue
+  }
+  if (localePages.length !== manifest.canonical_page_count) {
+    fail(`${locale.id} publishes ${localePages.length} routes; expected ${manifest.canonical_page_count}`)
+  }
+  const neutralRoutes = new Set(localePages.map((page) => {
+    const route = routeLink(page.route)
+    return route.replace(/^\/(?:en|ja|ko)(?=\/)/, '')
+  }))
+  if (neutralRoutes.size !== manifestRoutes.size || [...manifestRoutes].some(route => !neutralRoutes.has(route))) {
+    fail(`${locale.id} route tree is not isomorphic with the canonical manifest`)
+  }
+  if (
+    locale.source === 'codex'
+    && localePages.some(page => page.contentLocale !== locale.id || page.canonicalSource === undefined)
+  ) {
+    fail(`${locale.id} must publish only native translations bound to canonical English sources`)
+  }
 }
 
 const routes = new Set(docsPages.map(page => routeLink(page.route)))
 if (routes.size !== docsPages.length) fail('duplicate public route')
 for (const page of docsPages) {
-  if (page.locale !== 'root' && page.locale !== 'en') fail(`unpublished locale leaked into route ${page.route}`)
+  if (!publishedLocaleKeys.has(page.locale)) fail(`unpublished locale leaked into route ${page.route}`)
 }
 
 const expectedModules = { guide: 3, develop: 17, reference: 62 }
 for (const [module, expected] of Object.entries(expectedModules)) {
   if (manifest.module_counts[module] !== expected) fail(`${module} canonical count must be ${expected}`)
-}
-
-const publishedLocales = locales.locales.filter(locale => locale.published).map(locale => locale.id)
-if (JSON.stringify(publishedLocales) !== JSON.stringify(['zh-CN', 'en-US'])) {
-  fail('first version must publish only zh-CN and en-US')
-}
-for (const id of ['ja-JP', 'ko-KR']) {
-  const locale = locales.locales.find(item => item.id === id)
-  if (locale === undefined || locale.published) fail(`${id} must remain configured but unpublished in the first version`)
 }
 
 const adaptedControls = new Set(adapter.adapters.map(record => record.path))
@@ -136,7 +195,11 @@ for (const record of adapter.adapters) {
 
 const publishedSourcePaths = new Set(lock.published_sources.map(file => file.path))
 for (const page of docsPages) {
-  if (!publishedSourcePaths.has(page.source)) fail(`route ${page.route} has no locked source record`)
+  if (page.locale === 'root' || page.locale === 'en') {
+    if (!publishedSourcePaths.has(page.source)) fail(`official route ${page.route} has no locked source record`)
+  } else if (page.canonicalSource === undefined || !publishedSourcePaths.has(page.canonicalSource)) {
+    fail(`translated route ${page.route} has no locked English source record`)
+  }
 }
 
 for (const record of lock.pairing_records) {
@@ -157,7 +220,8 @@ if (fallbackPages.length !== 1 || fallbackPages[0]?.locales['zh-CN']?.source !==
 }
 
 console.log(
-  `docs:check: ${manifest.canonical_page_count} canonical pages, ${docsPages.length} official routes, `
+  `docs:check: ${manifest.canonical_page_count} canonical pages, ${docsPages.length} routes across `
+  + `${publishedLocales.length} published locales, `
   + `${lock.published_sources.length} locked source files, ${lock.pairing_records.length} pairing records passed.`,
 )
 

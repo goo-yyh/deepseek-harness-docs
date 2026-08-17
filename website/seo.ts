@@ -60,14 +60,23 @@ const localeMetadata: Record<string, { hreflang: string; htmlLang: string; ogLoc
 const defaultDescriptions: Record<string, string> = {
   'zh-CN': 'DeepSeek Harness 中文文档：构建、扩展和运行插件化 Agent Harness。',
   'en-US': 'DeepSeek Harness documentation for building, extending, and running a plugin-based agent harness.',
+  'ja-JP': 'DeepSeek Harness 日本語ドキュメント：プラグインベースの Agent Harness の構築、拡張、実行方法を説明します。',
+  'ko-KR': 'DeepSeek Harness 한국어 문서: 플러그인 기반 Agent Harness를 구축하고 확장하며 실행하는 방법을 설명합니다.',
 }
 
 function defaultDescription(contentLocale: string, title: string): string {
   const siteDescription = defaultDescriptions[contentLocale] ?? `${SITE_NAME} documentation.`
   if (title === SITE_NAME) return siteDescription
-  return contentLocale === 'zh-CN'
-    ? `${title}：DeepSeek Harness 中文参考文档，涵盖相关概念、接口、行为与扩展方式。`
-    : `${title}. DeepSeek Harness reference documentation covering the related concepts, interfaces, behavior, and extension points.`
+  if (contentLocale === 'zh-CN') {
+    return `${title}：DeepSeek Harness 中文参考文档，涵盖相关概念、接口、行为与扩展方式。`
+  }
+  if (contentLocale === 'ja-JP') {
+    return `${title}：関連する概念、インターフェース、動作、拡張方法を説明する DeepSeek Harness 日本語リファレンスです。`
+  }
+  if (contentLocale === 'ko-KR') {
+    return `${title}: 관련 개념, 인터페이스, 동작 및 확장 방법을 설명하는 DeepSeek Harness 한국어 레퍼런스입니다.`
+  }
+  return `${title}. DeepSeek Harness reference documentation covering the related concepts, interfaces, behavior, and extension points.`
 }
 
 function normalizeOrigin(value: string): string {
@@ -86,7 +95,7 @@ function metadataFor(contentLocale: string): { hreflang: string; htmlLang: strin
 }
 
 function neutralRoute(page: DocsPage): string {
-  return page.locale === 'en' ? page.route.replace(/^en\//, '') : page.route
+  return page.route.replace(/^(?:en|ja|ko)\//, '')
 }
 
 function pageIsNativeTranslation(page: DocsPage): boolean {

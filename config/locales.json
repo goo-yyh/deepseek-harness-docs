@@ -20,14 +20,14 @@
       "vitepress_key": "ja",
       "path_prefix": "/ja/",
       "source": "codex",
-      "published": false
+      "published": true
     },
     {
       "id": "ko-KR",
       "vitepress_key": "ko",
       "path_prefix": "/ko/",
       "source": "codex",
-      "published": false
+      "published": true
     }
   ]
 }
