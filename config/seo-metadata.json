@@ -1,0 +1,1022 @@
+{
+  "schema_version": 1,
+  "origin": "https://www.deepseek-harness-docs.com",
+  "pages": {
+    "menu.start": {
+      "zh-CN": {
+        "title": "开始使用",
+        "description": "先按照 根 README 启动 Web UI；命令会打印其访问地址。本指南从服务器已经运行的状态开始。 dsh 进程会把调用目录作为默认文件系统位置，但新的 Web UI 在添加工作区前不会选中任何工作区。",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Start",
+        "description": "Start the Web UI through the root README ; the command prints its URL. This guide begins after that server is running. The dsh process uses its invoking…",
+        "indexability": "index"
+      }
+    },
+    "menu.concepts": {
+      "zh-CN": {
+        "title": "核心机制",
+        "description": "本页介绍 Cordis 插件模型和生命周期状态机。",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Core concepts",
+        "description": "This page describes the Cordis plugin model and lifecycle state machine.",
+        "indexability": "index"
+      }
+    },
+    "menu.build": {
+      "zh-CN": {
+        "title": "构建与扩展",
+        "description": "本教程会创建一个最小的 Harness 插件，并将其加载到 Web UI 中。请从已完成 从源码运行路径 的仓库检出开始。",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Build & extend",
+        "description": "This tutorial creates a minimal Harness plugin and loads it into the Web UI. Start from a repository checkout that has completed the run-from-source path .",
+        "indexability": "index"
+      }
+    },
+    "menu.runtime": {
+      "zh-CN": {
+        "title": "运行与编排",
+        "description": "子系统即 packages/core ，包含每个组合都会启动的包：事件溯源的会话日志、系统提示词组装、工具注册表、agent（智能体）类型，以及驱动它们的具体循环。本页说明 agent / agent-loop 这对包所声明的内容：agent 如何被创建与拥有，以及 Agent…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Runtime & orchestration",
+        "description": "The core subsystem is packages/core — the packages every composition boots: the event-sourced session log, system-prompt assembly, the tool registry, the…",
+        "indexability": "index"
+      }
+    },
+    "menu.api": {
+      "zh-CN": {
+        "title": "API 与类型",
+        "description": "每个 config: 块均可由 cordis.yml 条目设置：针对每个可加载的 harness 包，原样列出其 apply 函数或服务构造函数接收的配置声明（包括 JSDoc），并附上所有引用类型——包内类型直接粘贴，其他类型则提供链接。粘贴的内容是插件声明的完整配置类型——运行时 schema…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "API & types",
+        "description": "Every config: block a cordis.yml entry can set: for each loadable harness package, the verbatim config declaration (JSDoc included) its apply function or…",
+        "indexability": "index"
+      }
+    },
+    "menu.examples": {
+      "zh-CN": {
+        "title": "示例索引",
+        "description": "为新建 @deepseek-ai/dsh-<name> 包提供的逐文件清单。本清单以 bash 和适配器这两个包为模板进行验证；如果清单与模板有出入，请在此修正。",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Examples",
+        "description": "The file-by-file checklist for a new @deepseek-ai/dsh-<name> package. This checklist is validated against the bash and adapter packages as templates; if…",
+        "indexability": "index"
+      }
+    },
+    "menu.versions": {
+      "zh-CN": {
+        "title": "版本变化",
+        "description": "DeepSeek Harness 上游版本与结构变化。",
+        "indexability": "noindex"
+      },
+      "en-US": {
+        "title": "Version changes",
+        "description": "Upstream DeepSeek Harness version and structure changes.",
+        "indexability": "noindex"
+      }
+    },
+    "quickstart": {
+      "zh-CN": {
+        "title": "使用 Web UI",
+        "description": "打开 设置 → 模型 ，输入 DeepSeek API 密钥并保存。模型路由会立即可用，不需要重启服务器。 模型配置指南 介绍其他提供方和自定义 OpenAI 兼容端点。",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Use the Web UI",
+        "description": "Open Settings → Models , enter a DeepSeek API key, and save it. The model route becomes usable immediately without restarting the server. The model…",
+        "indexability": "index"
+      }
+    },
+    "providers": {
+      "zh-CN": {
+        "title": "配置模型",
+        "description": "打开 设置 → 模型 。DeepSeek 卡片提供一个 API 密钥字段；输入密钥并保存。 模型页：DeepSeek 卡片，以及添加提供方与添加自定义提供方两个入口 密钥是只写的。保存后，页面只会收到脱敏描述符，永远不会收到明文密钥。密钥存储在 $DSH_HOME/.credentials.yaml…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Configure models",
+        "description": "Open Settings → Models . The DeepSeek card exposes one API-key field; enter the key and save it. The Models page: the DeepSeek card, with Add provider…",
+        "indexability": "index"
+      }
+    },
+    "python-sdk": {
+      "zh-CN": {
+        "title": "Python SDK 快速上手",
+        "description": "Python 3.10 或更高版本 Git Linux x64、Linux arm64 或 macOS 14 或更高版本的 arm64 DeepSeek 兼容的 API 端点与凭据 agent 可以修改的隔离 workspace",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Get started with the Python SDK",
+        "description": "Python 3.10 or newer Git Linux x64, Linux arm64, or macOS 14 or newer on arm64 A DeepSeek-compatible API endpoint and credential An isolated workspace…",
+        "indexability": "index"
+      }
+    },
+    "basic": {
+      "zh-CN": {
+        "title": "第一个插件",
+        "description": "在仓库根目录创建本教程使用的临时项目： mkdir -p scratch-plugin/src",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Your first plugin",
+        "description": "From the repository root, create a scratch project for the tutorial: mkdir -p scratch-plugin/src",
+        "indexability": "index"
+      }
+    },
+    "basic.tool": {
+      "zh-CN": {
+        "title": "开发一个工具",
+        "description": "将 scratch-plugin/src/my-plugin.ts 替换为： import type { Context } from '@deepseek-ai/cordis' import { defineTool } from '@deepseek-ai/dsh-tools' export…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Build a tool",
+        "description": "Replace scratch-plugin/src/my-plugin.ts with: import type { Context } from '@deepseek-ai/cordis' import { defineTool } from '@deepseek-ai/dsh-tools'…",
+        "indexability": "index"
+      }
+    },
+    "basic.config": {
+      "zh-CN": {
+        "title": "插件配置",
+        "description": "在插件中导出一个 Config 类型和同名的 Schemastery schema；默认值直接写在 schema 中： import type { Context } from '@deepseek-ai/cordis' import Schema from…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Plugin configuration",
+        "description": "Export a Config type and a same-named Schemastery schema. Put defaults directly on the schema fields: import type { Context } from '@deepseek-ai/cordis'…",
+        "indexability": "index"
+      }
+    },
+    "basic.publish": {
+      "zh-CN": {
+        "title": "打包与安装插件",
+        "description": "安装机制建立在两个概念之上。二者都由一份 package.json 描述，但它们在 dsh 键下携带的 manifest（元数据清单）种类不同，回答的问题也不同： 组合包 是附带一个配置层的 npm 包。它的 manifest 声明 dsh.bundle…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Package and install a plugin",
+        "description": "Installation is built on two concepts. Both are described by a package.json , but they carry different kinds of manifest under the dsh key, and they…",
+        "indexability": "index"
+      }
+    },
+    "framework": {
+      "zh-CN": {
+        "title": "插件与生命周期",
+        "description": "每个被加载的插件都拥有一个 Fiber 作用域，其状态如下： PENDING → LOADING → ACTIVE ↘ FAILED ACTIVE → UNLOADING → DISPOSED 状态 含义 PENDING 已声明，但所需依赖未就绪 LOADING 依赖就绪，正在执行 apply…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Plugins and lifecycle",
+        "description": "Every loaded plugin owns a Fiber scope with the following states: PENDING → LOADING → ACTIVE ↘ FAILED ACTIVE → UNLOADING → DISPOSED State Meaning PENDING…",
+        "indexability": "index"
+      }
+    },
+    "framework.service": {
+      "zh-CN": {
+        "title": "服务与依赖",
+        "description": "在 Harness 中， tools 、 llm 、 agents 都是服务。服务是挂载在 ctx 上的命名能力： ctx.tools // ToolRuntime service ctx.llm // LLM service ctx.agents // Agent service…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Services and dependencies",
+        "description": "In Harness, tools , llm , and agents are services. Each is a named capability mounted on ctx : ctx.tools // ToolRuntime service ctx.llm // LLM service…",
+        "indexability": "index"
+      }
+    },
+    "framework.events": {
+      "zh-CN": {
+        "title": "事件系统",
+        "description": "监听事件 ctx.on('event-name', (payload) => { // Handle the event. }) 触发事件 ctx.emit('event-name', payload)",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Event system",
+        "description": "Listen for an event ctx.on('event-name', (payload) => { // Handle the event. }) Emit an event ctx.emit('event-name', payload)",
+        "indexability": "index"
+      }
+    },
+    "practice": {
+      "zh-CN": {
+        "title": "能力的三种角色设计",
+        "description": "当一项能力足够通用，需要支持可替换的提供方时（例如 Bash 执行），harness 会区分三种角色： Service Definition 、 Service Provider 和 Consumer 。角色需要独立演进或替换时，将它们放入不同包；否则一个包可以承担多个角色。完整能力构成其…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Three-role capability design",
+        "description": "When a capability is general enough to need replaceable providers, such as Bash execution, Harness separates three roles: a Service Definition , a…",
+        "indexability": "index"
+      }
+    },
+    "practice.llm-adapter": {
+      "zh-CN": {
+        "title": "LLM 适配器",
+        "description": "LLM 适配器是一个继承 LlmAdapter 并实现 stream() 方法的类，它会将 Harness 的提供方无关请求转换为具体提供方的 API 调用，并将响应转换回 Harness 分片。",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "LLM adapters",
+        "description": "An LLM adapter extends LlmAdapter and implements stream() , translating Harness's provider-neutral request into a provider API call and translating the…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial": {
+      "zh-CN": {
+        "title": "Cordis 教程",
+        "description": "<a id=\"setup\"> </a> 你需要克隆本仓库并安装依赖； 开发指南 列出了前置条件。本教程不需要 API 密钥；所有示例均可在无密钥环境中运行。 git clone https://github.com/deepseek-ai/deepseek-harness.git cd…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Cordis tutorial",
+        "description": "You need a clone of this repository with dependencies installed; the development guide lists the prerequisites. No API key is needed for this tutorial…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial.01-first-plugin": {
+      "zh-CN": {
+        "title": "1. 编写第一个插件",
+        "description": "在 tmp/cordis-tutorial 目录中（参见 环境设置 ）创建 hello.ts ： import type { Context } from '@deepseek-ai/cordis' export const name = 'hello' export function…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "1. Your first plugin",
+        "description": "In your tmp/cordis-tutorial directory (see setup ), create hello.ts : import type { Context } from '@deepseek-ai/cordis' export const name = 'hello'…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial.02-lifecycle-and-effects": {
+      "zh-CN": {
+        "title": "2. 生命周期与 effect",
+        "description": "对于 Cordis 尚未管理的资源，例如定时器、连接或 watcher，应将其包装在 ctx.effect() 中并返回 disposer（资源释放函数）： 创建 lifecycle.ts ，将它放在 tmp/cordis-tutorial 中： import type { Context } from…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "2. Lifecycle and effects",
+        "description": "For a resource Cordis does not already manage — a timer, a connection, a watcher — wrap it in ctx.effect() and return a disposer: Create lifecycle.ts in…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial.03-services": {
+      "zh-CN": {
+        "title": "3. 服务",
+        "description": "创建 greeter.ts ，将它放在 tmp/cordis-tutorial 中： import { Service, type Context } from '@deepseek-ai/cordis' declare module '@deepseek-ai/cordis' { interface…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "3. Services",
+        "description": "Create greeter.ts in tmp/cordis-tutorial : import { Service, type Context } from '@deepseek-ai/cordis' declare module '@deepseek-ai/cordis' { interface…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial.04-events": {
+      "zh-CN": {
+        "title": "4. 事件",
+        "description": "创建 stats.ts ，将它放在 tmp/cordis-tutorial 中。它是一项负责计数并在每次变化时发出通知的服务： import { Service, type Context } from '@deepseek-ai/cordis' declare module…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "4. Events",
+        "description": "Create stats.ts in tmp/cordis-tutorial — a service that counts things and announces each change: import { Service, type Context } from…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial.05-config": {
+      "zh-CN": {
+        "title": "5. 配置",
+        "description": "创建 config-demo.ts ，并将其放在 tmp/cordis-tutorial 中： import type { Context } from '@deepseek-ai/cordis' import Schema from '@deepseek-ai/schemastery' export…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "5. Configuration",
+        "description": "Create config-demo.ts in tmp/cordis-tutorial : import type { Context } from '@deepseek-ai/cordis' import Schema from '@deepseek-ai/schemastery' export…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial.06-composition-and-hmr": {
+      "zh-CN": {
+        "title": "6. 组合与 HMR（热模块替换）",
+        "description": "Cordis 配置项除了 name 和 config ，还接受其他元数据： - id: greeter # stable identity for this entry name: './greeter.ts' - id: consumer name: './consumer.ts' disabled…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "6. Composition and HMR",
+        "description": "A config entry accepts metadata beyond name and config : - id: greeter # stable identity for this entry name: './greeter.ts' - id: consumer name…",
+        "indexability": "index"
+      }
+    },
+    "cordis-tutorial.07-into-the-harness": {
+      "zh-CN": {
+        "title": "7. 进入 harness",
+        "description": "创建 greet-tool.ts ，将它放在 tmp/cordis-tutorial 中： import type { Context } from '@deepseek-ai/cordis' import { defineTool } from '@deepseek-ai/dsh-tools'…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "7. Into the harness",
+        "description": "Create greet-tool.ts in tmp/cordis-tutorial : import type { Context } from '@deepseek-ai/cordis' import { defineTool } from '@deepseek-ai/dsh-tools'…",
+        "indexability": "index"
+      }
+    },
+    "cordis-primer": {
+      "zh-CN": {
+        "title": "Cordis 入门",
+        "description": "插件是实现 Service 的对象。 它可以是一个带有可选 inject 和 apply(ctx) 字段的函数，也可以是一个 Service 子类，其生命周期由 Cordis 挂载到当前上下文中。 上下文是服务的容器。 一个服务占据一个稳定的 ctx.<key> （如 ctx.tools 、…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Cordis Primer",
+        "description": "A plugin is a object that implements Service. It can be a function with optional inject and apply(ctx) fields, or a Service subclass whose lifecycle…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.core": {
+      "zh-CN": {
+        "title": "核心",
+        "description": "一个轮次按同一条循环流经六个包： agent-loop 中的 driver 认领一条排队的提示词，在 会话日志 （ ctx.sessions ）上开启轮次，通过 system-prompt （ ctx.systemPrompt ）组装请求前缀并从日志派生历史，经 LLM（大语言模型） seam…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Core",
+        "description": "A turn flows through the six packages in one loop: the driver in agent-loop claims a queued prompt, opens a turn on the session log ( ctx.sessions )…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.scope": {
+      "zh-CN": {
+        "title": "作用域注册",
+        "description": "ScopeKey 是一个不透明的对象身份标识。已交付的 agent loop（智能体循环）使用活跃的 Agent 对象作为自身的 key，但该原语从不检视该对象。 /** An opaque, identity-compared scope key. */ type ScopeKey = object…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Scoped Registration",
+        "description": "ScopeKey is an opaque object identity. The shipped loop uses the live Agent object as its own key, but the primitive never inspects the object. /** An…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.invariants": {
+      "zh-CN": {
+        "title": "运行时不变式",
+        "description": "/** Runtime invariant selection configured on the service plugin. */ interface Config { /** Global switch; defaults to `true`. */ readonly enabled?…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Runtime Invariants",
+        "description": "/** Runtime invariant selection configured on the service plugin. */ interface Config { /** Global switch; defaults to `true`. */ readonly enabled?…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.session": {
+      "zh-CN": {
+        "title": "会话",
+        "description": "仅追加的事件类型。可通过声明合并扩展：插件通过 declaration merging 声明额外的事件类型。例如 压缩（compaction） seam 添加了 compaction/start / compaction/summary / compaction/end…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Sessions",
+        "description": "The append-only event types. Merge-extensible: a plugin declares extra event types via declaration merging — e.g. the compaction seam adds…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.session-query": {
+      "zh-CN": {
+        "title": "会话查询",
+        "description": "SessionRecord 由全语料库列表返回。它除了克隆的、优先取自 live 源的 header 外，还单独公开各源的可用性。 SessionEventRecord 是轻量的原始日志投影；分类使用与模型历史推导相同的 foldSurface() 状态转换。 /** Whether an event…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Session Query",
+        "description": "SessionRecord is returned by the cross-corpus list. It exposes source availability independently from the cloned live-preferred header.…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.session-reference": {
+      "zh-CN": {
+        "title": "会话引用",
+        "description": "SessionReferenceInput 是与宿主无关的选择。id 具有权威性；label 是随快照携带的显示元数据。 /** One source session selected by a host. */ interface SessionReferenceInput { /** Opaque…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Session References",
+        "description": "SessionReferenceInput is the host-independent selection. The id is authoritative; the label is display metadata carried into the snapshot. /** One source…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.session-title": {
+      "zh-CN": {
+        "title": "会话标题",
+        "description": "提供方生成修订时会记录 SessionTitleProviderId 。 SessionTitleEventData 列出生成标题时使用的精确人类消息 seq， SessionTitleSnapshot 则加入 foldSessionTitle() 选出的持久事件封装信息。 /** Identifies…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Session Titles",
+        "description": "SessionTitleProviderId is recorded for provider-produced revisions. SessionTitleEventData lists the exact human-message seqs used for the title, while…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.session-projection": {
+      "zh-CN": {
+        "title": "会话投影",
+        "description": "SessionProjectionMap 是整条链路（host 侧单元、协议块、客户端钩子）的 merge-extensible 类型表；值是协议层 JSON 全量值，渲染归 slot 体系管，永远不归本层。领域为每个 key 贡献一个 ProjectionDefinition ： /** * One…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Session Projections",
+        "description": "SessionProjectionMap is the merge-extensible type table for the whole chain (host unit, wire block, client hook); values are wire-JSON whole values, and…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.persistence": {
+      "zh-CN": {
+        "title": "会话持久化",
+        "description": "session/event 是一个 同步 通知；持久化插件会将事件复制到逐会话控制器，而不阻塞生产方。第一个待处理事件会开启固定批处理窗口，后续事件会加入但不会重置截止时间。窗口到期后会启动一个持久化批次；该次写入期间接纳的事件会获得自己的截止时间，并形成后续批次。 session/flush…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Session Persistence",
+        "description": "session/event is a synchronous notification; persistence plugins copy the event into a per-session controller without blocking the producer. The first…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.spill": {
+      "zh-CN": {
+        "title": "spill 存储",
+        "description": "saveText 是唯一的服务操作：原样持久保存 content ，并返回不透明的定位符、后端提供的检索提示和准确字节数。请求携带保存时的存储命名空间（ owner ）、生成内容的工具和调用（ source ，用于命名和检查，而非访问控制）以及后端可用作命名提示的 suggestedName…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Spill Storage",
+        "description": "saveText is the sole service operation: persist content verbatim, return an opaque locator, a backend-supplied retrieval hint, and the exact byte count.…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.session-telemetry": {
+      "zh-CN": {
+        "title": "遥测（telemetry）",
+        "description": "/** * Severity of a telemetry record, pre-mapped at capture so a receiver can * alert with zero configuration: `error` for events whose own outcome flag…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "SessionTelemetryBackend",
+        "description": "/** * Severity of a telemetry record, pre-mapped at capture so a receiver can * alert with zero configuration: `error` for events whose own outcome flag…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.llm-streaming": {
+      "zh-CN": {
+        "title": "LLM（大语言模型）流式输出",
+        "description": "<a id=\"content-blocks-and-messages\"> </a> 一段对话由 Message 组成；一条消息是一个类型化 内容块 的数组。块的联合类型从 ContentBlockMap 派生。 源码： packages/llm/llm/src/types.ts /** *…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "LLM Streaming",
+        "description": "<a id=\"content-blocks-and-messages\"> </a> A conversation is Message s; a message is an array of typed content blocks . The block union derives from…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.token-meter": {
+      "zh-CN": {
+        "title": "Token 计量",
+        "description": "/** Detached immutable request-pressure and surface snapshot at one consumed log revision. */ interface TokenMeasurement { /** Number of durable events…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Token Meter",
+        "description": "/** Detached immutable request-pressure and surface snapshot at one consumed log revision. */ interface TokenMeasurement { /** Number of durable events…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.system-prompt": {
+      "zh-CN": {
+        "title": "系统提示词组装",
+        "description": "AssembleContext 标识一次组装所解析的作用域层，并可携带该请求的显式控制信号。它可合并扩展： dsh-agent 添加可选字段 agent ，用于携带当前的 agent（智能体）实例； assembleContextFor(agent, signal)…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "System Prompt Assembly",
+        "description": "AssembleContext identifies the scope layer one assembly resolves and may carry the explicit control signal for that request. It is merge-extensible…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.compaction": {
+      "zh-CN": {
+        "title": "压缩（compaction）",
+        "description": "压缩通过声明合并为 SessionEventMap 扩展三种事件类型。三者都 仅写入日志 ——它们记录锁、摘要、选中范围、被遮蔽事件 seq、token 数以及模型调用，绝不进入 surface。这里有意不扩展 SurfaceEventType…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Compaction",
+        "description": "Compaction extends SessionEventMap with three event types via declaration merging. All three are log-only — they record the lock, summary, selected…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.tools": {
+      "zh-CN": {
+        "title": "工具",
+        "description": "由一个 ToolSchema （面向模型的字段）、必需的规范输出声明、 execute 函数、仅供宿主使用的调度器元数据、可选的最终内容回调和可选 UI 展示函数组成。注册表持有这些定义，循环通过它们分派调用。注册表的 schemas() 通过显式允许列表构建面向模型的 ToolSchema[]…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Tools",
+        "description": "A ToolSchema (the model-facing fields) plus a mandatory canonical output declaration, the execute function, host-only scheduler metadata, an optional…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.shell": {
+      "zh-CN": {
+        "title": "Bash 执行器",
+        "description": "DSH_* 变量是归 Harness 所有的子进程事实。面向模型的 bash 工具通过 ctx.shellEnv 收集它们，再经由 ShellExecRequest.dshEnv 传递；子进程服务在合并当前快照之前会移除继承而来的 DSH_* 名称。 DshEnvironmentKey ／…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Bash Executor",
+        "description": "DSH_* variables are Harness-owned child-process facts. The model-facing bash tool collects them through ctx.shellEnv and passes them through…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.subprocess": {
+      "zh-CN": {
+        "title": "子进程",
+        "description": "一个提供方的 spawn 工作目录、可执行文件路径、普通进程与终端会话，和挂载的文件系统提供方处于同一路径与进程命名空间。 resolveExecutable(command, env?, signal?) 验证绝对可执行文件路径，或通过提供方清理后的 PATH 加有意覆盖来解析裸名称。",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Subprocess",
+        "description": "One provider's spawn working directories, executable paths, ordinary processes, and terminal sessions inhabit the same path and process namespace as the…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.terminal": {
+      "zh-CN": {
+        "title": "持久 PTY 会话",
+        "description": "TerminalSessionId 是由服务铸造的branded id。可选名称是拥有者本地的显示元数据；授权比较的是拥有该会话的确切 Agent ，而不是名称或猜测的 id。 TerminalWaitReason 说明一次发送为何返回。它与 TerminalSessionStatus…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Persistent PTY Sessions",
+        "description": "TerminalSessionId is a service-minted branded id. Optional names are owner-local display metadata; authorization compares the exact owning Agent , not a…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.jobs": {
+      "zh-CN": {
+        "title": "后台任务运行时",
+        "description": "JobId 是按 <kind>-N 生成的 品牌化 id 。访问控制依赖拥有者授权，而非 id 的保密性。 JobKind 派生自可合并扩展的 map；注册表将各个 kind 视为不透明的 id 命名空间。 /** * Producer-defined job kinds. Plugins extend…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Background Task Runtime",
+        "description": "JobId is a branded id generated as <kind>-N . Access control relies on owner authorization, not id secrecy. JobKind derives from a merge-extensible map…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.filesystem": {
+      "zh-CN": {
+        "title": "文件系统",
+        "description": "每个操作首先将用户提供的路径解析为不透明的后端目标。消费方可以显示 displayPath ，但禁止解析 targetKey （一个品牌化的不透明 id），也不得假设它是本地绝对路径。 与文件系统共享执行世界的消费方通过提供方获取跨能力坐标，而不是解释该身份： processPath(target)…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Filesystem",
+        "description": "Every operation resolves a user-supplied path to an opaque backend target first. Consumers may display displayPath , but must not parse targetKey (a…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.lsp": {
+      "zh-CN": {
+        "title": "LSP 导航",
+        "description": "seam 与模型恰好公开 4 项语义查询；该联合是闭合的，因此新增一项查询会通过编译强制要求同步修改 seam、提供方和工具。位置与范围采用从零开始的 UTF-16 坐标，与协议一致；面向模型的工具采用从 1 开始的光标约定，并在输入和输出时进行转换。 /** * The four semantic…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "LSP navigation",
+        "description": "The seam and model expose exactly four semantic queries; the union is closed, so adding one is a compile-enforced change across the seam, providers, and…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.code-runtime": {
+      "zh-CN": {
+        "title": "代码运行时",
+        "description": "CodeRunRequest 携带 运行时要处理的一切内容 。按照「包边界处显式优于隐式」的规则，默认值（时间预算、输出上限）来自实现的已校验配置，绝不是 run() 内部隐藏的 ?? ： /** * One run: the program source plus everything the…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Code Runtime",
+        "description": "A CodeRunRequest carries everything the runtime acts on — per the \"explicit > implicit at package boundaries\" rule, defaulting (time budgets, output…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.web": {
+      "zh-CN": {
+        "title": "Web 访问",
+        "description": "搜索与抓取既不共享请求 schema，也不共享业务逻辑，但它们被有意设计为同一个 ctx.web 中间层：一个提供方选择策略的所有者、一套中止与错误词汇，以及一个面向产品的「此 harness 如何访问 Web」配置界面。代价是服务上并行的 searchX ／ fetchX…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Web Access",
+        "description": "Search and fetch share no request schema and no business logic, but they are deliberately one ctx.web middle layer: one provider-selection policy owner…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.skills": {
+      "zh-CN": {
+        "title": "Skills",
+        "description": "ctx.skills 组合本地、内嵌、远程或其他提供方。注册是同步的；远程初始化与发现属于 list() 的 await 阶段。提供方对象、选项与候选项以只读方式借用，语义字段会被校验。 注册表采用宿主 + 按 scope 的分层结构，即 工具注册表 在 dsh-scope…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Skills",
+        "description": "ctx.skills combines local, embedded, remote, or other providers. Registration is synchronous; remote initialization and discovery belong in awaited…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.workflow": {
+      "zh-CN": {
+        "title": "工作流",
+        "description": "本节定义调用方启动一次运行时提交的请求。普通工作流工具会根据模型的 { script, meta, args } 调用和发起调用的 agent 构建该请求；专用消费方还可以为本次运行选择引擎级 subagentProvider ，并将 maxTotalAgents 调低，但脚本无法观察或替换这两项策略。…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Workflow",
+        "description": "What a caller asks for when starting a run. The ordinary workflow tool builds this from the model's { script, meta, args } call plus the calling agent…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.subagent": {
+      "zh-CN": {
+        "title": "Subagent",
+        "description": "提供方通过一个静态描述符公布其 启动时 功能，服务会在单次 run 存在之前即行检查；如果请求依赖提供方不具备的功能，会被明确拒绝（ SubagentError('UNSUPPORTED_CAPABILITY') ），绝不会被接受后静默忽略。这些 flag 仅描述单次 start()…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Subagent",
+        "description": "A provider advertises its start-time features on a static descriptor the service checks BEFORE a one-shot run exists; a request that needs one the…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.approval": {
+      "zh-CN": {
+        "title": "用户审批",
+        "description": "每个请求都会获得一个全新的 ApprovalRequestId 。该品牌类型将 approval/asked 与 approval/decided 审计事件配对，同时不会让审批 id 与工具调用 id 或 agent/会话 id 互换。 /** * Pairs one `approval/asked`…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "User Approval",
+        "description": "Every request receives a fresh ApprovalRequestId . The brand pairs the approval/asked and approval/decided audit events without making approval ids…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.permission-presets": {
+      "zh-CN": {
+        "title": "权限预设",
+        "description": "预设是一个表键，映射到一个沙箱／审批组合，外加可选的客户端展示信息；默认预设表自带 workspace-write （ workspace-write + ask ）和 danger-full-access （ danger-full-access + never ）。 /** One preset's…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Permission Presets",
+        "description": "A preset is a table key mapping to one sandbox/approval bundle plus optional client presentation; the default table ships workspace-write (…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.sandbox": {
+      "zh-CN": {
+        "title": "进程沙箱",
+        "description": "SandboxMode 仅管控文件系统效果。 read-only 要求后端拒绝写入——POSIX runner 还会授予其 shell 所需的 /dev/null 接收器，而 Windows ACL runner 不授予任何显式可写根目录，并因环境 ACL 缺口报告部分强制执行…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Process Sandbox",
+        "description": "SandboxMode governs filesystem effects only. read-only asks the backend to deny writes — the POSIX runners additionally grant the /dev/null sink their…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.plan": {
+      "zh-CN": {
+        "title": "计划模式",
+        "description": "plan/mode （ { active: boolean } ）是仅记日志、整值替换的 会话事件 ：持久且可回放，绝不进入模型 transcript（文本记录）。 foldPlanMode(events, end?) 返回前缀中最后一条已记录值，没有时返回 false…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Plan Mode",
+        "description": "plan/mode ( { active: boolean } ) is a log-only, whole-value-replace session event : durable and replayable, never in the model transcript.…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.user-questions": {
+      "zh-CN": {
+        "title": "用户交互",
+        "description": "AskUserQuestionOption 包含一个可供选择的选项。 label 是面向用户的选项文字，同时也是面向模型的选中值； description 是可选的 UI 帮助文本。 /** One selectable answer offered to the user. */ interface…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "User Interaction",
+        "description": "AskUserQuestionOption contains one selectable choice. label is the user-facing option text and also the model-facing selected value; description is…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.commands": {
+      "zh-CN": {
+        "title": "用户命令",
+        "description": "该服务公开一个可选的非结构化输入提示。命令的可用性由插件组合决定：每个消费注册表的适配器都会看到全部生效定义。 /** Immutable metadata for a command's optional unstructured input. */ interface…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Human Commands",
+        "description": "The service exposes one optional unstructured-input hint. Command availability follows plugin composition: every adapter consuming the registry sees…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.goal": {
+      "zh-CN": {
+        "title": "同会话目标",
+        "description": "GoalId 是 品牌化 id 。调用方通过 GoalRef 修改一个确切修订版本；每次获准的持久变更都会递增修订号。 /** Compare-and-set identity for one exact goal revision. */ interface GoalRef { /** Stable…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Same-session goals",
+        "description": "GoalId is a branded id . A caller mutates one exact revision through GoalRef ; every accepted durable mutation increments the revision. /**…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.schedule": {
+      "zh-CN": {
+        "title": "仅限 Session 内的 Schedule",
+        "description": "ScheduleId 是 品牌化 id ，在单个 Session 内唯一且绝不复用。版本 1 支持正的安全整数 after_seconds 延时、显式的绝对 at 目标，或至少五分钟的安全整数 every_seconds 间隔。创建操作会将每个初始目标规范化为使用四位年份的 RFC 3339 UTC…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Session-local Schedule",
+        "description": "ScheduleId is a branded id , unique and never reused within one Session. Version 1 supports a positive safe-integer after_seconds delay, an explicit…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.web-server": {
+      "zh-CN": {
+        "title": "HTTP 服务器",
+        "description": "/** Route match kind: 'exact' matches the pathname verbatim; 'prefix' p matches p and p/<anything>. */ type WebRouteKind = 'exact' | 'prefix' /** One…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "HTTP Server",
+        "description": "/** Route match kind: 'exact' matches the pathname verbatim; 'prefix' p matches p and p/<anything>. */ type WebRouteKind = 'exact' | 'prefix' /** One…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.typert": {
+      "zh-CN": {
+        "title": "Typert 远程调用",
+        "description": "业务对象包通过声明合并扩展两个空 map。lookup 将一种 Host 对象类型与其 wire identity 关联；上下文声明将一种作用域上下文类别与其 wire identity 关联。生成的 descriptor 引用这些 key，运行时提供方则提供活对象解析行为。 /**…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Typert remote calls",
+        "description": "Business-object packages extend two empty maps through declaration merging. A lookup associates one Host object type with its wire identity; a Context…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.client-modules": {
+      "zh-CN": {
+        "title": "Client 模块",
+        "description": "图是 Node 半与浏览器半之间协议层的唯一真源：宿主从扫描到的包组合出 WebBootEntry 行，把图作为 <head> 中的第一个脚本注入（ window.__DSH_BOOT__ ，其中 < 已转义，插件可控的字符串因此无法逃出 script 元素），壳则在启动任何东西之前先解析它。没有有效…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Client Modules",
+        "description": "The graph is the wire single source between the Node and browser halves: the host composes WebBootEntry rows from scanned packages, injects the graph as…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.storage": {
+      "zh-CN": {
+        "title": "存储",
+        "description": "Storage （ 签名 ）是汇合点，不是存储本体。 ctx.storage.backend 是一张名称 → 后端的表：多个后端并排保持挂载，哪个后端服务哪个消费方由该消费方自己的配置决定（即领域层的路由表），绝不是枢纽全局的选择。 register(name, backend) 返回…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Storage",
+        "description": "Storage ( signatures ) is a meeting point, not a store. ctx.storage.backend is a name → backend table: multiple backends stay mounted side by side, and…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.workspace": {
+      "zh-CN": {
+        "title": "工作区",
+        "description": "/** * Identifies one workspace record. A generated uuid, never the path: path * normalization rewrites paths, and a reference anchor must stay stable. */…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Workspaces",
+        "description": "/** * Identifies one workspace record. A generated uuid, never the path: path * normalization rewrites paths, and a reference anchor must stay stable. */…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.settings": {
+      "zh-CN": {
+        "title": "用户设置",
+        "description": "namespace 命名用户文档中一个归插件所有的分节。brand 防止调用方将设置 namespace 与在包或进程之间传递的其他 id 混用；构造时校验小写 kebab-case 语法。 /** Nominal id of one registered settings namespace. */…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "User Settings",
+        "description": "A namespace names one plugin-owned section of the user document. The brand prevents callers from mixing settings namespaces with other ids passed between…",
+        "indexability": "index"
+      }
+    },
+    "subsystems.credentials": {
+      "zh-CN": {
+        "title": "用户凭据",
+        "description": "引用以 POSIX 风格环境变量名命名一条凭据。brand 防止调用方将凭据引用与在包或进程之间传递的其他字符串混用；构造时校验 shell 标识符语法。 /** Nominal reference to one credential: a POSIX-style environment-variable…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "User Credentials",
+        "description": "A reference names one credential as a POSIX-style environment-variable name. The brand prevents callers from mixing credential references with other…",
+        "indexability": "index"
+      }
+    },
+    "reference": {
+      "zh-CN": {
+        "title": "DeepSeek Harness 架构",
+        "description": "Cordis 是 dsh 底层的框架：插件向共享上下文贡献服务、类型化事件和可逆的副作用。产品的每一部分都是插件，包括模型适配器、工具注册表、会话日志，以及 agent loop（智能体循环）本身，因此每一部分都可以从配置替换。 不存在需要打补丁的特权内核：扩展 dsh…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "DeepSeek Harness Architecture",
+        "description": "Cordis is the framework under dsh: plugins contribute services, typed events, and reversible effects to a shared context. Every part of the product is a…",
+        "indexability": "index"
+      }
+    },
+    "config-catalog": {
+      "zh-CN": {
+        "title": "插件配置目录",
+        "description": "<a id=\"deepseek-aidsh-acp\"> </a> 需要： agents /** Plugin config: the provider/model selection used for each ACP-created agent. */ export interface…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Plugin Config Catalog",
+        "description": "<a id=\"deepseek-aidsh-acp\"> </a> Requires: agents /** Plugin config: the provider/model selection used for each ACP-created agent. */ export interface…",
+        "indexability": "index"
+      }
+    },
+    "tool-catalog": {
+      "zh-CN": {
+        "title": "工具 Schema 目录",
+        "description": "下表将模型可见的工具名称与其背后的插件包和服务 seam 对应起来。各包章节随后给出确切的 JSON Schema。 工具包 模型可见名称 依赖 写入／影响 随产品发布的别名 部署说明 @deepseek-ai/dsh-tool-ask-user ask_user_question ctx.tools 、…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Tool Schema Catalog",
+        "description": "This table connects model-visible tool names to the plugin package and service seams behind them. Exact JSON Schemas follow in the package sections…",
+        "indexability": "index"
+      }
+    },
+    "persistence-catalog": {
+      "zh-CN": {
+        "title": "会话持久化事件目录",
+        "description": "/** The appendable event-type keys of {@link SessionEventMap}, plugin-merged extensions included. */ export type SessionEventType = keyof SessionEventMap…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Session Persistence Event Catalog",
+        "description": "/** The appendable event-type keys of {@link SessionEventMap}, plugin-merged extensions included. */ export type SessionEventType = keyof SessionEventMap…",
+        "indexability": "index"
+      }
+    },
+    "cordis-api.context": {
+      "zh-CN": {
+        "title": "上下文",
+        "description": "Context.effect /** Symbol key under which a disposer exposes its {@link EffectMeta} diagnostics tree. */ static readonly effect: unique symbol…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Context",
+        "description": "Context.effect /** Symbol key under which a disposer exposes its {@link EffectMeta} diagnostics tree. */ static readonly effect: unique symbol Symbol key…",
+        "indexability": "index"
+      }
+    },
+    "cordis-api.events": {
+      "zh-CN": {
+        "title": "事件",
+        "description": "ctx.on() 和 ctx.once() 接受的选项。 /** Options accepted by `ctx.on()` and `ctx.once()`. */ interface EventOptions { /** Add the listener before existing…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Events",
+        "description": "Options accepted by ctx.on() and ctx.once() . /** Options accepted by `ctx.on()` and `ctx.once()`. */ interface EventOptions { /** Add the listener…",
+        "indexability": "index"
+      }
+    },
+    "cordis-api.fiber": {
+      "zh-CN": {
+        "title": "Fiber",
+        "description": "单次插件应用的运行时实例。 fiber 会跟踪 ctx.plugin() 返回的插件上下文所对应的依赖状态、经过校验的配置、生命周期作用和清理操作。 源码 fiber.uid /** Unique id within the registry; 0 for the root fiber, `null`…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Fiber",
+        "description": "Runtime instance of one plugin application. A fiber tracks dependency state, validated config, lifecycle effects, and cleanup for the plugin context…",
+        "indexability": "index"
+      }
+    },
+    "cordis-api.registry": {
+      "zh-CN": {
+        "title": "注册表",
+        "description": "支持的插件入口点形式。 /** Supported plugin entrypoint shapes. */ type Plugin<T = any> = | Plugin.Function<T> | Plugin.Constructor<T> | Plugin.Object<T> /** Types…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Registry",
+        "description": "Supported plugin entrypoint shapes. /** Supported plugin entrypoint shapes. */ type Plugin<T = any> = | Plugin.Function<T> | Plugin.Constructor<T> |…",
+        "indexability": "index"
+      }
+    },
+    "cordis-api.service": {
+      "zh-CN": {
+        "title": "Service",
+        "description": "Service.init /** Symbol key of an instance method run after construction (class plugins). */ static readonly init: unique symbol…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Service",
+        "description": "Service.init /** Symbol key of an instance method run after construction (class plugins). */ static readonly init: unique symbol Symbol key of an…",
+        "indexability": "index"
+      }
+    },
+    "cordis-api.inherited": {
+      "zh-CN": null,
+      "en-US": {
+        "title": "Inherited Cordis API",
+        "description": "ctx.on / ctx.once — Register an event listener (disposable). ( vendor/cordis/src/events.ts:34 ) ctx.emit / ctx.parallel / ctx.serial / ctx.bail /…",
+        "indexability": "index"
+      }
+    },
+    "cookbook.adding-a-package": {
+      "zh-CN": {
+        "title": "实操手册：添加 workspace 包",
+        "description": "packages/<group>/<pkg>/ package.json # copy from packages/core/tools, adjust name/description/deps tsconfig.json # extends ../../../tsconfig.base.json…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Cookbook: adding a workspace package",
+        "description": "packages/<group>/<pkg>/ package.json # copy from packages/core/tools, adjust name/description/deps tsconfig.json # extends ../../../tsconfig.base.json…",
+        "indexability": "index"
+      }
+    },
+    "cookbook.adding-a-tool": {
+      "zh-CN": {
+        "title": "工具编写参考",
+        "description": "import { readFile } from 'node:fs/promises' import type { Context } from '@deepseek-ai/cordis' import { defineTool } from '@deepseek-ai/dsh-tools' export…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Tool authoring reference",
+        "description": "import { readFile } from 'node:fs/promises' import type { Context } from '@deepseek-ai/cordis' import { defineTool } from '@deepseek-ai/dsh-tools' export…",
+        "indexability": "index"
+      }
+    },
+    "cookbook.adding-an-llm-adapter": {
+      "zh-CN": {
+        "title": "实操手册：添加 LLM（大语言模型）适配器",
+        "description": "class MyAdapter extends LlmAdapter { async * stream(options: GenerateOptions): AsyncIterable<StreamChunk> { … } } export const name = 'llm-myprovider'…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Cookbook: adding an LLM adapter",
+        "description": "class MyAdapter extends LlmAdapter { async * stream(options: GenerateOptions): AsyncIterable<StreamChunk> { … } } export const name = 'llm-myprovider'…",
+        "indexability": "index"
+      }
+    },
+    "cookbook.extension-cookbook": {
+      "zh-CN": {
+        "title": "实操手册：扩展插件形态",
+        "description": "工具在 ctx.tools 上注册。带注解的 defineTool 示例（类型化的 execute 参数、结果构造、 run_in_background 模式）见 adding-a-tool.md ——该指南是工具定义的真源。 ctx.tools.register() 也直接接受原始 JSON…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Cookbook: extension plugin shapes",
+        "description": "A tool registers on ctx.tools . The annotated defineTool example (typed execute arguments, result construction, the run_in_background pattern) lives in…",
+        "indexability": "index"
+      }
+    },
+    "cookbook.adding-a-conversation-node": {
+      "zh-CN": {
+        "title": "添加 Web Client Conversation Node",
+        "description": "编写 Definition 前先选定稳定的业务 id。构成同一个 Node 的每条事件都必须携带该 id，或只凭自身 payload 独立推导出该 id；Client 绝不能把 update 猜测为属于“最近一个未完成”的 Context。 以一个 review job 为例，事件约定可以是： 事件 角色…",
+        "indexability": "index"
+      },
+      "en-US": {
+        "title": "Add a Web Client conversation node",
+        "description": "Choose one stable business id before writing the Definition. Every event that contributes to the same Node must carry that id or derive it independently…",
+        "indexability": "index"
+      }
+    }
+  }
+}

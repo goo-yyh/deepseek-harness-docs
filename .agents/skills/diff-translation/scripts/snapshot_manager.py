@@ -393,9 +393,8 @@ def command_apply(args: argparse.Namespace) -> int:
     backup.mkdir()
     controlled = [
         "docs",
-        "website/docs.ts",
-        "website/.vitepress/config.ts",
-        "website/public",
+        "public/wordmark.svg",
+        "public/favicon.svg",
         "LICENSE",
         "config/upstream-lock.json",
         "config/upstream-tree.json",
@@ -410,12 +409,11 @@ def command_apply(args: argparse.Namespace) -> int:
     try:
         for relative_path in [
             "docs",
-            "website/docs.ts",
-            "website/.vitepress/config.ts",
-            "website/public",
             "LICENSE",
         ]:
             copy_path(checkout / relative_path, root / relative_path)
+        copy_path(checkout / "website/public/wordmark.svg", root / "public/wordmark.svg")
+        copy_path(checkout / "website/public/favicon.svg", root / "public/favicon.svg")
         result = run_command(
             [
                 "pnpm",
@@ -545,6 +543,10 @@ def command_verify(args: argparse.Namespace) -> int:
         commands = [
             ["pnpm", "exec", "tsc", "--noEmit"],
             ["pnpm", "run", "docs:check"],
+            ["pnpm", "run", "content:segments"],
+            ["pnpm", "run", "content:project"],
+            ["pnpm", "run", "content:audit"],
+            ["pnpm", "run", "check"],
             ["pnpm", "run", "build"],
             ["pnpm", "run", "docs:routes"],
         ]
@@ -598,8 +600,8 @@ def render_result(run_id: str, discovery: dict[str, Any], verification: dict[str
 - 状态：`{verification.get('status')}`
 - Discovery：`{discovery.get('status')}`
 - 上游：`{discovery.get('baseline_commit')}` → `{discovery.get('upstream_commit')}`
-- 首版 locale：简体中文、English
-- 日文/韩文：已配置，未发布，未生成回退译文
+- 发布 locale：简体中文、English
+- 其他语言：不在产品、同步、构建或发布范围内
 
 ## 更新页面总览
 

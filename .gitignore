@@ -1,9 +1,11 @@
 node_modules/
 __pycache__/
 *.py[cod]
-website/.generated/
-website/.cache/
-website/.dist/
+src/content/docs/
+public/assets/docs/
+dist/
+.astro/
+.cache/
 .docs-source/
 diff/
 .vercel/

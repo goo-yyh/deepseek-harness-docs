@@ -1,95 +1,61 @@
-/** Verify that VitePress emitted exactly the route trees enabled by locale publication state. */
-
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { resolve } from 'node:path'
-import { docsPages } from '../website/docs.ts'
+import { LOCALES, localizedRoute, readJson, type ContentMap, type SeoMetadata } from './projection-model.ts'
 
+interface Redirects { redirects: Array<{ source: string; destination: string; permanent: boolean }> }
 const root = resolve(import.meta.dirname, '..')
-const dist = resolve(root, 'website/.dist')
-const missing: string[] = []
-const fallbackRoute = '/reference/cordis-api/inherited'
-const fallbackDestination = '/en/reference/cordis-api/inherited'
-const manifest = JSON.parse(readFileSync(resolve(root, 'config/docs-manifest.json'), 'utf8')) as {
-  canonical_page_count: number
-  published_route_count: number
+const dist = resolve(root, 'dist')
+const contentMap = readJson<ContentMap>(resolve(root, 'config/content-map.json'))
+const seo = readJson<SeoMetadata>(resolve(root, 'config/seo-metadata.json'))
+const redirects = readJson<Redirects>(resolve(root, 'config/redirects.json')).redirects
+const vercel = readJson<Redirects>(resolve(root, 'vercel.json')).redirects
+const errors: string[] = []
+const astroRedirects = [
+  { source: '/', destination: '/start', file: resolve(dist, 'index.html') },
+  { source: '/en', destination: '/en/start', file: resolve(dist, 'en/index.html') },
+  {
+    source: '/api/cordis/inherited',
+    destination: '/en/api/cordis/inherited',
+    file: resolve(dist, 'api/cordis/inherited/index.html'),
+  },
+]
+let expected = 0
+for (const target of contentMap.target_pages) {
+  for (const locale of LOCALES) {
+    if (seo.pages[target.page_id]?.[locale] == null) continue
+    expected += 1
+    const route = localizedRoute(target.neutral_route, locale)
+    if (!existsSync(resolve(dist, route.replace(/^\//, ''), 'index.html'))) errors.push(`missing ${route}`)
+  }
 }
-const localeConfig = JSON.parse(readFileSync(resolve(root, 'config/locales.json'), 'utf8')) as {
-  locales: Array<{
-    id: string
-    vitepress_key: 'root' | 'en' | 'ja' | 'ko'
-    path_prefix: string
-    published: boolean
-  }>
+function files(directory: string): string[] {
+  return readdirSync(directory).flatMap((name) => {
+    const path = resolve(directory, name)
+    return statSync(path).isDirectory() ? files(path) : [path]
+  })
 }
-const publishedLocales = localeConfig.locales.filter(locale => locale.published)
-
-function localeOutputRoot(locale: (typeof localeConfig.locales)[number]): string {
-  return locale.vitepress_key === 'root' ? dist : resolve(dist, locale.vitepress_key)
-}
-
-function htmlFileCount(path: string): number {
-  if (!existsSync(path)) return 0
-  return readdirSync(path).reduce((count, entry) => {
-    const child = resolve(path, entry)
-    if (statSync(child).isDirectory()) return count + htmlFileCount(child)
-    return count + (entry.endsWith('.html') ? 1 : 0)
-  }, 0)
-}
-
-const expectedRouteCount = manifest.canonical_page_count * publishedLocales.length
-if (docsPages.length !== expectedRouteCount || manifest.published_route_count !== expectedRouteCount) {
-  throw new Error(
-    `docs:routes: route inventory differs from ${manifest.canonical_page_count} canonical pages × `
-    + `${publishedLocales.length} published locales`,
-  )
-}
-
-for (const page of docsPages) {
-  const output = resolve(dist, page.route.replace(/\.md$/, '.html'))
-  if (!existsSync(output)) missing.push(page.route)
-}
-
-if (missing.length > 0) {
-  throw new Error(`docs:routes: missing ${missing.length} route(s): ${missing.slice(0, 10).join(', ')}`)
-}
-
-for (const locale of localeConfig.locales) {
-  const localePages = docsPages.filter(page => page.locale === locale.vitepress_key)
-  const outputRoot = localeOutputRoot(locale)
-  if (!locale.published) {
-    if (localePages.length !== 0 || existsSync(outputRoot)) {
-      throw new Error(`docs:routes: unpublished ${locale.id} route tree was generated`)
-    }
+if (files(dist).some(file => /\/(?:ja|ko)(?:\/|\.)/.test(file.slice(dist.length)))) errors.push('dist contains Japanese or Korean routes')
+for (const redirect of astroRedirects) {
+  if (!existsSync(redirect.file)) {
+    errors.push(`missing Astro redirect ${redirect.source}`)
     continue
   }
-  if (localePages.length !== manifest.canonical_page_count) {
-    throw new Error(`docs:routes: ${locale.id} route tree is incomplete`)
+  const html = readFileSync(redirect.file, 'utf8')
+  if (!html.includes(`http-equiv="refresh" content="0;url=${redirect.destination}"`)) {
+    errors.push(`${redirect.source} does not redirect to ${redirect.destination}`)
   }
-  const homePath = locale.vitepress_key === 'root'
-    ? resolve(dist, 'index.html')
-    : resolve(outputRoot, 'index.html')
-  const home = readFileSync(homePath, 'utf8')
-  if (!home.includes('url=./guide/quickstart')) {
-    throw new Error(`docs:routes: ${locale.id} locale-home redirect changed`)
-  }
-  if (locale.vitepress_key !== 'root' && htmlFileCount(outputRoot) !== manifest.canonical_page_count) {
-    throw new Error(`docs:routes: ${locale.id} output tree contains an unexpected number of HTML files`)
+  if (!html.includes('<meta name="robots" content="noindex">')) errors.push(`${redirect.source} redirect is indexable`)
+  if (!html.includes(`rel="canonical" href="https://www.deepseek-harness-docs.com${redirect.destination}"`)) {
+    errors.push(`${redirect.source} redirect has the wrong canonical`)
   }
 }
-
-const vercel = JSON.parse(readFileSync(resolve(root, 'vercel.json'), 'utf8')) as {
-  redirects?: Array<{ source?: string; destination?: string; permanent?: boolean }>
+if (JSON.stringify(redirects) !== JSON.stringify(vercel)) errors.push('vercel redirects differ from config/redirects.json')
+const sources = new Set(redirects.map(item => item.source))
+for (const redirect of redirects) {
+  if (!redirect.permanent) errors.push(`${redirect.source} is not permanent`)
+  if (redirect.source === redirect.destination) errors.push(`${redirect.source} redirects to itself`)
+  if (sources.has(redirect.destination)) errors.push(`${redirect.source} creates a redirect chain through ${redirect.destination}`)
 }
-const fallbackRedirect = vercel.redirects?.filter(redirect => redirect.source === fallbackRoute) ?? []
-if (
-  fallbackRedirect.length !== 1
-  || fallbackRedirect[0]?.destination !== fallbackDestination
-  || fallbackRedirect[0]?.permanent !== true
-) {
-  throw new Error(`docs:routes: ${fallbackRoute} must permanently redirect to ${fallbackDestination} on Vercel`)
-}
-
-console.log(
-  `docs:routes: ${docsPages.length} HTML routes across ${publishedLocales.length} published locales passed; `
-  + 'the inherited fallback redirect passed.',
-)
+if (new Set(redirects.map(item => item.source)).size !== redirects.length) errors.push('redirect sources are duplicated')
+if (errors.length > 0) throw new Error(`docs:routes failed:\n- ${errors.join('\n- ')}`)
+console.log(`docs:routes: ${expected} Astro pages, ${astroRedirects.length} local entry redirects, and ${redirects.length} one-hop deployment redirects passed; no ja/ko output exists.`)

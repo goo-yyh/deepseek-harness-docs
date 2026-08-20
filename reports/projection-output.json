@@ -1,0 +1,2959 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
+  "target_page_count": 85,
+  "generated_locale_pages": 169,
+  "generated_tree_sha256": "4979de0199863f0151ea34eb741745952c57eaadffba6bf02c5e543664ed09da",
+  "pages": [
+    {
+      "page_id": "menu.start",
+      "locale": "zh-CN",
+      "route": "/start",
+      "output": "src/content/docs/start.md",
+      "output_sha256": "af2b761f7289b110d97117c4c4f64cc28433c9d76febfced8a8a1e97aaab8e97",
+      "segment_ids": [
+        "home#title",
+        "guide.quickstart#intro",
+        "guide.providers#intro",
+        "guide.python-sdk#intro",
+        "reference#intro"
+      ]
+    },
+    {
+      "page_id": "menu.start",
+      "locale": "en-US",
+      "route": "/en/start",
+      "output": "src/content/docs/en/start.md",
+      "output_sha256": "256291604229b6a8935001d401e679e6d7935dafeac54b175b05adda25a926bd",
+      "segment_ids": [
+        "home#title",
+        "guide.quickstart#intro",
+        "guide.providers#intro",
+        "guide.python-sdk#intro",
+        "reference#intro"
+      ]
+    },
+    {
+      "page_id": "menu.concepts",
+      "locale": "zh-CN",
+      "route": "/concepts",
+      "output": "src/content/docs/concepts.md",
+      "output_sha256": "c53cae86a04cac4f167851c0a1e70715bb3b4d41aabe3824f685557ef7a5dfe1",
+      "segment_ids": [
+        "develop.framework#intro",
+        "develop.framework.service#intro",
+        "develop.framework.events#intro",
+        "develop.cordis-tutorial#intro",
+        "develop.cordis-tutorial.01-first-plugin#intro",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#intro",
+        "develop.cordis-tutorial.03-services#intro",
+        "develop.cordis-tutorial.04-events#intro",
+        "develop.cordis-tutorial.05-config#intro",
+        "develop.cordis-tutorial.06-composition-and-hmr#intro",
+        "develop.cordis-tutorial.07-into-the-harness#intro",
+        "reference.cordis-primer#intro",
+        "reference.subsystems#title",
+        "reference.subsystems#intro",
+        "reference.capability-seams#title",
+        "reference.capability-seams#intro",
+        "reference.agent-lifecycle#title",
+        "reference.agent-lifecycle#intro",
+        "reference.tool-execution-pipeline#title",
+        "reference.tool-execution-pipeline#intro"
+      ]
+    },
+    {
+      "page_id": "menu.concepts",
+      "locale": "en-US",
+      "route": "/en/concepts",
+      "output": "src/content/docs/en/concepts.md",
+      "output_sha256": "d7ae555aaaad0ce469951b792dcffdf2bef09d473441ec079b64b85e6da420d0",
+      "segment_ids": [
+        "develop.framework#intro",
+        "develop.framework.service#intro",
+        "develop.framework.events#intro",
+        "develop.cordis-tutorial#intro",
+        "develop.cordis-tutorial.01-first-plugin#intro",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#intro",
+        "develop.cordis-tutorial.03-services#intro",
+        "develop.cordis-tutorial.04-events#intro",
+        "develop.cordis-tutorial.05-config#intro",
+        "develop.cordis-tutorial.06-composition-and-hmr#intro",
+        "develop.cordis-tutorial.07-into-the-harness#intro",
+        "reference.cordis-primer#intro",
+        "reference.subsystems#title",
+        "reference.subsystems#intro",
+        "reference.capability-seams#title",
+        "reference.capability-seams#intro",
+        "reference.agent-lifecycle#title",
+        "reference.agent-lifecycle#intro",
+        "reference.tool-execution-pipeline#title",
+        "reference.tool-execution-pipeline#intro"
+      ]
+    },
+    {
+      "page_id": "menu.build",
+      "locale": "zh-CN",
+      "route": "/build",
+      "output": "src/content/docs/build.md",
+      "output_sha256": "8a21e99d2f4e1f13154ce80968edbba76d452d6826d8e917019f3257343aa960",
+      "segment_ids": [
+        "develop.basic#intro",
+        "develop.basic.tool#intro",
+        "develop.basic.config#intro",
+        "develop.basic.publish#intro",
+        "develop.practice#intro",
+        "develop.practice.llm-adapter#intro"
+      ]
+    },
+    {
+      "page_id": "menu.build",
+      "locale": "en-US",
+      "route": "/en/build",
+      "output": "src/content/docs/en/build.md",
+      "output_sha256": "0b59b43a0180606ff386c38e0fac8926bc6e14814332e6e030b30efcbacdd2be",
+      "segment_ids": [
+        "develop.basic#intro",
+        "develop.basic.tool#intro",
+        "develop.basic.config#intro",
+        "develop.basic.publish#intro",
+        "develop.practice#intro",
+        "develop.practice.llm-adapter#intro"
+      ]
+    },
+    {
+      "page_id": "menu.runtime",
+      "locale": "zh-CN",
+      "route": "/runtime",
+      "output": "src/content/docs/runtime.md",
+      "output_sha256": "b548dd5280fc7850bb86f6218a9cd1780d3cce3fa1ebc648dab7f4e1e3ba4806",
+      "segment_ids": [
+        "reference.subsystems.core#intro",
+        "reference.subsystems.scope#intro",
+        "reference.subsystems.invariants#intro",
+        "reference.subsystems.session#intro",
+        "reference.subsystems.session-query#intro",
+        "reference.subsystems.session-reference#intro",
+        "reference.subsystems.session-title#intro",
+        "reference.subsystems.session-projection#intro",
+        "reference.subsystems.persistence#intro",
+        "reference.subsystems.spill#intro",
+        "reference.subsystems.session-telemetry#intro",
+        "reference.subsystems.llm-streaming#intro",
+        "reference.subsystems.token-meter#intro",
+        "reference.subsystems.system-prompt#intro",
+        "reference.subsystems.compaction#intro",
+        "reference.subsystems.tools#intro",
+        "reference.subsystems.shell#intro",
+        "reference.subsystems.subprocess#intro",
+        "reference.subsystems.terminal#intro",
+        "reference.subsystems.jobs#intro",
+        "reference.subsystems.filesystem#intro",
+        "reference.subsystems.lsp#intro",
+        "reference.subsystems.code-runtime#intro",
+        "reference.subsystems.web#intro",
+        "reference.subsystems.skills#intro",
+        "reference.subsystems.workflow#intro",
+        "reference.subsystems.subagent#intro",
+        "reference.subsystems.approval#intro",
+        "reference.subsystems.permission-presets#intro",
+        "reference.subsystems.sandbox#intro",
+        "reference.subsystems.plan#intro",
+        "reference.subsystems.user-questions#intro",
+        "reference.subsystems.commands#intro",
+        "reference.subsystems.goal#intro",
+        "reference.subsystems.schedule#intro",
+        "reference.subsystems.web-server#intro",
+        "reference.subsystems.typert#intro",
+        "reference.subsystems.client-modules#intro",
+        "reference.subsystems.storage#intro",
+        "reference.subsystems.workspace#intro",
+        "reference.subsystems.settings#intro",
+        "reference.subsystems.credentials#intro"
+      ]
+    },
+    {
+      "page_id": "menu.runtime",
+      "locale": "en-US",
+      "route": "/en/runtime",
+      "output": "src/content/docs/en/runtime.md",
+      "output_sha256": "b30df43678a93931136302b1ca24eefecb64002cace206104e47cff1b575be2d",
+      "segment_ids": [
+        "reference.subsystems.core#intro",
+        "reference.subsystems.scope#intro",
+        "reference.subsystems.invariants#intro",
+        "reference.subsystems.session#intro",
+        "reference.subsystems.session-query#intro",
+        "reference.subsystems.session-reference#intro",
+        "reference.subsystems.session-title#intro",
+        "reference.subsystems.session-projection#intro",
+        "reference.subsystems.persistence#intro",
+        "reference.subsystems.spill#intro",
+        "reference.subsystems.session-telemetry#intro",
+        "reference.subsystems.llm-streaming#intro",
+        "reference.subsystems.token-meter#intro",
+        "reference.subsystems.system-prompt#intro",
+        "reference.subsystems.compaction#intro",
+        "reference.subsystems.tools#intro",
+        "reference.subsystems.shell#intro",
+        "reference.subsystems.subprocess#intro",
+        "reference.subsystems.terminal#intro",
+        "reference.subsystems.jobs#intro",
+        "reference.subsystems.filesystem#intro",
+        "reference.subsystems.lsp#intro",
+        "reference.subsystems.code-runtime#intro",
+        "reference.subsystems.web#intro",
+        "reference.subsystems.skills#intro",
+        "reference.subsystems.workflow#intro",
+        "reference.subsystems.subagent#intro",
+        "reference.subsystems.approval#intro",
+        "reference.subsystems.permission-presets#intro",
+        "reference.subsystems.sandbox#intro",
+        "reference.subsystems.plan#intro",
+        "reference.subsystems.user-questions#intro",
+        "reference.subsystems.commands#intro",
+        "reference.subsystems.goal#intro",
+        "reference.subsystems.schedule#intro",
+        "reference.subsystems.web-server#intro",
+        "reference.subsystems.typert#intro",
+        "reference.subsystems.client-modules#intro",
+        "reference.subsystems.storage#intro",
+        "reference.subsystems.workspace#intro",
+        "reference.subsystems.settings#intro",
+        "reference.subsystems.credentials#intro"
+      ]
+    },
+    {
+      "page_id": "menu.api",
+      "locale": "zh-CN",
+      "route": "/api",
+      "output": "src/content/docs/api.md",
+      "output_sha256": "a56c50c944d8f07a46fa4e0b04817c0a5196bf348f79b15e87995b3afd9d0fa0",
+      "segment_ids": [
+        "reference.config-catalog#intro",
+        "reference.tool-catalog#intro",
+        "reference.persistence-catalog#intro",
+        "reference.cordis-api.context#intro",
+        "reference.cordis-api.events#intro",
+        "reference.cordis-api.fiber#intro",
+        "reference.cordis-api.registry#intro",
+        "reference.cordis-api.service#intro",
+        "reference.cordis-api.inherited#intro"
+      ]
+    },
+    {
+      "page_id": "menu.api",
+      "locale": "en-US",
+      "route": "/en/api",
+      "output": "src/content/docs/en/api.md",
+      "output_sha256": "e6591f1f99ffe6bd008271a78bfb9027f941e35e2299e00898d5af6cb196587c",
+      "segment_ids": [
+        "reference.config-catalog#intro",
+        "reference.tool-catalog#intro",
+        "reference.persistence-catalog#intro",
+        "reference.cordis-api.context#intro",
+        "reference.cordis-api.events#intro",
+        "reference.cordis-api.fiber#intro",
+        "reference.cordis-api.registry#intro",
+        "reference.cordis-api.service#intro",
+        "reference.cordis-api.inherited#intro"
+      ]
+    },
+    {
+      "page_id": "menu.examples",
+      "locale": "zh-CN",
+      "route": "/examples",
+      "output": "src/content/docs/examples.md",
+      "output_sha256": "a197e6036447c87f98562e0e0f4b00a1df8e4556ce94071cf143b496ce10428a",
+      "segment_ids": [
+        "reference.cookbook.adding-a-package#intro",
+        "reference.cookbook.adding-a-tool#intro",
+        "reference.cookbook.adding-an-llm-adapter#intro",
+        "reference.cookbook.extension-cookbook#intro",
+        "reference.cookbook.adding-a-conversation-node#intro"
+      ]
+    },
+    {
+      "page_id": "menu.examples",
+      "locale": "en-US",
+      "route": "/en/examples",
+      "output": "src/content/docs/en/examples.md",
+      "output_sha256": "46e96d7ad04dc30d11e2d43d109de1375c9da44132eeeac28e69e2c36317a1fe",
+      "segment_ids": [
+        "reference.cookbook.adding-a-package#intro",
+        "reference.cookbook.adding-a-tool#intro",
+        "reference.cookbook.adding-an-llm-adapter#intro",
+        "reference.cookbook.extension-cookbook#intro",
+        "reference.cookbook.adding-a-conversation-node#intro"
+      ]
+    },
+    {
+      "page_id": "menu.versions",
+      "locale": "zh-CN",
+      "route": "/versions",
+      "output": "src/content/docs/versions.md",
+      "output_sha256": "0822f852502400981224f56474ef2c40436504306ff44bf3bca6da621bd6cfa4",
+      "segment_ids": []
+    },
+    {
+      "page_id": "menu.versions",
+      "locale": "en-US",
+      "route": "/en/versions",
+      "output": "src/content/docs/en/versions.md",
+      "output_sha256": "5da5a096b08f890fd5663babf0f1a9a89f06c11433a626b5ea02c7cbee22a06a",
+      "segment_ids": []
+    },
+    {
+      "page_id": "quickstart",
+      "locale": "zh-CN",
+      "route": "/start/web-ui",
+      "output": "src/content/docs/start/web-ui.md",
+      "output_sha256": "69beb0fe70cd033f6dc2fd1d2986a43c308244cd8223b275d4fdc230ce0a7ca6",
+      "segment_ids": [
+        "guide.quickstart#title",
+        "guide.quickstart#section-001",
+        "guide.quickstart#section-002",
+        "guide.quickstart#section-003",
+        "guide.quickstart#section-004"
+      ]
+    },
+    {
+      "page_id": "quickstart",
+      "locale": "en-US",
+      "route": "/en/start/web-ui",
+      "output": "src/content/docs/en/start/web-ui.md",
+      "output_sha256": "a37ff4c251e77eb13a03b476d3829a19cb067b47c86ff4fc9972e690766bd8f1",
+      "segment_ids": [
+        "guide.quickstart#title",
+        "guide.quickstart#section-001",
+        "guide.quickstart#section-002",
+        "guide.quickstart#section-003",
+        "guide.quickstart#section-004"
+      ]
+    },
+    {
+      "page_id": "providers",
+      "locale": "zh-CN",
+      "route": "/start/models",
+      "output": "src/content/docs/start/models.md",
+      "output_sha256": "ef15817dfab8cce4508e725e920fa899ea9c7bfee173aafa25311f1dc2743a7f",
+      "segment_ids": [
+        "guide.providers#title",
+        "guide.providers#section-001",
+        "guide.providers#section-002",
+        "guide.providers#section-003",
+        "guide.providers#section-004",
+        "guide.providers#section-005",
+        "guide.providers#section-006"
+      ]
+    },
+    {
+      "page_id": "providers",
+      "locale": "en-US",
+      "route": "/en/start/models",
+      "output": "src/content/docs/en/start/models.md",
+      "output_sha256": "e4faa8886c2a6d7de9347b8ab63e989f7a2c599852850c297d3b395581146bf3",
+      "segment_ids": [
+        "guide.providers#title",
+        "guide.providers#section-001",
+        "guide.providers#section-002",
+        "guide.providers#section-003",
+        "guide.providers#section-004",
+        "guide.providers#section-005",
+        "guide.providers#section-006"
+      ]
+    },
+    {
+      "page_id": "python-sdk",
+      "locale": "zh-CN",
+      "route": "/start/python-sdk",
+      "output": "src/content/docs/start/python-sdk.md",
+      "output_sha256": "880a717260a78eb762b7a4787fe974c05dcc2c455fef7e0d4bbdcae0ee67796f",
+      "segment_ids": [
+        "guide.python-sdk#title",
+        "guide.python-sdk#section-001",
+        "guide.python-sdk#section-002",
+        "guide.python-sdk#section-003",
+        "guide.python-sdk#section-004",
+        "guide.python-sdk#section-005",
+        "guide.python-sdk#section-006"
+      ]
+    },
+    {
+      "page_id": "python-sdk",
+      "locale": "en-US",
+      "route": "/en/start/python-sdk",
+      "output": "src/content/docs/en/start/python-sdk.md",
+      "output_sha256": "eaeca612183299138a8e176c188752710e808d7720dc1b8f48883ab09e683990",
+      "segment_ids": [
+        "guide.python-sdk#title",
+        "guide.python-sdk#section-001",
+        "guide.python-sdk#section-002",
+        "guide.python-sdk#section-003",
+        "guide.python-sdk#section-004",
+        "guide.python-sdk#section-005",
+        "guide.python-sdk#section-006"
+      ]
+    },
+    {
+      "page_id": "basic",
+      "locale": "zh-CN",
+      "route": "/build/first-plugin",
+      "output": "src/content/docs/build/first-plugin.md",
+      "output_sha256": "5abac4f0666acf0e2d62b19954aa0fc45512cccb7f43baa5199c403979034d49",
+      "segment_ids": [
+        "develop.basic#title",
+        "develop.basic#section-001",
+        "develop.basic#section-002",
+        "develop.basic#section-003",
+        "develop.basic#section-004",
+        "develop.basic#section-005",
+        "develop.basic#section-006",
+        "develop.basic#section-007",
+        "develop.basic#section-008"
+      ]
+    },
+    {
+      "page_id": "basic",
+      "locale": "en-US",
+      "route": "/en/build/first-plugin",
+      "output": "src/content/docs/en/build/first-plugin.md",
+      "output_sha256": "a0d8dc5c313a4c99ff531cafb1fd9fe9a69d195ac82644ebab0973f03d1da268",
+      "segment_ids": [
+        "develop.basic#title",
+        "develop.basic#section-001",
+        "develop.basic#section-002",
+        "develop.basic#section-003",
+        "develop.basic#section-004",
+        "develop.basic#section-005",
+        "develop.basic#section-006",
+        "develop.basic#section-007",
+        "develop.basic#section-008"
+      ]
+    },
+    {
+      "page_id": "basic.tool",
+      "locale": "zh-CN",
+      "route": "/build/tool",
+      "output": "src/content/docs/build/tool.md",
+      "output_sha256": "1d1c2d57c28d5613c8df7903ddfea35236b3296fba49c04aad7843d665e95a59",
+      "segment_ids": [
+        "develop.basic.tool#title",
+        "develop.basic.tool#section-001",
+        "develop.basic.tool#section-002",
+        "develop.basic.tool#section-003"
+      ]
+    },
+    {
+      "page_id": "basic.tool",
+      "locale": "en-US",
+      "route": "/en/build/tool",
+      "output": "src/content/docs/en/build/tool.md",
+      "output_sha256": "b19711be44133d083d51a9b9a5778306c3b12d942ecf9c0b8de24112552d201c",
+      "segment_ids": [
+        "develop.basic.tool#title",
+        "develop.basic.tool#section-001",
+        "develop.basic.tool#section-002",
+        "develop.basic.tool#section-003"
+      ]
+    },
+    {
+      "page_id": "basic.config",
+      "locale": "zh-CN",
+      "route": "/build/config",
+      "output": "src/content/docs/build/config.md",
+      "output_sha256": "6868700bb527c1fadcb75c706aa025b0eafc3337302c3149af9de1b9a1069ace",
+      "segment_ids": [
+        "develop.basic.config#title",
+        "develop.basic.config#section-001",
+        "develop.basic.config#section-002",
+        "develop.basic.config#section-003",
+        "develop.basic.config#section-004",
+        "develop.basic.config#section-005"
+      ]
+    },
+    {
+      "page_id": "basic.config",
+      "locale": "en-US",
+      "route": "/en/build/config",
+      "output": "src/content/docs/en/build/config.md",
+      "output_sha256": "21e511538e1f47bb44f65382ad84201d92e78b231033eb5585789ee597d62d7f",
+      "segment_ids": [
+        "develop.basic.config#title",
+        "develop.basic.config#section-001",
+        "develop.basic.config#section-002",
+        "develop.basic.config#section-003",
+        "develop.basic.config#section-004",
+        "develop.basic.config#section-005"
+      ]
+    },
+    {
+      "page_id": "basic.publish",
+      "locale": "zh-CN",
+      "route": "/build/publish",
+      "output": "src/content/docs/build/publish.md",
+      "output_sha256": "44906b5d7e59252ff279de092bba569a43cab8587d0be6e24197cccf3e5d6595",
+      "segment_ids": [
+        "develop.basic.publish#title",
+        "develop.basic.publish#section-001",
+        "develop.basic.publish#section-002",
+        "develop.basic.publish#section-003",
+        "develop.basic.publish#section-004",
+        "develop.basic.publish#section-005",
+        "develop.basic.publish#section-006"
+      ]
+    },
+    {
+      "page_id": "basic.publish",
+      "locale": "en-US",
+      "route": "/en/build/publish",
+      "output": "src/content/docs/en/build/publish.md",
+      "output_sha256": "63977906b50e1d40c059db301889ab135e49376d2ecf9eee348630692efbc443",
+      "segment_ids": [
+        "develop.basic.publish#title",
+        "develop.basic.publish#section-001",
+        "develop.basic.publish#section-002",
+        "develop.basic.publish#section-003",
+        "develop.basic.publish#section-004",
+        "develop.basic.publish#section-005",
+        "develop.basic.publish#section-006"
+      ]
+    },
+    {
+      "page_id": "framework",
+      "locale": "zh-CN",
+      "route": "/concepts/plugin-lifecycle",
+      "output": "src/content/docs/concepts/plugin-lifecycle.md",
+      "output_sha256": "62c55c745309bb7e8ecdcc8282da90e9397c46a94eb38f146813ab8196c2ce3a",
+      "segment_ids": [
+        "develop.framework#title",
+        "develop.framework#section-001",
+        "develop.framework#section-002",
+        "develop.framework#section-003",
+        "develop.framework#section-004",
+        "develop.framework#section-005",
+        "develop.framework#section-006",
+        "develop.framework#section-007",
+        "develop.framework#section-008"
+      ]
+    },
+    {
+      "page_id": "framework",
+      "locale": "en-US",
+      "route": "/en/concepts/plugin-lifecycle",
+      "output": "src/content/docs/en/concepts/plugin-lifecycle.md",
+      "output_sha256": "8ec621afa0fca399ffe5ada416527db4b8dc97e5b0bb336bdac2df1560febc96",
+      "segment_ids": [
+        "develop.framework#title",
+        "develop.framework#section-001",
+        "develop.framework#section-002",
+        "develop.framework#section-003",
+        "develop.framework#section-004",
+        "develop.framework#section-005",
+        "develop.framework#section-006",
+        "develop.framework#section-007",
+        "develop.framework#section-008"
+      ]
+    },
+    {
+      "page_id": "framework.service",
+      "locale": "zh-CN",
+      "route": "/concepts/service",
+      "output": "src/content/docs/concepts/service.md",
+      "output_sha256": "cd67f991860e4b2ad514ebcae6a8ab327dbac271c9b56300176bcb333dd4897c",
+      "segment_ids": [
+        "develop.framework.service#title",
+        "develop.framework.service#section-001",
+        "develop.framework.service#section-002",
+        "develop.framework.service#section-003",
+        "develop.framework.service#section-004",
+        "develop.framework.service#section-005",
+        "develop.framework.service#section-006",
+        "develop.framework.service#section-007"
+      ]
+    },
+    {
+      "page_id": "framework.service",
+      "locale": "en-US",
+      "route": "/en/concepts/service",
+      "output": "src/content/docs/en/concepts/service.md",
+      "output_sha256": "037f8d894fca9c268299c018001678b787ce6527436b1c9e211655b92f5d44d2",
+      "segment_ids": [
+        "develop.framework.service#title",
+        "develop.framework.service#section-001",
+        "develop.framework.service#section-002",
+        "develop.framework.service#section-003",
+        "develop.framework.service#section-004",
+        "develop.framework.service#section-005",
+        "develop.framework.service#section-006",
+        "develop.framework.service#section-007"
+      ]
+    },
+    {
+      "page_id": "framework.events",
+      "locale": "zh-CN",
+      "route": "/concepts/events",
+      "output": "src/content/docs/concepts/events.md",
+      "output_sha256": "7191deace6faced5fcdc899bf45f875e9071567135c198fba2fcfe35e37ea241",
+      "segment_ids": [
+        "develop.framework.events#title",
+        "develop.framework.events#section-001",
+        "develop.framework.events#section-002",
+        "develop.framework.events#section-003",
+        "develop.framework.events#section-004",
+        "develop.framework.events#section-005",
+        "develop.framework.events#section-006",
+        "develop.framework.events#section-007"
+      ]
+    },
+    {
+      "page_id": "framework.events",
+      "locale": "en-US",
+      "route": "/en/concepts/events",
+      "output": "src/content/docs/en/concepts/events.md",
+      "output_sha256": "b50bc36b1e7626c567205d679301d89ae248c6a79aa70a5109665c30fe0eda55",
+      "segment_ids": [
+        "develop.framework.events#title",
+        "develop.framework.events#section-001",
+        "develop.framework.events#section-002",
+        "develop.framework.events#section-003",
+        "develop.framework.events#section-004",
+        "develop.framework.events#section-005",
+        "develop.framework.events#section-006",
+        "develop.framework.events#section-007"
+      ]
+    },
+    {
+      "page_id": "practice",
+      "locale": "zh-CN",
+      "route": "/build/capability-layering",
+      "output": "src/content/docs/build/capability-layering.md",
+      "output_sha256": "f3b466bfcf7af7fc84a66b1561ce832ed25f2195320cd7b2d4d8c105cc210fee",
+      "segment_ids": [
+        "develop.practice#title",
+        "develop.practice#section-001",
+        "develop.practice#section-002",
+        "develop.practice#section-003",
+        "develop.practice#section-004",
+        "develop.practice#section-005",
+        "develop.practice#section-006"
+      ]
+    },
+    {
+      "page_id": "practice",
+      "locale": "en-US",
+      "route": "/en/build/capability-layering",
+      "output": "src/content/docs/en/build/capability-layering.md",
+      "output_sha256": "162bada5cea8b4dbd62f677d39f47a1299899f7caa561b7539ba1d93e152157a",
+      "segment_ids": [
+        "develop.practice#title",
+        "develop.practice#section-001",
+        "develop.practice#section-002",
+        "develop.practice#section-003",
+        "develop.practice#section-004",
+        "develop.practice#section-005",
+        "develop.practice#section-006"
+      ]
+    },
+    {
+      "page_id": "practice.llm-adapter",
+      "locale": "zh-CN",
+      "route": "/build/llm-adapter",
+      "output": "src/content/docs/build/llm-adapter.md",
+      "output_sha256": "8d0946b4cc94e84d0f00b361b79115b407025259a962dacb6e45c0d13dfaf2f0",
+      "segment_ids": [
+        "develop.practice.llm-adapter#title",
+        "develop.practice.llm-adapter#section-001",
+        "develop.practice.llm-adapter#section-002",
+        "develop.practice.llm-adapter#section-003",
+        "develop.practice.llm-adapter#section-004",
+        "develop.practice.llm-adapter#section-005",
+        "develop.practice.llm-adapter#section-006",
+        "develop.practice.llm-adapter#section-007",
+        "develop.practice.llm-adapter#section-008"
+      ]
+    },
+    {
+      "page_id": "practice.llm-adapter",
+      "locale": "en-US",
+      "route": "/en/build/llm-adapter",
+      "output": "src/content/docs/en/build/llm-adapter.md",
+      "output_sha256": "f1082cbefaf18910b891df233b241f4806c339ad85f2fc1a32a4c20fa92ee3d8",
+      "segment_ids": [
+        "develop.practice.llm-adapter#title",
+        "develop.practice.llm-adapter#section-001",
+        "develop.practice.llm-adapter#section-002",
+        "develop.practice.llm-adapter#section-003",
+        "develop.practice.llm-adapter#section-004",
+        "develop.practice.llm-adapter#section-005",
+        "develop.practice.llm-adapter#section-006",
+        "develop.practice.llm-adapter#section-007",
+        "develop.practice.llm-adapter#section-008"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial",
+      "output": "src/content/docs/concepts/cordis/tutorial.md",
+      "output_sha256": "efe4db40a666dc3ba2f57c42f5dd4d942407a8f18f22383c0e039aac9cc49888",
+      "segment_ids": [
+        "develop.cordis-tutorial#title",
+        "develop.cordis-tutorial#section-001",
+        "develop.cordis-tutorial#section-002",
+        "develop.cordis-tutorial#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial",
+      "output": "src/content/docs/en/concepts/cordis/tutorial.md",
+      "output_sha256": "4fbc9f044c016de144e4e6edb904a08dbb59f60a55b57dcd185a80148f410141",
+      "segment_ids": [
+        "develop.cordis-tutorial#title",
+        "develop.cordis-tutorial#section-001",
+        "develop.cordis-tutorial#section-002",
+        "develop.cordis-tutorial#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.01-first-plugin",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial/first-plugin",
+      "output": "src/content/docs/concepts/cordis/tutorial/first-plugin.md",
+      "output_sha256": "b855490e3f76c96d0d14b9447a5ac27e26044c052abbc2573fd6043250c182db",
+      "segment_ids": [
+        "develop.cordis-tutorial.01-first-plugin#title",
+        "develop.cordis-tutorial.01-first-plugin#section-001",
+        "develop.cordis-tutorial.01-first-plugin#section-002",
+        "develop.cordis-tutorial.01-first-plugin#section-003",
+        "develop.cordis-tutorial.01-first-plugin#section-004",
+        "develop.cordis-tutorial.01-first-plugin#section-005"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.01-first-plugin",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial/first-plugin",
+      "output": "src/content/docs/en/concepts/cordis/tutorial/first-plugin.md",
+      "output_sha256": "bb64464be463d6ac76397acab1225acd035dd57b3aa9d31956d84a8d00b2e9ee",
+      "segment_ids": [
+        "develop.cordis-tutorial.01-first-plugin#title",
+        "develop.cordis-tutorial.01-first-plugin#section-001",
+        "develop.cordis-tutorial.01-first-plugin#section-002",
+        "develop.cordis-tutorial.01-first-plugin#section-003",
+        "develop.cordis-tutorial.01-first-plugin#section-004",
+        "develop.cordis-tutorial.01-first-plugin#section-005"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.02-lifecycle-and-effects",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial/lifecycle-and-effects",
+      "output": "src/content/docs/concepts/cordis/tutorial/lifecycle-and-effects.md",
+      "output_sha256": "6dec23d4aef4a00f5492ae434faca4051d33aefc1571b3a05635dbc2cfa7e652",
+      "segment_ids": [
+        "develop.cordis-tutorial.02-lifecycle-and-effects#title",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-001",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-002",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.02-lifecycle-and-effects",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial/lifecycle-and-effects",
+      "output": "src/content/docs/en/concepts/cordis/tutorial/lifecycle-and-effects.md",
+      "output_sha256": "9cbc23647483cd9ed2d86e5051998ee834e022aec109dc9170f23be88db169f5",
+      "segment_ids": [
+        "develop.cordis-tutorial.02-lifecycle-and-effects#title",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-001",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-002",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.03-services",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial/services",
+      "output": "src/content/docs/concepts/cordis/tutorial/services.md",
+      "output_sha256": "a3c0d1882ad650e20a6ae468669fa3cac9695d29fbd4065a1823e0a6dafca924",
+      "segment_ids": [
+        "develop.cordis-tutorial.03-services#title",
+        "develop.cordis-tutorial.03-services#section-001",
+        "develop.cordis-tutorial.03-services#section-002",
+        "develop.cordis-tutorial.03-services#section-003",
+        "develop.cordis-tutorial.03-services#section-004",
+        "develop.cordis-tutorial.03-services#section-005"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.03-services",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial/services",
+      "output": "src/content/docs/en/concepts/cordis/tutorial/services.md",
+      "output_sha256": "28d66dcbe37bb54c9155386f57fa1e798b6ec3131f8b70ab45f93e2a5f6962f8",
+      "segment_ids": [
+        "develop.cordis-tutorial.03-services#title",
+        "develop.cordis-tutorial.03-services#section-001",
+        "develop.cordis-tutorial.03-services#section-002",
+        "develop.cordis-tutorial.03-services#section-003",
+        "develop.cordis-tutorial.03-services#section-004",
+        "develop.cordis-tutorial.03-services#section-005"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.04-events",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial/events",
+      "output": "src/content/docs/concepts/cordis/tutorial/events.md",
+      "output_sha256": "f72cbd327026c039c02bca25c34999fbcae5365e66d59815cb12ba310e5b7a9b",
+      "segment_ids": [
+        "develop.cordis-tutorial.04-events#title",
+        "develop.cordis-tutorial.04-events#section-001",
+        "develop.cordis-tutorial.04-events#section-002",
+        "develop.cordis-tutorial.04-events#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.04-events",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial/events",
+      "output": "src/content/docs/en/concepts/cordis/tutorial/events.md",
+      "output_sha256": "143411a3bb7ebc15f9c6f0c1d49e1516fcb7440947a53ce43ac6e9e4a8b48d67",
+      "segment_ids": [
+        "develop.cordis-tutorial.04-events#title",
+        "develop.cordis-tutorial.04-events#section-001",
+        "develop.cordis-tutorial.04-events#section-002",
+        "develop.cordis-tutorial.04-events#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.05-config",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial/config",
+      "output": "src/content/docs/concepts/cordis/tutorial/config.md",
+      "output_sha256": "7a5cafa7e868886005c52194a44ed5f7558cd149fdfa955d61e877e485b47a3d",
+      "segment_ids": [
+        "develop.cordis-tutorial.05-config#title",
+        "develop.cordis-tutorial.05-config#section-001",
+        "develop.cordis-tutorial.05-config#section-002",
+        "develop.cordis-tutorial.05-config#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.05-config",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial/config",
+      "output": "src/content/docs/en/concepts/cordis/tutorial/config.md",
+      "output_sha256": "1cab909b778a56ef494fbcb901bbfd241640c3d90f94af124a9695ebd3b45f78",
+      "segment_ids": [
+        "develop.cordis-tutorial.05-config#title",
+        "develop.cordis-tutorial.05-config#section-001",
+        "develop.cordis-tutorial.05-config#section-002",
+        "develop.cordis-tutorial.05-config#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.06-composition-and-hmr",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial/composition-and-hmr",
+      "output": "src/content/docs/concepts/cordis/tutorial/composition-and-hmr.md",
+      "output_sha256": "b740bd33ab4e3d1742f9df6dd6c6ab4730ad10c2f01c678b7bb84fa31bad3285",
+      "segment_ids": [
+        "develop.cordis-tutorial.06-composition-and-hmr#title",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-001",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-002",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.06-composition-and-hmr",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial/composition-and-hmr",
+      "output": "src/content/docs/en/concepts/cordis/tutorial/composition-and-hmr.md",
+      "output_sha256": "b4eaaf5fdf4e1d56f273226d793b37cad1f7464f21e850e6af8eb05047977510",
+      "segment_ids": [
+        "develop.cordis-tutorial.06-composition-and-hmr#title",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-001",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-002",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-003"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.07-into-the-harness",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/tutorial/into-the-harness",
+      "output": "src/content/docs/concepts/cordis/tutorial/into-the-harness.md",
+      "output_sha256": "827e830142d9a24e025c3d434a1ab57279ef05a93ce3c3e9fd069e707e310394",
+      "segment_ids": [
+        "develop.cordis-tutorial.07-into-the-harness#title",
+        "develop.cordis-tutorial.07-into-the-harness#section-001",
+        "develop.cordis-tutorial.07-into-the-harness#section-002",
+        "develop.cordis-tutorial.07-into-the-harness#section-003",
+        "develop.cordis-tutorial.07-into-the-harness#section-004"
+      ]
+    },
+    {
+      "page_id": "cordis-tutorial.07-into-the-harness",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/tutorial/into-the-harness",
+      "output": "src/content/docs/en/concepts/cordis/tutorial/into-the-harness.md",
+      "output_sha256": "91234c406385b45fb312b1d3383e34966464416442528df87e29deb49f872b57",
+      "segment_ids": [
+        "develop.cordis-tutorial.07-into-the-harness#title",
+        "develop.cordis-tutorial.07-into-the-harness#section-001",
+        "develop.cordis-tutorial.07-into-the-harness#section-002",
+        "develop.cordis-tutorial.07-into-the-harness#section-003",
+        "develop.cordis-tutorial.07-into-the-harness#section-004"
+      ]
+    },
+    {
+      "page_id": "cordis-primer",
+      "locale": "zh-CN",
+      "route": "/concepts/cordis/primer",
+      "output": "src/content/docs/concepts/cordis/primer.md",
+      "output_sha256": "c51a18c3451281bf546412236fc1279f29ae9d35c89529dcb2f2c4ccb9730a73",
+      "segment_ids": [
+        "reference.cordis-primer#title",
+        "reference.cordis-primer#section-001",
+        "reference.cordis-primer#section-002",
+        "reference.cordis-primer#section-003",
+        "reference.cordis-primer#section-004",
+        "reference.cordis-primer#section-005"
+      ]
+    },
+    {
+      "page_id": "cordis-primer",
+      "locale": "en-US",
+      "route": "/en/concepts/cordis/primer",
+      "output": "src/content/docs/en/concepts/cordis/primer.md",
+      "output_sha256": "d757025d58e520dd20e278a07da6ae5ce96e97d526a3aff2ea7e2de766b34298",
+      "segment_ids": [
+        "reference.cordis-primer#title",
+        "reference.cordis-primer#section-001",
+        "reference.cordis-primer#section-002",
+        "reference.cordis-primer#section-003",
+        "reference.cordis-primer#section-004",
+        "reference.cordis-primer#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.core",
+      "locale": "zh-CN",
+      "route": "/runtime/core",
+      "output": "src/content/docs/runtime/core.md",
+      "output_sha256": "6107c820ec6e1533c0ce29b6c6d9bf2459fbcb1b28f5568426e426b8e917acd2",
+      "segment_ids": [
+        "reference.subsystems.core#title",
+        "reference.subsystems.core#section-001",
+        "reference.subsystems.core#section-002",
+        "reference.subsystems.core#section-003",
+        "reference.subsystems.core#section-004",
+        "reference.subsystems.core#section-005",
+        "reference.subsystems.core#section-006",
+        "reference.subsystems.core#section-007",
+        "reference.subsystems.core#section-008",
+        "reference.subsystems.core#section-009"
+      ]
+    },
+    {
+      "page_id": "subsystems.core",
+      "locale": "en-US",
+      "route": "/en/runtime/core",
+      "output": "src/content/docs/en/runtime/core.md",
+      "output_sha256": "87eddda20cba7e3f47687594ea675e4c2f6ba24f9768b2863fab5f95b34c1d9e",
+      "segment_ids": [
+        "reference.subsystems.core#title",
+        "reference.subsystems.core#section-001",
+        "reference.subsystems.core#section-002",
+        "reference.subsystems.core#section-003",
+        "reference.subsystems.core#section-004",
+        "reference.subsystems.core#section-005",
+        "reference.subsystems.core#section-006",
+        "reference.subsystems.core#section-007",
+        "reference.subsystems.core#section-008",
+        "reference.subsystems.core#section-009"
+      ]
+    },
+    {
+      "page_id": "subsystems.scope",
+      "locale": "zh-CN",
+      "route": "/runtime/scope",
+      "output": "src/content/docs/runtime/scope.md",
+      "output_sha256": "c8ced0515857064a10629cee04be530ce1389579d32ccde038aa3e30dd183d1d",
+      "segment_ids": [
+        "reference.subsystems.scope#title",
+        "reference.subsystems.scope#section-001",
+        "reference.subsystems.scope#section-002",
+        "reference.subsystems.scope#section-003"
+      ]
+    },
+    {
+      "page_id": "subsystems.scope",
+      "locale": "en-US",
+      "route": "/en/runtime/scope",
+      "output": "src/content/docs/en/runtime/scope.md",
+      "output_sha256": "67e8848417d7533736b356de0be688516f7dff0dd13bcad3da9ae2e978848102",
+      "segment_ids": [
+        "reference.subsystems.scope#title",
+        "reference.subsystems.scope#section-001",
+        "reference.subsystems.scope#section-002",
+        "reference.subsystems.scope#section-003"
+      ]
+    },
+    {
+      "page_id": "subsystems.invariants",
+      "locale": "zh-CN",
+      "route": "/runtime/invariants",
+      "output": "src/content/docs/runtime/invariants.md",
+      "output_sha256": "60c91a9af5d19a8e249551ec9f21a3521dad43064dfcb40492266734f4f49291",
+      "segment_ids": [
+        "reference.subsystems.invariants#title",
+        "reference.subsystems.invariants#section-001",
+        "reference.subsystems.invariants#section-002",
+        "reference.subsystems.invariants#section-003",
+        "reference.subsystems.invariants#section-004",
+        "reference.subsystems.invariants#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.invariants",
+      "locale": "en-US",
+      "route": "/en/runtime/invariants",
+      "output": "src/content/docs/en/runtime/invariants.md",
+      "output_sha256": "f19da39fe87edc4b60eb2e329584f1d0cc9191e799acd062f2ebeb5392f0f4de",
+      "segment_ids": [
+        "reference.subsystems.invariants#title",
+        "reference.subsystems.invariants#section-001",
+        "reference.subsystems.invariants#section-002",
+        "reference.subsystems.invariants#section-003",
+        "reference.subsystems.invariants#section-004",
+        "reference.subsystems.invariants#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.session",
+      "locale": "zh-CN",
+      "route": "/runtime/session",
+      "output": "src/content/docs/runtime/session.md",
+      "output_sha256": "e55dfdf4aabc41ed688788f3d9e1a6414252d6b19e5eb1501ad4f6d72f7aea72",
+      "segment_ids": [
+        "reference.subsystems.session#title",
+        "reference.subsystems.session#section-001",
+        "reference.subsystems.session#section-002",
+        "reference.subsystems.session#section-003",
+        "reference.subsystems.session#section-004",
+        "reference.subsystems.session#section-005",
+        "reference.subsystems.session#section-006",
+        "reference.subsystems.session#section-007",
+        "reference.subsystems.session#section-008",
+        "reference.subsystems.session#section-009",
+        "reference.subsystems.session#section-010",
+        "reference.subsystems.session#section-011",
+        "reference.subsystems.session#section-012"
+      ]
+    },
+    {
+      "page_id": "subsystems.session",
+      "locale": "en-US",
+      "route": "/en/runtime/session",
+      "output": "src/content/docs/en/runtime/session.md",
+      "output_sha256": "5297d85c52e07c66c6f27d5e76dffd7bed441f1cfd78b4ef4bee52f75b09d13a",
+      "segment_ids": [
+        "reference.subsystems.session#title",
+        "reference.subsystems.session#section-001",
+        "reference.subsystems.session#section-002",
+        "reference.subsystems.session#section-003",
+        "reference.subsystems.session#section-004",
+        "reference.subsystems.session#section-005",
+        "reference.subsystems.session#section-006",
+        "reference.subsystems.session#section-007",
+        "reference.subsystems.session#section-008",
+        "reference.subsystems.session#section-009",
+        "reference.subsystems.session#section-010",
+        "reference.subsystems.session#section-011",
+        "reference.subsystems.session#section-012"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-query",
+      "locale": "zh-CN",
+      "route": "/runtime/session-query",
+      "output": "src/content/docs/runtime/session-query.md",
+      "output_sha256": "10685a09d250d49429a9c98da34ac8cd116d680dd8e6b54b4b366a4ff59fdcce",
+      "segment_ids": [
+        "reference.subsystems.session-query#title",
+        "reference.subsystems.session-query#section-001",
+        "reference.subsystems.session-query#section-002",
+        "reference.subsystems.session-query#section-003",
+        "reference.subsystems.session-query#section-004",
+        "reference.subsystems.session-query#section-005",
+        "reference.subsystems.session-query#section-006",
+        "reference.subsystems.session-query#section-007",
+        "reference.subsystems.session-query#section-008"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-query",
+      "locale": "en-US",
+      "route": "/en/runtime/session-query",
+      "output": "src/content/docs/en/runtime/session-query.md",
+      "output_sha256": "096a795ef22cbc707a939dd68f0b6f6d0fcac014104140ed2eaa05c28975719e",
+      "segment_ids": [
+        "reference.subsystems.session-query#title",
+        "reference.subsystems.session-query#section-001",
+        "reference.subsystems.session-query#section-002",
+        "reference.subsystems.session-query#section-003",
+        "reference.subsystems.session-query#section-004",
+        "reference.subsystems.session-query#section-005",
+        "reference.subsystems.session-query#section-006",
+        "reference.subsystems.session-query#section-007",
+        "reference.subsystems.session-query#section-008"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-reference",
+      "locale": "zh-CN",
+      "route": "/runtime/session-reference",
+      "output": "src/content/docs/runtime/session-reference.md",
+      "output_sha256": "aed79fc3172b2ce7302f2e64d64607243ab010c631518a7790bde6ab6fe03b4b",
+      "segment_ids": [
+        "reference.subsystems.session-reference#title",
+        "reference.subsystems.session-reference#section-001",
+        "reference.subsystems.session-reference#section-002",
+        "reference.subsystems.session-reference#section-003",
+        "reference.subsystems.session-reference#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-reference",
+      "locale": "en-US",
+      "route": "/en/runtime/session-reference",
+      "output": "src/content/docs/en/runtime/session-reference.md",
+      "output_sha256": "25d54d5e58b0befc907bb273045311394976629b8b092e371ccf4663dbf35153",
+      "segment_ids": [
+        "reference.subsystems.session-reference#title",
+        "reference.subsystems.session-reference#section-001",
+        "reference.subsystems.session-reference#section-002",
+        "reference.subsystems.session-reference#section-003",
+        "reference.subsystems.session-reference#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-title",
+      "locale": "zh-CN",
+      "route": "/runtime/session-title",
+      "output": "src/content/docs/runtime/session-title.md",
+      "output_sha256": "956c50ad83349bcb71878bf17e21f021b88b8a30dfeac327ab952944f741e330",
+      "segment_ids": [
+        "reference.subsystems.session-title#title",
+        "reference.subsystems.session-title#section-001",
+        "reference.subsystems.session-title#section-002",
+        "reference.subsystems.session-title#section-003",
+        "reference.subsystems.session-title#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-title",
+      "locale": "en-US",
+      "route": "/en/runtime/session-title",
+      "output": "src/content/docs/en/runtime/session-title.md",
+      "output_sha256": "095c9570dca508fbb26642c8d896d25ba5876fa4790bb842a3961da12e1ba95e",
+      "segment_ids": [
+        "reference.subsystems.session-title#title",
+        "reference.subsystems.session-title#section-001",
+        "reference.subsystems.session-title#section-002",
+        "reference.subsystems.session-title#section-003",
+        "reference.subsystems.session-title#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-projection",
+      "locale": "zh-CN",
+      "route": "/runtime/session-projection",
+      "output": "src/content/docs/runtime/session-projection.md",
+      "output_sha256": "381fed1a6ac3a2f214e2930c19686605d03194f9584182d20087e5312b7a7bc5",
+      "segment_ids": [
+        "reference.subsystems.session-projection#title",
+        "reference.subsystems.session-projection#section-001",
+        "reference.subsystems.session-projection#section-002",
+        "reference.subsystems.session-projection#section-003",
+        "reference.subsystems.session-projection#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-projection",
+      "locale": "en-US",
+      "route": "/en/runtime/session-projection",
+      "output": "src/content/docs/en/runtime/session-projection.md",
+      "output_sha256": "ea0dc772aebe4a10c3de3e5cfee072bd14864b4f08ff4f3670be33220f718849",
+      "segment_ids": [
+        "reference.subsystems.session-projection#title",
+        "reference.subsystems.session-projection#section-001",
+        "reference.subsystems.session-projection#section-002",
+        "reference.subsystems.session-projection#section-003",
+        "reference.subsystems.session-projection#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.persistence",
+      "locale": "zh-CN",
+      "route": "/runtime/persistence",
+      "output": "src/content/docs/runtime/persistence.md",
+      "output_sha256": "117efb14d37d28f71b54ba76528b586b19328d5e5a0a2a486b9f2d8ed04fc395",
+      "segment_ids": [
+        "reference.subsystems.persistence#title",
+        "reference.subsystems.persistence#section-001",
+        "reference.subsystems.persistence#section-002",
+        "reference.subsystems.persistence#section-003",
+        "reference.subsystems.persistence#section-004",
+        "reference.subsystems.persistence#section-005",
+        "reference.subsystems.persistence#section-006",
+        "reference.subsystems.persistence#section-007",
+        "reference.subsystems.persistence#section-008",
+        "reference.subsystems.persistence#section-009",
+        "reference.subsystems.persistence#section-010",
+        "reference.subsystems.persistence#section-011"
+      ]
+    },
+    {
+      "page_id": "subsystems.persistence",
+      "locale": "en-US",
+      "route": "/en/runtime/persistence",
+      "output": "src/content/docs/en/runtime/persistence.md",
+      "output_sha256": "66825ffe8f1da3be1349ea94c7b0f82928ccd8890fd9e59e21b493260e12534e",
+      "segment_ids": [
+        "reference.subsystems.persistence#title",
+        "reference.subsystems.persistence#section-001",
+        "reference.subsystems.persistence#section-002",
+        "reference.subsystems.persistence#section-003",
+        "reference.subsystems.persistence#section-004",
+        "reference.subsystems.persistence#section-005",
+        "reference.subsystems.persistence#section-006",
+        "reference.subsystems.persistence#section-007",
+        "reference.subsystems.persistence#section-008",
+        "reference.subsystems.persistence#section-009",
+        "reference.subsystems.persistence#section-010",
+        "reference.subsystems.persistence#section-011"
+      ]
+    },
+    {
+      "page_id": "subsystems.spill",
+      "locale": "zh-CN",
+      "route": "/runtime/spill",
+      "output": "src/content/docs/runtime/spill.md",
+      "output_sha256": "a7450e73197eef567c533c075afaa0a0d10687a74ff78515f2bfc7efd37f137f",
+      "segment_ids": [
+        "reference.subsystems.spill#title",
+        "reference.subsystems.spill#section-001",
+        "reference.subsystems.spill#section-002",
+        "reference.subsystems.spill#section-003",
+        "reference.subsystems.spill#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.spill",
+      "locale": "en-US",
+      "route": "/en/runtime/spill",
+      "output": "src/content/docs/en/runtime/spill.md",
+      "output_sha256": "b9456d07f406865251c0ed624c8da1887f83e38111913b2f0cb596d9f277369f",
+      "segment_ids": [
+        "reference.subsystems.spill#title",
+        "reference.subsystems.spill#section-001",
+        "reference.subsystems.spill#section-002",
+        "reference.subsystems.spill#section-003",
+        "reference.subsystems.spill#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-telemetry",
+      "locale": "zh-CN",
+      "route": "/runtime/session-telemetry",
+      "output": "src/content/docs/runtime/session-telemetry.md",
+      "output_sha256": "50242f2273dce7dff7148533c014e5870c41cd2788d93fa959e5382fe116cea9",
+      "segment_ids": [
+        "reference.subsystems.session-telemetry#title",
+        "reference.subsystems.session-telemetry#section-001",
+        "reference.subsystems.session-telemetry#section-002",
+        "reference.subsystems.session-telemetry#section-003",
+        "reference.subsystems.session-telemetry#section-004",
+        "reference.subsystems.session-telemetry#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.session-telemetry",
+      "locale": "en-US",
+      "route": "/en/runtime/session-telemetry",
+      "output": "src/content/docs/en/runtime/session-telemetry.md",
+      "output_sha256": "d7e96cc387648ec6a3145c2526759ca1f38e6091c719a636ccffde9ee64a1f5d",
+      "segment_ids": [
+        "reference.subsystems.session-telemetry#title",
+        "reference.subsystems.session-telemetry#section-001",
+        "reference.subsystems.session-telemetry#section-002",
+        "reference.subsystems.session-telemetry#section-003",
+        "reference.subsystems.session-telemetry#section-004",
+        "reference.subsystems.session-telemetry#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.llm-streaming",
+      "locale": "zh-CN",
+      "route": "/runtime/llm-streaming",
+      "output": "src/content/docs/runtime/llm-streaming.md",
+      "output_sha256": "ca6fee2eb74e74ee4fb108c0c07600472a7af1b43e0829ec7f6fe5238459fcc8",
+      "segment_ids": [
+        "reference.subsystems.llm-streaming#title",
+        "reference.subsystems.llm-streaming#section-001",
+        "reference.subsystems.llm-streaming#section-002",
+        "reference.subsystems.llm-streaming#section-003",
+        "reference.subsystems.llm-streaming#section-004",
+        "reference.subsystems.llm-streaming#section-005",
+        "reference.subsystems.llm-streaming#section-006",
+        "reference.subsystems.llm-streaming#section-007",
+        "reference.subsystems.llm-streaming#section-008",
+        "reference.subsystems.llm-streaming#section-009",
+        "reference.subsystems.llm-streaming#section-010",
+        "reference.subsystems.llm-streaming#section-011"
+      ]
+    },
+    {
+      "page_id": "subsystems.llm-streaming",
+      "locale": "en-US",
+      "route": "/en/runtime/llm-streaming",
+      "output": "src/content/docs/en/runtime/llm-streaming.md",
+      "output_sha256": "47a66ab095c2fdb55afa01c7dafd66f531a0ad8a75ba3504f6e875385d81c052",
+      "segment_ids": [
+        "reference.subsystems.llm-streaming#title",
+        "reference.subsystems.llm-streaming#section-001",
+        "reference.subsystems.llm-streaming#section-002",
+        "reference.subsystems.llm-streaming#section-003",
+        "reference.subsystems.llm-streaming#section-004",
+        "reference.subsystems.llm-streaming#section-005",
+        "reference.subsystems.llm-streaming#section-006",
+        "reference.subsystems.llm-streaming#section-007",
+        "reference.subsystems.llm-streaming#section-008",
+        "reference.subsystems.llm-streaming#section-009",
+        "reference.subsystems.llm-streaming#section-010",
+        "reference.subsystems.llm-streaming#section-011"
+      ]
+    },
+    {
+      "page_id": "subsystems.token-meter",
+      "locale": "zh-CN",
+      "route": "/runtime/token-meter",
+      "output": "src/content/docs/runtime/token-meter.md",
+      "output_sha256": "d4b28df679e0ce6756a1e672c77ca131c06e43672c3695a0f1d0f32013f12b11",
+      "segment_ids": [
+        "reference.subsystems.token-meter#title",
+        "reference.subsystems.token-meter#section-001",
+        "reference.subsystems.token-meter#section-002",
+        "reference.subsystems.token-meter#section-003"
+      ]
+    },
+    {
+      "page_id": "subsystems.token-meter",
+      "locale": "en-US",
+      "route": "/en/runtime/token-meter",
+      "output": "src/content/docs/en/runtime/token-meter.md",
+      "output_sha256": "14be01b715d80885c0b4e0caa6ffbafcd459b131b2826debb5d461281da0bac5",
+      "segment_ids": [
+        "reference.subsystems.token-meter#title",
+        "reference.subsystems.token-meter#section-001",
+        "reference.subsystems.token-meter#section-002",
+        "reference.subsystems.token-meter#section-003"
+      ]
+    },
+    {
+      "page_id": "subsystems.system-prompt",
+      "locale": "zh-CN",
+      "route": "/runtime/system-prompt",
+      "output": "src/content/docs/runtime/system-prompt.md",
+      "output_sha256": "e4f6703ca83962193df32d2d5601e27093949b9c60086b4fdec4377d8f9dde17",
+      "segment_ids": [
+        "reference.subsystems.system-prompt#title",
+        "reference.subsystems.system-prompt#section-001",
+        "reference.subsystems.system-prompt#section-002",
+        "reference.subsystems.system-prompt#section-003",
+        "reference.subsystems.system-prompt#section-004",
+        "reference.subsystems.system-prompt#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.system-prompt",
+      "locale": "en-US",
+      "route": "/en/runtime/system-prompt",
+      "output": "src/content/docs/en/runtime/system-prompt.md",
+      "output_sha256": "238155c558eeb9b758741e61cf1bde320b71188b9705b3466c432330d416106a",
+      "segment_ids": [
+        "reference.subsystems.system-prompt#title",
+        "reference.subsystems.system-prompt#section-001",
+        "reference.subsystems.system-prompt#section-002",
+        "reference.subsystems.system-prompt#section-003",
+        "reference.subsystems.system-prompt#section-004",
+        "reference.subsystems.system-prompt#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.compaction",
+      "locale": "zh-CN",
+      "route": "/runtime/compaction",
+      "output": "src/content/docs/runtime/compaction.md",
+      "output_sha256": "3b84bc218b8cd2bee1f8429ebef760fbc27b14b428b9aee380dade6c4c8961aa",
+      "segment_ids": [
+        "reference.subsystems.compaction#title",
+        "reference.subsystems.compaction#section-001",
+        "reference.subsystems.compaction#section-002",
+        "reference.subsystems.compaction#section-003",
+        "reference.subsystems.compaction#section-004",
+        "reference.subsystems.compaction#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.compaction",
+      "locale": "en-US",
+      "route": "/en/runtime/compaction",
+      "output": "src/content/docs/en/runtime/compaction.md",
+      "output_sha256": "d5a828e2a09a0e66e7d00be50c3a88004a7d84c1b909771068a27debe0326dca",
+      "segment_ids": [
+        "reference.subsystems.compaction#title",
+        "reference.subsystems.compaction#section-001",
+        "reference.subsystems.compaction#section-002",
+        "reference.subsystems.compaction#section-003",
+        "reference.subsystems.compaction#section-004",
+        "reference.subsystems.compaction#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.tools",
+      "locale": "zh-CN",
+      "route": "/runtime/tools",
+      "output": "src/content/docs/runtime/tools.md",
+      "output_sha256": "36c5cb386fc7ae88b1813f81bbe41def5bff6b7b7594ddeed9e95ce5aad7b4b6",
+      "segment_ids": [
+        "reference.subsystems.tools#title",
+        "reference.subsystems.tools#section-001",
+        "reference.subsystems.tools#section-002",
+        "reference.subsystems.tools#section-003",
+        "reference.subsystems.tools#section-004",
+        "reference.subsystems.tools#section-005",
+        "reference.subsystems.tools#section-006",
+        "reference.subsystems.tools#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.tools",
+      "locale": "en-US",
+      "route": "/en/runtime/tools",
+      "output": "src/content/docs/en/runtime/tools.md",
+      "output_sha256": "a381d3c6c8d314f6600ff1829a25db0dd59eb853d1042ef39376e98b83fad8cb",
+      "segment_ids": [
+        "reference.subsystems.tools#title",
+        "reference.subsystems.tools#section-001",
+        "reference.subsystems.tools#section-002",
+        "reference.subsystems.tools#section-003",
+        "reference.subsystems.tools#section-004",
+        "reference.subsystems.tools#section-005",
+        "reference.subsystems.tools#section-006",
+        "reference.subsystems.tools#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.shell",
+      "locale": "zh-CN",
+      "route": "/runtime/shell",
+      "output": "src/content/docs/runtime/shell.md",
+      "output_sha256": "6cd3cc7e86a9b54e2038c1ad415e01a9289368ce9eb9c3fc4e65b1c89545eca0",
+      "segment_ids": [
+        "reference.subsystems.shell#title",
+        "reference.subsystems.shell#section-001",
+        "reference.subsystems.shell#section-002",
+        "reference.subsystems.shell#section-003",
+        "reference.subsystems.shell#section-004",
+        "reference.subsystems.shell#section-005",
+        "reference.subsystems.shell#section-006",
+        "reference.subsystems.shell#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.shell",
+      "locale": "en-US",
+      "route": "/en/runtime/shell",
+      "output": "src/content/docs/en/runtime/shell.md",
+      "output_sha256": "b1ae4420b7cb8fddbdd7ca24d30f29669a56a8587a9f97dc66d62ecaa7205a90",
+      "segment_ids": [
+        "reference.subsystems.shell#title",
+        "reference.subsystems.shell#section-001",
+        "reference.subsystems.shell#section-002",
+        "reference.subsystems.shell#section-003",
+        "reference.subsystems.shell#section-004",
+        "reference.subsystems.shell#section-005",
+        "reference.subsystems.shell#section-006",
+        "reference.subsystems.shell#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.subprocess",
+      "locale": "zh-CN",
+      "route": "/runtime/subprocess",
+      "output": "src/content/docs/runtime/subprocess.md",
+      "output_sha256": "2da135a57247d47719be5eeedb5ea5e6a8fe1a749da51e47e1bba89bd9e2ed0e",
+      "segment_ids": [
+        "reference.subsystems.subprocess#title",
+        "reference.subsystems.subprocess#section-001",
+        "reference.subsystems.subprocess#section-002",
+        "reference.subsystems.subprocess#section-003",
+        "reference.subsystems.subprocess#section-004",
+        "reference.subsystems.subprocess#section-005",
+        "reference.subsystems.subprocess#section-006",
+        "reference.subsystems.subprocess#section-007",
+        "reference.subsystems.subprocess#section-008",
+        "reference.subsystems.subprocess#section-009"
+      ]
+    },
+    {
+      "page_id": "subsystems.subprocess",
+      "locale": "en-US",
+      "route": "/en/runtime/subprocess",
+      "output": "src/content/docs/en/runtime/subprocess.md",
+      "output_sha256": "678307cfd514d0ec708fa1b1991e664c5103678ce23d6fb3118b7c16d781b0ee",
+      "segment_ids": [
+        "reference.subsystems.subprocess#title",
+        "reference.subsystems.subprocess#section-001",
+        "reference.subsystems.subprocess#section-002",
+        "reference.subsystems.subprocess#section-003",
+        "reference.subsystems.subprocess#section-004",
+        "reference.subsystems.subprocess#section-005",
+        "reference.subsystems.subprocess#section-006",
+        "reference.subsystems.subprocess#section-007",
+        "reference.subsystems.subprocess#section-008",
+        "reference.subsystems.subprocess#section-009"
+      ]
+    },
+    {
+      "page_id": "subsystems.terminal",
+      "locale": "zh-CN",
+      "route": "/runtime/terminal",
+      "output": "src/content/docs/runtime/terminal.md",
+      "output_sha256": "e066687a875f99d1c9a4e2db91f200b6ba6d83c373d7f6e26d20387a876d00a9",
+      "segment_ids": [
+        "reference.subsystems.terminal#title",
+        "reference.subsystems.terminal#section-001",
+        "reference.subsystems.terminal#section-002",
+        "reference.subsystems.terminal#section-003",
+        "reference.subsystems.terminal#section-004",
+        "reference.subsystems.terminal#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.terminal",
+      "locale": "en-US",
+      "route": "/en/runtime/terminal",
+      "output": "src/content/docs/en/runtime/terminal.md",
+      "output_sha256": "1e352f51bbe0ec3833dbd974bc80c78cb6003701b748e1c9b347678c534f6b4a",
+      "segment_ids": [
+        "reference.subsystems.terminal#title",
+        "reference.subsystems.terminal#section-001",
+        "reference.subsystems.terminal#section-002",
+        "reference.subsystems.terminal#section-003",
+        "reference.subsystems.terminal#section-004",
+        "reference.subsystems.terminal#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.jobs",
+      "locale": "zh-CN",
+      "route": "/runtime/jobs",
+      "output": "src/content/docs/runtime/jobs.md",
+      "output_sha256": "8b3177bd095a1205d1dbe28e1be9fd1eeeae1c2b57810abd6f2ed47722e874bf",
+      "segment_ids": [
+        "reference.subsystems.jobs#title",
+        "reference.subsystems.jobs#section-001",
+        "reference.subsystems.jobs#section-002",
+        "reference.subsystems.jobs#section-003",
+        "reference.subsystems.jobs#section-004",
+        "reference.subsystems.jobs#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.jobs",
+      "locale": "en-US",
+      "route": "/en/runtime/jobs",
+      "output": "src/content/docs/en/runtime/jobs.md",
+      "output_sha256": "6f2600cd2e927830de18b13a8cbb1e8b2d5344e5b6a7cbc3a117373c0e1fbdce",
+      "segment_ids": [
+        "reference.subsystems.jobs#title",
+        "reference.subsystems.jobs#section-001",
+        "reference.subsystems.jobs#section-002",
+        "reference.subsystems.jobs#section-003",
+        "reference.subsystems.jobs#section-004",
+        "reference.subsystems.jobs#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.filesystem",
+      "locale": "zh-CN",
+      "route": "/runtime/filesystem",
+      "output": "src/content/docs/runtime/filesystem.md",
+      "output_sha256": "66a39389074cabf38e129c941568a83bb40b3eded1537337cb371913318b054f",
+      "segment_ids": [
+        "reference.subsystems.filesystem#title",
+        "reference.subsystems.filesystem#section-001",
+        "reference.subsystems.filesystem#section-002",
+        "reference.subsystems.filesystem#section-003",
+        "reference.subsystems.filesystem#section-004",
+        "reference.subsystems.filesystem#section-005",
+        "reference.subsystems.filesystem#section-006",
+        "reference.subsystems.filesystem#section-007",
+        "reference.subsystems.filesystem#section-008",
+        "reference.subsystems.filesystem#section-009",
+        "reference.subsystems.filesystem#section-010"
+      ]
+    },
+    {
+      "page_id": "subsystems.filesystem",
+      "locale": "en-US",
+      "route": "/en/runtime/filesystem",
+      "output": "src/content/docs/en/runtime/filesystem.md",
+      "output_sha256": "bb0e9333ab448df330b1484160f516b577e336b799bf4df366a36ebd705b90a7",
+      "segment_ids": [
+        "reference.subsystems.filesystem#title",
+        "reference.subsystems.filesystem#section-001",
+        "reference.subsystems.filesystem#section-002",
+        "reference.subsystems.filesystem#section-003",
+        "reference.subsystems.filesystem#section-004",
+        "reference.subsystems.filesystem#section-005",
+        "reference.subsystems.filesystem#section-006",
+        "reference.subsystems.filesystem#section-007",
+        "reference.subsystems.filesystem#section-008",
+        "reference.subsystems.filesystem#section-009",
+        "reference.subsystems.filesystem#section-010"
+      ]
+    },
+    {
+      "page_id": "subsystems.lsp",
+      "locale": "zh-CN",
+      "route": "/runtime/lsp",
+      "output": "src/content/docs/runtime/lsp.md",
+      "output_sha256": "a8a9635dd63819efd8218c4190d1df6fd55bf3c3c7cfcbd0a52cc71c3c4080cc",
+      "segment_ids": [
+        "reference.subsystems.lsp#title",
+        "reference.subsystems.lsp#section-001",
+        "reference.subsystems.lsp#section-002",
+        "reference.subsystems.lsp#section-003",
+        "reference.subsystems.lsp#section-004",
+        "reference.subsystems.lsp#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.lsp",
+      "locale": "en-US",
+      "route": "/en/runtime/lsp",
+      "output": "src/content/docs/en/runtime/lsp.md",
+      "output_sha256": "96edbd49d1ce4fc3b7b82f6f350a69af3e3a2d3eb61bd61b040ce757010afa7d",
+      "segment_ids": [
+        "reference.subsystems.lsp#title",
+        "reference.subsystems.lsp#section-001",
+        "reference.subsystems.lsp#section-002",
+        "reference.subsystems.lsp#section-003",
+        "reference.subsystems.lsp#section-004",
+        "reference.subsystems.lsp#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.code-runtime",
+      "locale": "zh-CN",
+      "route": "/runtime/code-runtime",
+      "output": "src/content/docs/runtime/code-runtime.md",
+      "output_sha256": "7e205dcd460f9469778744eb1d3e5ee5aaa0cbe8bc31d27dc219980018809fdf",
+      "segment_ids": [
+        "reference.subsystems.code-runtime#title",
+        "reference.subsystems.code-runtime#section-001",
+        "reference.subsystems.code-runtime#section-002",
+        "reference.subsystems.code-runtime#section-003",
+        "reference.subsystems.code-runtime#section-004",
+        "reference.subsystems.code-runtime#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.code-runtime",
+      "locale": "en-US",
+      "route": "/en/runtime/code-runtime",
+      "output": "src/content/docs/en/runtime/code-runtime.md",
+      "output_sha256": "277f4d2caaf153812954904b4c601cbe7ed74d9c56875133556ac509a516df17",
+      "segment_ids": [
+        "reference.subsystems.code-runtime#title",
+        "reference.subsystems.code-runtime#section-001",
+        "reference.subsystems.code-runtime#section-002",
+        "reference.subsystems.code-runtime#section-003",
+        "reference.subsystems.code-runtime#section-004",
+        "reference.subsystems.code-runtime#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.web",
+      "locale": "zh-CN",
+      "route": "/runtime/web",
+      "output": "src/content/docs/runtime/web.md",
+      "output_sha256": "a931b0ddbd5fd77f0e894a41c772b85767c0088ba9afd3e32206d8e6d6a99731",
+      "segment_ids": [
+        "reference.subsystems.web#title",
+        "reference.subsystems.web#section-001",
+        "reference.subsystems.web#section-002",
+        "reference.subsystems.web#section-003",
+        "reference.subsystems.web#section-004",
+        "reference.subsystems.web#section-005",
+        "reference.subsystems.web#section-006",
+        "reference.subsystems.web#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.web",
+      "locale": "en-US",
+      "route": "/en/runtime/web",
+      "output": "src/content/docs/en/runtime/web.md",
+      "output_sha256": "91a737bec441affb5711a6fc6b50e3ea51dc90c6e861b21894724e7e464bb2c3",
+      "segment_ids": [
+        "reference.subsystems.web#title",
+        "reference.subsystems.web#section-001",
+        "reference.subsystems.web#section-002",
+        "reference.subsystems.web#section-003",
+        "reference.subsystems.web#section-004",
+        "reference.subsystems.web#section-005",
+        "reference.subsystems.web#section-006",
+        "reference.subsystems.web#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.skills",
+      "locale": "zh-CN",
+      "route": "/runtime/skills",
+      "output": "src/content/docs/runtime/skills.md",
+      "output_sha256": "6e9080b59e66c299bdcce63a7d077c6bc576dff420095f30a38fbd9a0320999e",
+      "segment_ids": [
+        "reference.subsystems.skills#title",
+        "reference.subsystems.skills#section-001",
+        "reference.subsystems.skills#section-002",
+        "reference.subsystems.skills#section-003",
+        "reference.subsystems.skills#section-004",
+        "reference.subsystems.skills#section-005",
+        "reference.subsystems.skills#section-006",
+        "reference.subsystems.skills#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.skills",
+      "locale": "en-US",
+      "route": "/en/runtime/skills",
+      "output": "src/content/docs/en/runtime/skills.md",
+      "output_sha256": "fdc49bf2b18fb20a76e24fad66b5ab5b400f0e8330786dc823faea1fbaea7c83",
+      "segment_ids": [
+        "reference.subsystems.skills#title",
+        "reference.subsystems.skills#section-001",
+        "reference.subsystems.skills#section-002",
+        "reference.subsystems.skills#section-003",
+        "reference.subsystems.skills#section-004",
+        "reference.subsystems.skills#section-005",
+        "reference.subsystems.skills#section-006",
+        "reference.subsystems.skills#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.workflow",
+      "locale": "zh-CN",
+      "route": "/runtime/workflow",
+      "output": "src/content/docs/runtime/workflow.md",
+      "output_sha256": "461191d4f1a6203a2fac6e7f77c1960ea2400a2a870ca67aad9d3b604d709aeb",
+      "segment_ids": [
+        "reference.subsystems.workflow#title",
+        "reference.subsystems.workflow#section-001",
+        "reference.subsystems.workflow#section-002",
+        "reference.subsystems.workflow#section-003",
+        "reference.subsystems.workflow#section-004",
+        "reference.subsystems.workflow#section-005",
+        "reference.subsystems.workflow#section-006",
+        "reference.subsystems.workflow#section-007",
+        "reference.subsystems.workflow#section-008"
+      ]
+    },
+    {
+      "page_id": "subsystems.workflow",
+      "locale": "en-US",
+      "route": "/en/runtime/workflow",
+      "output": "src/content/docs/en/runtime/workflow.md",
+      "output_sha256": "c1a8c288a0fc718ea42b1932690b99b2935e1e3b56a0e32d9476b7cc821d381f",
+      "segment_ids": [
+        "reference.subsystems.workflow#title",
+        "reference.subsystems.workflow#section-001",
+        "reference.subsystems.workflow#section-002",
+        "reference.subsystems.workflow#section-003",
+        "reference.subsystems.workflow#section-004",
+        "reference.subsystems.workflow#section-005",
+        "reference.subsystems.workflow#section-006",
+        "reference.subsystems.workflow#section-007",
+        "reference.subsystems.workflow#section-008"
+      ]
+    },
+    {
+      "page_id": "subsystems.subagent",
+      "locale": "zh-CN",
+      "route": "/runtime/subagent",
+      "output": "src/content/docs/runtime/subagent.md",
+      "output_sha256": "6128d5941b850a7623b80da6f2ef6e20f01e1ed61993274639e7abc4d6aab760",
+      "segment_ids": [
+        "reference.subsystems.subagent#title",
+        "reference.subsystems.subagent#section-001",
+        "reference.subsystems.subagent#section-002",
+        "reference.subsystems.subagent#section-003",
+        "reference.subsystems.subagent#section-004",
+        "reference.subsystems.subagent#section-005",
+        "reference.subsystems.subagent#section-006",
+        "reference.subsystems.subagent#section-007",
+        "reference.subsystems.subagent#section-008",
+        "reference.subsystems.subagent#section-009"
+      ]
+    },
+    {
+      "page_id": "subsystems.subagent",
+      "locale": "en-US",
+      "route": "/en/runtime/subagent",
+      "output": "src/content/docs/en/runtime/subagent.md",
+      "output_sha256": "5e5bc740f966f5fc2a1bd5d3d0c90a745dd2fdfdb2a7cd45f33f3c585b9fca27",
+      "segment_ids": [
+        "reference.subsystems.subagent#title",
+        "reference.subsystems.subagent#section-001",
+        "reference.subsystems.subagent#section-002",
+        "reference.subsystems.subagent#section-003",
+        "reference.subsystems.subagent#section-004",
+        "reference.subsystems.subagent#section-005",
+        "reference.subsystems.subagent#section-006",
+        "reference.subsystems.subagent#section-007",
+        "reference.subsystems.subagent#section-008",
+        "reference.subsystems.subagent#section-009"
+      ]
+    },
+    {
+      "page_id": "subsystems.approval",
+      "locale": "zh-CN",
+      "route": "/runtime/approval",
+      "output": "src/content/docs/runtime/approval.md",
+      "output_sha256": "ab43b0a56ef4fe5664373d73ca9444e7a6605ada9296598ae6c92e5a7bfbac32",
+      "segment_ids": [
+        "reference.subsystems.approval#title",
+        "reference.subsystems.approval#section-001",
+        "reference.subsystems.approval#section-002",
+        "reference.subsystems.approval#section-003",
+        "reference.subsystems.approval#section-004",
+        "reference.subsystems.approval#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.approval",
+      "locale": "en-US",
+      "route": "/en/runtime/approval",
+      "output": "src/content/docs/en/runtime/approval.md",
+      "output_sha256": "772af9f18a12cf8140835b7db158d3364f231ca3564ff56f866ec4948aebe4ac",
+      "segment_ids": [
+        "reference.subsystems.approval#title",
+        "reference.subsystems.approval#section-001",
+        "reference.subsystems.approval#section-002",
+        "reference.subsystems.approval#section-003",
+        "reference.subsystems.approval#section-004",
+        "reference.subsystems.approval#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.permission-presets",
+      "locale": "zh-CN",
+      "route": "/runtime/permission-presets",
+      "output": "src/content/docs/runtime/permission-presets.md",
+      "output_sha256": "9132b89cbefd456a2da99894fa49c88bdac715f2866920c031a033dfb4e21ed0",
+      "segment_ids": [
+        "reference.subsystems.permission-presets#title",
+        "reference.subsystems.permission-presets#section-001",
+        "reference.subsystems.permission-presets#section-002",
+        "reference.subsystems.permission-presets#section-003",
+        "reference.subsystems.permission-presets#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.permission-presets",
+      "locale": "en-US",
+      "route": "/en/runtime/permission-presets",
+      "output": "src/content/docs/en/runtime/permission-presets.md",
+      "output_sha256": "787a6b47d8c6c70792ee261ccc7be1d6a10fdf4ae833d07af8e8bc7cfe5b8a62",
+      "segment_ids": [
+        "reference.subsystems.permission-presets#title",
+        "reference.subsystems.permission-presets#section-001",
+        "reference.subsystems.permission-presets#section-002",
+        "reference.subsystems.permission-presets#section-003",
+        "reference.subsystems.permission-presets#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.sandbox",
+      "locale": "zh-CN",
+      "route": "/runtime/sandbox",
+      "output": "src/content/docs/runtime/sandbox.md",
+      "output_sha256": "820bc48b9f0a49c5982310c9906d1d323e615ee38f19c4e2eedbd2c61f9da54b",
+      "segment_ids": [
+        "reference.subsystems.sandbox#title",
+        "reference.subsystems.sandbox#section-001",
+        "reference.subsystems.sandbox#section-002",
+        "reference.subsystems.sandbox#section-003",
+        "reference.subsystems.sandbox#section-004",
+        "reference.subsystems.sandbox#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.sandbox",
+      "locale": "en-US",
+      "route": "/en/runtime/sandbox",
+      "output": "src/content/docs/en/runtime/sandbox.md",
+      "output_sha256": "75b1f48b074f96b8b33d5ca19f4d767c881e1de898f39c4e7b7f5a2a401d4a2c",
+      "segment_ids": [
+        "reference.subsystems.sandbox#title",
+        "reference.subsystems.sandbox#section-001",
+        "reference.subsystems.sandbox#section-002",
+        "reference.subsystems.sandbox#section-003",
+        "reference.subsystems.sandbox#section-004",
+        "reference.subsystems.sandbox#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.plan",
+      "locale": "zh-CN",
+      "route": "/runtime/plan",
+      "output": "src/content/docs/runtime/plan.md",
+      "output_sha256": "7a0a0e0d54f2761e19aa1c829140e3cffb4f69672d2d71b74747d65060802c37",
+      "segment_ids": [
+        "reference.subsystems.plan#title",
+        "reference.subsystems.plan#section-001",
+        "reference.subsystems.plan#section-002",
+        "reference.subsystems.plan#section-003",
+        "reference.subsystems.plan#section-004",
+        "reference.subsystems.plan#section-005",
+        "reference.subsystems.plan#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.plan",
+      "locale": "en-US",
+      "route": "/en/runtime/plan",
+      "output": "src/content/docs/en/runtime/plan.md",
+      "output_sha256": "669995206937cdebf38d3cd3e23ec5d4460c3e2c9b57800cffb30ec89b48ea0b",
+      "segment_ids": [
+        "reference.subsystems.plan#title",
+        "reference.subsystems.plan#section-001",
+        "reference.subsystems.plan#section-002",
+        "reference.subsystems.plan#section-003",
+        "reference.subsystems.plan#section-004",
+        "reference.subsystems.plan#section-005",
+        "reference.subsystems.plan#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.user-questions",
+      "locale": "zh-CN",
+      "route": "/runtime/user-questions",
+      "output": "src/content/docs/runtime/user-questions.md",
+      "output_sha256": "761a6197a99336c87920d8d824f11e031eba20265a06a4d1433d45c3323c3cc0",
+      "segment_ids": [
+        "reference.subsystems.user-questions#title",
+        "reference.subsystems.user-questions#section-001",
+        "reference.subsystems.user-questions#section-002",
+        "reference.subsystems.user-questions#section-003",
+        "reference.subsystems.user-questions#section-004",
+        "reference.subsystems.user-questions#section-005",
+        "reference.subsystems.user-questions#section-006",
+        "reference.subsystems.user-questions#section-007",
+        "reference.subsystems.user-questions#section-008"
+      ]
+    },
+    {
+      "page_id": "subsystems.user-questions",
+      "locale": "en-US",
+      "route": "/en/runtime/user-questions",
+      "output": "src/content/docs/en/runtime/user-questions.md",
+      "output_sha256": "54fcbd53d53937bc6c602d47c25281d648856f0b37fcb4d6b8760364b18c06df",
+      "segment_ids": [
+        "reference.subsystems.user-questions#title",
+        "reference.subsystems.user-questions#section-001",
+        "reference.subsystems.user-questions#section-002",
+        "reference.subsystems.user-questions#section-003",
+        "reference.subsystems.user-questions#section-004",
+        "reference.subsystems.user-questions#section-005",
+        "reference.subsystems.user-questions#section-006",
+        "reference.subsystems.user-questions#section-007",
+        "reference.subsystems.user-questions#section-008"
+      ]
+    },
+    {
+      "page_id": "subsystems.commands",
+      "locale": "zh-CN",
+      "route": "/runtime/commands",
+      "output": "src/content/docs/runtime/commands.md",
+      "output_sha256": "99c07d0eed69881ecc208c1d43fef9f2a448d07d13bfea85e1425e58aa67fba6",
+      "segment_ids": [
+        "reference.subsystems.commands#title",
+        "reference.subsystems.commands#section-001",
+        "reference.subsystems.commands#section-002",
+        "reference.subsystems.commands#section-003",
+        "reference.subsystems.commands#section-004",
+        "reference.subsystems.commands#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.commands",
+      "locale": "en-US",
+      "route": "/en/runtime/commands",
+      "output": "src/content/docs/en/runtime/commands.md",
+      "output_sha256": "341c51f7945a403a09d051c1c24a665f0dec83c5c65aa36cd78ea579932825dd",
+      "segment_ids": [
+        "reference.subsystems.commands#title",
+        "reference.subsystems.commands#section-001",
+        "reference.subsystems.commands#section-002",
+        "reference.subsystems.commands#section-003",
+        "reference.subsystems.commands#section-004",
+        "reference.subsystems.commands#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.goal",
+      "locale": "zh-CN",
+      "route": "/runtime/goal",
+      "output": "src/content/docs/runtime/goal.md",
+      "output_sha256": "3e88ffb3d846f57a3a7108a2d7f3b76f73c7e2745e451eccfc433354995cfa30",
+      "segment_ids": [
+        "reference.subsystems.goal#title",
+        "reference.subsystems.goal#section-001",
+        "reference.subsystems.goal#section-002",
+        "reference.subsystems.goal#section-003",
+        "reference.subsystems.goal#section-004",
+        "reference.subsystems.goal#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.goal",
+      "locale": "en-US",
+      "route": "/en/runtime/goal",
+      "output": "src/content/docs/en/runtime/goal.md",
+      "output_sha256": "022d5faf81e26712461d6caf18f78b3d3d55f64ce73a90539aa92398d474a26b",
+      "segment_ids": [
+        "reference.subsystems.goal#title",
+        "reference.subsystems.goal#section-001",
+        "reference.subsystems.goal#section-002",
+        "reference.subsystems.goal#section-003",
+        "reference.subsystems.goal#section-004",
+        "reference.subsystems.goal#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.schedule",
+      "locale": "zh-CN",
+      "route": "/runtime/schedule",
+      "output": "src/content/docs/runtime/schedule.md",
+      "output_sha256": "23499a4987e2ec57750dd774e704c1c8fe37e5be389adfcfe24fd9b284225f77",
+      "segment_ids": [
+        "reference.subsystems.schedule#title",
+        "reference.subsystems.schedule#section-001",
+        "reference.subsystems.schedule#section-002",
+        "reference.subsystems.schedule#section-003",
+        "reference.subsystems.schedule#section-004",
+        "reference.subsystems.schedule#section-005",
+        "reference.subsystems.schedule#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.schedule",
+      "locale": "en-US",
+      "route": "/en/runtime/schedule",
+      "output": "src/content/docs/en/runtime/schedule.md",
+      "output_sha256": "f82f54a5a652b9f9497eabf0c2b6c47983ad1dd402ed66261423ade5d33b8bb9",
+      "segment_ids": [
+        "reference.subsystems.schedule#title",
+        "reference.subsystems.schedule#section-001",
+        "reference.subsystems.schedule#section-002",
+        "reference.subsystems.schedule#section-003",
+        "reference.subsystems.schedule#section-004",
+        "reference.subsystems.schedule#section-005",
+        "reference.subsystems.schedule#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.web-server",
+      "locale": "zh-CN",
+      "route": "/runtime/web-server",
+      "output": "src/content/docs/runtime/web-server.md",
+      "output_sha256": "ada00c7b60e1399365a157b4b9b3d5a2c96a3b482581836ff26001b32be6d527",
+      "segment_ids": [
+        "reference.subsystems.web-server#title",
+        "reference.subsystems.web-server#section-001",
+        "reference.subsystems.web-server#section-002",
+        "reference.subsystems.web-server#section-003",
+        "reference.subsystems.web-server#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.web-server",
+      "locale": "en-US",
+      "route": "/en/runtime/web-server",
+      "output": "src/content/docs/en/runtime/web-server.md",
+      "output_sha256": "d1da53f786fe675348fa0d18e69984c9bbc566282b7f12f7faef08b728260587",
+      "segment_ids": [
+        "reference.subsystems.web-server#title",
+        "reference.subsystems.web-server#section-001",
+        "reference.subsystems.web-server#section-002",
+        "reference.subsystems.web-server#section-003",
+        "reference.subsystems.web-server#section-004"
+      ]
+    },
+    {
+      "page_id": "subsystems.typert",
+      "locale": "zh-CN",
+      "route": "/runtime/typert",
+      "output": "src/content/docs/runtime/typert.md",
+      "output_sha256": "5e8a78060a6832988db7b0810c4bf39e538f5e6fdf9fd75acd6bae3c0f449904",
+      "segment_ids": [
+        "reference.subsystems.typert#title",
+        "reference.subsystems.typert#section-001",
+        "reference.subsystems.typert#section-002",
+        "reference.subsystems.typert#section-003",
+        "reference.subsystems.typert#section-004",
+        "reference.subsystems.typert#section-005",
+        "reference.subsystems.typert#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.typert",
+      "locale": "en-US",
+      "route": "/en/runtime/typert",
+      "output": "src/content/docs/en/runtime/typert.md",
+      "output_sha256": "ebcbca84443ab9e022db2d43bef97d9011cb743c671c0ba4a8b81281f9f6987a",
+      "segment_ids": [
+        "reference.subsystems.typert#title",
+        "reference.subsystems.typert#section-001",
+        "reference.subsystems.typert#section-002",
+        "reference.subsystems.typert#section-003",
+        "reference.subsystems.typert#section-004",
+        "reference.subsystems.typert#section-005",
+        "reference.subsystems.typert#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.client-modules",
+      "locale": "zh-CN",
+      "route": "/runtime/client-modules",
+      "output": "src/content/docs/runtime/client-modules.md",
+      "output_sha256": "ea5ca47d082a27e722670edc252a059a84cf88d8d14b97ce3b4c264e37d6aead",
+      "segment_ids": [
+        "reference.subsystems.client-modules#title",
+        "reference.subsystems.client-modules#section-001",
+        "reference.subsystems.client-modules#section-002",
+        "reference.subsystems.client-modules#section-003",
+        "reference.subsystems.client-modules#section-004",
+        "reference.subsystems.client-modules#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.client-modules",
+      "locale": "en-US",
+      "route": "/en/runtime/client-modules",
+      "output": "src/content/docs/en/runtime/client-modules.md",
+      "output_sha256": "4b9ab0a8d47273fdaf969b8151f8a2e0c55f062b0009b7b3d14783d8ab7cbeab",
+      "segment_ids": [
+        "reference.subsystems.client-modules#title",
+        "reference.subsystems.client-modules#section-001",
+        "reference.subsystems.client-modules#section-002",
+        "reference.subsystems.client-modules#section-003",
+        "reference.subsystems.client-modules#section-004",
+        "reference.subsystems.client-modules#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.storage",
+      "locale": "zh-CN",
+      "route": "/runtime/storage",
+      "output": "src/content/docs/runtime/storage.md",
+      "output_sha256": "2a7b610b0a5d1102a216b91a33b14697e63e4ac441d21be717c8f2d7fc1ff2e7",
+      "segment_ids": [
+        "reference.subsystems.storage#title",
+        "reference.subsystems.storage#section-001",
+        "reference.subsystems.storage#section-002",
+        "reference.subsystems.storage#section-003",
+        "reference.subsystems.storage#section-004",
+        "reference.subsystems.storage#section-005",
+        "reference.subsystems.storage#section-006",
+        "reference.subsystems.storage#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.storage",
+      "locale": "en-US",
+      "route": "/en/runtime/storage",
+      "output": "src/content/docs/en/runtime/storage.md",
+      "output_sha256": "f359be09474ba5819add48540641c3079cb27727add0ab469b66d067dc79a318",
+      "segment_ids": [
+        "reference.subsystems.storage#title",
+        "reference.subsystems.storage#section-001",
+        "reference.subsystems.storage#section-002",
+        "reference.subsystems.storage#section-003",
+        "reference.subsystems.storage#section-004",
+        "reference.subsystems.storage#section-005",
+        "reference.subsystems.storage#section-006",
+        "reference.subsystems.storage#section-007"
+      ]
+    },
+    {
+      "page_id": "subsystems.workspace",
+      "locale": "zh-CN",
+      "route": "/runtime/workspace",
+      "output": "src/content/docs/runtime/workspace.md",
+      "output_sha256": "0ff01900f65ee493e0f539a1fc2d0860080adec081476801efe67e532ebbb6ab",
+      "segment_ids": [
+        "reference.subsystems.workspace#title",
+        "reference.subsystems.workspace#section-001",
+        "reference.subsystems.workspace#section-002",
+        "reference.subsystems.workspace#section-003",
+        "reference.subsystems.workspace#section-004",
+        "reference.subsystems.workspace#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.workspace",
+      "locale": "en-US",
+      "route": "/en/runtime/workspace",
+      "output": "src/content/docs/en/runtime/workspace.md",
+      "output_sha256": "249e37cd60ff318fdd4dabf1ee3a37026dcfcb493c46f24f5570e1504176ab8e",
+      "segment_ids": [
+        "reference.subsystems.workspace#title",
+        "reference.subsystems.workspace#section-001",
+        "reference.subsystems.workspace#section-002",
+        "reference.subsystems.workspace#section-003",
+        "reference.subsystems.workspace#section-004",
+        "reference.subsystems.workspace#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.settings",
+      "locale": "zh-CN",
+      "route": "/runtime/settings",
+      "output": "src/content/docs/runtime/settings.md",
+      "output_sha256": "815ed519c84dd3c01fc7a20ffd9e23d28495bccc6aef0de42ce64e218b97ccf1",
+      "segment_ids": [
+        "reference.subsystems.settings#title",
+        "reference.subsystems.settings#section-001",
+        "reference.subsystems.settings#section-002",
+        "reference.subsystems.settings#section-003",
+        "reference.subsystems.settings#section-004",
+        "reference.subsystems.settings#section-005",
+        "reference.subsystems.settings#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.settings",
+      "locale": "en-US",
+      "route": "/en/runtime/settings",
+      "output": "src/content/docs/en/runtime/settings.md",
+      "output_sha256": "a861c83a67c74d9a14342d2cff64645b5f2b26a601ccbe9316e07119200c8277",
+      "segment_ids": [
+        "reference.subsystems.settings#title",
+        "reference.subsystems.settings#section-001",
+        "reference.subsystems.settings#section-002",
+        "reference.subsystems.settings#section-003",
+        "reference.subsystems.settings#section-004",
+        "reference.subsystems.settings#section-005",
+        "reference.subsystems.settings#section-006"
+      ]
+    },
+    {
+      "page_id": "subsystems.credentials",
+      "locale": "zh-CN",
+      "route": "/runtime/credentials",
+      "output": "src/content/docs/runtime/credentials.md",
+      "output_sha256": "c57a5fdcd5a358397b5beeb20355dc044f553c277ddf768c7ffd7e2e74c51fec",
+      "segment_ids": [
+        "reference.subsystems.credentials#title",
+        "reference.subsystems.credentials#section-001",
+        "reference.subsystems.credentials#section-002",
+        "reference.subsystems.credentials#section-003",
+        "reference.subsystems.credentials#section-004",
+        "reference.subsystems.credentials#section-005"
+      ]
+    },
+    {
+      "page_id": "subsystems.credentials",
+      "locale": "en-US",
+      "route": "/en/runtime/credentials",
+      "output": "src/content/docs/en/runtime/credentials.md",
+      "output_sha256": "e091fbf2770c2067f0cb1785af3c05b5c0a5e4fe2f4d21c88455d5c602a7890d",
+      "segment_ids": [
+        "reference.subsystems.credentials#title",
+        "reference.subsystems.credentials#section-001",
+        "reference.subsystems.credentials#section-002",
+        "reference.subsystems.credentials#section-003",
+        "reference.subsystems.credentials#section-004",
+        "reference.subsystems.credentials#section-005"
+      ]
+    },
+    {
+      "page_id": "reference",
+      "locale": "zh-CN",
+      "route": "/concepts/reference",
+      "output": "src/content/docs/concepts/reference.md",
+      "output_sha256": "7dc6414ead4d4a17bb5e1aee2470875fcf1d067ec51528e0a5d2dc0890beb9f7",
+      "segment_ids": [
+        "reference#title",
+        "reference#section-001",
+        "reference#section-002",
+        "reference#section-003",
+        "reference#section-004",
+        "reference#section-005",
+        "reference#section-006",
+        "reference#section-007",
+        "reference#section-008"
+      ]
+    },
+    {
+      "page_id": "reference",
+      "locale": "en-US",
+      "route": "/en/concepts/reference",
+      "output": "src/content/docs/en/concepts/reference.md",
+      "output_sha256": "abfa39b70a4c608c630cdc4362625aa94444b814eaef0f589d79f2a1bca096d6",
+      "segment_ids": [
+        "reference#title",
+        "reference#section-001",
+        "reference#section-002",
+        "reference#section-003",
+        "reference#section-004",
+        "reference#section-005",
+        "reference#section-006",
+        "reference#section-007",
+        "reference#section-008"
+      ]
+    },
+    {
+      "page_id": "config-catalog",
+      "locale": "zh-CN",
+      "route": "/api/catalogs/config-catalog",
+      "output": "src/content/docs/api/catalogs/config-catalog.md",
+      "output_sha256": "cd8b2a364ebf1eaa04886463548c78bce0f4fce138389adf7c32dc3314dbf3ce",
+      "segment_ids": [
+        "reference.config-catalog#title",
+        "reference.config-catalog#section-001",
+        "reference.config-catalog#section-002",
+        "reference.config-catalog#section-003",
+        "reference.config-catalog#section-004",
+        "reference.config-catalog#section-005",
+        "reference.config-catalog#section-006",
+        "reference.config-catalog#section-007",
+        "reference.config-catalog#section-008",
+        "reference.config-catalog#section-009",
+        "reference.config-catalog#section-010",
+        "reference.config-catalog#section-011",
+        "reference.config-catalog#section-012",
+        "reference.config-catalog#section-013",
+        "reference.config-catalog#section-014",
+        "reference.config-catalog#section-015",
+        "reference.config-catalog#section-016",
+        "reference.config-catalog#section-017",
+        "reference.config-catalog#section-018",
+        "reference.config-catalog#section-019",
+        "reference.config-catalog#section-020",
+        "reference.config-catalog#section-021",
+        "reference.config-catalog#section-022",
+        "reference.config-catalog#section-023",
+        "reference.config-catalog#section-024",
+        "reference.config-catalog#section-025",
+        "reference.config-catalog#section-026",
+        "reference.config-catalog#section-027",
+        "reference.config-catalog#section-028",
+        "reference.config-catalog#section-029",
+        "reference.config-catalog#section-030",
+        "reference.config-catalog#section-031",
+        "reference.config-catalog#section-032",
+        "reference.config-catalog#section-033",
+        "reference.config-catalog#section-034",
+        "reference.config-catalog#section-035",
+        "reference.config-catalog#section-036",
+        "reference.config-catalog#section-037",
+        "reference.config-catalog#section-038",
+        "reference.config-catalog#section-039",
+        "reference.config-catalog#section-040",
+        "reference.config-catalog#section-041",
+        "reference.config-catalog#section-042",
+        "reference.config-catalog#section-043",
+        "reference.config-catalog#section-044",
+        "reference.config-catalog#section-045",
+        "reference.config-catalog#section-046",
+        "reference.config-catalog#section-047",
+        "reference.config-catalog#section-048",
+        "reference.config-catalog#section-049",
+        "reference.config-catalog#section-050",
+        "reference.config-catalog#section-051",
+        "reference.config-catalog#section-052",
+        "reference.config-catalog#section-053",
+        "reference.config-catalog#section-054",
+        "reference.config-catalog#section-055",
+        "reference.config-catalog#section-056",
+        "reference.config-catalog#section-057",
+        "reference.config-catalog#section-058",
+        "reference.config-catalog#section-059",
+        "reference.config-catalog#section-060",
+        "reference.config-catalog#section-061",
+        "reference.config-catalog#section-062",
+        "reference.config-catalog#section-063",
+        "reference.config-catalog#section-064",
+        "reference.config-catalog#section-065",
+        "reference.config-catalog#section-066",
+        "reference.config-catalog#section-067",
+        "reference.config-catalog#section-068",
+        "reference.config-catalog#section-069",
+        "reference.config-catalog#section-070",
+        "reference.config-catalog#section-071",
+        "reference.config-catalog#section-072",
+        "reference.config-catalog#section-073",
+        "reference.config-catalog#section-074",
+        "reference.config-catalog#section-075",
+        "reference.config-catalog#section-076",
+        "reference.config-catalog#section-077",
+        "reference.config-catalog#section-078",
+        "reference.config-catalog#section-079",
+        "reference.config-catalog#section-080",
+        "reference.config-catalog#section-081",
+        "reference.config-catalog#section-082",
+        "reference.config-catalog#section-083",
+        "reference.config-catalog#section-084",
+        "reference.config-catalog#section-085",
+        "reference.config-catalog#section-086",
+        "reference.config-catalog#section-087",
+        "reference.config-catalog#section-088",
+        "reference.config-catalog#section-089",
+        "reference.config-catalog#section-090",
+        "reference.config-catalog#section-091",
+        "reference.config-catalog#section-092",
+        "reference.config-catalog#section-093",
+        "reference.config-catalog#section-094",
+        "reference.config-catalog#section-095",
+        "reference.config-catalog#section-096",
+        "reference.config-catalog#section-097",
+        "reference.config-catalog#section-098",
+        "reference.config-catalog#section-099",
+        "reference.config-catalog#section-100",
+        "reference.config-catalog#section-101",
+        "reference.config-catalog#section-102",
+        "reference.config-catalog#section-103",
+        "reference.config-catalog#section-104",
+        "reference.config-catalog#section-105",
+        "reference.config-catalog#section-106",
+        "reference.config-catalog#section-107",
+        "reference.config-catalog#section-108"
+      ]
+    },
+    {
+      "page_id": "config-catalog",
+      "locale": "en-US",
+      "route": "/en/api/catalogs/config-catalog",
+      "output": "src/content/docs/en/api/catalogs/config-catalog.md",
+      "output_sha256": "5b1f8ae15487a9fa200ab1e12e1c04ac7eafcfced8932ae3275ddbba9f7c150a",
+      "segment_ids": [
+        "reference.config-catalog#title",
+        "reference.config-catalog#section-001",
+        "reference.config-catalog#section-002",
+        "reference.config-catalog#section-003",
+        "reference.config-catalog#section-004",
+        "reference.config-catalog#section-005",
+        "reference.config-catalog#section-006",
+        "reference.config-catalog#section-007",
+        "reference.config-catalog#section-008",
+        "reference.config-catalog#section-009",
+        "reference.config-catalog#section-010",
+        "reference.config-catalog#section-011",
+        "reference.config-catalog#section-012",
+        "reference.config-catalog#section-013",
+        "reference.config-catalog#section-014",
+        "reference.config-catalog#section-015",
+        "reference.config-catalog#section-016",
+        "reference.config-catalog#section-017",
+        "reference.config-catalog#section-018",
+        "reference.config-catalog#section-019",
+        "reference.config-catalog#section-020",
+        "reference.config-catalog#section-021",
+        "reference.config-catalog#section-022",
+        "reference.config-catalog#section-023",
+        "reference.config-catalog#section-024",
+        "reference.config-catalog#section-025",
+        "reference.config-catalog#section-026",
+        "reference.config-catalog#section-027",
+        "reference.config-catalog#section-028",
+        "reference.config-catalog#section-029",
+        "reference.config-catalog#section-030",
+        "reference.config-catalog#section-031",
+        "reference.config-catalog#section-032",
+        "reference.config-catalog#section-033",
+        "reference.config-catalog#section-034",
+        "reference.config-catalog#section-035",
+        "reference.config-catalog#section-036",
+        "reference.config-catalog#section-037",
+        "reference.config-catalog#section-038",
+        "reference.config-catalog#section-039",
+        "reference.config-catalog#section-040",
+        "reference.config-catalog#section-041",
+        "reference.config-catalog#section-042",
+        "reference.config-catalog#section-043",
+        "reference.config-catalog#section-044",
+        "reference.config-catalog#section-045",
+        "reference.config-catalog#section-046",
+        "reference.config-catalog#section-047",
+        "reference.config-catalog#section-048",
+        "reference.config-catalog#section-049",
+        "reference.config-catalog#section-050",
+        "reference.config-catalog#section-051",
+        "reference.config-catalog#section-052",
+        "reference.config-catalog#section-053",
+        "reference.config-catalog#section-054",
+        "reference.config-catalog#section-055",
+        "reference.config-catalog#section-056",
+        "reference.config-catalog#section-057",
+        "reference.config-catalog#section-058",
+        "reference.config-catalog#section-059",
+        "reference.config-catalog#section-060",
+        "reference.config-catalog#section-061",
+        "reference.config-catalog#section-062",
+        "reference.config-catalog#section-063",
+        "reference.config-catalog#section-064",
+        "reference.config-catalog#section-065",
+        "reference.config-catalog#section-066",
+        "reference.config-catalog#section-067",
+        "reference.config-catalog#section-068",
+        "reference.config-catalog#section-069",
+        "reference.config-catalog#section-070",
+        "reference.config-catalog#section-071",
+        "reference.config-catalog#section-072",
+        "reference.config-catalog#section-073",
+        "reference.config-catalog#section-074",
+        "reference.config-catalog#section-075",
+        "reference.config-catalog#section-076",
+        "reference.config-catalog#section-077",
+        "reference.config-catalog#section-078",
+        "reference.config-catalog#section-079",
+        "reference.config-catalog#section-080",
+        "reference.config-catalog#section-081",
+        "reference.config-catalog#section-082",
+        "reference.config-catalog#section-083",
+        "reference.config-catalog#section-084",
+        "reference.config-catalog#section-085",
+        "reference.config-catalog#section-086",
+        "reference.config-catalog#section-087",
+        "reference.config-catalog#section-088",
+        "reference.config-catalog#section-089",
+        "reference.config-catalog#section-090",
+        "reference.config-catalog#section-091",
+        "reference.config-catalog#section-092",
+        "reference.config-catalog#section-093",
+        "reference.config-catalog#section-094",
+        "reference.config-catalog#section-095",
+        "reference.config-catalog#section-096",
+        "reference.config-catalog#section-097",
+        "reference.config-catalog#section-098",
+        "reference.config-catalog#section-099",
+        "reference.config-catalog#section-100",
+        "reference.config-catalog#section-101",
+        "reference.config-catalog#section-102",
+        "reference.config-catalog#section-103",
+        "reference.config-catalog#section-104",
+        "reference.config-catalog#section-105",
+        "reference.config-catalog#section-106",
+        "reference.config-catalog#section-107",
+        "reference.config-catalog#section-108"
+      ]
+    },
+    {
+      "page_id": "tool-catalog",
+      "locale": "zh-CN",
+      "route": "/api/catalogs/tool-catalog",
+      "output": "src/content/docs/api/catalogs/tool-catalog.md",
+      "output_sha256": "e92d54507ae8b974e84dde3616b7955d66cd5ee5aac4716e88e8b99414c4ad86",
+      "segment_ids": [
+        "reference.tool-catalog#title",
+        "reference.tool-catalog#section-001",
+        "reference.tool-catalog#section-002",
+        "reference.tool-catalog#section-003",
+        "reference.tool-catalog#section-004",
+        "reference.tool-catalog#section-005",
+        "reference.tool-catalog#section-006",
+        "reference.tool-catalog#section-007",
+        "reference.tool-catalog#section-008",
+        "reference.tool-catalog#section-009",
+        "reference.tool-catalog#section-010",
+        "reference.tool-catalog#section-011",
+        "reference.tool-catalog#section-012",
+        "reference.tool-catalog#section-013",
+        "reference.tool-catalog#section-014",
+        "reference.tool-catalog#section-015",
+        "reference.tool-catalog#section-016",
+        "reference.tool-catalog#section-017",
+        "reference.tool-catalog#section-018",
+        "reference.tool-catalog#section-019",
+        "reference.tool-catalog#section-020",
+        "reference.tool-catalog#section-021",
+        "reference.tool-catalog#section-022",
+        "reference.tool-catalog#section-023",
+        "reference.tool-catalog#section-024",
+        "reference.tool-catalog#section-025"
+      ]
+    },
+    {
+      "page_id": "tool-catalog",
+      "locale": "en-US",
+      "route": "/en/api/catalogs/tool-catalog",
+      "output": "src/content/docs/en/api/catalogs/tool-catalog.md",
+      "output_sha256": "b10c7699c8367182959e5cadf1bb6032ddc7756a6ce30f7673789dadc6b79f3a",
+      "segment_ids": [
+        "reference.tool-catalog#title",
+        "reference.tool-catalog#section-001",
+        "reference.tool-catalog#section-002",
+        "reference.tool-catalog#section-003",
+        "reference.tool-catalog#section-004",
+        "reference.tool-catalog#section-005",
+        "reference.tool-catalog#section-006",
+        "reference.tool-catalog#section-007",
+        "reference.tool-catalog#section-008",
+        "reference.tool-catalog#section-009",
+        "reference.tool-catalog#section-010",
+        "reference.tool-catalog#section-011",
+        "reference.tool-catalog#section-012",
+        "reference.tool-catalog#section-013",
+        "reference.tool-catalog#section-014",
+        "reference.tool-catalog#section-015",
+        "reference.tool-catalog#section-016",
+        "reference.tool-catalog#section-017",
+        "reference.tool-catalog#section-018",
+        "reference.tool-catalog#section-019",
+        "reference.tool-catalog#section-020",
+        "reference.tool-catalog#section-021",
+        "reference.tool-catalog#section-022",
+        "reference.tool-catalog#section-023",
+        "reference.tool-catalog#section-024",
+        "reference.tool-catalog#section-025"
+      ]
+    },
+    {
+      "page_id": "persistence-catalog",
+      "locale": "zh-CN",
+      "route": "/api/catalogs/persistence-catalog",
+      "output": "src/content/docs/api/catalogs/persistence-catalog.md",
+      "output_sha256": "cc479d418b16665548ca67b40dbd85d4264c2a8c122415b957208148b36c87bd",
+      "segment_ids": [
+        "reference.persistence-catalog#title",
+        "reference.persistence-catalog#section-001",
+        "reference.persistence-catalog#section-002"
+      ]
+    },
+    {
+      "page_id": "persistence-catalog",
+      "locale": "en-US",
+      "route": "/en/api/catalogs/persistence-catalog",
+      "output": "src/content/docs/en/api/catalogs/persistence-catalog.md",
+      "output_sha256": "6a18c918e15d6fef2de95c952d9130c9e7fc5a6f09fb2ed408b9181d38625752",
+      "segment_ids": [
+        "reference.persistence-catalog#title",
+        "reference.persistence-catalog#section-001",
+        "reference.persistence-catalog#section-002"
+      ]
+    },
+    {
+      "page_id": "cordis-api.context",
+      "locale": "zh-CN",
+      "route": "/api/cordis/context",
+      "output": "src/content/docs/api/cordis/context.md",
+      "output_sha256": "a62fd20e986fda46c4e50d8fbd5f8751685e540cb3b590591b31f2f252379b0a",
+      "segment_ids": [
+        "reference.cordis-api.context#title",
+        "reference.cordis-api.context#section-001",
+        "reference.cordis-api.context#section-002"
+      ]
+    },
+    {
+      "page_id": "cordis-api.context",
+      "locale": "en-US",
+      "route": "/en/api/cordis/context",
+      "output": "src/content/docs/en/api/cordis/context.md",
+      "output_sha256": "50acfc0526eaf8b0f3542ba377265c5b3fc4049e39afaf2350463898a73cdac3",
+      "segment_ids": [
+        "reference.cordis-api.context#title",
+        "reference.cordis-api.context#section-001",
+        "reference.cordis-api.context#section-002"
+      ]
+    },
+    {
+      "page_id": "cordis-api.events",
+      "locale": "zh-CN",
+      "route": "/api/cordis/events",
+      "output": "src/content/docs/api/cordis/events.md",
+      "output_sha256": "e3c546f028cee8299057b18942d88f198c06e2624ebb423b0f3536610d6a944c",
+      "segment_ids": [
+        "reference.cordis-api.events#title",
+        "reference.cordis-api.events#section-001",
+        "reference.cordis-api.events#section-002"
+      ]
+    },
+    {
+      "page_id": "cordis-api.events",
+      "locale": "en-US",
+      "route": "/en/api/cordis/events",
+      "output": "src/content/docs/en/api/cordis/events.md",
+      "output_sha256": "b6b464a654b4a3c52259bc0196e39a85396d4e38392e945222c1665def24d728",
+      "segment_ids": [
+        "reference.cordis-api.events#title",
+        "reference.cordis-api.events#section-001",
+        "reference.cordis-api.events#section-002"
+      ]
+    },
+    {
+      "page_id": "cordis-api.fiber",
+      "locale": "zh-CN",
+      "route": "/api/cordis/fiber",
+      "output": "src/content/docs/api/cordis/fiber.md",
+      "output_sha256": "6a85b61e72c358c56ee55c971d9dcdea66c39ed86751b508af05f2b2dca3cb31",
+      "segment_ids": [
+        "reference.cordis-api.fiber#title",
+        "reference.cordis-api.fiber#section-001",
+        "reference.cordis-api.fiber#section-002",
+        "reference.cordis-api.fiber#section-003",
+        "reference.cordis-api.fiber#section-004",
+        "reference.cordis-api.fiber#section-005",
+        "reference.cordis-api.fiber#section-006"
+      ]
+    },
+    {
+      "page_id": "cordis-api.fiber",
+      "locale": "en-US",
+      "route": "/en/api/cordis/fiber",
+      "output": "src/content/docs/en/api/cordis/fiber.md",
+      "output_sha256": "64e25c5f2796e04e9c8b64f4a4888124f5ed62566c827db28e62f6fc8a58b1e8",
+      "segment_ids": [
+        "reference.cordis-api.fiber#title",
+        "reference.cordis-api.fiber#section-001",
+        "reference.cordis-api.fiber#section-002",
+        "reference.cordis-api.fiber#section-003",
+        "reference.cordis-api.fiber#section-004",
+        "reference.cordis-api.fiber#section-005",
+        "reference.cordis-api.fiber#section-006"
+      ]
+    },
+    {
+      "page_id": "cordis-api.registry",
+      "locale": "zh-CN",
+      "route": "/api/cordis/registry",
+      "output": "src/content/docs/api/cordis/registry.md",
+      "output_sha256": "448b14e10ba41545895cf8213895dede5c906f8f2626ea3ed9340891a811f2d5",
+      "segment_ids": [
+        "reference.cordis-api.registry#title",
+        "reference.cordis-api.registry#section-001",
+        "reference.cordis-api.registry#section-002"
+      ]
+    },
+    {
+      "page_id": "cordis-api.registry",
+      "locale": "en-US",
+      "route": "/en/api/cordis/registry",
+      "output": "src/content/docs/en/api/cordis/registry.md",
+      "output_sha256": "f0e88b4107a9790fbfb1b0983557e5ea3309677a492b2c2b8128477a8ae8fb94",
+      "segment_ids": [
+        "reference.cordis-api.registry#title",
+        "reference.cordis-api.registry#section-001",
+        "reference.cordis-api.registry#section-002"
+      ]
+    },
+    {
+      "page_id": "cordis-api.service",
+      "locale": "zh-CN",
+      "route": "/api/cordis/service",
+      "output": "src/content/docs/api/cordis/service.md",
+      "output_sha256": "dbefa77f1b12529d4362454da89df65eaa5f70b9a1b5f6ba292c2853dfda994f",
+      "segment_ids": [
+        "reference.cordis-api.service#title",
+        "reference.cordis-api.service#section-001"
+      ]
+    },
+    {
+      "page_id": "cordis-api.service",
+      "locale": "en-US",
+      "route": "/en/api/cordis/service",
+      "output": "src/content/docs/en/api/cordis/service.md",
+      "output_sha256": "bca42b9a42859cf73cc6be27902aa97e0eb9afb08cf807689be77625a384ab1c",
+      "segment_ids": [
+        "reference.cordis-api.service#title",
+        "reference.cordis-api.service#section-001"
+      ]
+    },
+    {
+      "page_id": "cordis-api.inherited",
+      "locale": "en-US",
+      "route": "/en/api/cordis/inherited",
+      "output": "src/content/docs/en/api/cordis/inherited.md",
+      "output_sha256": "0bdce1ea816c42f604c39955276822c0696975f913f8f3e205bf450f1098e64f",
+      "segment_ids": [
+        "reference.cordis-api.inherited#title",
+        "reference.cordis-api.inherited#section-001",
+        "reference.cordis-api.inherited#section-002"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-a-package",
+      "locale": "zh-CN",
+      "route": "/examples/adding-a-package",
+      "output": "src/content/docs/examples/adding-a-package.md",
+      "output_sha256": "e9da0d15ca7da30d46884546f94885b43550166db886159447786f041f11f857",
+      "segment_ids": [
+        "reference.cookbook.adding-a-package#title",
+        "reference.cookbook.adding-a-package#section-001",
+        "reference.cookbook.adding-a-package#section-002",
+        "reference.cookbook.adding-a-package#section-003",
+        "reference.cookbook.adding-a-package#section-004",
+        "reference.cookbook.adding-a-package#section-005"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-a-package",
+      "locale": "en-US",
+      "route": "/en/examples/adding-a-package",
+      "output": "src/content/docs/en/examples/adding-a-package.md",
+      "output_sha256": "eecbd94de3a8fec41aa1273cd2c77f228d3a722272202bfde5a39037db00b188",
+      "segment_ids": [
+        "reference.cookbook.adding-a-package#title",
+        "reference.cookbook.adding-a-package#section-001",
+        "reference.cookbook.adding-a-package#section-002",
+        "reference.cookbook.adding-a-package#section-003",
+        "reference.cookbook.adding-a-package#section-004",
+        "reference.cookbook.adding-a-package#section-005"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-a-tool",
+      "locale": "zh-CN",
+      "route": "/examples/adding-a-tool",
+      "output": "src/content/docs/examples/adding-a-tool.md",
+      "output_sha256": "65002783307bdc8fad456ce7150debfa8b3931142da33024bf1987c4b526675b",
+      "segment_ids": [
+        "reference.cookbook.adding-a-tool#title",
+        "reference.cookbook.adding-a-tool#section-001",
+        "reference.cookbook.adding-a-tool#section-002",
+        "reference.cookbook.adding-a-tool#section-003",
+        "reference.cookbook.adding-a-tool#section-004",
+        "reference.cookbook.adding-a-tool#section-005",
+        "reference.cookbook.adding-a-tool#section-006",
+        "reference.cookbook.adding-a-tool#section-007"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-a-tool",
+      "locale": "en-US",
+      "route": "/en/examples/adding-a-tool",
+      "output": "src/content/docs/en/examples/adding-a-tool.md",
+      "output_sha256": "755d10031994bb14426ecab79462f32a5a1b7065888af438a21445ff3fac4748",
+      "segment_ids": [
+        "reference.cookbook.adding-a-tool#title",
+        "reference.cookbook.adding-a-tool#section-001",
+        "reference.cookbook.adding-a-tool#section-002",
+        "reference.cookbook.adding-a-tool#section-003",
+        "reference.cookbook.adding-a-tool#section-004",
+        "reference.cookbook.adding-a-tool#section-005",
+        "reference.cookbook.adding-a-tool#section-006",
+        "reference.cookbook.adding-a-tool#section-007"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-an-llm-adapter",
+      "locale": "zh-CN",
+      "route": "/examples/adding-an-llm-adapter",
+      "output": "src/content/docs/examples/adding-an-llm-adapter.md",
+      "output_sha256": "93ac7135c67c15c419a47a3061889c849a64cae842aa71d286d0f0d54f58cbf8",
+      "segment_ids": [
+        "reference.cookbook.adding-an-llm-adapter#title",
+        "reference.cookbook.adding-an-llm-adapter#section-001",
+        "reference.cookbook.adding-an-llm-adapter#section-002",
+        "reference.cookbook.adding-an-llm-adapter#section-003",
+        "reference.cookbook.adding-an-llm-adapter#section-004"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-an-llm-adapter",
+      "locale": "en-US",
+      "route": "/en/examples/adding-an-llm-adapter",
+      "output": "src/content/docs/en/examples/adding-an-llm-adapter.md",
+      "output_sha256": "e834526a4a10e3d85b9d4259a12ae681c731ede7b3c54481651f42212c23317b",
+      "segment_ids": [
+        "reference.cookbook.adding-an-llm-adapter#title",
+        "reference.cookbook.adding-an-llm-adapter#section-001",
+        "reference.cookbook.adding-an-llm-adapter#section-002",
+        "reference.cookbook.adding-an-llm-adapter#section-003",
+        "reference.cookbook.adding-an-llm-adapter#section-004"
+      ]
+    },
+    {
+      "page_id": "cookbook.extension-cookbook",
+      "locale": "zh-CN",
+      "route": "/examples/extension-cookbook",
+      "output": "src/content/docs/examples/extension-cookbook.md",
+      "output_sha256": "1dc1c45ff1a59e88aa4cb570f68a39199fc4effce237a7488e9f4e210bec2644",
+      "segment_ids": [
+        "reference.cookbook.extension-cookbook#title",
+        "reference.cookbook.extension-cookbook#section-001",
+        "reference.cookbook.extension-cookbook#section-002",
+        "reference.cookbook.extension-cookbook#section-003",
+        "reference.cookbook.extension-cookbook#section-004",
+        "reference.cookbook.extension-cookbook#section-005",
+        "reference.cookbook.extension-cookbook#section-006"
+      ]
+    },
+    {
+      "page_id": "cookbook.extension-cookbook",
+      "locale": "en-US",
+      "route": "/en/examples/extension-cookbook",
+      "output": "src/content/docs/en/examples/extension-cookbook.md",
+      "output_sha256": "a0a6621b9a944c7bcc5b56518d389d608bac7ffc61ffcf263bef061660f3bc2e",
+      "segment_ids": [
+        "reference.cookbook.extension-cookbook#title",
+        "reference.cookbook.extension-cookbook#section-001",
+        "reference.cookbook.extension-cookbook#section-002",
+        "reference.cookbook.extension-cookbook#section-003",
+        "reference.cookbook.extension-cookbook#section-004",
+        "reference.cookbook.extension-cookbook#section-005",
+        "reference.cookbook.extension-cookbook#section-006"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-a-conversation-node",
+      "locale": "zh-CN",
+      "route": "/examples/adding-a-conversation-node",
+      "output": "src/content/docs/examples/adding-a-conversation-node.md",
+      "output_sha256": "4a4a84eaa8d4451c691ff98b3485cfaf7610e8f7793b74ea0ba5ce48457fabe3",
+      "segment_ids": [
+        "reference.cookbook.adding-a-conversation-node#title",
+        "reference.cookbook.adding-a-conversation-node#section-001",
+        "reference.cookbook.adding-a-conversation-node#section-002",
+        "reference.cookbook.adding-a-conversation-node#section-003",
+        "reference.cookbook.adding-a-conversation-node#section-004",
+        "reference.cookbook.adding-a-conversation-node#section-005"
+      ]
+    },
+    {
+      "page_id": "cookbook.adding-a-conversation-node",
+      "locale": "en-US",
+      "route": "/en/examples/adding-a-conversation-node",
+      "output": "src/content/docs/en/examples/adding-a-conversation-node.md",
+      "output_sha256": "fa142bd7f288b67c65b8644290840c70008b5f9338cb0e21095b69f5f1fec756",
+      "segment_ids": [
+        "reference.cookbook.adding-a-conversation-node#title",
+        "reference.cookbook.adding-a-conversation-node#section-001",
+        "reference.cookbook.adding-a-conversation-node#section-002",
+        "reference.cookbook.adding-a-conversation-node#section-003",
+        "reference.cookbook.adding-a-conversation-node#section-004",
+        "reference.cookbook.adding-a-conversation-node#section-005"
+      ]
+    }
+  ]
+}

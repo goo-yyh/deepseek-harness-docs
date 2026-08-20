@@ -1,24 +1,73 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
-  "adapters": [
+  "upstream_bindings": [
     {
       "path": "website/docs.ts",
-      "upstream_sha256": "55d2b315e080e5112443923f5cf22e3efc85b6076ef8091a4b2104278a510d28",
-      "local_sha256": "b182e76ff484c3878010bc75a31c27b5acb176cd38353a49e25ade3a170e8706",
-      "reason": "Project validated Japanese and Korean translations into locale-isomorphic route, sidebar, and source catalogs while keeping official Chinese and English catalog entries unchanged."
-    },
-    {
-      "path": "scripts/project-doc-site.ts",
-      "upstream_sha256": "2081fbf35974a00ac74294caa313eae4f2fd7d522d1689ffd0bc37f8fe79b6a8",
-      "local_sha256": "a35c0965baa942a46d22f6d84b3db60db4be32ec132a31c7c0df3841135fc64e",
-      "reason": "Resolve non-vendored repository-relative links against the pinned upstream Git tree, keep rendered images local, and bind translated headings to canonical English identities."
+      "sha256": "55d2b315e080e5112443923f5cf22e3efc85b6076ef8091a4b2104278a510d28",
+      "role": "catalog discovery only"
     },
     {
       "path": "website/.vitepress/config.ts",
-      "upstream_sha256": "51e246d500db89ac1d8f2d8305be02d66c9dd0f38b9935a3ea153d2f286b6a6b",
-      "local_sha256": "914522ce7c8193627e722338679eae49c5561b8dd33f8cb1fd6636198c534ef0",
-      "reason": "Add manifest-driven multilingual canonical, hreflang, localized metadata, structured data, sitemap hooks, and stable translated heading IDs without changing the official VitePress theme."
+      "sha256": "51e246d500db89ac1d8f2d8305be02d66c9dd0f38b9935a3ea153d2f286b6a6b",
+      "role": "upstream behavior evidence only"
+    },
+    {
+      "path": "scripts/project-doc-site.ts",
+      "sha256": "2081fbf35974a00ac74294caa313eae4f2fd7d522d1689ffd0bc37f8fe79b6a8",
+      "role": "upstream link and asset behavior evidence only"
+    }
+  ],
+  "local_controls": [
+    {
+      "path": "astro.config.mjs",
+      "sha256": "9aa0e8aa816c25c738f8d4c9f790324ba9fa9a6b6a86af8863c19f2ef926a823",
+      "reason": "Pinned Astro/Starlight static runtime with Chinese and English task-oriented navigation."
+    },
+    {
+      "path": "src/styles/docs.css",
+      "sha256": "f3319ca62bd1ffa23aa751891a92be90bdc28e5891c85a200bbfe8fffda3adb0",
+      "reason": "Owns the codex_doc_cn-inspired documentation shell, responsive typography, navigation hierarchy, and light/dark visual tokens."
+    },
+    {
+      "path": "scripts/navigation-model.ts",
+      "sha256": "05b23b625d400c545f476254e45faff99d31dc13c8a6452564941b7b04d93d3d",
+      "reason": "Validates and projects the reviewed bilingual two-level navigation without changing page identities or routes."
+    },
+    {
+      "path": "scripts/bootstrap-content-map.ts",
+      "sha256": "e2184c483c3aa4d582f4f4ca645f768f0e922d527245af3b959603c4044f88ef",
+      "reason": "Regenerates content ownership while requiring a complete human-reviewed navigation taxonomy."
+    },
+    {
+      "path": "scripts/projection-model.ts",
+      "sha256": "7405a339eba5487b0fbdf000038984900979803c524a405f21a71a754bf0b440",
+      "reason": "Defines locked AST segments, neutral routes, locale boundaries, and source provenance."
+    },
+    {
+      "path": "scripts/extract-source-segments.ts",
+      "sha256": "7fe52e30041471df944ce7eac0d61c49d0d33749f59f9cf15bfe07c9adfceffb",
+      "reason": "Deterministically extracts title, introduction, and complete H2 subtrees from official bytes."
+    },
+    {
+      "path": "scripts/project-astro-docs.ts",
+      "sha256": "54e91bd3d04d95d6ad9a34b9a41585550139829584d211692be3b7f6c12556ce",
+      "reason": "Projects one-owner source segments into generated Astro content while keeping upstream provenance out of public page output."
+    },
+    {
+      "path": "scripts/audit-content-projection.ts",
+      "sha256": "61221ddfabdef8fd9c82392c048d58a6f2da8474c357b1023f892a052554ecfb",
+      "reason": "Fails closed on missing or duplicate ownership, exact source-page reproduction, public source attribution, or receipt drift."
+    },
+    {
+      "path": "scripts/verify-built-routes.ts",
+      "sha256": "e3b4d102398b9d38b36f1c0b170c60c327690c083726797786d9c1111df50754",
+      "reason": "Verifies all Astro pages, local entry redirects, locale fallback routing, and one-hop deployment redirects."
+    },
+    {
+      "path": "src/components/Head.astro",
+      "sha256": "b349546a8d3b605a8e307a7cb243ea498522af95774f03658d5dcdf9e310f7aa",
+      "reason": "Owns the single Vercel Analytics injection and production sitemap discovery link."
     }
   ]
 }

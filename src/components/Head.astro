@@ -1,0 +1,33 @@
+---
+import DefaultHead from '@astrojs/starlight/components/Head.astro'
+import Analytics from '@vercel/analytics/astro'
+
+interface HeadEntry {
+  tag: string
+  attrs?: Record<string, string>
+}
+
+const starlightRoute = (Astro.locals as unknown as { starlightRoute: { head: HeadEntry[] } }).starlightRoute
+starlightRoute.head = starlightRoute.head.filter(({ tag, attrs }) => !(tag === 'link' && attrs?.rel === 'sitemap'))
+---
+
+<DefaultHead />
+<link rel="sitemap" href="/sitemap.xml" />
+<Analytics />
+
+<script>
+  import mermaid from 'mermaid'
+
+  const renderMermaid = async () => {
+    const diagrams = document.querySelectorAll<HTMLElement>('[data-mermaid-source]:not([data-processed])')
+    if (diagrams.length === 0) return
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: 'strict',
+      theme: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default',
+    })
+    await mermaid.run({ nodes: Array.from(diagrams) })
+  }
+
+  document.addEventListener('DOMContentLoaded', () => void renderMermaid(), { once: true })
+</script>

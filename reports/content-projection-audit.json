@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
+  "source_page_count": 83,
+  "source_segment_count": 717,
+  "target_page_count": 85,
+  "generated_locale_pages": 169,
+  "coverage_percent": 100,
+  "missing_segments": [],
+  "duplicate_owners": [],
+  "exact_full_page_duplicates": [],
+  "errors": []
+}

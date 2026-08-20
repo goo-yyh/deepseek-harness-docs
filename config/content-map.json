@@ -1,0 +1,2143 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
+  "target_pages": [
+    {
+      "page_id": "menu.start",
+      "neutral_route": "/start",
+      "kind": "topic",
+      "menu_id": "start",
+      "order": 10,
+      "segments": [
+        "home#title",
+        "guide.quickstart#intro",
+        "guide.providers#intro",
+        "guide.python-sdk#intro",
+        "reference#intro"
+      ],
+      "source_page_ids": [
+        "home",
+        "guide.quickstart",
+        "guide.providers",
+        "guide.python-sdk",
+        "reference"
+      ],
+      "legacy_routes": [],
+      "indexing": "index"
+    },
+    {
+      "page_id": "menu.concepts",
+      "neutral_route": "/concepts",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 20,
+      "segments": [
+        "develop.framework#intro",
+        "develop.framework.service#intro",
+        "develop.framework.events#intro",
+        "develop.cordis-tutorial#intro",
+        "develop.cordis-tutorial.01-first-plugin#intro",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#intro",
+        "develop.cordis-tutorial.03-services#intro",
+        "develop.cordis-tutorial.04-events#intro",
+        "develop.cordis-tutorial.05-config#intro",
+        "develop.cordis-tutorial.06-composition-and-hmr#intro",
+        "develop.cordis-tutorial.07-into-the-harness#intro",
+        "reference.cordis-primer#intro",
+        "reference.subsystems#title",
+        "reference.subsystems#intro",
+        "reference.capability-seams#title",
+        "reference.capability-seams#intro",
+        "reference.agent-lifecycle#title",
+        "reference.agent-lifecycle#intro",
+        "reference.tool-execution-pipeline#title",
+        "reference.tool-execution-pipeline#intro"
+      ],
+      "source_page_ids": [
+        "develop.framework",
+        "develop.framework.service",
+        "develop.framework.events",
+        "develop.cordis-tutorial",
+        "develop.cordis-tutorial.01-first-plugin",
+        "develop.cordis-tutorial.02-lifecycle-and-effects",
+        "develop.cordis-tutorial.03-services",
+        "develop.cordis-tutorial.04-events",
+        "develop.cordis-tutorial.05-config",
+        "develop.cordis-tutorial.06-composition-and-hmr",
+        "develop.cordis-tutorial.07-into-the-harness",
+        "reference.cordis-primer",
+        "reference.subsystems",
+        "reference.capability-seams",
+        "reference.agent-lifecycle",
+        "reference.tool-execution-pipeline"
+      ],
+      "legacy_routes": [],
+      "indexing": "index"
+    },
+    {
+      "page_id": "menu.build",
+      "neutral_route": "/build",
+      "kind": "topic",
+      "menu_id": "build",
+      "order": 30,
+      "segments": [
+        "develop.basic#intro",
+        "develop.basic.tool#intro",
+        "develop.basic.config#intro",
+        "develop.basic.publish#intro",
+        "develop.practice#intro",
+        "develop.practice.llm-adapter#intro"
+      ],
+      "source_page_ids": [
+        "develop.basic",
+        "develop.basic.tool",
+        "develop.basic.config",
+        "develop.basic.publish",
+        "develop.practice",
+        "develop.practice.llm-adapter"
+      ],
+      "legacy_routes": [],
+      "indexing": "index"
+    },
+    {
+      "page_id": "menu.runtime",
+      "neutral_route": "/runtime",
+      "kind": "topic",
+      "menu_id": "runtime",
+      "order": 40,
+      "segments": [
+        "reference.subsystems.core#intro",
+        "reference.subsystems.scope#intro",
+        "reference.subsystems.invariants#intro",
+        "reference.subsystems.session#intro",
+        "reference.subsystems.session-query#intro",
+        "reference.subsystems.session-reference#intro",
+        "reference.subsystems.session-title#intro",
+        "reference.subsystems.session-projection#intro",
+        "reference.subsystems.persistence#intro",
+        "reference.subsystems.spill#intro",
+        "reference.subsystems.session-telemetry#intro",
+        "reference.subsystems.llm-streaming#intro",
+        "reference.subsystems.token-meter#intro",
+        "reference.subsystems.system-prompt#intro",
+        "reference.subsystems.compaction#intro",
+        "reference.subsystems.tools#intro",
+        "reference.subsystems.shell#intro",
+        "reference.subsystems.subprocess#intro",
+        "reference.subsystems.terminal#intro",
+        "reference.subsystems.jobs#intro",
+        "reference.subsystems.filesystem#intro",
+        "reference.subsystems.lsp#intro",
+        "reference.subsystems.code-runtime#intro",
+        "reference.subsystems.web#intro",
+        "reference.subsystems.skills#intro",
+        "reference.subsystems.workflow#intro",
+        "reference.subsystems.subagent#intro",
+        "reference.subsystems.approval#intro",
+        "reference.subsystems.permission-presets#intro",
+        "reference.subsystems.sandbox#intro",
+        "reference.subsystems.plan#intro",
+        "reference.subsystems.user-questions#intro",
+        "reference.subsystems.commands#intro",
+        "reference.subsystems.goal#intro",
+        "reference.subsystems.schedule#intro",
+        "reference.subsystems.web-server#intro",
+        "reference.subsystems.typert#intro",
+        "reference.subsystems.client-modules#intro",
+        "reference.subsystems.storage#intro",
+        "reference.subsystems.workspace#intro",
+        "reference.subsystems.settings#intro",
+        "reference.subsystems.credentials#intro"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.core",
+        "reference.subsystems.scope",
+        "reference.subsystems.invariants",
+        "reference.subsystems.session",
+        "reference.subsystems.session-query",
+        "reference.subsystems.session-reference",
+        "reference.subsystems.session-title",
+        "reference.subsystems.session-projection",
+        "reference.subsystems.persistence",
+        "reference.subsystems.spill",
+        "reference.subsystems.session-telemetry",
+        "reference.subsystems.llm-streaming",
+        "reference.subsystems.token-meter",
+        "reference.subsystems.system-prompt",
+        "reference.subsystems.compaction",
+        "reference.subsystems.tools",
+        "reference.subsystems.shell",
+        "reference.subsystems.subprocess",
+        "reference.subsystems.terminal",
+        "reference.subsystems.jobs",
+        "reference.subsystems.filesystem",
+        "reference.subsystems.lsp",
+        "reference.subsystems.code-runtime",
+        "reference.subsystems.web",
+        "reference.subsystems.skills",
+        "reference.subsystems.workflow",
+        "reference.subsystems.subagent",
+        "reference.subsystems.approval",
+        "reference.subsystems.permission-presets",
+        "reference.subsystems.sandbox",
+        "reference.subsystems.plan",
+        "reference.subsystems.user-questions",
+        "reference.subsystems.commands",
+        "reference.subsystems.goal",
+        "reference.subsystems.schedule",
+        "reference.subsystems.web-server",
+        "reference.subsystems.typert",
+        "reference.subsystems.client-modules",
+        "reference.subsystems.storage",
+        "reference.subsystems.workspace",
+        "reference.subsystems.settings",
+        "reference.subsystems.credentials"
+      ],
+      "legacy_routes": [],
+      "indexing": "index"
+    },
+    {
+      "page_id": "menu.api",
+      "neutral_route": "/api",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 50,
+      "segments": [
+        "reference.config-catalog#intro",
+        "reference.tool-catalog#intro",
+        "reference.persistence-catalog#intro",
+        "reference.cordis-api.context#intro",
+        "reference.cordis-api.events#intro",
+        "reference.cordis-api.fiber#intro",
+        "reference.cordis-api.registry#intro",
+        "reference.cordis-api.service#intro",
+        "reference.cordis-api.inherited#intro"
+      ],
+      "source_page_ids": [
+        "reference.config-catalog",
+        "reference.tool-catalog",
+        "reference.persistence-catalog",
+        "reference.cordis-api.context",
+        "reference.cordis-api.events",
+        "reference.cordis-api.fiber",
+        "reference.cordis-api.registry",
+        "reference.cordis-api.service",
+        "reference.cordis-api.inherited"
+      ],
+      "legacy_routes": [],
+      "indexing": "index"
+    },
+    {
+      "page_id": "menu.examples",
+      "neutral_route": "/examples",
+      "kind": "example-index",
+      "menu_id": "examples",
+      "order": 60,
+      "segments": [
+        "reference.cookbook.adding-a-package#intro",
+        "reference.cookbook.adding-a-tool#intro",
+        "reference.cookbook.adding-an-llm-adapter#intro",
+        "reference.cookbook.extension-cookbook#intro",
+        "reference.cookbook.adding-a-conversation-node#intro"
+      ],
+      "source_page_ids": [
+        "reference.cookbook.adding-a-package",
+        "reference.cookbook.adding-a-tool",
+        "reference.cookbook.adding-an-llm-adapter",
+        "reference.cookbook.extension-cookbook",
+        "reference.cookbook.adding-a-conversation-node"
+      ],
+      "legacy_routes": [],
+      "indexing": "index"
+    },
+    {
+      "page_id": "menu.versions",
+      "neutral_route": "/versions",
+      "kind": "version-diff",
+      "menu_id": "versions",
+      "order": 70,
+      "segments": [],
+      "source_page_ids": [],
+      "legacy_routes": [],
+      "indexing": "noindex"
+    },
+    {
+      "page_id": "quickstart",
+      "neutral_route": "/start/web-ui",
+      "kind": "topic",
+      "menu_id": "start",
+      "order": 1,
+      "segments": [
+        "guide.quickstart#title",
+        "guide.quickstart#section-001",
+        "guide.quickstart#section-002",
+        "guide.quickstart#section-003",
+        "guide.quickstart#section-004"
+      ],
+      "source_page_ids": [
+        "guide.quickstart"
+      ],
+      "legacy_routes": [
+        "/guide/quickstart"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "providers",
+      "neutral_route": "/start/models",
+      "kind": "topic",
+      "menu_id": "start",
+      "order": 2,
+      "segments": [
+        "guide.providers#title",
+        "guide.providers#section-001",
+        "guide.providers#section-002",
+        "guide.providers#section-003",
+        "guide.providers#section-004",
+        "guide.providers#section-005",
+        "guide.providers#section-006"
+      ],
+      "source_page_ids": [
+        "guide.providers"
+      ],
+      "legacy_routes": [
+        "/guide/providers"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "python-sdk",
+      "neutral_route": "/start/python-sdk",
+      "kind": "topic",
+      "menu_id": "start",
+      "order": 1,
+      "segments": [
+        "guide.python-sdk#title",
+        "guide.python-sdk#section-001",
+        "guide.python-sdk#section-002",
+        "guide.python-sdk#section-003",
+        "guide.python-sdk#section-004",
+        "guide.python-sdk#section-005",
+        "guide.python-sdk#section-006"
+      ],
+      "source_page_ids": [
+        "guide.python-sdk"
+      ],
+      "legacy_routes": [
+        "/guide/python-sdk"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "basic",
+      "neutral_route": "/build/first-plugin",
+      "kind": "topic",
+      "menu_id": "build",
+      "order": 1,
+      "segments": [
+        "develop.basic#title",
+        "develop.basic#section-001",
+        "develop.basic#section-002",
+        "develop.basic#section-003",
+        "develop.basic#section-004",
+        "develop.basic#section-005",
+        "develop.basic#section-006",
+        "develop.basic#section-007",
+        "develop.basic#section-008"
+      ],
+      "source_page_ids": [
+        "develop.basic"
+      ],
+      "legacy_routes": [
+        "/develop/basic/"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "basic.tool",
+      "neutral_route": "/build/tool",
+      "kind": "topic",
+      "menu_id": "build",
+      "order": 2,
+      "segments": [
+        "develop.basic.tool#title",
+        "develop.basic.tool#section-001",
+        "develop.basic.tool#section-002",
+        "develop.basic.tool#section-003"
+      ],
+      "source_page_ids": [
+        "develop.basic.tool"
+      ],
+      "legacy_routes": [
+        "/develop/basic/tool"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "basic.config",
+      "neutral_route": "/build/config",
+      "kind": "topic",
+      "menu_id": "build",
+      "order": 3,
+      "segments": [
+        "develop.basic.config#title",
+        "develop.basic.config#section-001",
+        "develop.basic.config#section-002",
+        "develop.basic.config#section-003",
+        "develop.basic.config#section-004",
+        "develop.basic.config#section-005"
+      ],
+      "source_page_ids": [
+        "develop.basic.config"
+      ],
+      "legacy_routes": [
+        "/develop/basic/config"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "basic.publish",
+      "neutral_route": "/build/publish",
+      "kind": "topic",
+      "menu_id": "build",
+      "order": 4,
+      "segments": [
+        "develop.basic.publish#title",
+        "develop.basic.publish#section-001",
+        "develop.basic.publish#section-002",
+        "develop.basic.publish#section-003",
+        "develop.basic.publish#section-004",
+        "develop.basic.publish#section-005",
+        "develop.basic.publish#section-006"
+      ],
+      "source_page_ids": [
+        "develop.basic.publish"
+      ],
+      "legacy_routes": [
+        "/develop/basic/publish"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "framework",
+      "neutral_route": "/concepts/plugin-lifecycle",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 1,
+      "segments": [
+        "develop.framework#title",
+        "develop.framework#section-001",
+        "develop.framework#section-002",
+        "develop.framework#section-003",
+        "develop.framework#section-004",
+        "develop.framework#section-005",
+        "develop.framework#section-006",
+        "develop.framework#section-007",
+        "develop.framework#section-008"
+      ],
+      "source_page_ids": [
+        "develop.framework"
+      ],
+      "legacy_routes": [
+        "/develop/framework/"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "framework.service",
+      "neutral_route": "/concepts/service",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 2,
+      "segments": [
+        "develop.framework.service#title",
+        "develop.framework.service#section-001",
+        "develop.framework.service#section-002",
+        "develop.framework.service#section-003",
+        "develop.framework.service#section-004",
+        "develop.framework.service#section-005",
+        "develop.framework.service#section-006",
+        "develop.framework.service#section-007"
+      ],
+      "source_page_ids": [
+        "develop.framework.service"
+      ],
+      "legacy_routes": [
+        "/develop/framework/service"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "framework.events",
+      "neutral_route": "/concepts/events",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 3,
+      "segments": [
+        "develop.framework.events#title",
+        "develop.framework.events#section-001",
+        "develop.framework.events#section-002",
+        "develop.framework.events#section-003",
+        "develop.framework.events#section-004",
+        "develop.framework.events#section-005",
+        "develop.framework.events#section-006",
+        "develop.framework.events#section-007"
+      ],
+      "source_page_ids": [
+        "develop.framework.events"
+      ],
+      "legacy_routes": [
+        "/develop/framework/events"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "practice",
+      "neutral_route": "/build/capability-layering",
+      "kind": "topic",
+      "menu_id": "build",
+      "order": 1,
+      "segments": [
+        "develop.practice#title",
+        "develop.practice#section-001",
+        "develop.practice#section-002",
+        "develop.practice#section-003",
+        "develop.practice#section-004",
+        "develop.practice#section-005",
+        "develop.practice#section-006"
+      ],
+      "source_page_ids": [
+        "develop.practice"
+      ],
+      "legacy_routes": [
+        "/develop/practice/"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "practice.llm-adapter",
+      "neutral_route": "/build/llm-adapter",
+      "kind": "topic",
+      "menu_id": "build",
+      "order": 2,
+      "segments": [
+        "develop.practice.llm-adapter#title",
+        "develop.practice.llm-adapter#section-001",
+        "develop.practice.llm-adapter#section-002",
+        "develop.practice.llm-adapter#section-003",
+        "develop.practice.llm-adapter#section-004",
+        "develop.practice.llm-adapter#section-005",
+        "develop.practice.llm-adapter#section-006",
+        "develop.practice.llm-adapter#section-007",
+        "develop.practice.llm-adapter#section-008"
+      ],
+      "source_page_ids": [
+        "develop.practice.llm-adapter"
+      ],
+      "legacy_routes": [
+        "/develop/practice/llm-adapter"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial",
+      "neutral_route": "/concepts/cordis/tutorial",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 0,
+      "segments": [
+        "develop.cordis-tutorial#title",
+        "develop.cordis-tutorial#section-001",
+        "develop.cordis-tutorial#section-002",
+        "develop.cordis-tutorial#section-003"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial.01-first-plugin",
+      "neutral_route": "/concepts/cordis/tutorial/first-plugin",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 1,
+      "segments": [
+        "develop.cordis-tutorial.01-first-plugin#title",
+        "develop.cordis-tutorial.01-first-plugin#section-001",
+        "develop.cordis-tutorial.01-first-plugin#section-002",
+        "develop.cordis-tutorial.01-first-plugin#section-003",
+        "develop.cordis-tutorial.01-first-plugin#section-004",
+        "develop.cordis-tutorial.01-first-plugin#section-005"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial.01-first-plugin"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/01-first-plugin"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial.02-lifecycle-and-effects",
+      "neutral_route": "/concepts/cordis/tutorial/lifecycle-and-effects",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 2,
+      "segments": [
+        "develop.cordis-tutorial.02-lifecycle-and-effects#title",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-001",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-002",
+        "develop.cordis-tutorial.02-lifecycle-and-effects#section-003"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial.02-lifecycle-and-effects"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/02-lifecycle-and-effects"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial.03-services",
+      "neutral_route": "/concepts/cordis/tutorial/services",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 3,
+      "segments": [
+        "develop.cordis-tutorial.03-services#title",
+        "develop.cordis-tutorial.03-services#section-001",
+        "develop.cordis-tutorial.03-services#section-002",
+        "develop.cordis-tutorial.03-services#section-003",
+        "develop.cordis-tutorial.03-services#section-004",
+        "develop.cordis-tutorial.03-services#section-005"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial.03-services"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/03-services"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial.04-events",
+      "neutral_route": "/concepts/cordis/tutorial/events",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 4,
+      "segments": [
+        "develop.cordis-tutorial.04-events#title",
+        "develop.cordis-tutorial.04-events#section-001",
+        "develop.cordis-tutorial.04-events#section-002",
+        "develop.cordis-tutorial.04-events#section-003"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial.04-events"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/04-events"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial.05-config",
+      "neutral_route": "/concepts/cordis/tutorial/config",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 5,
+      "segments": [
+        "develop.cordis-tutorial.05-config#title",
+        "develop.cordis-tutorial.05-config#section-001",
+        "develop.cordis-tutorial.05-config#section-002",
+        "develop.cordis-tutorial.05-config#section-003"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial.05-config"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/05-config"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial.06-composition-and-hmr",
+      "neutral_route": "/concepts/cordis/tutorial/composition-and-hmr",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 6,
+      "segments": [
+        "develop.cordis-tutorial.06-composition-and-hmr#title",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-001",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-002",
+        "develop.cordis-tutorial.06-composition-and-hmr#section-003"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial.06-composition-and-hmr"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/06-composition-and-hmr"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-tutorial.07-into-the-harness",
+      "neutral_route": "/concepts/cordis/tutorial/into-the-harness",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 7,
+      "segments": [
+        "develop.cordis-tutorial.07-into-the-harness#title",
+        "develop.cordis-tutorial.07-into-the-harness#section-001",
+        "develop.cordis-tutorial.07-into-the-harness#section-002",
+        "develop.cordis-tutorial.07-into-the-harness#section-003",
+        "develop.cordis-tutorial.07-into-the-harness#section-004"
+      ],
+      "source_page_ids": [
+        "develop.cordis-tutorial.07-into-the-harness"
+      ],
+      "legacy_routes": [
+        "/develop/cordis-tutorial/07-into-the-harness"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-primer",
+      "neutral_route": "/concepts/cordis/primer",
+      "kind": "topic",
+      "menu_id": "concepts",
+      "order": 1,
+      "segments": [
+        "reference.cordis-primer#title",
+        "reference.cordis-primer#section-001",
+        "reference.cordis-primer#section-002",
+        "reference.cordis-primer#section-003",
+        "reference.cordis-primer#section-004",
+        "reference.cordis-primer#section-005"
+      ],
+      "source_page_ids": [
+        "reference.cordis-primer"
+      ],
+      "legacy_routes": [
+        "/reference/cordis-primer"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.core",
+      "neutral_route": "/runtime/core",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 0,
+      "segments": [
+        "reference.subsystems.core#title",
+        "reference.subsystems.core#section-001",
+        "reference.subsystems.core#section-002",
+        "reference.subsystems.core#section-003",
+        "reference.subsystems.core#section-004",
+        "reference.subsystems.core#section-005",
+        "reference.subsystems.core#section-006",
+        "reference.subsystems.core#section-007",
+        "reference.subsystems.core#section-008",
+        "reference.subsystems.core#section-009"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.core"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/core"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.scope",
+      "neutral_route": "/runtime/scope",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 1,
+      "segments": [
+        "reference.subsystems.scope#title",
+        "reference.subsystems.scope#section-001",
+        "reference.subsystems.scope#section-002",
+        "reference.subsystems.scope#section-003"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.scope"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/scope"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.invariants",
+      "neutral_route": "/runtime/invariants",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 2,
+      "segments": [
+        "reference.subsystems.invariants#title",
+        "reference.subsystems.invariants#section-001",
+        "reference.subsystems.invariants#section-002",
+        "reference.subsystems.invariants#section-003",
+        "reference.subsystems.invariants#section-004",
+        "reference.subsystems.invariants#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.invariants"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/invariants"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.session",
+      "neutral_route": "/runtime/session",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 0,
+      "segments": [
+        "reference.subsystems.session#title",
+        "reference.subsystems.session#section-001",
+        "reference.subsystems.session#section-002",
+        "reference.subsystems.session#section-003",
+        "reference.subsystems.session#section-004",
+        "reference.subsystems.session#section-005",
+        "reference.subsystems.session#section-006",
+        "reference.subsystems.session#section-007",
+        "reference.subsystems.session#section-008",
+        "reference.subsystems.session#section-009",
+        "reference.subsystems.session#section-010",
+        "reference.subsystems.session#section-011",
+        "reference.subsystems.session#section-012"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.session"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/session"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.session-query",
+      "neutral_route": "/runtime/session-query",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 1,
+      "segments": [
+        "reference.subsystems.session-query#title",
+        "reference.subsystems.session-query#section-001",
+        "reference.subsystems.session-query#section-002",
+        "reference.subsystems.session-query#section-003",
+        "reference.subsystems.session-query#section-004",
+        "reference.subsystems.session-query#section-005",
+        "reference.subsystems.session-query#section-006",
+        "reference.subsystems.session-query#section-007",
+        "reference.subsystems.session-query#section-008"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.session-query"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/session-query"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.session-reference",
+      "neutral_route": "/runtime/session-reference",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 2,
+      "segments": [
+        "reference.subsystems.session-reference#title",
+        "reference.subsystems.session-reference#section-001",
+        "reference.subsystems.session-reference#section-002",
+        "reference.subsystems.session-reference#section-003",
+        "reference.subsystems.session-reference#section-004"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.session-reference"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/session-reference"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.session-title",
+      "neutral_route": "/runtime/session-title",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 3,
+      "segments": [
+        "reference.subsystems.session-title#title",
+        "reference.subsystems.session-title#section-001",
+        "reference.subsystems.session-title#section-002",
+        "reference.subsystems.session-title#section-003",
+        "reference.subsystems.session-title#section-004"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.session-title"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/session-title"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.session-projection",
+      "neutral_route": "/runtime/session-projection",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 4,
+      "segments": [
+        "reference.subsystems.session-projection#title",
+        "reference.subsystems.session-projection#section-001",
+        "reference.subsystems.session-projection#section-002",
+        "reference.subsystems.session-projection#section-003",
+        "reference.subsystems.session-projection#section-004"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.session-projection"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/session-projection"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.persistence",
+      "neutral_route": "/runtime/persistence",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 5,
+      "segments": [
+        "reference.subsystems.persistence#title",
+        "reference.subsystems.persistence#section-001",
+        "reference.subsystems.persistence#section-002",
+        "reference.subsystems.persistence#section-003",
+        "reference.subsystems.persistence#section-004",
+        "reference.subsystems.persistence#section-005",
+        "reference.subsystems.persistence#section-006",
+        "reference.subsystems.persistence#section-007",
+        "reference.subsystems.persistence#section-008",
+        "reference.subsystems.persistence#section-009",
+        "reference.subsystems.persistence#section-010",
+        "reference.subsystems.persistence#section-011"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.persistence"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/persistence"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.spill",
+      "neutral_route": "/runtime/spill",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 6,
+      "segments": [
+        "reference.subsystems.spill#title",
+        "reference.subsystems.spill#section-001",
+        "reference.subsystems.spill#section-002",
+        "reference.subsystems.spill#section-003",
+        "reference.subsystems.spill#section-004"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.spill"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/spill"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.session-telemetry",
+      "neutral_route": "/runtime/session-telemetry",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 7,
+      "segments": [
+        "reference.subsystems.session-telemetry#title",
+        "reference.subsystems.session-telemetry#section-001",
+        "reference.subsystems.session-telemetry#section-002",
+        "reference.subsystems.session-telemetry#section-003",
+        "reference.subsystems.session-telemetry#section-004",
+        "reference.subsystems.session-telemetry#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.session-telemetry"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/session-telemetry"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.llm-streaming",
+      "neutral_route": "/runtime/llm-streaming",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 0,
+      "segments": [
+        "reference.subsystems.llm-streaming#title",
+        "reference.subsystems.llm-streaming#section-001",
+        "reference.subsystems.llm-streaming#section-002",
+        "reference.subsystems.llm-streaming#section-003",
+        "reference.subsystems.llm-streaming#section-004",
+        "reference.subsystems.llm-streaming#section-005",
+        "reference.subsystems.llm-streaming#section-006",
+        "reference.subsystems.llm-streaming#section-007",
+        "reference.subsystems.llm-streaming#section-008",
+        "reference.subsystems.llm-streaming#section-009",
+        "reference.subsystems.llm-streaming#section-010",
+        "reference.subsystems.llm-streaming#section-011"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.llm-streaming"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/llm-streaming"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.token-meter",
+      "neutral_route": "/runtime/token-meter",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 1,
+      "segments": [
+        "reference.subsystems.token-meter#title",
+        "reference.subsystems.token-meter#section-001",
+        "reference.subsystems.token-meter#section-002",
+        "reference.subsystems.token-meter#section-003"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.token-meter"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/token-meter"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.system-prompt",
+      "neutral_route": "/runtime/system-prompt",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 2,
+      "segments": [
+        "reference.subsystems.system-prompt#title",
+        "reference.subsystems.system-prompt#section-001",
+        "reference.subsystems.system-prompt#section-002",
+        "reference.subsystems.system-prompt#section-003",
+        "reference.subsystems.system-prompt#section-004",
+        "reference.subsystems.system-prompt#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.system-prompt"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/system-prompt"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.compaction",
+      "neutral_route": "/runtime/compaction",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 3,
+      "segments": [
+        "reference.subsystems.compaction#title",
+        "reference.subsystems.compaction#section-001",
+        "reference.subsystems.compaction#section-002",
+        "reference.subsystems.compaction#section-003",
+        "reference.subsystems.compaction#section-004",
+        "reference.subsystems.compaction#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.compaction"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/compaction"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.tools",
+      "neutral_route": "/runtime/tools",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 0,
+      "segments": [
+        "reference.subsystems.tools#title",
+        "reference.subsystems.tools#section-001",
+        "reference.subsystems.tools#section-002",
+        "reference.subsystems.tools#section-003",
+        "reference.subsystems.tools#section-004",
+        "reference.subsystems.tools#section-005",
+        "reference.subsystems.tools#section-006",
+        "reference.subsystems.tools#section-007"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.tools"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/tools"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.shell",
+      "neutral_route": "/runtime/shell",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 1,
+      "segments": [
+        "reference.subsystems.shell#title",
+        "reference.subsystems.shell#section-001",
+        "reference.subsystems.shell#section-002",
+        "reference.subsystems.shell#section-003",
+        "reference.subsystems.shell#section-004",
+        "reference.subsystems.shell#section-005",
+        "reference.subsystems.shell#section-006",
+        "reference.subsystems.shell#section-007"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.shell"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/shell"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.subprocess",
+      "neutral_route": "/runtime/subprocess",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 2,
+      "segments": [
+        "reference.subsystems.subprocess#title",
+        "reference.subsystems.subprocess#section-001",
+        "reference.subsystems.subprocess#section-002",
+        "reference.subsystems.subprocess#section-003",
+        "reference.subsystems.subprocess#section-004",
+        "reference.subsystems.subprocess#section-005",
+        "reference.subsystems.subprocess#section-006",
+        "reference.subsystems.subprocess#section-007",
+        "reference.subsystems.subprocess#section-008",
+        "reference.subsystems.subprocess#section-009"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.subprocess"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/subprocess"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.terminal",
+      "neutral_route": "/runtime/terminal",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 3,
+      "segments": [
+        "reference.subsystems.terminal#title",
+        "reference.subsystems.terminal#section-001",
+        "reference.subsystems.terminal#section-002",
+        "reference.subsystems.terminal#section-003",
+        "reference.subsystems.terminal#section-004",
+        "reference.subsystems.terminal#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.terminal"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/terminal"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.jobs",
+      "neutral_route": "/runtime/jobs",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 4,
+      "segments": [
+        "reference.subsystems.jobs#title",
+        "reference.subsystems.jobs#section-001",
+        "reference.subsystems.jobs#section-002",
+        "reference.subsystems.jobs#section-003",
+        "reference.subsystems.jobs#section-004",
+        "reference.subsystems.jobs#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.jobs"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/jobs"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.filesystem",
+      "neutral_route": "/runtime/filesystem",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 5,
+      "segments": [
+        "reference.subsystems.filesystem#title",
+        "reference.subsystems.filesystem#section-001",
+        "reference.subsystems.filesystem#section-002",
+        "reference.subsystems.filesystem#section-003",
+        "reference.subsystems.filesystem#section-004",
+        "reference.subsystems.filesystem#section-005",
+        "reference.subsystems.filesystem#section-006",
+        "reference.subsystems.filesystem#section-007",
+        "reference.subsystems.filesystem#section-008",
+        "reference.subsystems.filesystem#section-009",
+        "reference.subsystems.filesystem#section-010"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.filesystem"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/filesystem"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.lsp",
+      "neutral_route": "/runtime/lsp",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 6,
+      "segments": [
+        "reference.subsystems.lsp#title",
+        "reference.subsystems.lsp#section-001",
+        "reference.subsystems.lsp#section-002",
+        "reference.subsystems.lsp#section-003",
+        "reference.subsystems.lsp#section-004",
+        "reference.subsystems.lsp#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.lsp"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/lsp"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.code-runtime",
+      "neutral_route": "/runtime/code-runtime",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 7,
+      "segments": [
+        "reference.subsystems.code-runtime#title",
+        "reference.subsystems.code-runtime#section-001",
+        "reference.subsystems.code-runtime#section-002",
+        "reference.subsystems.code-runtime#section-003",
+        "reference.subsystems.code-runtime#section-004",
+        "reference.subsystems.code-runtime#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.code-runtime"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/code-runtime"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.web",
+      "neutral_route": "/runtime/web",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 8,
+      "segments": [
+        "reference.subsystems.web#title",
+        "reference.subsystems.web#section-001",
+        "reference.subsystems.web#section-002",
+        "reference.subsystems.web#section-003",
+        "reference.subsystems.web#section-004",
+        "reference.subsystems.web#section-005",
+        "reference.subsystems.web#section-006",
+        "reference.subsystems.web#section-007"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.web"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/web"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.skills",
+      "neutral_route": "/runtime/skills",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 9,
+      "segments": [
+        "reference.subsystems.skills#title",
+        "reference.subsystems.skills#section-001",
+        "reference.subsystems.skills#section-002",
+        "reference.subsystems.skills#section-003",
+        "reference.subsystems.skills#section-004",
+        "reference.subsystems.skills#section-005",
+        "reference.subsystems.skills#section-006",
+        "reference.subsystems.skills#section-007"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.skills"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/skills"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.workflow",
+      "neutral_route": "/runtime/workflow",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 10,
+      "segments": [
+        "reference.subsystems.workflow#title",
+        "reference.subsystems.workflow#section-001",
+        "reference.subsystems.workflow#section-002",
+        "reference.subsystems.workflow#section-003",
+        "reference.subsystems.workflow#section-004",
+        "reference.subsystems.workflow#section-005",
+        "reference.subsystems.workflow#section-006",
+        "reference.subsystems.workflow#section-007",
+        "reference.subsystems.workflow#section-008"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.workflow"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/workflow"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.subagent",
+      "neutral_route": "/runtime/subagent",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 11,
+      "segments": [
+        "reference.subsystems.subagent#title",
+        "reference.subsystems.subagent#section-001",
+        "reference.subsystems.subagent#section-002",
+        "reference.subsystems.subagent#section-003",
+        "reference.subsystems.subagent#section-004",
+        "reference.subsystems.subagent#section-005",
+        "reference.subsystems.subagent#section-006",
+        "reference.subsystems.subagent#section-007",
+        "reference.subsystems.subagent#section-008",
+        "reference.subsystems.subagent#section-009"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.subagent"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/subagent"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.approval",
+      "neutral_route": "/runtime/approval",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 0,
+      "segments": [
+        "reference.subsystems.approval#title",
+        "reference.subsystems.approval#section-001",
+        "reference.subsystems.approval#section-002",
+        "reference.subsystems.approval#section-003",
+        "reference.subsystems.approval#section-004",
+        "reference.subsystems.approval#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.approval"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/approval"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.permission-presets",
+      "neutral_route": "/runtime/permission-presets",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 1,
+      "segments": [
+        "reference.subsystems.permission-presets#title",
+        "reference.subsystems.permission-presets#section-001",
+        "reference.subsystems.permission-presets#section-002",
+        "reference.subsystems.permission-presets#section-003",
+        "reference.subsystems.permission-presets#section-004"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.permission-presets"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/permission-presets"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.sandbox",
+      "neutral_route": "/runtime/sandbox",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 2,
+      "segments": [
+        "reference.subsystems.sandbox#title",
+        "reference.subsystems.sandbox#section-001",
+        "reference.subsystems.sandbox#section-002",
+        "reference.subsystems.sandbox#section-003",
+        "reference.subsystems.sandbox#section-004",
+        "reference.subsystems.sandbox#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.sandbox"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/sandbox"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.plan",
+      "neutral_route": "/runtime/plan",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 3,
+      "segments": [
+        "reference.subsystems.plan#title",
+        "reference.subsystems.plan#section-001",
+        "reference.subsystems.plan#section-002",
+        "reference.subsystems.plan#section-003",
+        "reference.subsystems.plan#section-004",
+        "reference.subsystems.plan#section-005",
+        "reference.subsystems.plan#section-006"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.plan"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/plan"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.user-questions",
+      "neutral_route": "/runtime/user-questions",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 4,
+      "segments": [
+        "reference.subsystems.user-questions#title",
+        "reference.subsystems.user-questions#section-001",
+        "reference.subsystems.user-questions#section-002",
+        "reference.subsystems.user-questions#section-003",
+        "reference.subsystems.user-questions#section-004",
+        "reference.subsystems.user-questions#section-005",
+        "reference.subsystems.user-questions#section-006",
+        "reference.subsystems.user-questions#section-007",
+        "reference.subsystems.user-questions#section-008"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.user-questions"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/user-questions"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.commands",
+      "neutral_route": "/runtime/commands",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 5,
+      "segments": [
+        "reference.subsystems.commands#title",
+        "reference.subsystems.commands#section-001",
+        "reference.subsystems.commands#section-002",
+        "reference.subsystems.commands#section-003",
+        "reference.subsystems.commands#section-004",
+        "reference.subsystems.commands#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.commands"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/commands"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.goal",
+      "neutral_route": "/runtime/goal",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 6,
+      "segments": [
+        "reference.subsystems.goal#title",
+        "reference.subsystems.goal#section-001",
+        "reference.subsystems.goal#section-002",
+        "reference.subsystems.goal#section-003",
+        "reference.subsystems.goal#section-004",
+        "reference.subsystems.goal#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.goal"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/goal"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.schedule",
+      "neutral_route": "/runtime/schedule",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 7,
+      "segments": [
+        "reference.subsystems.schedule#title",
+        "reference.subsystems.schedule#section-001",
+        "reference.subsystems.schedule#section-002",
+        "reference.subsystems.schedule#section-003",
+        "reference.subsystems.schedule#section-004",
+        "reference.subsystems.schedule#section-005",
+        "reference.subsystems.schedule#section-006"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.schedule"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/schedule"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.web-server",
+      "neutral_route": "/runtime/web-server",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 0,
+      "segments": [
+        "reference.subsystems.web-server#title",
+        "reference.subsystems.web-server#section-001",
+        "reference.subsystems.web-server#section-002",
+        "reference.subsystems.web-server#section-003",
+        "reference.subsystems.web-server#section-004"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.web-server"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/web-server"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.typert",
+      "neutral_route": "/runtime/typert",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 1,
+      "segments": [
+        "reference.subsystems.typert#title",
+        "reference.subsystems.typert#section-001",
+        "reference.subsystems.typert#section-002",
+        "reference.subsystems.typert#section-003",
+        "reference.subsystems.typert#section-004",
+        "reference.subsystems.typert#section-005",
+        "reference.subsystems.typert#section-006"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.typert"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/typert"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.client-modules",
+      "neutral_route": "/runtime/client-modules",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 2,
+      "segments": [
+        "reference.subsystems.client-modules#title",
+        "reference.subsystems.client-modules#section-001",
+        "reference.subsystems.client-modules#section-002",
+        "reference.subsystems.client-modules#section-003",
+        "reference.subsystems.client-modules#section-004",
+        "reference.subsystems.client-modules#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.client-modules"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/client-modules"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.storage",
+      "neutral_route": "/runtime/storage",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 3,
+      "segments": [
+        "reference.subsystems.storage#title",
+        "reference.subsystems.storage#section-001",
+        "reference.subsystems.storage#section-002",
+        "reference.subsystems.storage#section-003",
+        "reference.subsystems.storage#section-004",
+        "reference.subsystems.storage#section-005",
+        "reference.subsystems.storage#section-006",
+        "reference.subsystems.storage#section-007"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.storage"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/storage"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.workspace",
+      "neutral_route": "/runtime/workspace",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 4,
+      "segments": [
+        "reference.subsystems.workspace#title",
+        "reference.subsystems.workspace#section-001",
+        "reference.subsystems.workspace#section-002",
+        "reference.subsystems.workspace#section-003",
+        "reference.subsystems.workspace#section-004",
+        "reference.subsystems.workspace#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.workspace"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/workspace"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.settings",
+      "neutral_route": "/runtime/settings",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 5,
+      "segments": [
+        "reference.subsystems.settings#title",
+        "reference.subsystems.settings#section-001",
+        "reference.subsystems.settings#section-002",
+        "reference.subsystems.settings#section-003",
+        "reference.subsystems.settings#section-004",
+        "reference.subsystems.settings#section-005",
+        "reference.subsystems.settings#section-006"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.settings"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/settings"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "subsystems.credentials",
+      "neutral_route": "/runtime/credentials",
+      "kind": "entity",
+      "menu_id": "runtime",
+      "order": 6,
+      "segments": [
+        "reference.subsystems.credentials#title",
+        "reference.subsystems.credentials#section-001",
+        "reference.subsystems.credentials#section-002",
+        "reference.subsystems.credentials#section-003",
+        "reference.subsystems.credentials#section-004",
+        "reference.subsystems.credentials#section-005"
+      ],
+      "source_page_ids": [
+        "reference.subsystems.credentials"
+      ],
+      "legacy_routes": [
+        "/reference/subsystems/credentials"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "reference",
+      "neutral_route": "/concepts/reference",
+      "kind": "topic",
+      "menu_id": "start",
+      "order": 0,
+      "segments": [
+        "reference#title",
+        "reference#section-001",
+        "reference#section-002",
+        "reference#section-003",
+        "reference#section-004",
+        "reference#section-005",
+        "reference#section-006",
+        "reference#section-007",
+        "reference#section-008"
+      ],
+      "source_page_ids": [
+        "reference"
+      ],
+      "legacy_routes": [
+        "/reference/"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "config-catalog",
+      "neutral_route": "/api/catalogs/config-catalog",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 0,
+      "segments": [
+        "reference.config-catalog#title",
+        "reference.config-catalog#section-001",
+        "reference.config-catalog#section-002",
+        "reference.config-catalog#section-003",
+        "reference.config-catalog#section-004",
+        "reference.config-catalog#section-005",
+        "reference.config-catalog#section-006",
+        "reference.config-catalog#section-007",
+        "reference.config-catalog#section-008",
+        "reference.config-catalog#section-009",
+        "reference.config-catalog#section-010",
+        "reference.config-catalog#section-011",
+        "reference.config-catalog#section-012",
+        "reference.config-catalog#section-013",
+        "reference.config-catalog#section-014",
+        "reference.config-catalog#section-015",
+        "reference.config-catalog#section-016",
+        "reference.config-catalog#section-017",
+        "reference.config-catalog#section-018",
+        "reference.config-catalog#section-019",
+        "reference.config-catalog#section-020",
+        "reference.config-catalog#section-021",
+        "reference.config-catalog#section-022",
+        "reference.config-catalog#section-023",
+        "reference.config-catalog#section-024",
+        "reference.config-catalog#section-025",
+        "reference.config-catalog#section-026",
+        "reference.config-catalog#section-027",
+        "reference.config-catalog#section-028",
+        "reference.config-catalog#section-029",
+        "reference.config-catalog#section-030",
+        "reference.config-catalog#section-031",
+        "reference.config-catalog#section-032",
+        "reference.config-catalog#section-033",
+        "reference.config-catalog#section-034",
+        "reference.config-catalog#section-035",
+        "reference.config-catalog#section-036",
+        "reference.config-catalog#section-037",
+        "reference.config-catalog#section-038",
+        "reference.config-catalog#section-039",
+        "reference.config-catalog#section-040",
+        "reference.config-catalog#section-041",
+        "reference.config-catalog#section-042",
+        "reference.config-catalog#section-043",
+        "reference.config-catalog#section-044",
+        "reference.config-catalog#section-045",
+        "reference.config-catalog#section-046",
+        "reference.config-catalog#section-047",
+        "reference.config-catalog#section-048",
+        "reference.config-catalog#section-049",
+        "reference.config-catalog#section-050",
+        "reference.config-catalog#section-051",
+        "reference.config-catalog#section-052",
+        "reference.config-catalog#section-053",
+        "reference.config-catalog#section-054",
+        "reference.config-catalog#section-055",
+        "reference.config-catalog#section-056",
+        "reference.config-catalog#section-057",
+        "reference.config-catalog#section-058",
+        "reference.config-catalog#section-059",
+        "reference.config-catalog#section-060",
+        "reference.config-catalog#section-061",
+        "reference.config-catalog#section-062",
+        "reference.config-catalog#section-063",
+        "reference.config-catalog#section-064",
+        "reference.config-catalog#section-065",
+        "reference.config-catalog#section-066",
+        "reference.config-catalog#section-067",
+        "reference.config-catalog#section-068",
+        "reference.config-catalog#section-069",
+        "reference.config-catalog#section-070",
+        "reference.config-catalog#section-071",
+        "reference.config-catalog#section-072",
+        "reference.config-catalog#section-073",
+        "reference.config-catalog#section-074",
+        "reference.config-catalog#section-075",
+        "reference.config-catalog#section-076",
+        "reference.config-catalog#section-077",
+        "reference.config-catalog#section-078",
+        "reference.config-catalog#section-079",
+        "reference.config-catalog#section-080",
+        "reference.config-catalog#section-081",
+        "reference.config-catalog#section-082",
+        "reference.config-catalog#section-083",
+        "reference.config-catalog#section-084",
+        "reference.config-catalog#section-085",
+        "reference.config-catalog#section-086",
+        "reference.config-catalog#section-087",
+        "reference.config-catalog#section-088",
+        "reference.config-catalog#section-089",
+        "reference.config-catalog#section-090",
+        "reference.config-catalog#section-091",
+        "reference.config-catalog#section-092",
+        "reference.config-catalog#section-093",
+        "reference.config-catalog#section-094",
+        "reference.config-catalog#section-095",
+        "reference.config-catalog#section-096",
+        "reference.config-catalog#section-097",
+        "reference.config-catalog#section-098",
+        "reference.config-catalog#section-099",
+        "reference.config-catalog#section-100",
+        "reference.config-catalog#section-101",
+        "reference.config-catalog#section-102",
+        "reference.config-catalog#section-103",
+        "reference.config-catalog#section-104",
+        "reference.config-catalog#section-105",
+        "reference.config-catalog#section-106",
+        "reference.config-catalog#section-107",
+        "reference.config-catalog#section-108"
+      ],
+      "source_page_ids": [
+        "reference.config-catalog"
+      ],
+      "legacy_routes": [
+        "/reference/config-catalog"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "tool-catalog",
+      "neutral_route": "/api/catalogs/tool-catalog",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 1,
+      "segments": [
+        "reference.tool-catalog#title",
+        "reference.tool-catalog#section-001",
+        "reference.tool-catalog#section-002",
+        "reference.tool-catalog#section-003",
+        "reference.tool-catalog#section-004",
+        "reference.tool-catalog#section-005",
+        "reference.tool-catalog#section-006",
+        "reference.tool-catalog#section-007",
+        "reference.tool-catalog#section-008",
+        "reference.tool-catalog#section-009",
+        "reference.tool-catalog#section-010",
+        "reference.tool-catalog#section-011",
+        "reference.tool-catalog#section-012",
+        "reference.tool-catalog#section-013",
+        "reference.tool-catalog#section-014",
+        "reference.tool-catalog#section-015",
+        "reference.tool-catalog#section-016",
+        "reference.tool-catalog#section-017",
+        "reference.tool-catalog#section-018",
+        "reference.tool-catalog#section-019",
+        "reference.tool-catalog#section-020",
+        "reference.tool-catalog#section-021",
+        "reference.tool-catalog#section-022",
+        "reference.tool-catalog#section-023",
+        "reference.tool-catalog#section-024",
+        "reference.tool-catalog#section-025"
+      ],
+      "source_page_ids": [
+        "reference.tool-catalog"
+      ],
+      "legacy_routes": [
+        "/reference/tool-catalog"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "persistence-catalog",
+      "neutral_route": "/api/catalogs/persistence-catalog",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 2,
+      "segments": [
+        "reference.persistence-catalog#title",
+        "reference.persistence-catalog#section-001",
+        "reference.persistence-catalog#section-002"
+      ],
+      "source_page_ids": [
+        "reference.persistence-catalog"
+      ],
+      "legacy_routes": [
+        "/reference/persistence-catalog"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-api.context",
+      "neutral_route": "/api/cordis/context",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 0,
+      "segments": [
+        "reference.cordis-api.context#title",
+        "reference.cordis-api.context#section-001",
+        "reference.cordis-api.context#section-002"
+      ],
+      "source_page_ids": [
+        "reference.cordis-api.context"
+      ],
+      "legacy_routes": [
+        "/reference/cordis-api/context"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-api.events",
+      "neutral_route": "/api/cordis/events",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 1,
+      "segments": [
+        "reference.cordis-api.events#title",
+        "reference.cordis-api.events#section-001",
+        "reference.cordis-api.events#section-002"
+      ],
+      "source_page_ids": [
+        "reference.cordis-api.events"
+      ],
+      "legacy_routes": [
+        "/reference/cordis-api/events"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-api.fiber",
+      "neutral_route": "/api/cordis/fiber",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 2,
+      "segments": [
+        "reference.cordis-api.fiber#title",
+        "reference.cordis-api.fiber#section-001",
+        "reference.cordis-api.fiber#section-002",
+        "reference.cordis-api.fiber#section-003",
+        "reference.cordis-api.fiber#section-004",
+        "reference.cordis-api.fiber#section-005",
+        "reference.cordis-api.fiber#section-006"
+      ],
+      "source_page_ids": [
+        "reference.cordis-api.fiber"
+      ],
+      "legacy_routes": [
+        "/reference/cordis-api/fiber"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-api.registry",
+      "neutral_route": "/api/cordis/registry",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 3,
+      "segments": [
+        "reference.cordis-api.registry#title",
+        "reference.cordis-api.registry#section-001",
+        "reference.cordis-api.registry#section-002"
+      ],
+      "source_page_ids": [
+        "reference.cordis-api.registry"
+      ],
+      "legacy_routes": [
+        "/reference/cordis-api/registry"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-api.service",
+      "neutral_route": "/api/cordis/service",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 4,
+      "segments": [
+        "reference.cordis-api.service#title",
+        "reference.cordis-api.service#section-001"
+      ],
+      "source_page_ids": [
+        "reference.cordis-api.service"
+      ],
+      "legacy_routes": [
+        "/reference/cordis-api/service"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cordis-api.inherited",
+      "neutral_route": "/api/cordis/inherited",
+      "kind": "api",
+      "menu_id": "api",
+      "order": 5,
+      "segments": [
+        "reference.cordis-api.inherited#title",
+        "reference.cordis-api.inherited#section-001",
+        "reference.cordis-api.inherited#section-002"
+      ],
+      "source_page_ids": [
+        "reference.cordis-api.inherited"
+      ],
+      "legacy_routes": [
+        "/reference/cordis-api/inherited"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cookbook.adding-a-package",
+      "neutral_route": "/examples/adding-a-package",
+      "kind": "example-index",
+      "menu_id": "examples",
+      "order": 0,
+      "segments": [
+        "reference.cookbook.adding-a-package#title",
+        "reference.cookbook.adding-a-package#section-001",
+        "reference.cookbook.adding-a-package#section-002",
+        "reference.cookbook.adding-a-package#section-003",
+        "reference.cookbook.adding-a-package#section-004",
+        "reference.cookbook.adding-a-package#section-005"
+      ],
+      "source_page_ids": [
+        "reference.cookbook.adding-a-package"
+      ],
+      "legacy_routes": [
+        "/reference/cookbook/adding-a-package"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cookbook.adding-a-tool",
+      "neutral_route": "/examples/adding-a-tool",
+      "kind": "example-index",
+      "menu_id": "examples",
+      "order": 1,
+      "segments": [
+        "reference.cookbook.adding-a-tool#title",
+        "reference.cookbook.adding-a-tool#section-001",
+        "reference.cookbook.adding-a-tool#section-002",
+        "reference.cookbook.adding-a-tool#section-003",
+        "reference.cookbook.adding-a-tool#section-004",
+        "reference.cookbook.adding-a-tool#section-005",
+        "reference.cookbook.adding-a-tool#section-006",
+        "reference.cookbook.adding-a-tool#section-007"
+      ],
+      "source_page_ids": [
+        "reference.cookbook.adding-a-tool"
+      ],
+      "legacy_routes": [
+        "/reference/cookbook/adding-a-tool"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cookbook.adding-an-llm-adapter",
+      "neutral_route": "/examples/adding-an-llm-adapter",
+      "kind": "example-index",
+      "menu_id": "examples",
+      "order": 2,
+      "segments": [
+        "reference.cookbook.adding-an-llm-adapter#title",
+        "reference.cookbook.adding-an-llm-adapter#section-001",
+        "reference.cookbook.adding-an-llm-adapter#section-002",
+        "reference.cookbook.adding-an-llm-adapter#section-003",
+        "reference.cookbook.adding-an-llm-adapter#section-004"
+      ],
+      "source_page_ids": [
+        "reference.cookbook.adding-an-llm-adapter"
+      ],
+      "legacy_routes": [
+        "/reference/cookbook/adding-an-llm-adapter"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cookbook.extension-cookbook",
+      "neutral_route": "/examples/extension-cookbook",
+      "kind": "example-index",
+      "menu_id": "examples",
+      "order": 3,
+      "segments": [
+        "reference.cookbook.extension-cookbook#title",
+        "reference.cookbook.extension-cookbook#section-001",
+        "reference.cookbook.extension-cookbook#section-002",
+        "reference.cookbook.extension-cookbook#section-003",
+        "reference.cookbook.extension-cookbook#section-004",
+        "reference.cookbook.extension-cookbook#section-005",
+        "reference.cookbook.extension-cookbook#section-006"
+      ],
+      "source_page_ids": [
+        "reference.cookbook.extension-cookbook"
+      ],
+      "legacy_routes": [
+        "/reference/cookbook/extension-cookbook"
+      ],
+      "indexing": "index"
+    },
+    {
+      "page_id": "cookbook.adding-a-conversation-node",
+      "neutral_route": "/examples/adding-a-conversation-node",
+      "kind": "example-index",
+      "menu_id": "examples",
+      "order": 4,
+      "segments": [
+        "reference.cookbook.adding-a-conversation-node#title",
+        "reference.cookbook.adding-a-conversation-node#section-001",
+        "reference.cookbook.adding-a-conversation-node#section-002",
+        "reference.cookbook.adding-a-conversation-node#section-003",
+        "reference.cookbook.adding-a-conversation-node#section-004",
+        "reference.cookbook.adding-a-conversation-node#section-005"
+      ],
+      "source_page_ids": [
+        "reference.cookbook.adding-a-conversation-node"
+      ],
+      "legacy_routes": [
+        "/reference/cookbook/adding-a-conversation-node"
+      ],
+      "indexing": "index"
+    }
+  ]
+}

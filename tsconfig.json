@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "ES2023",
     "lib": ["ES2023", "DOM"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true,
@@ -11,5 +11,5 @@
     "resolveJsonModule": true,
     "types": ["node"]
   },
-  "include": ["scripts/**/*.ts", "website/**/*.ts"]
+  "include": [".astro/types.d.ts", "src/**/*.ts", "src/**/*.astro", "scripts/**/*.ts", "astro.config.mjs"]
 }

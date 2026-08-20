@@ -2,7 +2,7 @@
   "schema_version": 1,
   "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
   "canonical_page_count": 83,
-  "published_route_count": 332,
+  "published_route_count": 166,
   "official_locales": [
     "zh-CN",
     "en-US"

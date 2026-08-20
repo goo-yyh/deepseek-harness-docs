@@ -2,44 +2,40 @@
 
 ## Authority order
 
-1. Pinned Git blobs from `deepseek-ai/deepseek-harness` are content truth.
-2. Pinned `website/docs.ts` is the page/route/sidebar publication truth.
-3. Pinned VitePress config and assets are the visual/navigation truth.
-4. The live GitHub Pages site verifies deployed rendering and interactions.
-
-HTML scraping is never the normal content path. Do not execute upstream package
-scripts, MDX, HTML, event handlers, or expressions while synchronizing.
+1. Pinned official Git blobs are Chinese/English content truth.
+2. `config/docs-manifest.json` is source-page identity and pairing truth.
+3. `config/source-segments.json` is locked-AST segment truth.
+4. `config/content-map.json`, `navigation.json`, and `seo-metadata.json` are the
+   local Astro publication truth.
+5. Upstream publication controls and the live official site are discovery and
+   rendered-behavior evidence only.
 
 ## Catalog blockers
 
-Any change to these paths blocks automatic content promotion:
+Changes to upstream `website/docs.ts`, VitePress configuration, projector,
+brand assets, or license block automatic promotion. Review source additions,
+removals, pairing, fallback, official module identity, and licensing. Do not
+copy upstream VitePress controls into the local runtime.
 
-- `website/docs.ts`
-- `website/.vitepress/config.ts`
-- `scripts/project-doc-site.ts`
-- `website/public/wordmark.svg`
-- `website/public/favicon.svg`
-- `LICENSE`
-
-Review additions/removals, module membership, section labels/order, route
-aliases, locale fallback, edit links, responsive behavior, and licensing. After
-reconciliation, regenerate the lock and start a new run.
+Local changes to segment schema, content map, navigation, SEO metadata,
+redirects, Astro/Starlight controls, projector, or provenance audit are also
+high-risk reviewed controls.
 
 ## Content contract
 
-- Every published source path is listed in `config/upstream-lock.json` with its
-  Git blob, SHA-256, and byte length.
-- Every ordinary bilingual page keeps the official sibling `.md`, `.zh.md`, and
+- Every published source path is bound to a Git blob, SHA-256, and byte length.
+- Ordinary bilingual pages retain the official `.md`, `.zh.md`, and
   `.i18n.yaml` triplet.
-- The hashes inside `.i18n.yaml` must equal the current Git blob hashes.
-- `docs/cordis-api/inherited.md` is the sole current published English fallback
-  on the Chinese route.
-- Non-published repository-relative targets resolve to the pinned GitHub tree.
-  Images rendered by the site must be present locally and must not be hotlinked.
+- `docs/cordis-api/inherited.md` remains the sole English-only source owner; it
+  must not appear as native Chinese content.
+- Non-published repository links resolve to the pinned GitHub tree. Published
+  targets resolve to the local segment owner; images are copied locally.
+- Japanese/Korean sources, translations, state, routes, and fallbacks are not
+  part of the catalog.
 
 ## Promotion boundary
 
-Promote from the run's frozen checkout, never a new network fetch. Copy the
-complete official `docs/` tree so link targets and assets remain coherent. Copy
-exact official publication controls except the reviewed local projector
-adapter. Update the lock only after all copied bytes validate.
+Promote only from the frozen checkout. Copy the complete official `docs/` tree,
+license, favicon, and wordmark. Re-capture locks, regenerate segments, and stop
+for projection reconciliation before publication. Local Astro controls and
+manifests are never replaced automatically.

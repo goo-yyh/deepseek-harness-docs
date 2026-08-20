@@ -1,0 +1,360 @@
+{
+  "schema_version": 2,
+  "menus": [
+    {
+      "type": "group",
+      "id": "start",
+      "order": 10,
+      "labels": { "zh-CN": "开始使用", "en-US": "Start" },
+      "collapsed": true,
+      "items": [
+        {
+          "type": "page",
+          "page_id": "menu.start",
+          "labels": { "zh-CN": "概览", "en-US": "Overview" }
+        },
+        {
+          "type": "group",
+          "id": "start-essentials",
+          "labels": { "zh-CN": "基础上手", "en-US": "Essentials" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "quickstart" },
+            { "type": "page", "page_id": "providers" },
+            {
+              "type": "page",
+              "page_id": "python-sdk",
+              "labels": { "zh-CN": "Python SDK", "en-US": "Python SDK" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "concepts",
+      "order": 20,
+      "labels": { "zh-CN": "核心机制", "en-US": "Core concepts" },
+      "collapsed": true,
+      "items": [
+        {
+          "type": "page",
+          "page_id": "menu.concepts",
+          "labels": { "zh-CN": "概览", "en-US": "Overview" }
+        },
+        {
+          "type": "page",
+          "page_id": "reference",
+          "labels": { "zh-CN": "Harness 架构", "en-US": "Harness architecture" }
+        },
+        {
+          "type": "group",
+          "id": "concepts-plugin-foundations",
+          "labels": { "zh-CN": "插件基础", "en-US": "Plugin foundations" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "framework" },
+            { "type": "page", "page_id": "framework.service" },
+            { "type": "page", "page_id": "framework.events" }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "concepts-cordis",
+          "labels": { "zh-CN": "Cordis", "en-US": "Cordis" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "cordis-primer" },
+            {
+              "type": "page",
+              "page_id": "cordis-tutorial",
+              "labels": { "zh-CN": "教程概览", "en-US": "Tutorial overview" }
+            },
+            { "type": "page", "page_id": "cordis-tutorial.01-first-plugin" },
+            { "type": "page", "page_id": "cordis-tutorial.02-lifecycle-and-effects" },
+            { "type": "page", "page_id": "cordis-tutorial.03-services" },
+            { "type": "page", "page_id": "cordis-tutorial.04-events" },
+            { "type": "page", "page_id": "cordis-tutorial.05-config" },
+            { "type": "page", "page_id": "cordis-tutorial.06-composition-and-hmr" },
+            { "type": "page", "page_id": "cordis-tutorial.07-into-the-harness" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "build",
+      "order": 30,
+      "labels": { "zh-CN": "构建与扩展", "en-US": "Build & extend" },
+      "collapsed": true,
+      "items": [
+        {
+          "type": "page",
+          "page_id": "menu.build",
+          "labels": { "zh-CN": "概览", "en-US": "Overview" }
+        },
+        {
+          "type": "group",
+          "id": "build-plugin-development",
+          "labels": { "zh-CN": "插件开发", "en-US": "Plugin development" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "basic" },
+            { "type": "page", "page_id": "basic.tool" },
+            { "type": "page", "page_id": "basic.config" },
+            { "type": "page", "page_id": "basic.publish" }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "build-advanced-extensions",
+          "labels": { "zh-CN": "高级扩展", "en-US": "Advanced extensions" },
+          "collapsed": true,
+          "items": [
+            {
+              "type": "page",
+              "page_id": "practice",
+              "labels": { "zh-CN": "能力分层", "en-US": "Capability layering" }
+            },
+            { "type": "page", "page_id": "practice.llm-adapter" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "runtime",
+      "order": 40,
+      "labels": { "zh-CN": "运行与编排", "en-US": "Runtime & orchestration" },
+      "collapsed": true,
+      "items": [
+        {
+          "type": "page",
+          "page_id": "menu.runtime",
+          "labels": { "zh-CN": "概览", "en-US": "Overview" }
+        },
+        {
+          "type": "group",
+          "id": "runtime-foundations",
+          "labels": { "zh-CN": "运行时基础", "en-US": "Runtime foundations" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.core" },
+            { "type": "page", "page_id": "subsystems.scope" },
+            { "type": "page", "page_id": "subsystems.invariants" }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "runtime-sessions",
+          "labels": { "zh-CN": "会话与上下文", "en-US": "Sessions & context" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.session" },
+            { "type": "page", "page_id": "subsystems.session-query" },
+            { "type": "page", "page_id": "subsystems.session-reference" },
+            { "type": "page", "page_id": "subsystems.session-title" },
+            { "type": "page", "page_id": "subsystems.session-projection" },
+            { "type": "page", "page_id": "subsystems.persistence" },
+            { "type": "page", "page_id": "subsystems.spill" },
+            {
+              "type": "page",
+              "page_id": "subsystems.session-telemetry",
+              "labels": { "zh-CN": "会话遥测", "en-US": "Session telemetry" }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "runtime-model-context",
+          "labels": { "zh-CN": "模型与上下文工程", "en-US": "Model & context" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.llm-streaming" },
+            { "type": "page", "page_id": "subsystems.token-meter" },
+            { "type": "page", "page_id": "subsystems.system-prompt" },
+            { "type": "page", "page_id": "subsystems.compaction" }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "runtime-tools-execution",
+          "labels": { "zh-CN": "工具与执行", "en-US": "Tools & execution" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.tools" },
+            { "type": "page", "page_id": "subsystems.shell" },
+            { "type": "page", "page_id": "subsystems.subprocess" },
+            { "type": "page", "page_id": "subsystems.terminal" },
+            { "type": "page", "page_id": "subsystems.jobs" },
+            { "type": "page", "page_id": "subsystems.filesystem" },
+            { "type": "page", "page_id": "subsystems.lsp" },
+            { "type": "page", "page_id": "subsystems.code-runtime" },
+            { "type": "page", "page_id": "subsystems.web" },
+            { "type": "page", "page_id": "subsystems.skills" }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "runtime-agents-workflow",
+          "labels": { "zh-CN": "智能体与工作流", "en-US": "Agents & workflow" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.workflow" },
+            { "type": "page", "page_id": "subsystems.subagent" }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "runtime-safety-interaction",
+          "labels": { "zh-CN": "安全与交互", "en-US": "Safety & interaction" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.approval" },
+            { "type": "page", "page_id": "subsystems.permission-presets" },
+            { "type": "page", "page_id": "subsystems.sandbox" },
+            { "type": "page", "page_id": "subsystems.plan" },
+            { "type": "page", "page_id": "subsystems.user-questions" },
+            { "type": "page", "page_id": "subsystems.commands" },
+            { "type": "page", "page_id": "subsystems.goal" },
+            {
+              "type": "page",
+              "page_id": "subsystems.schedule",
+              "labels": { "zh-CN": "会话内 Schedule", "en-US": "Session-local schedule" }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "runtime-services-clients",
+          "labels": { "zh-CN": "服务与客户端", "en-US": "Services & clients" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.web-server" },
+            { "type": "page", "page_id": "subsystems.typert" },
+            {
+              "type": "page",
+              "page_id": "subsystems.client-modules",
+              "labels": { "zh-CN": "客户端模块", "en-US": "Client modules" }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "runtime-data-environment",
+          "labels": { "zh-CN": "数据与环境", "en-US": "Data & environment" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "subsystems.storage" },
+            { "type": "page", "page_id": "subsystems.workspace" },
+            { "type": "page", "page_id": "subsystems.settings" },
+            { "type": "page", "page_id": "subsystems.credentials" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "api",
+      "order": 50,
+      "labels": { "zh-CN": "API 与类型", "en-US": "API & types" },
+      "collapsed": true,
+      "items": [
+        {
+          "type": "page",
+          "page_id": "menu.api",
+          "labels": { "zh-CN": "概览", "en-US": "Overview" }
+        },
+        {
+          "type": "group",
+          "id": "api-catalogs",
+          "labels": { "zh-CN": "Schema 与事件目录", "en-US": "Schemas & event catalogs" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "config-catalog" },
+            { "type": "page", "page_id": "tool-catalog" },
+            { "type": "page", "page_id": "persistence-catalog" }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "api-cordis",
+          "labels": { "zh-CN": "Cordis API", "en-US": "Cordis API" },
+          "collapsed": true,
+          "items": [
+            { "type": "page", "page_id": "cordis-api.context" },
+            { "type": "page", "page_id": "cordis-api.service" },
+            { "type": "page", "page_id": "cordis-api.registry" },
+            { "type": "page", "page_id": "cordis-api.events" },
+            { "type": "page", "page_id": "cordis-api.fiber" },
+            {
+              "type": "page",
+              "page_id": "cordis-api.inherited",
+              "labels": { "zh-CN": "继承 API（英文）", "en-US": "Inherited API" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "examples",
+      "order": 60,
+      "labels": { "zh-CN": "示例索引", "en-US": "Examples" },
+      "collapsed": true,
+      "items": [
+        {
+          "type": "page",
+          "page_id": "menu.examples",
+          "labels": { "zh-CN": "概览", "en-US": "Overview" }
+        },
+        {
+          "type": "group",
+          "id": "examples-extension-basics",
+          "labels": { "zh-CN": "基础扩展示例", "en-US": "Extension basics" },
+          "collapsed": true,
+          "items": [
+            {
+              "type": "page",
+              "page_id": "cookbook.adding-a-package",
+              "labels": { "zh-CN": "添加 workspace 包", "en-US": "Add a workspace package" }
+            },
+            {
+              "type": "page",
+              "page_id": "cookbook.adding-a-tool",
+              "labels": { "zh-CN": "编写工具", "en-US": "Author a tool" }
+            },
+            {
+              "type": "page",
+              "page_id": "cookbook.adding-an-llm-adapter",
+              "labels": { "zh-CN": "添加 LLM 适配器", "en-US": "Add an LLM adapter" }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "examples-advanced-integrations",
+          "labels": { "zh-CN": "进阶集成", "en-US": "Advanced integrations" },
+          "collapsed": true,
+          "items": [
+            {
+              "type": "page",
+              "page_id": "cookbook.extension-cookbook",
+              "labels": { "zh-CN": "扩展插件形态", "en-US": "Extension plugin shapes" }
+            },
+            {
+              "type": "page",
+              "page_id": "cookbook.adding-a-conversation-node",
+              "labels": { "zh-CN": "添加会话节点", "en-US": "Add a conversation node" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "page",
+      "page_id": "menu.versions",
+      "order": 70
+    }
+  ]
+}

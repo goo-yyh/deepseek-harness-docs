@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "47f943859bef60e4160492346772ded9b24f765a",
+  "projector_version": 1,
+  "astro": "7.2.4",
+  "starlight": "0.41.7",
+  "hashes": {
+    "source_segments": "809fae8190c299ec0c7809d10e6bcca8e1ac5b0c0d4f8dfb8f2ea59954c03abd",
+    "content_map": "c90d2d49ab9227b8e2027e51f48d32fdf8388d728fe2cf94f70e0fdf4b0e84a3",
+    "navigation": "2d38fee312af1ce899ce08181c963260ca75e065acee72a90c952387fbc0828d",
+    "seo_metadata": "f18b33f2c436691e536f427f204531323a56961d8b08d6e403a22f8c58839685",
+    "redirects": "4392f133b1a5c445c09fbd9eea54e29c4f5a1e7dc3999851538b9456affa127a"
+  }
+}

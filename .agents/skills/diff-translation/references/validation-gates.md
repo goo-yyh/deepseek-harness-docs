@@ -1,91 +1,54 @@
 # Validation gates
 
-A material run is complete only when all gates below are bound to the same input
-fingerprint.
+A material source run is complete only when all gates bind the same immutable
+input fingerprint.
 
-## Static/source
+## Source
 
-- Upstream repository, branch, commit, and tree are full and pinned.
-- Manifest contains 83 current canonical pages and derives route counts rather
-  than relying on that number permanently.
-- Guide/Development/Reference counts match the pinned publication.
-- Official locale route sets are isomorphic.
-- Every published source byte matches the lock and Git blob.
-- Every applicable bilingual sidecar matches both current owner blobs.
-- The official English fallback exception is explicit.
-- Every promoted Japanese/Korean tree contains exactly one validated target and
-  navigation label for every manifest page (currently 83 per locale).
-- Every translated page state matches the current English Git blob, locked and
-  normalized source hashes, target hash, upstream commit, and locale-wide model
-  provenance.
-- Japanese/Korean remain unpublished until complete; once published, partial or
-  stale locale state is a hard failure.
+- Official repository, branch, commit, and tree are fully pinned.
+- The manifest source count, Guide/Development/Reference inventory, and only
+  the official zh-CN/en-US pairs match reviewed upstream publication.
+- Every source and pairing record matches locked blobs, hashes, and bytes.
+- The English-only inherited Cordis source is explicit.
+- No Japanese/Korean directory, translation state, runner, route, sitemap URL,
+  alternate, search entry, or dependency exists.
 
-## Translation
+## Segment and projection
 
-- Structured Codex output matches the translation bundle schema and exact unit
-  inventory.
-- Every protected token occurs exactly once. Structural token order, heading
-  levels, Markdown AST shape, code/HTML, and immutable literals match the
-  normalized English input.
-- Japanese prose contains sufficient Japanese kana and no Korean or likely
-  Chinese prose. Korean prose contains sufficient Hangul and no Japanese kana
-  or likely Chinese prose. Protected technical English is allowed. A
-  redirect-only page whose only visible text is an allowed product/protocol
-  name is not required to invent target-language prose, but any surrounding
-  natural-language sentence remains subject to the full language gate.
-- The run-local batch gate checks every semantic heading, paragraph, table cell,
-  image alt, and separately generated navigation label before creating
-  immutable batch output; the locale-wide audit repeats these checks after
-  promotion.
-- Recovery runs copy frozen inputs. Any reused response has exact input/inventory
-  equality plus source-file SHA-256 provenance.
-- A batch may unlock its successor only with exit 0, the explicit
-  `validate-translation-batch ... passed` output, a validated batch receipt,
-  and a completed marker. Failed-run artifacts remain immutable evidence.
-- `pnpm run docs:i18n` passes all 83 Japanese and all 83 Korean pages before
-  either publication switch is enabled.
+- Every locked source parses deterministically into title, introduction, and
+  complete H2 subtrees; explicit pre-heading anchors stay with their H2.
+- Segment selectors and raw/visible hashes match exactly.
+- Coverage is 100%, every segment has one primary owner, and no target page
+  reproduces one complete official-page segment inventory.
+- Every generated locale page and source attribution is receipt-bound.
+- New/deleted/ambiguous/orphan segments, empty indexable pages, route collisions,
+  and unsupported body text fail closed.
 
-## Build/routes
+## Build and SEO
 
+- `pnpm test`
 - `pnpm exec tsc --noEmit`
 - `pnpm run docs:check`
-- `pnpm run docs:i18n`
+- `pnpm run content:segments`
+- `pnpm run content:project`
+- `pnpm run content:audit`
+- `pnpm run check`
 - `pnpm run build`
+- `pnpm run seo:audit`
 - `pnpm run docs:routes`
-- Every manifest route emits HTML.
-- Each published locale emits the complete manifest route set; each unpublished
-  locale emits no route, sitemap URL, hreflang, language-menu item, or fallback.
-- When all four locales are published against the current 83-page manifest,
-  route verification expects 332 content routes, plus locale-home redirect
-  documents governed by the navigation contract.
-- Search, Mermaid, local images, edit links, language switching, and clean URLs
-  work in the production preview.
-- Every indexable rendered page passes localized title/description, `html lang`,
-  self-canonical, Open Graph, Twitter, JSON-LD, reciprocal hreflang,
-  `x-default`, sitemap, robots, and `robots.txt` checks. Japanese and Korean SEO
-  must be target-language owned; English metadata fallback is a failure.
+- Every expected static zh/en route exists; ja/ko output is absent.
+- Search, Mermaid, code, images, source attribution, locale switching, and
+  clean URLs work in production preview.
+- Every indexable page passes unique title/description, lang, self-canonical,
+  reciprocal native hreflang, x-default, robots, Open Graph, Twitter, JSON-LD,
+  sitemap, robots.txt, redirect, and fragment checks.
+- Vercel Analytics is injected once. IndexNow dry-run reads the fresh sitemap
+  and key without sending a notification.
 
-## Browser evidence
+## Browser and immutable verification
 
-Changed pages require source and local evidence at equal viewports where an
-official rendered counterpart exists. Japanese/Korean pages have no official
-rendered counterpart, so bind local screenshots to the locked English source
-path/hash and translated route instead of inventing an upstream target-language
-URL. Evidence must include local/official URL as applicable, locale, viewport,
-theme, interactions, source path/hash, checked time, screenshot path, and
-screenshot SHA-256.
-
-Every changed route must be rendered and inspected. Across each locale, capture
-desktop/mobile and light/dark coverage for Guide, Development, and Reference,
-including navigation/sidebar, page outline, localized search, language
-switching, heading order, visible prose/code, links, clean URLs, and responsive
-drawers. Browser evidence supplements the all-page source/route/SEO audits; it
-does not replace them.
-
-## Immutable verification
-
-Formal verification writes once. Each command receipt contains command,
-timestamps, exit code, log path/hash, and the repository input fingerprint. A
-failed or stale formal run is preserved; continue with a recovery run instead
-of replacing evidence.
+Changed routes require local and official evidence at comparable viewports
+where an official counterpart exists. Cover both locales where native,
+desktop/mobile, light/dark, navigation, search, outline, content, diagrams,
+links, source attribution, and accessibility. Formal verification writes once;
+failed or stale evidence continues only through recovery.

@@ -1,32 +1,18 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "locales": [
     {
       "id": "zh-CN",
-      "vitepress_key": "root",
+      "astro_key": "root",
       "path_prefix": "/",
       "source": "official",
       "published": true
     },
     {
       "id": "en-US",
-      "vitepress_key": "en",
+      "astro_key": "en",
       "path_prefix": "/en/",
       "source": "official",
-      "published": true
-    },
-    {
-      "id": "ja-JP",
-      "vitepress_key": "ja",
-      "path_prefix": "/ja/",
-      "source": "codex",
-      "published": true
-    },
-    {
-      "id": "ko-KR",
-      "vitepress_key": "ko",
-      "path_prefix": "/ko/",
-      "source": "codex",
       "published": true
     }
   ]

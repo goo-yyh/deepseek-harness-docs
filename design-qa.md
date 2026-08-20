@@ -1,153 +1,172 @@
-# Design QA
+# Astro migration design QA
 
-## Comparison target
+## Scope
 
-- Source visual truth:
-  - `.design-evidence/source/official-quickstart-desktop-full.png`
-  - `.design-evidence/source/official-quickstart-mobile-full.png`
-  - `.design-evidence/source/official-quickstart-desktop-dark.png`
-  - `.design-evidence/source/official-mobile-navigation-open.png`
-  - `.design-evidence/source/official-search-open-mobile.png`
-- Rendered implementation:
-  - `.design-evidence/implementation/local-quickstart-desktop-full.png`
-  - `.design-evidence/implementation/local-quickstart-mobile-full.png`
-  - `.design-evidence/implementation/local-quickstart-desktop-dark.png`
-  - `.design-evidence/implementation/local-mobile-navigation-open.png`
-  - `.design-evidence/implementation/local-search-open-mobile.png`
-- Source URL: `https://deepseek-harness.github.io/deepseek-harness/en/guide/quickstart`
-- Implementation URL: `http://127.0.0.1:4173/en/guide/quickstart`
-- Browser: Codex in-app Browser
-- State: English Quickstart, light/dark theme and documented interaction states
+This report validates the local Astro 7.2.4 and Starlight 0.41.7 implementation
+introduced by `specs/0002.md`. It does not claim pixel parity with the retired
+VitePress mirror: the task-oriented navigation, routes, page composition, and
+visual shell are intentional local adaptations.
 
-## Viewport and normalization
+The older `local-*` screenshots in `.design-evidence/implementation/` document
+the previous VitePress implementation and are retained as historical evidence.
+The current implementation is represented only by the `astro-*` files listed
+below.
 
-| Surface | CSS viewport | Source pixels | Implementation pixels | deviceScaleFactor |
-| --- | ---: | ---: | ---: | ---: |
-| Desktop top | 1440 × 900 | 1440 × 900 | 1440 × 900 | 1 |
-| Desktop full page | 1440 × 900 | 1440 × 1543 | 1440 × 1543 | 1 |
-| Mobile top | 390 × 844 | 390 × 844 | 390 × 844 | 1 |
-| Mobile full page | 390 × 844 | 390 × 1891 | 390 × 1891 | 1 |
+## Environment
 
-The captures use equal browser, viewport, density, route, locale, theme, and
-scroll state. Browser chrome is excluded.
+- URL: `http://127.0.0.1:4173`
+- Browser: Chromium driven through Playwright CLI
+- Desktop viewport: `1440 x 900`
+- Mobile viewport: `390 x 844`
+- Build input: the current local `dist/` produced by `pnpm run build`
+- Locales: Simplified Chinese at root and English under `/en/`
 
-## Full-view comparison evidence
+## Current visual-refresh evidence
 
-- Desktop full-page source and implementation PNGs are byte-identical:
-  `9b72a04299d6472e361c31f842fcf13fb56bc0b080c021811ca57473f58e957c`.
-- Mobile full-page source and implementation PNGs are byte-identical:
-  `dc424666a88fb9e88e7942cefa0c713e3b782f8b320ace5304f28a2c1c001eaa`.
-- Mobile top source and implementation PNGs are byte-identical:
-  `5bae16d32819d669191618b26939caa776e53a9a516fb9dff7c79b4cc447eea3`.
-- Desktop dark-theme source and implementation PNGs are byte-identical:
-  `6064edff03d2ce56f33e71905cc1e63029b28e6e495d0e331663c626974eb9f1`.
-- The Reference landing page was also compared at 1440 × 900; its visible
-  composition, sidebar density, headings, outline, and navigation match. Its
-  capture timing included a different transient sidebar-scrollbar state, which
-  is not design drift.
+- Chinese Start page, desktop light:
+  `.design-evidence/implementation/astro-refresh-start-zh-desktop-light.png`
+- English Start page, desktop dark:
+  `.design-evidence/implementation/astro-refresh-start-en-desktop-dark.png`
+- Chinese code-heavy page, desktop light:
+  `.design-evidence/implementation/astro-refresh-first-plugin-zh-desktop-light.png`
+- Chinese Mermaid page, desktop light:
+  `.design-evidence/implementation/astro-refresh-concepts-mermaid-zh-desktop-light.png`
+- Chinese Start page, mobile light:
+  `.design-evidence/implementation/astro-refresh-start-zh-mobile-light.png`
+- Chinese mobile navigation:
+  `.design-evidence/implementation/astro-refresh-start-zh-mobile-navigation-light.png`
+- Chinese Cordis tutorial hierarchy, desktop light:
+  `.design-evidence/implementation/astro-navigation-cordis-zh-desktop-light.png`
+- Chinese Runtime hierarchy, desktop light:
+  `.design-evidence/implementation/astro-navigation-runtime-zh-desktop-light.png`
+- English Cordis API hierarchy, desktop light:
+  `.design-evidence/implementation/astro-navigation-api-en-desktop-light.png`
+- Chinese Cordis tutorial hierarchy, mobile menu open:
+  `.design-evidence/implementation/astro-navigation-cordis-zh-mobile-open.png`
+- Chinese Cordis page end without an attribution footer, desktop light:
+  `.design-evidence/implementation/astro-source-removal-cordis-zh-desktop-bottom.png`
+- English Cordis page end without an attribution footer, desktop light:
+  `.design-evidence/implementation/astro-source-removal-cordis-en-desktop-bottom.png`
+- Chinese Web UI page end without an attribution footer, mobile light:
+  `.design-evidence/implementation/astro-source-removal-web-ui-zh-mobile-bottom.png`
 
-## Focused comparison evidence
-
-- Mobile navigation-open source and implementation PNGs are byte-identical:
-  `604221b4c724532e72b10768042e5791ddf23cccadbfb9beebd2843fa01d56da`.
-- Mobile search-open source and implementation PNGs are byte-identical:
-  `4bb7d29d15959298cdfc37a8009831bca72a67c8b621f689866c61907a306ec7`.
-- Mobile sidebar and “On this page” states were compared in the same Browser
-  comparison input. Visible geometry, overlay opacity, typography, item order,
-  borders, and shadows match; non-identical PNG hashes come from transition and
-  focus timing only.
-- Desktop language menu, mobile sidebar, mobile page outline, English search
-  results, Chinese search results, light/dark theme, Guide/Development/Reference
-  navigation, and Chinese/English route switching were exercised.
-
-## Required fidelity surfaces
-
-### Fonts and typography
-
-Passed. Both sites compute the body font as
-`Inter, ui-sans-serif, system-ui, sans-serif, ...`; hierarchy, weights, sizes,
-line heights, wrapping, code typography, and antialiasing match in equal-state
-captures.
-
-### Spacing and layout rhythm
-
-Passed. Desktop measurements match exactly: fixed navigation height `64px`,
-sidebar width `272px`, content container `688px` wide at `x=384`, and document
-height `1543px`. Mobile document height matches at `1891px`. Section gaps,
-rules, padding, radii, overlay geometry, and responsive collapse behavior match.
-
-### Colors and visual tokens
-
-Passed. Light body background/text are `rgb(255, 255, 255)` /
-`rgb(60, 60, 67)` on both sites. Dark body background/text are
-`rgb(27, 27, 31)` / `rgb(223, 223, 214)` on both sites. Brand, border,
-sidebar, code, overlay, and focus tokens come from the same official VitePress
-configuration.
-
-### Image quality and asset fidelity
-
-Passed. The real official wordmark and favicon are local assets; no handmade
-replacement is used. Provider screenshots load from local hashed assets at
-their full intrinsic sizes (`1600×866` and `1128×864`). Mermaid renders a real
-SVG. No source image is hotlinked.
-
-### Copy and content
-
-Passed. The 83 canonical pages map to 166 official Chinese/English routes. All
-165 published source files match their pinned upstream Git blobs and SHA-256
-values, and all 82 bilingual pairing records validate. The official
-`inherited.md` English fallback is preserved intentionally.
-
-## Primary interactions and browser health
-
-- English search returned 16 visible results for `workspace`.
-- Chinese search returned 16 visible results for `工作区`.
-- Language switching navigated between `/en/guide/quickstart` and
-  `/guide/quickstart` with the correct title/H1.
-- Development and Reference tabs navigated to their official landing routes.
-- Mobile top navigation, sidebar drawer, page-outline dropdown, and search
-  overlay opened and closed correctly.
-- Provider images loaded completely from local assets.
-- Mermaid rendered an SVG.
-- Browser console warnings/errors checked: none.
-
-## Production deployment verification
-
-- Production canonical origin: `https://www.deepseek-harness-docs.com`.
-- Vercel reported the production deployment as `Ready`.
-- `/` resolved to `/guide/quickstart`; Chinese and English Quickstart routes
-  returned `200`, while unpublished Japanese and Korean routes returned `404`.
-- The deployed Chinese page, English page, three top-level tabs, pinned GitHub
-  links, local search results, and official visual composition were rechecked in
-  the Codex in-app Browser.
+The previous `astro-*` evidence remains as the pre-refresh implementation
+record. The `astro-refresh-*` set above was captured from the current built
+`dist/` through `astro preview`, not from the development server.
 
 ## Findings
 
-No actionable P0, P1, or P2 visual mismatch was found.
+### Structured information architecture
 
-The only intentional non-visual divergence is that repository-relative links to
-non-published source paths use the pinned upstream commit instead of moving
-`master`; the visible link labels and layout remain official, while the target
-is more reproducible.
+Passed. `/start` and `/en/start` render the new task-oriented Start hub rather
+than reproducing the old official Quickstart page. The sidebar is grouped into
+Start, Core concepts, Build and extend, Runtime and orchestration, API and
+types, Examples, and Version changes. Internal source provenance remains bound
+to each projected page without adding a visible upstream-attribution footer.
 
-## Comparison history
+The reviewed navigation now places every one of the 85 neutral page identities
+exactly once. Cordis tutorial pages are nested under Core concepts → Cordis;
+the 42 Runtime subsystem pages are split into eight responsibility groups;
+catalogs and Cordis API have separate branches; and examples are separated into
+extension basics and advanced integrations. Chinese and English use concise,
+independently reviewed labels while page titles, content, and routes remain
+unchanged. Version changes is a direct entry instead of a redundant one-item
+accordion.
 
-Pass 1 found no P0/P1/P2 issues. No visual fix was required, so no second
-comparison iteration was necessary.
+### Visual system
 
-## Implementation checklist
+Passed. The refresh adapts the restrained documentation language used by the
+local `codex_doc_cn` project without copying its application code. The reading
+column is capped at `50rem`; system typography uses smaller, tighter heading
+steps; surfaces use neutral zinc values; blue is reserved for actionable text;
+and borders replace decorative shadows. Light and dark modes share the same
+hierarchy and spacing contract.
 
-- [x] Desktop light parity
-- [x] Desktop dark parity
-- [x] Mobile responsive parity
-- [x] Search parity and real results
-- [x] Navigation/sidebar/outline parity
-- [x] Chinese/English content and language switching
-- [x] Real official assets and Mermaid
-- [x] Zero browser console warnings/errors
+The sidebar now starts with every catalog group collapsed. Starlight opens only
+the group containing the current page, preserving context while preventing all
+169 pages from competing for attention. The active item uses a soft neutral
+surface and a two-pixel edge marker instead of a saturated blue block.
 
-## Follow-up polish
+Nested groups use a quieter secondary label and a vertical ownership guide for
+their children. The current top-level and second-level ancestors open together;
+unrelated branches remain closed. Both levels retain full-row summary targets,
+native disclosure semantics, and visible chevrons.
 
-No P3 follow-up is required for the first-version visual target.
+### Locale behavior
 
-final result: passed
+Passed after one browser-found correction. The first browser pass showed
+Chinese sidebar labels on English pages because Starlight looks up translation
+labels by the configured `en-US` language tag, not the locale directory key
+`en`. The configuration now uses `en-US`; a second pass confirmed English
+group labels, page labels, previous/next navigation, title, H1, outline, and
+language controls. Switching from `/start` to `/en/start` preserves the neutral
+page identity.
+
+### Source attribution display
+
+Passed. The generated Chinese and English documentation pages no longer render
+the former attribution footer, its source paths, or its upstream commit.
+Public JSON-LD also omits `isBasedOn` and `citation`. Repository locks, segment
+ownership, projection receipts, audit reports, and the license remain intact as
+non-visual maintenance and compliance controls. Desktop page ends now flow
+directly into pagination, and mobile pages retain normal bottom spacing without
+an empty attribution surface.
+
+### Search
+
+Passed. English search for `workspace` returned 19 results, including the new
+`/en/runtime/workspace`, `/en/examples/adding-a-package`, and
+`/en/start/python-sdk` routes. The overlay, result fragments, highlights, and
+load-more control were visible and interactive.
+
+### Mermaid
+
+Passed. `/concepts` contained three Mermaid source blocks; all three were
+marked processed and rendered as SVG in the browser. The renderer follows the
+active Starlight light/dark theme.
+
+### Responsive layout and interactions
+
+Passed. At `390 x 844`, the document collapses to a mobile header, compact
+on-page outline, and menu button. Opening the menu displays the localized
+task-oriented navigation without horizontal clipping. The content width,
+heading scale, code surfaces, right outline, and pagination
+were also checked at `1440 x 900` and `1920 x 1080`. Desktop light and dark
+theme controls worked.
+
+The Cordis mobile branch was checked with Core concepts and Cordis open, the
+active tutorial step visible, and Plugin foundations toggled independently.
+The Chinese-only Cordis API fallback entry also navigated through the built
+local redirect to its English owner at `/en/api/cordis/inherited`.
+
+### Browser health
+
+No application runtime warning was observed. Local preview logs one expected
+404 for `/_vercel/insights/script.js`: Vercel serves that endpoint only after
+Web Analytics is enabled for and deployed through the connected Vercel
+project. The component injection is present locally; production collection is
+not asserted by this report.
+
+## Automated checks represented by the same build
+
+- 169 projected Chinese/English documentation pages
+- 717 neutral source segments with 100% single-owner coverage
+- 167 indexable sitemap URLs and 2 intentional `noindex` pages
+- 166 permanent one-hop legacy redirects
+- 6,131 internal fragment references across 173 HTML files
+- 169 projected pages with no upstream attribution or source metadata
+- no `/ja/` or `/ko/` output
+
+## Production boundary
+
+Production deployment, Vercel Analytics ingestion, Search Console processing,
+Bing receipt, and live IndexNow submission were not performed. Those checks
+must use the exact deployed commit and are outside this local implementation
+report.
+
+## Result
+
+No remaining actionable P0, P1, or P2 visual or interaction issue was found in
+the tested Astro/Starlight surfaces.
+
+Final result: passed locally.

@@ -1,0 +1,835 @@
+{
+  "schema_version": 1,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/start",
+      "permanent": true
+    },
+    {
+      "source": "/en/",
+      "destination": "/en/start",
+      "permanent": true
+    },
+    {
+      "source": "/guide/quickstart",
+      "destination": "/start/web-ui",
+      "permanent": true
+    },
+    {
+      "source": "/en/guide/quickstart",
+      "destination": "/en/start/web-ui",
+      "permanent": true
+    },
+    {
+      "source": "/guide/providers",
+      "destination": "/start/models",
+      "permanent": true
+    },
+    {
+      "source": "/en/guide/providers",
+      "destination": "/en/start/models",
+      "permanent": true
+    },
+    {
+      "source": "/guide/python-sdk",
+      "destination": "/start/python-sdk",
+      "permanent": true
+    },
+    {
+      "source": "/en/guide/python-sdk",
+      "destination": "/en/start/python-sdk",
+      "permanent": true
+    },
+    {
+      "source": "/develop/basic/",
+      "destination": "/build/first-plugin",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/basic/",
+      "destination": "/en/build/first-plugin",
+      "permanent": true
+    },
+    {
+      "source": "/develop/basic/tool",
+      "destination": "/build/tool",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/basic/tool",
+      "destination": "/en/build/tool",
+      "permanent": true
+    },
+    {
+      "source": "/develop/basic/config",
+      "destination": "/build/config",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/basic/config",
+      "destination": "/en/build/config",
+      "permanent": true
+    },
+    {
+      "source": "/develop/basic/publish",
+      "destination": "/build/publish",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/basic/publish",
+      "destination": "/en/build/publish",
+      "permanent": true
+    },
+    {
+      "source": "/develop/framework/",
+      "destination": "/concepts/plugin-lifecycle",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/framework/",
+      "destination": "/en/concepts/plugin-lifecycle",
+      "permanent": true
+    },
+    {
+      "source": "/develop/framework/service",
+      "destination": "/concepts/service",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/framework/service",
+      "destination": "/en/concepts/service",
+      "permanent": true
+    },
+    {
+      "source": "/develop/framework/events",
+      "destination": "/concepts/events",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/framework/events",
+      "destination": "/en/concepts/events",
+      "permanent": true
+    },
+    {
+      "source": "/develop/practice/",
+      "destination": "/build/capability-layering",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/practice/",
+      "destination": "/en/build/capability-layering",
+      "permanent": true
+    },
+    {
+      "source": "/develop/practice/llm-adapter",
+      "destination": "/build/llm-adapter",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/practice/llm-adapter",
+      "destination": "/en/build/llm-adapter",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/",
+      "destination": "/concepts/cordis/tutorial",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/",
+      "destination": "/en/concepts/cordis/tutorial",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/01-first-plugin",
+      "destination": "/concepts/cordis/tutorial/first-plugin",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/01-first-plugin",
+      "destination": "/en/concepts/cordis/tutorial/first-plugin",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/02-lifecycle-and-effects",
+      "destination": "/concepts/cordis/tutorial/lifecycle-and-effects",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/02-lifecycle-and-effects",
+      "destination": "/en/concepts/cordis/tutorial/lifecycle-and-effects",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/03-services",
+      "destination": "/concepts/cordis/tutorial/services",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/03-services",
+      "destination": "/en/concepts/cordis/tutorial/services",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/04-events",
+      "destination": "/concepts/cordis/tutorial/events",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/04-events",
+      "destination": "/en/concepts/cordis/tutorial/events",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/05-config",
+      "destination": "/concepts/cordis/tutorial/config",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/05-config",
+      "destination": "/en/concepts/cordis/tutorial/config",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/06-composition-and-hmr",
+      "destination": "/concepts/cordis/tutorial/composition-and-hmr",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/06-composition-and-hmr",
+      "destination": "/en/concepts/cordis/tutorial/composition-and-hmr",
+      "permanent": true
+    },
+    {
+      "source": "/develop/cordis-tutorial/07-into-the-harness",
+      "destination": "/concepts/cordis/tutorial/into-the-harness",
+      "permanent": true
+    },
+    {
+      "source": "/en/develop/cordis-tutorial/07-into-the-harness",
+      "destination": "/en/concepts/cordis/tutorial/into-the-harness",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cordis-primer",
+      "destination": "/concepts/cordis/primer",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cordis-primer",
+      "destination": "/en/concepts/cordis/primer",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/",
+      "destination": "/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/",
+      "destination": "/en/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/core",
+      "destination": "/runtime/core",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/core",
+      "destination": "/en/runtime/core",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/scope",
+      "destination": "/runtime/scope",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/scope",
+      "destination": "/en/runtime/scope",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/invariants",
+      "destination": "/runtime/invariants",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/invariants",
+      "destination": "/en/runtime/invariants",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/session",
+      "destination": "/runtime/session",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/session",
+      "destination": "/en/runtime/session",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/session-query",
+      "destination": "/runtime/session-query",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/session-query",
+      "destination": "/en/runtime/session-query",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/session-reference",
+      "destination": "/runtime/session-reference",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/session-reference",
+      "destination": "/en/runtime/session-reference",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/session-title",
+      "destination": "/runtime/session-title",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/session-title",
+      "destination": "/en/runtime/session-title",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/session-projection",
+      "destination": "/runtime/session-projection",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/session-projection",
+      "destination": "/en/runtime/session-projection",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/persistence",
+      "destination": "/runtime/persistence",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/persistence",
+      "destination": "/en/runtime/persistence",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/spill",
+      "destination": "/runtime/spill",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/spill",
+      "destination": "/en/runtime/spill",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/session-telemetry",
+      "destination": "/runtime/session-telemetry",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/session-telemetry",
+      "destination": "/en/runtime/session-telemetry",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/llm-streaming",
+      "destination": "/runtime/llm-streaming",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/llm-streaming",
+      "destination": "/en/runtime/llm-streaming",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/token-meter",
+      "destination": "/runtime/token-meter",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/token-meter",
+      "destination": "/en/runtime/token-meter",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/system-prompt",
+      "destination": "/runtime/system-prompt",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/system-prompt",
+      "destination": "/en/runtime/system-prompt",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/compaction",
+      "destination": "/runtime/compaction",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/compaction",
+      "destination": "/en/runtime/compaction",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/tools",
+      "destination": "/runtime/tools",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/tools",
+      "destination": "/en/runtime/tools",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/shell",
+      "destination": "/runtime/shell",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/shell",
+      "destination": "/en/runtime/shell",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/subprocess",
+      "destination": "/runtime/subprocess",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/subprocess",
+      "destination": "/en/runtime/subprocess",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/terminal",
+      "destination": "/runtime/terminal",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/terminal",
+      "destination": "/en/runtime/terminal",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/jobs",
+      "destination": "/runtime/jobs",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/jobs",
+      "destination": "/en/runtime/jobs",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/filesystem",
+      "destination": "/runtime/filesystem",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/filesystem",
+      "destination": "/en/runtime/filesystem",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/lsp",
+      "destination": "/runtime/lsp",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/lsp",
+      "destination": "/en/runtime/lsp",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/code-runtime",
+      "destination": "/runtime/code-runtime",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/code-runtime",
+      "destination": "/en/runtime/code-runtime",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/web",
+      "destination": "/runtime/web",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/web",
+      "destination": "/en/runtime/web",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/skills",
+      "destination": "/runtime/skills",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/skills",
+      "destination": "/en/runtime/skills",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/workflow",
+      "destination": "/runtime/workflow",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/workflow",
+      "destination": "/en/runtime/workflow",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/subagent",
+      "destination": "/runtime/subagent",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/subagent",
+      "destination": "/en/runtime/subagent",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/approval",
+      "destination": "/runtime/approval",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/approval",
+      "destination": "/en/runtime/approval",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/permission-presets",
+      "destination": "/runtime/permission-presets",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/permission-presets",
+      "destination": "/en/runtime/permission-presets",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/sandbox",
+      "destination": "/runtime/sandbox",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/sandbox",
+      "destination": "/en/runtime/sandbox",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/plan",
+      "destination": "/runtime/plan",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/plan",
+      "destination": "/en/runtime/plan",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/user-questions",
+      "destination": "/runtime/user-questions",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/user-questions",
+      "destination": "/en/runtime/user-questions",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/commands",
+      "destination": "/runtime/commands",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/commands",
+      "destination": "/en/runtime/commands",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/goal",
+      "destination": "/runtime/goal",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/goal",
+      "destination": "/en/runtime/goal",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/schedule",
+      "destination": "/runtime/schedule",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/schedule",
+      "destination": "/en/runtime/schedule",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/web-server",
+      "destination": "/runtime/web-server",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/web-server",
+      "destination": "/en/runtime/web-server",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/typert",
+      "destination": "/runtime/typert",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/typert",
+      "destination": "/en/runtime/typert",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/client-modules",
+      "destination": "/runtime/client-modules",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/client-modules",
+      "destination": "/en/runtime/client-modules",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/storage",
+      "destination": "/runtime/storage",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/storage",
+      "destination": "/en/runtime/storage",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/workspace",
+      "destination": "/runtime/workspace",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/workspace",
+      "destination": "/en/runtime/workspace",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/settings",
+      "destination": "/runtime/settings",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/settings",
+      "destination": "/en/runtime/settings",
+      "permanent": true
+    },
+    {
+      "source": "/reference/subsystems/credentials",
+      "destination": "/runtime/credentials",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/subsystems/credentials",
+      "destination": "/en/runtime/credentials",
+      "permanent": true
+    },
+    {
+      "source": "/reference/",
+      "destination": "/concepts/reference",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/",
+      "destination": "/en/concepts/reference",
+      "permanent": true
+    },
+    {
+      "source": "/reference/capability-seams",
+      "destination": "/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/capability-seams",
+      "destination": "/en/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/reference/agent-lifecycle",
+      "destination": "/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/agent-lifecycle",
+      "destination": "/en/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/reference/tool-execution-pipeline",
+      "destination": "/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/tool-execution-pipeline",
+      "destination": "/en/concepts",
+      "permanent": true
+    },
+    {
+      "source": "/reference/config-catalog",
+      "destination": "/api/catalogs/config-catalog",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/config-catalog",
+      "destination": "/en/api/catalogs/config-catalog",
+      "permanent": true
+    },
+    {
+      "source": "/reference/tool-catalog",
+      "destination": "/api/catalogs/tool-catalog",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/tool-catalog",
+      "destination": "/en/api/catalogs/tool-catalog",
+      "permanent": true
+    },
+    {
+      "source": "/reference/persistence-catalog",
+      "destination": "/api/catalogs/persistence-catalog",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/persistence-catalog",
+      "destination": "/en/api/catalogs/persistence-catalog",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cordis-api/context",
+      "destination": "/api/cordis/context",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cordis-api/context",
+      "destination": "/en/api/cordis/context",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cordis-api/events",
+      "destination": "/api/cordis/events",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cordis-api/events",
+      "destination": "/en/api/cordis/events",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cordis-api/fiber",
+      "destination": "/api/cordis/fiber",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cordis-api/fiber",
+      "destination": "/en/api/cordis/fiber",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cordis-api/registry",
+      "destination": "/api/cordis/registry",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cordis-api/registry",
+      "destination": "/en/api/cordis/registry",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cordis-api/service",
+      "destination": "/api/cordis/service",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cordis-api/service",
+      "destination": "/en/api/cordis/service",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cordis-api/inherited",
+      "destination": "/en/api/cordis/inherited",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cordis-api/inherited",
+      "destination": "/en/api/cordis/inherited",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cookbook/adding-a-package",
+      "destination": "/examples/adding-a-package",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cookbook/adding-a-package",
+      "destination": "/en/examples/adding-a-package",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cookbook/adding-a-tool",
+      "destination": "/examples/adding-a-tool",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cookbook/adding-a-tool",
+      "destination": "/en/examples/adding-a-tool",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cookbook/adding-an-llm-adapter",
+      "destination": "/examples/adding-an-llm-adapter",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cookbook/adding-an-llm-adapter",
+      "destination": "/en/examples/adding-an-llm-adapter",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cookbook/extension-cookbook",
+      "destination": "/examples/extension-cookbook",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cookbook/extension-cookbook",
+      "destination": "/en/examples/extension-cookbook",
+      "permanent": true
+    },
+    {
+      "source": "/reference/cookbook/adding-a-conversation-node",
+      "destination": "/examples/adding-a-conversation-node",
+      "permanent": true
+    },
+    {
+      "source": "/en/reference/cookbook/adding-a-conversation-node",
+      "destination": "/en/examples/adding-a-conversation-node",
+      "permanent": true
+    }
+  ]
+}

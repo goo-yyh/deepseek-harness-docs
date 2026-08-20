@@ -8,38 +8,37 @@
     "node": ">=22.19.0"
   },
   "scripts": {
-    "dev": "vitepress dev website --host 127.0.0.1 --port 5173",
-    "build": "pnpm run docs:check && pnpm run docs:i18n && vitepress build website && pnpm run seo:audit && pnpm run indexnow:check && pnpm run docs:fragments",
-    "preview": "vitepress preview website --host 127.0.0.1 --port 4173",
+    "dev": "pnpm run content:project && astro dev --host 127.0.0.1 --port 5173",
+    "build": "pnpm run docs:check && pnpm run content:segments && pnpm run content:project && pnpm run content:audit && pnpm run check && astro build && pnpm run sitemap:build && pnpm run seo:audit && pnpm run indexnow:check && pnpm run docs:routes",
+    "preview": "astro preview --host 127.0.0.1 --port 4173",
     "docs:check": "tsx scripts/validate-docs.ts",
-    "docs:i18n": "tsx scripts/audit-translations.ts",
     "docs:manifest": "tsx scripts/capture-upstream.ts",
+    "content:segments": "tsx scripts/extract-source-segments.ts",
+    "content:project": "tsx scripts/project-astro-docs.ts",
+    "content:audit": "tsx scripts/audit-content-projection.ts",
+    "content:bootstrap": "tsx scripts/bootstrap-content-map.ts",
+    "check": "astro check",
+    "sitemap:build": "tsx scripts/build-sitemap.ts",
     "docs:routes": "tsx scripts/verify-built-routes.ts && tsx scripts/verify-built-fragments.ts",
-    "docs:fragments": "tsx scripts/verify-built-fragments.ts",
     "seo:audit": "tsx scripts/audit-seo.ts",
     "indexnow:check": "tsx scripts/submit-indexnow.ts --dry-run",
     "indexnow:submit": "tsx scripts/submit-indexnow.ts",
     "docs:sync": "python3 .agents/skills/diff-translation/scripts/snapshot_manager.py",
-    "test": "python3 .agents/skills/diff-translation/tests/test_pipeline.py && tsx scripts/test-heading-anchors.ts && pnpm run test:i18n-audit && tsx --test scripts/tests/translation-runner.test.ts",
-    "test:i18n-audit": "tsx --test scripts/tests/audit-translations.test.ts"
+    "test": "python3 .agents/skills/diff-translation/tests/test_pipeline.py && tsx --test scripts/tests/projection.test.ts"
   },
   "devDependencies": {
-    "@braintree/sanitize-url": "7.1.2",
+    "@astrojs/check": "0.9.10",
+    "@astrojs/markdown-remark": "7.2.4",
+    "@astrojs/starlight": "0.41.7",
     "@types/mdast": "^4.0.4",
     "@types/node": "^22.20.0",
-    "cytoscape": "3.34.0",
-    "cytoscape-cose-bilkent": "4.1.0",
-    "dayjs": "1.11.21",
-    "debug": "4.4.3",
+    "astro": "7.2.4",
     "mdast-util-from-markdown": "^2.0.3",
     "mdast-util-gfm": "^3.1.0",
     "mermaid": "11.16.0",
     "micromark-extension-gfm": "^3.0.0",
     "tsx": "^4.22.4",
-    "typescript": "^6.0.3",
-    "vite": "^5.4.14",
-    "vitepress": "^1.6.4",
-    "vitepress-plugin-mermaid": "^2.0.17"
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "@vercel/analytics": "2.0.1"
